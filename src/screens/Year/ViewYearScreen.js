@@ -56,7 +56,7 @@ export default function ViewYearScreen({ history }) {
   const [navigationalQuote, setNavigationalQuote] = useState();
   const [inputQuote, setInputQuote] = useState(false);
 
-  const [birthDate, setBirthDate] = useState("");
+  const [birthDate, setBirthDate] = useState("09/03/1992");
   const [inputBirthDate, setInputBirthDate] = useState(false);
 
   const [videoDisplay, setVideoDisplay] = useState(true);
@@ -216,15 +216,13 @@ const updateHandler = (e) => {
   
 const birthday =  years && years.map((year) => {
     const bday = year.birthDate.substring(0,10));
-  
   return new Date(bday);
- 
 }
+                                     
 console.log(birthday);
 
 let day1 = new Date(birthday);
 console.log(day1);
-
 
 let day2 = new Date();
 console.log(day2);
