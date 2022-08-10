@@ -245,7 +245,6 @@ useEffect(()=> {
   loadingTimeout();
    setContinuation(days1);
   setBirth(day1);
-  setTodayDay(day2);
 })
 
   return (
@@ -348,9 +347,8 @@ Learn About Your Year Page
         
                 <div>
            
-                <>
+          
                 <motion.h4
-         
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
@@ -360,7 +358,7 @@ Learn About Your Year Page
                     <span className="contText">Today is {todayDay}
                     <br/>day <span className="dobText2">{continuation}</span> in my life.</span>
                   </div>
-                  </>
+         
                 
 
                   {years && years.map((year) =>
