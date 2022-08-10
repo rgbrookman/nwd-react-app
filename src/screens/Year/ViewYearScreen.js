@@ -205,13 +205,7 @@ const updateHandler = (e) => {
 
 
 let day1 = years && new Date(birthDate.substring(0,10).replace(/-/g,"/"));
-
-let day2 = new Date();
-
-  
-  let diff = Math.abs(day2-day1);
-  let daysCalc = diff / (1000 * 3600 * 24)
-  let days1 = Math.floor(daysCalc);
+console.log(day1);
 
 
 
@@ -324,7 +318,7 @@ Learn About Your Year Page
             <motion.div className="outputButtons">
         
                 <div>
-                {!years ? <Loading /> : years.map((year) =>
+                {years && years.map((year) =>
                 <>
                 <motion.h4
                   key={year._id}
@@ -340,7 +334,7 @@ Learn About Your Year Page
                   </>
                   )}
 
-                  {!years ? <Loading /> : years.map((year) =>
+                  {years && years.map((year) =>
                   <>
                 <motion.input
                   key={year._id}
