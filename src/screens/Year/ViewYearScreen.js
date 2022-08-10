@@ -203,11 +203,16 @@ const updateHandler = (e) => {
     }, 250);
 };
 
-
-let birthDateVal = years && birthDate.substring(0,10);
-
-let day1 = years && new Date(birthDateVal.replace(/-/g,"/"));
+let day1 = new Date(birthDate);
 console.log(day1);
+
+
+let day2 = new Date();
+console.log(day2);
+
+let diff = Math.abs(day2-day1);
+let daysCalc = diff / (1000 * 3600 * 24)
+let days1 = Math.floor(daysCalc);
 
 
 
