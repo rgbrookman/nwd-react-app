@@ -607,10 +607,8 @@ Learn About Your Year Page
               </motion.div>
             </div>
 
-    {  !myValues_4 === "" ?  <hr className="dividingLine"/> : null }
 
 
-{  !myValues_4 === "" ?
 
   <div className="valuesIntBoxView">
   <motion.div className="editDeleteValues4">
@@ -675,13 +673,13 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
       </motion.div>
-    </div>     : null }
+    </div>   
 
 
-        { !myValues_5 === "" ? <hr className="dividingLine"/>    :   null    }
 
 
-{ !myValues_5 === "" ?    <div className="valuesIntBoxView">
+
+   <div className="valuesIntBoxView">
   <motion.div className="editDeleteValues5">
       <FontAwesomeIcon
         className="editIcon"
@@ -746,7 +744,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
             }} />
 
       </motion.div>
-    </div>                 :   null               }
+    </div>         
 
 
       </motion.div>
@@ -886,8 +884,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
               <motion.input
                 type="text"
-
-                    animate={ inputVision_3 ? "show": "hide"}
+                animate={ inputVision_3 ? "show": "hide"}
                 variants={valueState}
                 value={myVision_3}
                 onChange={(e) => setMyVision_3(e.target.value)}></motion.input>
