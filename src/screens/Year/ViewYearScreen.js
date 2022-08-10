@@ -204,7 +204,7 @@ const updateHandler = (e) => {
 };
 
 
-let birthDateVal = birthDate.substring(0,10);
+let birthDateVal = years && birthDate.substring(0,10);
 
 let day1 = years && new Date(birthDateVal.replace(/-/g,"/"));
 console.log(day1);
