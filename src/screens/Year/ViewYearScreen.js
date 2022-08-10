@@ -206,8 +206,6 @@ const updateHandler = (e) => {
 
   let day1 = new Date(birthDate);
   let day2 = new Date();
-
-  day1.toLocaleDateString();
   
   let diff = Math.abs(day2-day1);
   let daysCalc = diff / (1000 * 3600 * 24)
@@ -331,7 +329,7 @@ Learn About Your Year Page
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{day1}</motion.h4>
+                  >{birthDate.toLocaleDateString()}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is {day2.toLocaleDateString()}
