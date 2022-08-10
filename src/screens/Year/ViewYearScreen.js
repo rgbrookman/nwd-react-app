@@ -217,7 +217,7 @@ const updateHandler = (e) => {
 const birthday =  years && years.map((year) => year.birthDate);
 console.log(birthday);
 
-const bday = Date(birthday); 
+const bday = new Date(birthday); 
 console.log(bday);
 
 let day1 = new Date(birthday);
