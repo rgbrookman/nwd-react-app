@@ -104,7 +104,7 @@ useEffect(() => {
     try {
       const { data } = await axios.get(`/api/years/year/${id}`);
       setYourName(data.yourName);
-  setBirthDate(data.birthDate);
+  setBirthDate(data.birthDate.replace(/-/g,"/"));
   setMyValues_1(data.myValues_1);
   setMyValues_1_Text(data.myValues_1_Text);
   setMyValues_2(data.myValues_2);
