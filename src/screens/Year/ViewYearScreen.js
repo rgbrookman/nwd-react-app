@@ -215,7 +215,8 @@ const updateHandler = (e) => {
       return {date: parseDate(each.logDate.slice(0,10)), es: each.endScore}});
   
 const birthday =  years && years.map((year) => {
-    const bday = year.birthDate.substring(0,10));
+    const bday = year.birthDate
+    bday.substring(0,10));
   return new Date(bday);
 }
                                      
