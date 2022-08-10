@@ -56,7 +56,7 @@ export default function ViewYearScreen({ history }) {
   const [navigationalQuote, setNavigationalQuote] = useState();
   const [inputQuote, setInputQuote] = useState(false);
 
-  const [birthDate, setBirthDate] = useState("");
+  const [birthDate, setBirthDate] = useState("01/01/2000");
   const [inputBirthDate, setInputBirthDate] = useState(false);
 
   const [videoDisplay, setVideoDisplay] = useState(true);
