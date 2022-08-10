@@ -607,10 +607,10 @@ Learn About Your Year Page
               </motion.div>
             </div>
 
-    {  myValues_4  ?  <hr className="dividingLine"/> : null }
+    {  !myValues_4 === "" ?  <hr className="dividingLine"/> : null }
 
 
-{  myValues_4  ?
+{  !myValues_4 === "" ?
 
   <div className="valuesIntBoxView">
   <motion.div className="editDeleteValues4">
@@ -678,10 +678,10 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
     </div>     : null }
 
 
-        { myValues_5 ? <hr className="dividingLine"/>    :   null    }
+        { !myValues_5 === "" ? <hr className="dividingLine"/>    :   null    }
 
 
-{ myValues_5  ?    <div className="valuesIntBoxView">
+{ !myValues_5 === "" ?    <div className="valuesIntBoxView">
   <motion.div className="editDeleteValues5">
       <FontAwesomeIcon
         className="editIcon"
