@@ -332,7 +332,7 @@ Learn About Your Year Page
 
       <motion.div
         className="dobBox">
-          <span>I was born on...{day1}</span>
+          <span>I was born on...</span>
             <motion.div className="outputButtons">
         
                 <div>
@@ -343,7 +343,7 @@ Learn About Your Year Page
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{year.birthDate}</motion.h4>
+                  >{year.birthDate.substring(0,10)}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is {}
