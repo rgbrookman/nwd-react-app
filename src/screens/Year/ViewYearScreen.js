@@ -232,7 +232,7 @@ useEffect(()=> {
     <form onSubmit={updateHandler}>
 
   
-  { pageLoading ? <div className="pageLoading"><PageLoading /></div> :
+  { !years && !days && pageLoading ? <div className="pageLoading"><PageLoading /></div> :
     <main id="yearContainer">
       <div className="yearTopRow">
 
