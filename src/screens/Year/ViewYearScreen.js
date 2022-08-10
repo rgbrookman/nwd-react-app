@@ -232,6 +232,7 @@ let days1 = Math.floor(daysCalc);
     console.log(days1);
 
 const [continuation, setContinuation] = useState(80000);
+const [birthday, setBirthday] = useState("01/01/2000");
 
 const loadingTimeout = () => {
   setTimeout(()=> {
@@ -242,6 +243,7 @@ const loadingTimeout = () => {
 useEffect(()=> {
   loadingTimeout();
    setContinuation(days1);
+  setBirthday(day1);
 })
 
   return (
@@ -343,21 +345,21 @@ Learn About Your Year Page
             <motion.div className="outputButtons">
         
                 <div>
-                {years && years.map((year) =>
+           
                 <>
                 <motion.h4
                   key={year._id}
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{year.birthDate.substring(0,10).toLocaleDateString()}</motion.h4>
+                  >{birthday}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is {}
                     <br/>day <span className="dobText2">{continuation}</span> in my life.</span>
                   </div>
                   </>
-                  )}
+                
 
                   {years && years.map((year) =>
                   <>
