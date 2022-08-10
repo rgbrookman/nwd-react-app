@@ -210,8 +210,16 @@ const updateHandler = (e) => {
     }, 250);
 };
 
+
+    const startScoreData = days && days.map(each => {
+      return {date: parseDate(each.logDate.slice(0,10)), es: each.endScore}});
   
-const birthday =  years && years.map((year) => year.birthDate.substring(0,10));
+const birthday =  years && years.map((year) => {
+    const bday = year.birthDate.substring(0,10));
+  
+  return new Date(bday);
+ 
+}
 console.log(birthday);
 
 let day1 = new Date(birthday);
