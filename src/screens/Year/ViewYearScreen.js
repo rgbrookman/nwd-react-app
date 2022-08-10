@@ -329,7 +329,7 @@ Learn About Your Year Page
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{year.birthDate.toLocaleDateString()}</motion.h4>
+                  >{day1}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is {day2.toLocaleDateString()}
