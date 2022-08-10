@@ -130,7 +130,7 @@ useEffect(() => {
   
   const dateValid = async () =>{
     await fetching();
-     setBirthDate(data.birthDate.replace(/-/g,"/"));
+     setBirthDate(birthDate.replace(/-/g,"/"));
   }
 
    
