@@ -210,7 +210,11 @@ const updateHandler = (e) => {
     }, 250);
 };
 
-let day1 = new Date(birthDate);
+  
+const birthday =  years && years.map((year) => year.birthDate.substring(0,10));
+console.log(birthday);
+
+let day1 = new Date(birthday);
 console.log(day1);
 
 
