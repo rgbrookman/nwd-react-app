@@ -216,7 +216,6 @@ const updateHandler = (e) => {
   
 const birthday =  years && years.map((year) => {
     const bday = year.birthDate
-    bday.substring(0,10));
   return new Date(bday);
 }
                                      
