@@ -318,7 +318,7 @@ Learn About Your Year Page
 
       <motion.div
         className="dobBox">
-          <span>I was born on...{day1}</span>
+          <span>I was born on...</span>
             <motion.div className="outputButtons">
         
                 <div>
