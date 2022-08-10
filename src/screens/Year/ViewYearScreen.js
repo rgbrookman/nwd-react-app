@@ -231,7 +231,7 @@ let daysCalc = diff / (1000 * 3600 * 24)
 let days1 = Math.floor(daysCalc);
     console.log(days1);
 
-
+const [continuation, setContinuation] = useState(80000);
 
 const loadingTimeout = () => {
   setTimeout(()=> {
@@ -241,6 +241,7 @@ const loadingTimeout = () => {
 
 useEffect(()=> {
   loadingTimeout();
+   setContinuation(days1);
 })
 
   return (
@@ -353,7 +354,7 @@ Learn About Your Year Page
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is {}
-                    <br/>day <span className="dobText2">{}</span> in my life.</span>
+                    <br/>day <span className="dobText2">{continuation}</span> in my life.</span>
                   </div>
                   </>
                   )}
