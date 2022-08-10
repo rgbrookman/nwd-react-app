@@ -232,7 +232,7 @@ let days1 = Math.floor(daysCalc);
     console.log(days1);
 
 const [continuation, setContinuation] = useState(80000);
-const [birthday, setBirthday] = useState("01/01/2000");
+const [birth, setBirth] = useState("01/01/2000");
 
 const loadingTimeout = () => {
   setTimeout(()=> {
@@ -243,7 +243,7 @@ const loadingTimeout = () => {
 useEffect(()=> {
   loadingTimeout();
    setContinuation(days1);
-  setBirthday(day1);
+  setBirth(day1);
 })
 
   return (
@@ -352,7 +352,7 @@ Learn About Your Year Page
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{birthday}</motion.h4>
+                  >{birth}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is {}
