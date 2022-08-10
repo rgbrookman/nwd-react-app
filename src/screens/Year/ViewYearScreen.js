@@ -133,6 +133,7 @@ useEffect(() => {
      setBirthDate(birthDate.replace(/-/g,"/"));
   }
 
+  dateValid();
    
 
 }, [id]);
