@@ -225,8 +225,11 @@ let day2 = new Date();
 console.log(day2);
 
 let diff = Math.abs(day2-day1);
+  console.log(diff);
 let daysCalc = diff / (1000 * 3600 * 24)
+  console.log(daysCalc);
 let days1 = Math.floor(daysCalc);
+    console.log(days1);
 
 
 
