@@ -204,8 +204,10 @@ const updateHandler = (e) => {
 };
 
 
-  let day1 = birthDate.toLocaleDateString;
+  let day1 = new Date(birthDate);
   let day2 = new Date();
+
+  day1.toLocaleDateString();
   
   let diff = Math.abs(day2-day1);
   let daysCalc = diff / (1000 * 3600 * 24)
