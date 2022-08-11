@@ -44,7 +44,7 @@ export default function QuizMindsetScreen() {
     },
   }
 
-  const johnCleese = 'Pb5oIIPO62g'
+  const johnCleese = 'siV5Ue6MhPI'
 
   return (
     <>
@@ -236,6 +236,11 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${johnCleese}?start=4`}>
+</iframe>
 <a className="niceLink"href="https://youtu.be/Pb5oIIPO62g">Link to Full 35 Minute Video</a>
 </div>
 </div>
