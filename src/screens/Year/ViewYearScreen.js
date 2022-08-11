@@ -793,9 +793,10 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
       </motion.div>
       </motion.div>
 
-      <motion.div className="visionBox">
+       <motion.div className="visionBox">
       <span className="visionTitle">My vision for 2022 is...</span>
-      <motion.div className="visionDiv">
+      
+      <motion.div className="visionDiv1">
       {years && years.map((year) =>
           <motion.h4
           key={year._id}
@@ -835,7 +836,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 </motion.div>
 
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv">
+          <motion.div className="visionDiv2">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
@@ -874,7 +875,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               </motion.div>
         </motion.div>
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv">
+          <motion.div className="visionDiv3">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
@@ -886,7 +887,8 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
               <motion.input
                 type="text"
-                animate={ inputVision_3 ? "show": "hide"}
+
+                    animate={ inputVision_3 ? "show": "hide"}
                 variants={valueState}
                 value={myVision_3}
                 onChange={(e) => setMyVision_3(e.target.value)}></motion.input>
@@ -912,7 +914,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               </motion.div>
         </motion.div>
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv">
+          <motion.div className="visionDiv4">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
@@ -951,7 +953,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               </motion.div>
         </motion.div>
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv">
+          <motion.div className="visionDiv5">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
