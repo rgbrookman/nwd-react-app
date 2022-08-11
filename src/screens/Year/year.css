@@ -118,7 +118,12 @@
   margin-bottom: 12px;
 }
 
-.visionDiv {
+.visionDiv1,
+.visionDiv2,
+.visionDiv3,
+.visionDiv4,
+.visionDiv5
+ {
   display: flex;
   flex-direction: row;
 }
@@ -218,7 +223,12 @@
   width: 65%;
 }
 
-.valuesIntBoxView {
+.valuesIntBoxView1,
+.valuesIntBoxView2,
+.valuesIntBoxView3,
+.valuesIntBoxView4,
+.valuesIntBoxView5
+{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -356,21 +366,21 @@
 
 .nameBox:hover .editDeleteName,
 .dobBox:hover .editDeleteDOB,
-.valuesBox:hover .editDeleteValues1,
-.valuesBox:hover .editDeleteValuesText1,
-.valuesBox:hover .editDeleteValues2,
-.valuesBox:hover .editDeleteValuesText2,
-.valuesBox:hover .editDeleteValues3,
-.valuesBox:hover .editDeleteValuesText3,
-.valuesBox:hover .editDeleteValues4,
-.valuesBox:hover .editDeleteValuesText4,
-.valuesBox:hover .editDeleteValues5,
-.valuesBox:hover .editDeleteValuesText5,
-.visionBox:hover .editDeleteVision1,
-.visionBox:hover .editDeleteVision2,
-.visionBox:hover .editDeleteVision3,
-.visionBox:hover .editDeleteVision4,
-.visionBox:hover .editDeleteVision5,
+.valuesIntBoxView1:hover .editDeleteValues1,
+.valuesIntBoxView1:hover .editDeleteValuesText1,
+.valuesIntBoxView2:hover .editDeleteValues2,
+.valuesIntBoxView2:hover .editDeleteValuesText2,
+.valuesIntBoxView3:hover .editDeleteValues3,
+.valuesIntBoxView3:hover .editDeleteValuesText3,
+.valuesIntBoxView4:hover .editDeleteValues4,
+.valuesIntBoxView4:hover .editDeleteValuesText4,
+.valuesIntBoxView5:hover .editDeleteValues5,
+.valuesIntBoxView5:hover .editDeleteValuesText5,
+.visionDiv1:hover .editDeleteVision1,
+.visionDiv2:hover .editDeleteVision2,
+.visionDiv3:hover .editDeleteVision3,
+.visionDiv4:hover .editDeleteVision4,
+.visionDiv5:hover .editDeleteVision5,
 .whyBox:hover .editDeleteWhy,
 .ikigaiBox:hover .editDeleteIkigai,
 .quoteBox:hover .editDeleteQuote {
