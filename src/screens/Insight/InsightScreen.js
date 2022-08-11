@@ -8,6 +8,7 @@ import { listDays } from './../../actions/dayActions';
 import FeelingScore from '../../components/Charts/FeelingScore/FeelingScore.js';
 import FeelingScoreAverage from '../../components/Charts/FeelingScore/FeelingScoreAverage.js';
 import FeelingScoreVariance from '../../components/Charts/FeelingScore/FeelingScoreVariance.js';
+import FeelingScoreTrend from '../../components/Charts/FeelingScore/FeelingScoreTrend.js';
 
 //Tasks Completed
 import TasksCompleted from '../../components/Charts/TasksCompleted/TasksCompleted.js';
@@ -144,6 +145,9 @@ useEffect(()=> {
 
        <h3 className="insightHeader">Deviation</h3>
        <FeelingScoreVariance />
+
+       <h3 className="insightHeader">14 Day Trend</h3>
+   <FeelingScoreTrend />
        </Row>
         </Col>
        </Row>
