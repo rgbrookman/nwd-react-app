@@ -337,7 +337,10 @@ You wouldn't look at that path and be like, 'Man! How have I never noticed that 
 <span>
 As such, as I refer back to the mentions of my particular sufferings, the many days, decisions and moments that were shaped by their 'worst' compoments, all help them fall in the
 bucket of 'potential for good'. No one comes through their early life and early adult life unscathed i.e. free from trauma, incident, perfectly calibrated with such peak
-levels of existential conscious that result in a near divine experience of every present moment. We all have a long list of a 'potential for goods' in our live,
+levels of existential conscious that result in a near divine experience of every present moment. 
+<br />
+<br />
+  We all have a long list of a 'potential for goods' in our live,
 and this is a joy in life; finding a way to transform our condition each day. Every incremental, even infinitesimal improvement in condition, is a huge and captivating victory.
   <br />
   <br />
@@ -345,8 +348,6 @@ and this is a joy in life; finding a way to transform our condition each day. Ev
 </span>
 <br />
 <br />
-
-
 </div>
 <div className="rightCol">
 <div id="taskImageDiv" className="rightContent">
