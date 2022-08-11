@@ -58,6 +58,7 @@ import './index.css';
 
 //Misc
 import ExportScreen from './screens/Export/ExportScreen';
+import ExternalScreen from './screens/External/ExternalScreen';
 
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
           <Route path="/register" element={<RegisterScreen />} />
           <Route path="/insight" element={<InsightScreen />} />
           <Route path="/loading" element={<TransitionScreen />} />
+          <Route path="/resources" element={<ExternalScreen />} />
           <Route path="/insight/quiz" element={<QuizIntroScreen />} />
           <Route path="/insight/quiz/feeling" element={<QuizFeelingScreen />} />
           <Route path="/insight/quiz/mindset" element={<QuizMindsetScreen />} />
