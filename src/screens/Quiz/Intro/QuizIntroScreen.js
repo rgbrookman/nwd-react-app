@@ -66,21 +66,23 @@ export default function QuizScreen() {
             The <strong>Insight</strong> section of NWD is about giving anyone who wants it a completely different perspective on their own life.
             <br />
             <br />
-            The view we get of life from our own eyes is phenomenal. It is key in our connection with other humans, great for studying details in our
-            immediate surroundings and generally directly experiencing the glory of being alive.
+            The view we get of life from our own eyes is phenomenal. It plays a key role in our connection with other humans, 
+            is great for studying details in our immediate surroundings and viscerally experiencing the glory of being alive.
             <br />
             <br />
-            However, this very same view is poorly adapted to
-            break down our behaviours and reliably turn the best and worst of what we do into greater joy and growth.
+            However, this very same view is really very bad at allowing us to
+            break down our behaviours and, reliably and regularly, turn the best and worst of what we do into greater joy and growth.
           </span>
           <br />
             <br />
           <hr className="dividingLine" />
           <br />
           <span>
-            all of the sections that compose NoWastedDays are especially designed to make many different perspectives possible.
+            All of the sections that compose NoWastedDays are especially designed to make many different perspectives possible.
             In the <strong>Insight</strong> section, you will find a host of graphs and charts that take your <strong>Today</strong> diary data
             and allow you, with a bit of time and understanding, to transform your level of self-awareness and self-assurance.
+                <br />
+          <br />
             However, not a single iota of insight, ounce of possiblility or plane of perspective can be created by simply playing back
             the data in a few simple charts.
           <br />
@@ -94,7 +96,7 @@ export default function QuizScreen() {
           <br />
             The 'Art of Looking' encompasses my own personal experience from <s>700</s> over 800 days of NoWastedDays
             diary inputs to all of the key mental and practical pillars that build a firm foundation from which you can reliably
-             and resiliently find a new perspective that transforms your life.</span>
+            and resiliently find a new perspective that transforms your life.</span>
     </div>
   <div className="rightCol">
   <div className="rightContent">
@@ -106,11 +108,11 @@ export default function QuizScreen() {
     <span className="colLabel2"><strong>Key Components</strong></span>
       <h1 className="quizHeaderGreen">The Right Amount of the Right Information:</h1>
       <div className="introExplainer">
-        <p>Dataset truly representative of a problem to be solved</p>
+        <p>A dataset truly representative of a problem to be solved</p>
           <hr className="dividingLine" />
-        <p>Significant sample size covering a more than sufficient period of time</p>
+        <p>A significant sample size covering a more than sufficient period of time</p>
           <hr className="dividingLine" />
-        <p>Highly trusted data provider</p>
+        <p>A highly trusted data provider</p>
       </div>
   </div>
   </Col>
@@ -164,10 +166,10 @@ className="quizDiv">
     <div className="colTitle">
       <h4 className="quizHeaderWhite">Why?!</h4>
     </div>
-          <br />
+      <br />
     <span>
       Ever since I started to get a grasp for web development and data,
-      it has frustrated me to the core just how infrequently either are unconditionally applied to any of our lives.
+      it has aggravated me just how infrequently either are unconditionally applied to any of our lives. 
     </span>
       <br />
       <br />
@@ -177,13 +179,11 @@ className="quizDiv">
     <br />
     <br />
     Yet for all the causes data and technology can be a slave or a servant to, there seems to be a huge lack of provisions that are entirely
-    centered on helping any human being healthily learn more about themselves, <strong>at a cost they can control</strong>, and
-    , in doing so, speedily and safely translate this greater self-awareness into the experience of more
-    <br /><strong>joy and more growth each day.</strong></span>
+    centered on helping any human being healthily learn more about themselves, <strong>at a cost they can control</strong>.</span>
       <br />
       <br />
       <span>
-    This predicament has three principle causes:
+    This predicament is created for many reasons, but three principle causes stand out in my opinion:
     </span>
       <br />
       <br />
