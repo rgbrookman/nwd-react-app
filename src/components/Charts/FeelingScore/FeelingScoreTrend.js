@@ -26,24 +26,42 @@ const avgArray = [];
     days && days.map(each => avgArray.push(each.endScore));
 
 
-const zeroRemove = () => {
-  let lastItem = avgArray.length - 1;
+const recentView = avgArray.length - 1 === 0 ? avgArray.slice(avgArray.length - 14) :  avgArray.slice(-15, -1) 
 
-  if (avgArray[lastItem] === 0) {
-    return avgArray.pop();
+
+
+
+
+const zeroRemove = (array) => {
+  let lastItem = array.length - 1;
+
+  if (array[lastItem] === 0) {
+    return array.pop();
   } else {
-    return avgArray;
+    return array;
   }
+
+  
 }
 
-zeroRemove();
+zeroRemove(avgArray);
+console.log(avgArray);
+console.log(recentView);
 
-    const deviation = Math.round(d3.deviation(avgArray)* 10) / 10;
+
+const avg = Math.round(d3.mean(avgArray) * 10) / 10;
+console.log(avg);
+const recent = Math.round(d3.mean(recentView) * 10) / 10;
+console.log(recent);
+
+
+
+const newIndex = Number(recent / avg - 1).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:2}); 
+
 
 	return (
 
-			<span>{deviation}</span>
-
+			<span className="statSpan">{newIndex}</span>
 
 	)
 }
