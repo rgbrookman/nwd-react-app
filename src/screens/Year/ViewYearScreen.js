@@ -401,7 +401,7 @@ Learn About Your Year Page
       <span className="valuesTitle">My personal values are...</span>
 
 
-      <div className="valuesIntBoxView">
+      <div className="valuesIntBoxView1">
       <motion.div className="editDeleteValues1">
           <FontAwesomeIcon
             className="editIcon"
@@ -471,7 +471,7 @@ Learn About Your Year Page
 
           <hr className="dividingLine"/>
 
-          <div className="valuesIntBoxView">
+          <div className="valuesIntBoxView2">
           <motion.div className="editDeleteValues2">
               <FontAwesomeIcon
                 className="editIcon"
@@ -540,7 +540,7 @@ Learn About Your Year Page
 
           <hr className="dividingLine"/>
 
-          <div className="valuesIntBoxView">
+          <div className="valuesIntBoxView3">
           <motion.div className="editDeleteValues3">
               <FontAwesomeIcon
                 className="editIcon"
@@ -610,7 +610,9 @@ Learn About Your Year Page
 
 
 
-  <div className="valuesIntBoxView">
+
+
+  <div className="valuesIntBoxView4">
   <motion.div className="editDeleteValues4">
       <FontAwesomeIcon
         className="editIcon"
@@ -673,13 +675,13 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
       </motion.div>
-    </div>   
+    </div>    
 
 
 
 
 
-   <div className="valuesIntBoxView">
+  <div className="valuesIntBoxView5">
   <motion.div className="editDeleteValues5">
       <FontAwesomeIcon
         className="editIcon"
@@ -744,7 +746,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
             }} />
 
       </motion.div>
-    </div>         
+    </div>              
 
 
       </motion.div>
