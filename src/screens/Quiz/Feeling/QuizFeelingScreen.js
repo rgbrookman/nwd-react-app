@@ -13,7 +13,7 @@ import logo from '../../../NWD_Logo_White.png';
 import sameAverage from '../../../Same_Average.png';
 import waveConcept from '../../../wave_concept.png';
 import feelingscoretoday from '../../../FeelingScoreToday.png';
-import feelingscorechart from '../../../FeelingScoreChart.png';
+import feelingscorechart from '../../../feelingChart.png';
 import spiral from '../../../spiral.png';
 import './quizfeeling.css';
 
