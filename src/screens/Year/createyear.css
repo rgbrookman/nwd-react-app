@@ -391,28 +391,7 @@
   color: #46A46C;
 }
 
-.nameBox:hover .editDeleteName,
-.dobBox:hover .editDeleteDOB,
-.valuesBox:hover .editDeleteValues1,
-.valuesBox:hover .editDeleteValuesText1,
-.valuesBox:hover .editDeleteValues2,
-.valuesBox:hover .editDeleteValuesText2,
-.valuesBox:hover .editDeleteValues3,
-.valuesBox:hover .editDeleteValuesText3,
-.valuesBox:hover .editDeleteValues4,
-.valuesBox:hover .editDeleteValuesText4,
-.valuesBox:hover .editDeleteValues5,
-.valuesBox:hover .editDeleteValuesText5,
-.visionBox:hover .editDeleteVision1,
-.visionBox:hover .editDeleteVision2,
-.visionBox:hover .editDeleteVision3,
-.visionBox:hover .editDeleteVision4,
-.visionBox:hover .editDeleteVision5,
-.whyBox:hover .editDeleteWhy,
-.ikigaiBox:hover .editDeleteIkigai,
-.quoteBox:hover .editDeleteQuote {
-  display: block;
-}
+
 
 .editDeleteName,
 .editDeleteDOB,
