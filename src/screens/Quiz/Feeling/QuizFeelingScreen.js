@@ -113,8 +113,8 @@ export default function QuizFeelingScreen() {
   The higher this number is, the larger the difference from the average is.</span>
         <br />
         <br />
-<span>3.</span><span className="emphasis">Recent Trend:</span><span> T
-he degree to which your average from the last 14 days is more or less than your overall average</span>
+<span>3.</span><span className="emphasis">Recent Trend:</span><span> 
+The degree to which your average from the last 14 days is more or less than your overall average</span>
 </div>
 <div className="rightCol">
 <div className="rightContent">
@@ -228,7 +228,7 @@ className="quizDiv">
         <br />
       One of their many legacies that survives today is that of the Greek tragic play.
       Whilst this form of entertainment won't be drawing in crowds like the latest chapter in the Marvel Cinematic Universe
-      or the next Juan Manuel Miranda musical epic anytime soon, there are many beautiful ideas inside them that relate directly
+      or the next Lin Manuel Miranda musical epic anytime soon, there are many beautiful ideas inside them that relate directly
       to this very first thing that I think is so important.
       <br />
         <br />
@@ -244,7 +244,7 @@ className="quizDiv">
         character's true identity or the true nature of their own circumstances.
       <br />
         <br />
-      In perhaps simpler terms, these words relate to the parts in Greek tragedy where the protagonist comes face to face
+      In essence, these words relate to the parts in Greek tragedy where the protagonist comes face to face
       with his or her true identity or, speaking more generally, undergoes the transition from ignorance
       to knowledge (which in Greek tragic play context rarely makes for a happy time!).
         <br />
@@ -260,7 +260,7 @@ className="quizDiv">
       the benefit of my many mistakes so that they can capably manage any such discomfort, and, most importantly activate the growth that lays dormant behind it.
       <br />
       <br />
-      My efforts and intentions being what they are, that doesn't take away from the fact that if you even suspect you are going
+      These intentions do not take away from the fact that if you even suspect you are going
       to find it too difficult, too triggering -
       particulaly to the point where you may regress in joy and growth - <strong>this is where I would recommend you stop.</strong>
         <br />
@@ -272,10 +272,11 @@ className="quizDiv">
         <br />
       I believe that data and technology can facilitate the far more proactive processing and designing of our lives;
       helping any user reach levels of joy and growth that they would have perhaps struggled to reach in a
-      lifetime without this new unconditional perspective <i className="aside">(and suffer far less risk of self-destruction and recrimination in the process).</i>
+      lifetime without this new unconditional perspective <i className="aside">
+        (and suffer far less risk of self-destruction and recrimination in the process).</i>
       <br />
       <br />
-      The human experience has changed in so many ways in the last 250 years. Millenia of agricultural living
+      The human experience has changed in so many ways in the last 250 years. Thousands of years based on agricultural lives
       and optimally sized community centric groups have
       been usurped by industrial centres, smog, urban sprawl, the internet, smartphones, notifications, surveillance capitalism and many more such things.
       <br />
@@ -359,8 +360,8 @@ className="quizDiv">
     <br />
     <br />
       As with the other metrics too, and this is a drum I will beat relentlessly throughout this course, the value really comes
-      from using it as a provider of signals that inspire you to study your diary and explore the reems of unwritten but crucial
-      context bumbling around in your brain with more specificity, purpose and detachment.
+      from using it as a provider of objective signals that inspire you to study your diary and explore the reems of unwritten but crucial
+      context bumbling around in your brain with more specificity, purpose and healthy detachment.
     <br />
     <br />
     <span>
@@ -440,7 +441,6 @@ className="quizDiv">
     <div className="colTitle">
       <h4 className="quizHeaderWhite">It's noisy in here!</h4>
     </div>
-
 <br />
 <span>
 As we have explored in the previous step, an average is nothing without an understanding of your specific context,
