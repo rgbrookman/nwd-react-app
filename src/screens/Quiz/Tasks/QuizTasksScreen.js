@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../NWD_Logo_White.png';
 import feelingscoretoday from '../../../FeelingScoreToday.png';
-import feelingscorechart from '../../../FeelingScoreChart.png';
+import feelingscorechart from '../../../momentChart.png';
 import tasksCompleted from '../../../tasksCompleted.png';
 import tcr from '../../../TCR.png';
 import './quiztasks.css';
