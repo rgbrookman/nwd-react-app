@@ -75,20 +75,20 @@ className="quizDiv">
     </div>
       <br />
     <span>
-    The different moments that you log in your <strong>Today</strong> diary can be thought of in 3 different ways:
+    The different moments that you log in your <strong>Today</strong> diary can, in terms of data, be thought of in 3 different ways:
     </span>
     <br />
         <br />
         <span>
         1. <strong className="emphasis">The # of moments you attempted</strong>
         <br />
-        2. <strong className="emphasis">The total moments you completed</strong>
+        2. <strong className="emphasis">The # of moments you completed</strong>
         <br />
         3. <strong className="emphasis">The % of moments you attempted that you completed</strong>
         <br />
         <br />
           These three really simple aggregations offer a huge number of signals
-          into how you are setting up each day and optimising it for joy and growth.
+          into how you are optimising each day for your own unique brand of joy and growth.
         <br />
         <br />
         Alongside each metric, as with the feeling score, is its own gaggle of important friends:
@@ -167,7 +167,7 @@ className="quizDiv">
   <span>1.</span><strong className="emphasis">"Wait? I am just a hot mess?"</strong>
     <br />
         <br />
-    <span>2.</span><strong className="emphasis">"Hmm... Did I really write that down?"</strong>
+    <span>2.</span><strong className="emphasis">"Hmm... That doesn't sound like me?"</strong>
     <br />
         <br />
     <span>3.</span><strong className="emphasis">Balance of Running and Resting</strong>
@@ -208,7 +208,7 @@ className="quizDiv">
 <br />
 <br />
 <span>
-  First and foremost, look at my data on the right from an old google-sheets based version of NWD.
+  Without even a moments further ado, look at my data on the right from an old google-sheets based version of NWD.
   I think it is fair to say that the data is trying to tell me something loud and clear!
   Immediately signals start leaping off the screen:
   </span>
@@ -235,19 +235,27 @@ className="quizDiv">
 <strong>...you to write things down that perhaps you are not truly engaged and invested in doing?</strong>
 </span>
 <br />
-<br /><i className="aside">
-Drum beat heard in the depths again! A signal is an objective force, and not a value judgement.
-
-To spot a signal is a bit, if you like a cute metaphor, walking through a forest on a glorious summers day, and then seeing a path that you've never noticed before.
-
-You wouldn't look at that path and be like, 'Man! How have I never noticed that before? I am such an idiot.'. You are far more likely to say, 'Ooh. I wonder where that leads!'.</i>
+<br />
+  <i className="aside">
+Drum beat heard in the depths again! These signals, just as your own will be, are objective forces, and not a value judgement.
+<br />
+<br />
+To spot a signal is a bit, if you like a cute metaphor, like walking through a forest on a glorious summers day - without a care in the world, enjoying the rustle of the wind in the trees and 
+the melodic chirping of the birds in the trees - and then seeing a path that you've never noticed before.
+<br />
+<br />
+You wouldn't look at that path and be like, 'Man! I am such an idiot for not noticing that before!'. 
+You are far more likely to say, 'Ooh. I wonder where that leads!'.</i>
 <br />
 <br />
 <hr className="dividingLine" />
 <br />
 <span>
-  Laying myself pretty bare again, I am confident that as a version of the human condition, a pretty accurate description of me would be that,
-  over the course of my life to date, I am a person whose suffering tends to manifest in terms of people pleasing,
+  Laying myself pretty bare again, I am confident that as a version of the human condition, a pretty accurate description of me, over the course of my life to date,
+ would be as follows:  
+<br />
+<br />
+I am a person whose suffering tends to manifest in terms of people pleasing,
   suppressing my own ability and not seeing things through to the finish.
   <br />
   <br />
@@ -255,31 +263,30 @@ You wouldn't look at that path and be like, 'Man! How have I never noticed that 
   <br />
   <br />
   <strong className="emphasis">Curiousity</strong>
-
   <br />
-  (not finishing one thing has usually meant the starting of another quite divergent thing)
+  <i className="aside">(not finishing one thing has usually meant the starting of another quite divergent thing)</i>
   <br />
   <br />
   <strong className="emphasis">
   Creativity</strong>
   <br />
-  (if you have explored many divergent things,
-    you can see joins that others struggle to and or have a larger plain of reference from which to make imaginative suggestions)
+  <i className="aside">(if you have explored many divergent things,
+    you can see joins that others struggle to and or have a larger plain of reference from which to make imaginative suggestions)</i>
   <br />
   <br />
   <strong className="emphasis">Empathy</strong>
   <br />
-  (playing in different spaces usually means being prepared to be vulnerable and having experienced a greater diversity of human story;
-  both of which are likely to engender more empathy)
+  <i className="aside">(playing in different spaces usually means being prepared to be vulnerable and having experienced a greater diversity of human story;
+  both of which are likely to engender more empathy)</i>
   <br />
   <br />
-  I am doing an increasingly effective job of transcending the worst parts of my suffering - getting out of my own way - and getting the best
-  from them.
+  I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, understanding them and transforming my relationship with them
+ - and getting the best from them.
 <br />
 <br />
-  NWD has been astonishingly helpful in illuminating, through the provision of signals, the self-awareness above and many other things.
-  Obviously, the signal cannot provide a solution, it can only point towards an area of inquiry and curiousity which, in time, can provide more clarity (or comfort in the unknowing, which
-  is ultimately the more powerful mental force).
+  By being a hugely effectual generator of signals, NWD has been astonishingly helpful at empowering self-awareness above and many other things besdies.
+  Obviously, the signal cannot provide a solution, it can only point towards an area of inquiry and curiousity which, in time, can provide more clarity 
+(or comfort in the unknowing, which is ultimately the more powerful mental force).
   <br />
   <br />
   I suspect you can see a lot of what I have described in the nature of my old google sheets data.
@@ -505,7 +512,7 @@ className="quizDiv">
     <h2 className="quizHeaderWhite">Finding your balance between running and resting</h2>
     <br />
     <span>
-      If the derision of my friends is anything to go by, if NoWastedDays ever became a more widely known platform, the prevailing opinion would be that, on the basis of the name,
+      If the light teasing of my friends is anything to go by, if NoWastedDays ever became a more widely known platform, the prevailing opinion would be that, on the basis of the name,
       that it is about cramming more and more activities into everyday in the kind of Type-A frantic, no rest, 'sleep when you are dead' way that is often lauded in our culture.
     </span>
     <br />
