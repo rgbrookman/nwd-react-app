@@ -169,6 +169,9 @@ className="quizDiv">
         <br />
     <span>2.</span><strong className="emphasis">"Hmm... That doesn't sound like me?"</strong>
     <br />
+      <br />
+      <span>3.</span><strong className="emphasis">"Wait? Surely that must be bad?"</strong>
+    <br />
         <br />
     <span>3.</span><strong className="emphasis">Balance of Running and Resting</strong>
 </div>
@@ -248,14 +251,21 @@ You wouldn't look at that path and be like, 'Man! I am such an idiot for not not
 You are far more likely to say, 'Ooh. I wonder where that leads!'.</i>
 <br />
 <br />
-<hr className="dividingLine" />
-<br />
 <span>
-  Laying myself pretty bare again, I am confident that as a version of the human condition, a pretty accurate description of me, over the course of my life to date,
+  By being a hugely effectual generator of such signals in a way that your own first person perspective never can and the impression of others cannot either, 
+NWD and two full buckets can be a massively helpful tool for great self-awareness. 
+<br />
+<br />
+  Obviously, the signal cannot provide a solution, it can only point towards an area of inquiry and curiousity which, in time, can provide more clarity 
+(or comfort in the unknowing, which is ultimately the more powerful mental force).
+  <br />
+  <br />
+
+ A slice of self-awareness I have been afforded is that I am confident that as a version of the human condition, a pretty accurate description of me, over the course of my life to date,
  would be as follows:  
-<br />
-<br />
-I am a person whose suffering tends to manifest in terms of people pleasing,
+  <br />
+  <br />
+  I am a person whose suffering tends to manifest in terms of people pleasing,
   suppressing my own ability and not seeing things through to the finish.
   <br />
   <br />
@@ -282,14 +292,7 @@ I am a person whose suffering tends to manifest in terms of people pleasing,
   <br />
   I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, understanding them and transforming my relationship with them
  - and getting the best from them.
-<br />
-<br />
-  By being a hugely effectual generator of signals, NWD has been astonishingly helpful at empowering self-awareness above and many other things besdies.
-  Obviously, the signal cannot provide a solution, it can only point towards an area of inquiry and curiousity which, in time, can provide more clarity 
-(or comfort in the unknowing, which is ultimately the more powerful mental force).
-  <br />
-  <br />
-  I suspect you can see a lot of what I have described in the nature of my old google sheets data.
+
 </span>
 <br />
 
