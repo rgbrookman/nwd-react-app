@@ -92,12 +92,12 @@ className="quizDiv">
         <br />
         <br />
         Alongside each metric, as with the feeling score, is its own gaggle of important friends:
-          </span>
+        </span>
             <br />
-                <br />
-                <span>1.</span><span className="emphasis">Average:</span><span> The result of adding up all of your scores, and dividing them by the total number of days you have logged.</span>
-                    <br />
-                        <br />
+            <br />
+        <span>1.</span><span className="emphasis">Average:</span><span> The result of adding up all of your moment scores, and dividing them by the total number of days you have logged.</span>
+              <br />
+              <br />
                         <span>2.</span><span className="emphasis">Variance:</span><span> How much any of your moment related scores are likely to differ from the average.
                         The higher this number is, the more likely your score is to be significantly different from the average.</span>
                     <br />
@@ -292,7 +292,35 @@ I am a person whose suffering tends to manifest in terms of people pleasing,
   I suspect you can see a lot of what I have described in the nature of my old google sheets data.
 </span>
 <br />
-<br />
+
+</div>
+<div className="rightCol">
+<div id="taskImageDiv" className="rightContent">
+<img className="taskImage1" src={tcr} width="75%" />
+<img className="taskImage2" src={tasksCompleted} width="75%" />
+</div>
+</div>
+<div className="buttonRow">
+<Button className="quizButton" onClick={()=> {
+setMyLearnings1(myLearnings1 => false);
+setMyLearnings(myLearnings => true);
+}}>Previous</Button>
+<Button className="quizButton" onClick={()=> {
+setMyLearnings1(myLearnings1 => false);
+setMyLearnings2(myLearnings2 => true);
+}}>Next</Button>
+</div>
+</motion.div>
+
+<motion.div
+  animate={ myLearnings2 ? "show" : "hide"}
+  variants={showHideGrid}
+  className="quizDiv">
+  <div className="leftCol">
+    <div className="colTitle">
+      <h3 className="quizHeaderWhite">"But you said you would!"</h3>
+    </div>
+  <br />
 <span>
   From all this time, I have, importantly, gained many revelations about myself and, less importantly but with a certain sense of
   satisfaction, seen a quiet improvement in each measure over time; even if some habits still persist.
@@ -354,31 +382,30 @@ and this is a joy in life; finding a way to transform our condition each day. Ev
   NWD has taught me to relish this opportunity that each day presents and will endeavour to do so every day of my life.
 </span>
 <br />
-<br />
+
 </div>
 <div className="rightCol">
-<div id="taskImageDiv" className="rightContent">
-<img className="taskImage1" src={tcr} width="75%" />
-<img className="taskImage2" src={tasksCompleted} width="75%" />
+<div className="rightContent">
+<p>map of learnings</p>
 </div>
 </div>
 <div className="buttonRow">
 <Button className="quizButton" onClick={()=> {
-setMyLearnings1(myLearnings1 => false);
-setMyLearnings(myLearnings => true);
+setMyLearnings2(myLearnings2 => false);
+setMyLearnings1(myLearnings1 => true);
 }}>Previous</Button>
 <Button className="quizButton" onClick={()=> {
-setMyLearnings1(myLearnings1 => false);
-setMyLearnings2(myLearnings2 => true);
+setMyLearnings2(myLearnings2 => false);
+setMyLearnings3(myLearnings3 => true);
 }}>Next</Button>
 </div>
 </motion.div>
 
-<motion.div
 
-animate={ myLearnings2 ? "show" : "hide"}
-variants={showHideGrid}
-className="quizDiv">
+<motion.div
+  animate={ myLearnings3 ? "show" : "hide"}
+  variants={showHideGrid}
+  className="quizDiv">
   <div className="leftCol">
     <div className="colTitle">
       <h3 className="quizHeaderWhite">"But you said you would!"</h3>
@@ -489,19 +516,19 @@ Not writing moments specifically enough: How are you meant to complete a task wi
 </div>
 <div className="buttonRow">
 <Button className="quizButton" onClick={()=> {
-setMyLearnings2(myLearnings2 => false);
-setMyLearnings1(myLearnings1 => true);
+setMyLearnings3(myLearnings3 => false);
+setMyLearnings2(myLearnings2 => true);
 }}>Previous</Button>
 <Button className="quizButton" onClick={()=> {
-setMyLearnings2(myLearnings2 => false);
-setMyLearnings3(myLearnings3 => true);
+setMyLearnings3(myLearnings3 => false);
+setMyLearnings4(myLearnings4 => true);
 }}>Next</Button>
 </div>
 </motion.div>
 
 <motion.div
 
-animate={ myLearnings3 ? "show" : "hide"}
+animate={ myLearnings4 ? "show" : "hide"}
 variants={showHideGrid}
 className="quizDiv">
   <div className="leftCol">
@@ -550,8 +577,8 @@ className="quizDiv">
 </div>
 <div className="buttonRow">
 <Button className="quizButton" onClick={()=> {
-setMyLearnings2(myLearnings2 => true);
-setMyLearnings3(myLearnings3 => false);
+setMyLearnings3(myLearnings3 => true);
+setMyLearnings4(myLearnings4 => false);
 }}>Previous</Button>
 <Button className="quizButton" href="/insight/quiz/wave">Next</Button>
 </div>
