@@ -48,7 +48,7 @@ export default function QuizScreen() {
   setKickOff(kickOff => true);
 }}>
   <h1>The Art of Looking</h1>
-  <span><strong>Helping You Speedily and Safely Turn Your Insights into Greater Joy & Growth</strong></span>
+  <span><strong>Setup for Speedily and Safely Turning Your Insights into Greater Joy & Growth</strong></span>
   <hr className="dividingLine" />
   <span className="clickAnywhere">Click anywhere to start</span>
 </motion.div>
@@ -63,24 +63,24 @@ export default function QuizScreen() {
         </div>
           <br />
           <span>
-            The <strong>Insight</strong> section of NWD is about giving anyone who wants it a completely different perspective on their own life.
+            The <strong>Insight</strong> section of NWD is about giving anyone who wants it a completely different vantage point on their own life.
             <br />
             <br />
             The view we get of life from our own eyes is phenomenal. It plays a key role in our connection with other humans, 
-            is great for studying details in our immediate surroundings and viscerally experiencing the glory of being alive.
+            is great for studying details in our immediate surroundings and is fabulous at facilitating the visceral glory of being alive.
             <br />
             <br />
-            However, this very same view is really very bad at allowing us to
-            break down our behaviours and, reliably and regularly, turn the best and worst of what we do into greater joy and growth.
+            However, this very same view is not good at all at allowing us to
+            break down our behaviours and turn the best and worst of what we do into greater joy and growth in a way that is reliable, resilient and regular.
           </span>
           <br />
             <br />
           <hr className="dividingLine" />
           <br />
           <span>
-            All of the sections that compose NoWastedDays are especially designed to make many different perspectives possible.
+            All of the sections that compose NoWastedDays are especially designed to make many different vantage points possible.
             In the <strong>Insight</strong> section, you will find a host of graphs and charts that take your <strong>Today</strong> diary data
-            and allow you, with a bit of time and understanding, to transform your level of self-awareness and self-assurance.
+            and empower you, with a bit of time and understanding, to positively transform your level of self-awareness and self-assurance.
                 <br />
           <br />
             However, not a single iota of insight, ounce of possiblility or plane of perspective can be created by simply playing back
@@ -175,7 +175,7 @@ className="quizDiv">
       <br />
       <span>
       We feel the forces of data and technology endlessly in our culture; through our devices, in our news media, in our sporting competitions,
-      within our jobs, schools studies; online, offline - everywhere!
+      within our jobs, school studies; online, offline - everywhere!
     <br />
     <br />
     Yet for all the causes data and technology can be a slave or a servant to, there seems to be a huge lack of provisions that are entirely
