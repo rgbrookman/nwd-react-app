@@ -64,28 +64,27 @@ export default function QuizDebriefScreen() {
 </motion.div>
 
 <motion.div
-
-animate={ kickOff ? "show" : "hide"}
-variants={showHideGrid}
-className="quizDiv">
+  animate={ kickOff ? "show" : "hide"}
+  variants={showHideGrid}
+  className="quizDiv">
   <div className="leftCol">
     <div className="colTitle">
       <h4 className="quizHeaderWhite">Content</h4>
     </div>
     <br />
 <span>
-  When you get into your groove with NWD, you will find yourself doing a lof of dissecting decisions and their ensuing outcomes;
+  When you get into your groove with NWD, you will find yourself doing a lof of dissecting decisions and their ensuing outcomes; alot 
   trying to make sense of what was <i className="aside">(to use our lazy terms for a second)</i> 'good', 'bad' or somewhere inbetween.
 </span>
   <br />
   <br />
 <span>
   To look at an outcome objectively and in its entirety is extremely difficult,
-  and it is basically impossible without a reliable prompt or piece of guidance.
+  To look at an outcome objectively and in its entirety without a reliable prompt or piece of guidance is basically impossible.
   <br />
   <br />
-  This difficulty then, in turn, makes it very hard for us to learn from each day and the things we have tried to achieve within it.
-  As a result, more often than not, you will end up with a poorly calibrated sense of your role in the outcome.
+  This difficulty then, in turn, stands in the way of any of us learning from each day and the things we have tried to achieve within it as much as we possible could.
+  As a result, more often than not, we end up short on insight and high on a poorly calibrated sense of your role in the outcome.
 </span>
 <br />
 <br />
@@ -244,38 +243,42 @@ onClick={()=> {
 </motion.div>
 
 <motion.div
-
-animate={ open ? "show" : "hide"}
-variants={showHideGrid}
-className="quizDiv">
+  animate={ open ? "show" : "hide"}
+  variants={showHideGrid}
+  className="quizDiv">
   <div className="leftCol">
     <div className="colTitle">
-    <h4 className="quizHeaderWhite">Bucket #1: Consolidating Confidence</h4>
+      <h4 className="quizHeaderWhite">Bucket #1: Consolidating Confidence</h4>
     </div>
-      <br />
+     <br />
   <span>
-    There can be few more talked about things online than confidence; how you get it, how you exude it, how you keep it.
+    There can be few more talked about things online than confidence; how you get it, how you exude it, how you keep it. 
+    If you are man in your teens, 20's or 30's, you are only ever one Youtube advert or social media suggestions away from being 
+littered with advice from a certain brand of charisma experts, and confidence masters.
   </span>
   <br />
   <br />
   <span>
-    Confidence can often appear to manifest in people on a spectrum from manical self-determination to rigidly
-    negative self-talk. These modes become reinforced over time as another result of miscalibrating your role in a situation <i className="aside">(something we mentioned in an earlier section).</i>
+They will often talk about self-esteem, self-belief, having goals, being ruthless and a whole other litany of borderline psychotic modes of 
+thought, but there are truths about confidence that can empower anyone build their self-assurance in a far healthily and genuine fashion.
   </span>
   <br />
   <br />
   <span>
-    The truth is that within any outcome that you have exerted some genuine control over
+    A fundamental truth about consilidating confidence is that within any outcome that you have exerted some genuine control over
     - whether it was the most culturally celebrated, intelllectually exuberant, physically magnificent,
     god-like accomplishment or was the most apparently abject mistep leading to an painful, reputation tainting defeat
     - there will be something that you contributed to the situation that was represents a positive impact
-    towards the goal in question.
+    towards the goal in question. 
+        <br />
+    <br />
+    That positive contribution represents a package of confidence that it is important that you capture. 
+    A fabulous way to capture this confidence is by writing it down in the 
+    "Positive & In Your Control" column.
     <br />
     <br />
-    With this being true, the real question, then, is not about whether you did anything good, it is about how much good you did in reality.
-    This is important to gauge as you have earned confidence in relation to your contribution, so it is important that you capture it.
-    <br />
-    <br />
+    To help you get filling out the column well, 
+find below a list of things you may be forgetting to capture confidence from or evaluate amongst the things you contributed positively to a situation.
     <strong>Things you may forget to consolidate confidence from:</strong>
     <ul>
     <br />
@@ -289,12 +292,15 @@ className="quizDiv">
       <br />
     <li>Perceiving a situation in which change was possible.</li>
       <br />
-  <li>  The 10 great decisions that preceded the 1 dodgy one</li>
+  <li>The 10 great decisions that preceded the 1 dodgy one</li>
   <br />
-<li>Nurturing trust to the point that someone believed that you could play your role</li>
+<li>Nurturing trust to the point that someone believed that you could play your role in achieving a team outcome.</li>
       <br />
-
+  <li>Believing in yourself</li>
+      <br />
 </ul>
+Be careful here as overstating your impact on something is as bad as failing to capture what confidence you did earn. 
+We explore what might fall in that former category in a coming section.
     <strong>Things that may resulted in an overstated assessment of your own contribution:</strong>
     <br />
     <i className="aside">(We get to this in the next section)</i>
@@ -344,32 +350,28 @@ className="quizDiv">
       I stop and just reflect on the sheer infinitesimal chance that I am alive in the first place and how this lived
       experience I am having is so precious.
 
-      If you are feeling up for it, consider for a second the curious course of history that has to
-      intersect
+      If you are feeling up for it, consider for a second the curious courses of history that have had to
+      intersect...
 
       - all the love, hate, pioneering effort, balking chance, migration, stagnation, inflation and procrastination;
-      the dizzing lineage of people, places, processes, postulations, perambulations and prognostications that go back in just a couple back just a
-      couple of generations; let alone a longer period of time and space -
+      the dizzing lineage of people, places, processes, postulations, perambulations and prognostications that go back even just a
+      couple of generations, let alone a longer period of time and space -
 
 
-      for me to even to have a chance to exist in
-      the first place is so mind boggling that you can't help but come back to the present and with a bit of perspective in tow.
+      for you to even to have a chance to exist in
+      the first place. The chance is so mind boggling small that you can't help but be brought back to the present moment 
+      and with a bit of perspective in tow.
     </span>
     <br />
     <br />
     <span>
-      Even if you just looked forward from the start of my life, thanks to the good grace and sense of others,
-      I have gone from being born naked, afraid, without knowledge or reason to a position where
-      I can exercise some agency, intention and rationality to work towards a goal, build a life and feel joy.
-    </span>
-    <br />
-    <br />
-    <span>
-      These are all things that I had no control over but it is possible to feel intense gratitude for, and that is what this section is about.
+      This thought exercise ladders up to the broader point of this step which is that all the things 
+that happened before your life that put you in a position to live you had no control over
+ but it is possible to feel intense gratitude for, and that is what this section is about.
       <br />
       <br />
-      For all our own perception of self and determination on our own futures, there is so much good that is afforded to us by others on a daily
-      basis, it is important to be grateful for it.
+      In a more distilled and present tense fashion, there is so much good that is afforded to us by others on a daily
+      basis that it is important to be grateful for it.
     </span>
     <br />
     <br />
