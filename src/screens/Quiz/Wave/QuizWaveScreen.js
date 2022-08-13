@@ -50,6 +50,8 @@ export default function QuizWaveScreen() {
     },
   }
 
+  const dianaVreeland = '3wRmpc-Fh3o';
+
   return (
     <>
 
@@ -94,7 +96,11 @@ Surfers ably ride the waves the sea and moon create, and must experience such fl
 </div>
 <div className="rightCol">
 <div className="rightContent">
-
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${dianaVreeland}`}>
+</iframe>
 
 </div>
 </div>
