@@ -252,7 +252,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>A pile of old shit.</span>
+  <span>To load of rubbish that doesn't matter and isn't helpful.</span>
   </motion.div>
 
   </div>
@@ -351,7 +351,7 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">When turn into a metric or a graph, what is the feeling score then?</h1>
+  <h1 className="question">When turned into a metric or mapped onto a graph, what is the feeling score then?</h1>
   </motion.div>
   <div className="optionContainer">
 
@@ -370,7 +370,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>A provider of objective, unemotional signals in the present</span>
+  <span>A provider of a objective, unemotional signal(s) in the present moment</span>
   </motion.div>
   </motion.div>
 
@@ -386,7 +386,8 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>The be all and end all of everything in the moment you are looking at it; if it is up, you are sky high; if it is down, you are crushed.</span>
+  <span>The be all and end all of everything in the moment you are looking at it; 
+if it is up, you are sky high; if it is down, you are crushed.</span>
   </motion.div>
 
 
@@ -402,7 +403,7 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>The thing that elevates you above all other people and reveals your pre-destined greatness and divinity.</span>
+  <span>A pointless thing on the internet that is not even worth your time.</span>
   </motion.div>
 
 
@@ -418,7 +419,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>A pile of old shit.</span>
+  <span>A deep and fundamental reality that we should treat with huge solemnity and reverence.</span>
   </motion.div>
 
 
@@ -518,15 +519,12 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">Why do we use a 0 - 5 scale instead of a 0 - 10? </h1>
+  <h1 className="question">Why do we use a 0 - 5 scale instead of a 0 - 10?</h1>
     </motion.div>
 
   <div className="optionContainer">
 
-    <motion.div
-      className="answerCheck"
-      animate = { rightAnswer ? "right" : "wrong"}
-      variants={rightAnswerAnimation}>
+
   <motion.div
   className="optionOne option"
   animate={ selected1 ? "selected": "unselected"}
@@ -538,9 +536,9 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Because the less familiar scale encourages people to think a bit more and provide a more indicative result</span>
+  <span>Because I couldn't actually count up to 10.</span>
   </motion.div>
-  </motion.div>
+
 
 
   <motion.div
@@ -558,7 +556,10 @@ className="quizDiv">
   </motion.div>
 
 
-
+    <motion.div
+      className="answerCheck"
+      animate = { rightAnswer ? "right" : "wrong"}
+      variants={rightAnswerAnimation}>
   <motion.div
   className="optionThree option"
   animate={ selected3 ? "selected": "unselected"}
@@ -570,9 +571,9 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>The thing that elevates you above all other people and reveals your pre-destined greatness and divinity.</span>
+  <span>Because the less familiar scale encourages people to think a bit more and provide a more indicative result.</span>
   </motion.div>
-
+  </motion.div>
 
 
   <motion.div
@@ -586,13 +587,13 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>A pile of old shit.</span>
+  <span>No reason. Just did it for the lols...</span>
   </motion.div>
 
 
   </div>
 
-{ selected1 ?
+{ selected3 ?
   <Button
     className="checkAnswerButton" onClick={()=>{
       isRightAnswer(rightAnswer => true);
@@ -615,7 +616,7 @@ className="quizDiv">
 
 
 <div className="buttonRow">
-{ selected1 ?
+{ selected3 ?
 <Button className="quizButton" onClick={()=> {
   setQ1(q1=> true);
   setQ2(q2 => false);
@@ -640,7 +641,7 @@ className="quizDiv">
 }
 
 
-{ selected1 ?
+{ selected3 ?
 <Button className="quizButton" onClick={()=> {
   setQ3(q3 => false);
   setQ4(q4=> true);
@@ -720,7 +721,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Signal</span>
+  <span>A Signal</span>
   </motion.div>
 
 
@@ -890,7 +891,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Signal</span>
+  <span>A Signal</span>
   </motion.div>
   </motion.div>
 
@@ -1089,7 +1090,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>All of the Above, and the Week & Year Pages</span>
+  <span>All of the Above plus the Week & Year Pages</span>
   </motion.div>
   </motion.div>
 
@@ -1222,7 +1223,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>The average across the different moments you attempted </span>
+  <span>The average across the different moments you attempted</span>
   </motion.div>
 
 
@@ -1241,7 +1242,7 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>The value of all your 0 - 10 scores added up</span>
+  <span>The value of all your 0 - 10 scores when the platform adds them up for you.</span>
   </motion.div>
   </motion.div>
 
@@ -1257,7 +1258,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>A most momentous of all moments</span>
+  <span>The most momentous of all moments</span>
   </motion.div>
 
 
@@ -1377,7 +1378,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>A count of the moments you listed on any given day</span>
+  <span>A count of all the moments you listed on any given day</span>
   </motion.div>
   </motion.div>
 
@@ -1423,7 +1424,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>The total attempts you made at life that day</span>
+  <span>The total attempts you made at life that day + 1</span>
   </motion.div>
 
   </div>
@@ -1523,7 +1524,7 @@ className="quizDiv">
     className="answerCheck"
     animate = { wrongAnswer ? "right" : "wrong"}
     variants={wrongAnswerAnimation}>
-  <h1 className="question">What is your mr%</h1>
+  <h1 className="question">What is your Moment Completed %?</h1>
 </motion.div>
   <div className="optionContainer">
 
@@ -1559,7 +1560,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>A count of the moments you listed on any given day2</span>
+  <span>The % of moments you attempted that you completed</span>
   </motion.div>
   </motion.div>
 
@@ -1589,7 +1590,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>Answer #4</span>
+  <span>The average of the total moment score average.</span>
   </motion.div>
 
 
@@ -1698,7 +1699,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #1</span>
+  <span>Electronic Music</span>
   </motion.div>
 
 
@@ -1714,7 +1715,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>The be all and end all of everything in the moment you are looking at it; if it is up, you are sky high; if it is down, you are crushed.2</span>
+  <span>The be all and end all of everything in the moment you are looking at it; if it is up, you are sky high; if it is down, you are crushed.</span>
   </motion.div>
 
 
@@ -1733,7 +1734,7 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>A provider of objective, emotional signals in the present</span>
+  <span>A provider of an objective, unemotional signal(s) in the present</span>
   </motion.div>
   </motion.div>
 
@@ -1749,7 +1750,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>Answer #4</span>
+  <span>Noise</span>
   </motion.div>
 
   </div>
@@ -1848,7 +1849,7 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">Which of the following levels of balance is likely to draw out the most joy and growth for the most people?</h1>
+  <h1 className="question">Which of the following balances of activity and recovery is likely to draw out the most joy and growth for the most people?</h1>
     </motion.div>
 
   <div className="optionContainer">
@@ -2015,14 +2016,11 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">Is failing to do the things you have said you should do always a bad thing?</h1>
+  <h1 className="question">Is failing to do the things you have said you should do a bad thing?</h1>
     </motion.div>
 
   <div className="optionContainer">
-    <motion.div
-      className="answerCheck"
-      animate = { rightAnswer ? "right" : "wrong"}
-      variants={rightAnswerAnimation}>
+
 
   <motion.div
   className="optionOne option"
@@ -2035,9 +2033,9 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Yes, I am a piece of shit</span>
+  <span>No, because you may find that the thing you did instead is the thing you should be optimising your life around.</span>
   </motion.div>
-  </motion.div>
+
 
 
   <motion.div
@@ -2051,7 +2049,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>No, because you may find that the thing you didn’t do because of it was something that actually you should be optimising life around</span>
+  <span>No, because that is a reality to which you are now more aware. This anagorisis has put you in a position to act more knowingly.</span>
   </motion.div>
 
 
@@ -2066,10 +2064,14 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #3</span>
+  <span>No, because we are not dealing in terms of bad or good as the way we relate to things that feel bad now is capable of 
+huge transformation</span>
   </motion.div>
 
-
+    <motion.div
+      className="answerCheck"
+      animate = { rightAnswer ? "right" : "wrong"}
+      variants={rightAnswerAnimation}>
   <motion.div
   className="optionFour option"
   animate={ selected4 ? "selected": "unselected"}
@@ -2081,13 +2083,17 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>Answer #4</span>
+  <span>Whilst it is nice and worthy to do the things we said we would do, the awakening that can accompany 
+understanding why we didn't do them - as described in the 3 other answers - is certainly sufficient to not see any isolated 
+event as "bad".
+</span>
+  </motion.div>
   </motion.div>
 
 
   </div>
 
-{ selected1 ?
+{ selected4 ?
   <Button
     className="checkAnswerButton" onClick={()=>{
       isRightAnswer(rightAnswer => true);
@@ -2110,7 +2116,7 @@ className="quizDiv">
 
 
 <div className="buttonRow">
-{ selected1 ?
+{ selected4 ?
 <Button className="quizButton" onClick={()=> {
   setQ12(q12 => false);
   setQ11(q11 => true);
@@ -2135,7 +2141,7 @@ className="quizDiv">
 }
 
 
-{ selected1 ?
+{ selected4 ?
 <Button className="quizButton" onClick={()=> {
   setQ12(q12 => false);
   setQ13(q13 => true);
@@ -2203,7 +2209,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>- A way of monitoring the things you tried to do so you can climb to new levels of condition and survive the inevitable struggle to the next</span>
+  <span>A way of monitoring the things you tried to do so you can climb to new levels of condition and stay resolute during the inevitable struggle to the next.</span>
   </motion.div>
   </motion.div>
 
@@ -2219,7 +2225,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #2</span>
+  <span>Oscillations accompanied by a transfer of energy that travel through space or mass</span>
   </motion.div>
 
 
@@ -2235,7 +2241,7 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #3</span>
+  <span>A Novel by Virginia Woolf</span>
   </motion.div>
 
 
@@ -2251,7 +2257,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>Answer #4</span>
+  <span>A rolling body of water.</span>
   </motion.div>
 
 
@@ -2353,11 +2359,10 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">Why is the right head space/mindset helpful?</h1>
+  <h1 className="question">Why is the right mindset helpful?</h1>
   </motion.div>
 
   <div className="optionContainer">
-
 
   <motion.div
   className="optionOne option"
@@ -2370,7 +2375,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Tolerate Discomfort</span>
+  <span>Tolerate, and even Relish, Discomfort</span>
   </motion.div>
 
 
@@ -2588,7 +2593,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>Answer #4</span>
+  <span>Timothee Chalamet > Tim Allen > Caitriona Balfe</span>
   </motion.div>
 
 
@@ -2689,15 +2694,12 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">Why be Scepticism?</h1>
+  <h1 className="question">Why be Sceptical?</h1>
     </motion.div>
 
   <div className="optionContainer">
 
-    <motion.div
-      className="answerCheck"
-      animate = { rightAnswer ? "right" : "wrong"}
-      variants={rightAnswerAnimation}>
+
   <motion.div
   className="optionOne option"
   animate={ selected1 ? "selected": "unselected"}
@@ -2709,9 +2711,9 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Because it will help get to a deeper truth</span>
+  <span>Because it will help you get to a deeper truth.</span>
   </motion.div>
-  </motion.div>
+
 
 
   <motion.div
@@ -2725,7 +2727,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #2</span>
+  <span>Because it will help you avoid mistakes and the time wasted through a lack of scrutiny.</span>
   </motion.div>
 
 
@@ -2741,11 +2743,14 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #3</span>
+  <span>Because every situation is worthy of some scepticism due it being the formation of ideas and limited modes to communicate them.</span>
   </motion.div>
 
 
-
+    <motion.div
+      className="answerCheck"
+      animate = { rightAnswer ? "right" : "wrong"}
+      variants={rightAnswerAnimation}>
   <motion.div
   className="optionFour option"
   animate={ selected4 ? "selected": "unselected"}
@@ -2757,13 +2762,13 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>Answer #4</span>
+  <span>All of the above.</span>
   </motion.div>
-
+  </motion.div>
 
   </div>
 
-{ selected1 ?
+{ selected4 ?
   <Button
     className="checkAnswerButton" onClick={()=>{
       isRightAnswer(rightAnswer => true);
@@ -2786,7 +2791,7 @@ className="quizDiv">
 
 
 <div className="buttonRow">
-{ selected1 ?
+{ selected4 ?
 <Button className="quizButton" onClick={()=> {
   setQ16(q16 => false);
   setQ15(q15 => true);
@@ -2811,7 +2816,7 @@ className="quizDiv">
 }
 
 
-{ selected1 ?
+{ selected4 ?
 <Button className="quizButton" onClick={()=> {
   setQ16(q16 => false);
   setQ17(q17 => true);
@@ -2858,7 +2863,7 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">If you can get there, what is powerful about the Present Moment?</h1>
+  <h1 className="question">If you can get there, what is powerful about the Present moment?</h1>
   </motion.div>
   <div className="optionContainer">
 
@@ -2874,7 +2879,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #1</span>
+  <span>How it is a space free of mental consequences and the suffering that attaches to them.</span>
   </motion.div>
 
 
@@ -2890,7 +2895,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #2</span>
+  <span>How it helps you think more calmly and clearly.</span>
   </motion.div>
 
 
@@ -2906,7 +2911,7 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #3</span>
+  <span>How it is always available.</span>
   </motion.div>
 
 
@@ -3046,7 +3051,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Right Answer</span>
+  <span>Because optimism, at its best, is the combination of honesty and empowerment.</span>
   </motion.div>
   </motion.div>
 
@@ -3062,39 +3067,11 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>Answer #2</span>
+  <span>Its not. Pessissmisn and cyncism wins everytime.</span>
   </motion.div>
 
 
-  <motion.div
-  className="optionThree option"
-  animate={ selected3 ? "selected": "unselected"}
-  variants = {selectedAnimation}
-  whileHover ={{backgroundColor: "green", color: "#fff"}}
-  onClick={()=> {
-    is1Selected(selected1 => false);
-    is2Selected(selected2 => false);
-    is3Selected(selected2 => true);
-    is4Selected(selected2 => false);
-  }}>
-  <span>Answer #3</span>
-  </motion.div>
-
-
-
-  <motion.div
-  className="optionFour option"
-  animate={ selected4 ? "selected": "unselected"}
-  variants = {selectedAnimation}
-  whileHover ={{backgroundColor: "green", color: "#fff"}}
-  onClick={()=> {
-    is1Selected(selected1 => false);
-    is2Selected(selected2 => false);
-    is3Selected(selected2 => false);
-    is4Selected(selected2 => true);
-  }}>
-  <span>Answer #4</span>
-  </motion.div>
+ 
 
 
   </div>
