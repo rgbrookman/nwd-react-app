@@ -217,7 +217,7 @@ export default function Feedback({ history }) {
                 <h3 className="rowHeader">Pay as You Can</h3>
             <Col>
             <div className="feedbackContainer">
-            <label for="currentPG">Per month, how much would you pay for access to this tool, if anything {currentPageGood} / £15</label>
+            <label for="currentPG">Per month, how much would you pay for access to this tool, if anything £{paycPrice} / £15</label>
             <input
               id="currentPG"
               type="range"
