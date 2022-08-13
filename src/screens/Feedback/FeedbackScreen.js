@@ -19,7 +19,7 @@ export default function Feedback({ history }) {
   const [currentPageGood, setCurrentPageGood] = useState(5);
   const [currentPageHelp, setCurrentPageHelp] = useState(5);
   const [paycPrice, setPaycPrice] = useState(7);
-  const [payceHelp, setPaycHelp] = useState('');
+  const [paycHelp, setPaycHelp] = useState('');
 
   const navigate = useNavigate();
   const feedbackForm = useRef();
