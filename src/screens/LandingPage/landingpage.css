@@ -104,7 +104,8 @@
   }
 
   .landingPageVideo {
-    width: 100%;
+    width: clamp(75vw, 50vw, 30vw);
+    height: clamp(30vh, 25vw, 20vw);
   }
 
 .landingPageBox h1 {
