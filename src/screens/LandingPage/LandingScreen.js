@@ -25,6 +25,7 @@ export default function LandingScreen(history) {
   const [linkRefUpdate, setLinkRefUpdate] = useState(false);
   const [videoID, setVideoID] =useState('SfQNtiEH3M4');
   const [videoDisplay, setVideoDisplay] =useState(false);
+  const [textDisplay, setTextDisplay] =useState(true);
 
   const dispatch = useDispatch();
 
@@ -86,8 +87,12 @@ const startTheTour = 'SfQNtiEH3M4';
     { userInfo ?
       <main className="landingPageLogInMain">
        
-        <h1 className="landingPageHeaderText">
-          {userInfo.name}, <br/>this is your NoWastedDays.</h1>
+        <motion.h1 
+     className="landingPageHeaderText"
+     animate={ textDisplay ? "show" :  "hide" }
+    variants={hideState}
+    >
+          {userInfo.name}, <br/>this is your NoWastedDays.</motion.h1>
 
           { vw > 800 ? 
           <>
@@ -108,18 +113,21 @@ const startTheTour = 'SfQNtiEH3M4';
   onClick={()=>{
   setVideoID( videoID => 'SfQNtiEH3M4');
   setVideoDisplay( videoDisplay => !videoDisplay);
+  setTextDisplay( textDisplay => !textDisplay);
 }}>Vision</button>
 
 <button className="landingPageButton"
 onClick={()=>{
   setVideoID( videoID => 'SfQNtiEH3M4');
   setVideoDisplay( videoDisplay => !videoDisplay);
+   setTextDisplay( textDisplay => !textDisplay);
 }}>Aim of the Platform</button>
 
 <button className="landingPageButton"
 onClick={()=>{
   setVideoID( videoID => 'SfQNtiEH3M4');
   setVideoDisplay( videoDisplay => !videoDisplay);
+   setTextDisplay( textDisplay => !textDisplay);
 }}>Start the Tour</button>
 </div>
 </>
