@@ -18,6 +18,8 @@ export default function Feedback({ history }) {
   const [valuesPageHelp, setValuesPageHelp] = useState('');
   const [currentPageGood, setCurrentPageGood] = useState(5);
   const [currentPageHelp, setCurrentPageHelp] = useState(5);
+  const [paycPrice, setPaycPrice] = useState(7);
+  const [payceHelp, setPaycHelp] = useState('');
 
   const navigate = useNavigate();
   const feedbackForm = useRef();
@@ -207,6 +209,39 @@ export default function Feedback({ history }) {
                         name="potential-NPS"
                         onChange={(e) => setCurrentPageHelp(e.target.value)}
                         />
+                        </div>
+                            </Col>
+              </Row>
+  <hr className="dividingLine" />
+            <Row className="mt-4">
+                <h3 className="rowHeader">Pay as You Can</h3>
+            <Col>
+            <div className="feedbackContainer">
+            <label for="currentPG">Per month, how much would you pay for access to this tool, if anything {currentPageGood} / £15</label>
+            <input
+              id="currentPG"
+              type="range"
+              className="textInput"
+              value={paycPrice}
+              min="0"
+              max="15"
+              name="potential-payc"
+              onChange={(e) => setPaycPrice(e.target.value)}
+              />
+              </div>
+                  </Col>
+                      <Col>
+                      <div className="feedbackContainer">
+                      <label for="valuesPGHelp">Do you think PAYC (pay as you can) is a bad idea?</label>
+                 <textarea
+                      id="valuesPGHelp"
+                      className="textInput"
+                      value={paycHelp}
+                      name="potential-payc-help"
+                      placeholder="I would 100% rather have the bad news that is true, than the good news which is false <3."
+                      onChange={(e) => setPaycHelp(e.target.value)}
+                      rows={4}
+                      />
                         </div>
                             </Col>
               </Row>
