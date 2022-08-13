@@ -24,6 +24,7 @@ export default function QuizTasksScreen() {
   const [myLearnings1, setMyLearnings1] = useState(false);
   const [myLearnings2, setMyLearnings2] = useState(false);
   const [myLearnings3, setMyLearnings3] = useState(false);
+  const [myLearnings4, setMyLearnings4] = useState(false);
 
   const [input, setInput] = useState(true);
   const [output, setOutput] = useState(false);
