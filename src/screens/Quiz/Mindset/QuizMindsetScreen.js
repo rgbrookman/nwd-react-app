@@ -44,7 +44,12 @@ export default function QuizMindsetScreen() {
     },
   }
 
-  const johnCleese = 'siV5Ue6MhPI'
+  const johnCleese = 'Gg-6LtfB5JA';
+  const johnBerger = '0pDE4VX_9Kk';
+  const johnnyWilkinson = 'O80qs9OEadw';
+  const elaineStritch = 'pL_pIS_QnPc';
+  const steveJobs = 'UF8uR6Z6KLc';
+  const peterUstinov = 'ooCIpYOxaoo';
 
   return (
     <>
@@ -239,7 +244,7 @@ className="quizDiv">
 <iframe className='video'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${johnCleese}?start=4`}>
+        src={`https://youtube.com/embed/${johnCleese}?start=823`}>
 </iframe>
 <a className="niceLink"href="https://youtu.be/Pb5oIIPO62g">Link to Full 35 Minute Video</a>
 </div>
@@ -357,8 +362,12 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${johnBerger}?start=1681`}>
+</iframe>
 
-<a className="niceLink" href="https://youtu.be/0pDE4VX_9Kk?t=1681">Skip to the Quote</a>
 </div>
 </div>
 <div className="buttonRow">
@@ -398,7 +407,7 @@ ego with a past and a future, but rather as a pulsating node in one giant organi
 <br />
 <span>
 Whilst I am definitely not saying that the only way to get value from your insights is to be a zen buddhist monk or think in
-some crazily esoteric fashion, this disinteragrating of self and existing only in the present moment is really worth flagging.
+some crazily esoteric fashion, however, this disintegrating of self and existing only in the present moment is really worth flagging.
 </span>
 <br />
 <br />
@@ -418,7 +427,7 @@ On the present moment, Johnny Wilkinson says something inparticular in the talk 
 <br />
 <br />
 <span>
-He says, <br /><strong className="emphasis">'there are no consequences in the present moment'</strong>
+He says, <br /><strong className="emphasis">'you never live a consequence in the now. If you stay in the now, there is no consequence.'</strong>
 </span>
 <br />
 <br />
@@ -470,7 +479,11 @@ Everything I do has a consequence, everything has a cause and effect".
 </div>
 <div className="rightCol">
 <div className="rightContent">
-
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${johnnyWilkinson}?start=3068`}>
+</iframe>
 </div>
 </div>
 <div className="buttonRow">
@@ -562,24 +575,33 @@ className="video One"
 animate={ video1 ? "show" : "hide" }
 variants={showHideState}
 >
-
-<i className="aside timestamp">Timestamp: 00:30</i>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${elaineStritch}?start=26`}>
+</iframe>
 </motion.div>
 <motion.div
 className="video Two"
 animate={ video2 ? "show" : "hide" }
 variants={showHideState}
 >
-
-<i className="aside timestamp">Timestamp: 00:30</i>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${steveJobs}?start=302`}>
+</iframe>
 </motion.div>
 <motion.div
 className="video Three"
 animate={ video3 ? "show" : "hide" }
 variants={showHideState}
 >
-
-<i className="aside timestamp">Timestamp: 00:00</i>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${peterUstinov}?start=0`}>
+</iframe>
 </motion.div>
 <div className="nameButtonRow">
 <motion.button
