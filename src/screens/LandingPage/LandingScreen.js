@@ -23,6 +23,8 @@ export default function LandingScreen(history) {
   const [clickBox, setClickBox] = useState(false);
   const [linkRefCreate, setLinkRefCreate] = useState(false);
   const [linkRefUpdate, setLinkRefUpdate] = useState(false);
+  const [videoID, setVideoID] =useState('SfQNtiEH3M4');
+  const [videoDisplay, setVideoDisplay] =useState(false);
 
   const dispatch = useDispatch();
 
@@ -59,9 +61,21 @@ dispatch(listYears());
     },
   };
 
+  const hideState = {
+    hide: {
+      display: "none",
+    },
+    show: {
+      display: "flex",
+    },
+  };
+
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
 
+const platformExplainer = 'SfQNtiEH3M4';
+const visionExplainer = 'SfQNtiEH3M4';
+const startTheTour = 'SfQNtiEH3M4';
 
   return (
 
@@ -69,14 +83,47 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
       <Header />
 
-    {
-      userInfo
-      ?
+    { userInfo ?
       <main className="landingPageLogInMain">
-      <h1 className="landingPageHeaderText">
-      {userInfo.name}, <br/>this is your NoWastedDays.</h1>
+       
+        <h1 className="landingPageHeaderText">
+          {userInfo.name}, <br/>this is your NoWastedDays.</h1>
 
+          { vw > 800 ? 
+          <>
+      <motion.div 
+        className="lpVideoDiv"
+        animate={ videoDisplay ? "show" : "hide"}
+        variants={hideState}>
 
+      <iframe className='landingPageVideo'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${platformExplainer}?start=0`}>
+        </iframe>
+      </motion.div>
+
+<div className="landingPageButtonDiv">
+  <button className="landingPageButton"
+  onClick={()=>{
+  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Vision</button>
+
+<button className="landingPageButton"
+onClick={()=>{
+  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Aim of the Platform</button>
+
+<button className="landingPageButton"
+onClick={()=>{
+  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Start the Tour</button>
+</div>
+</>
+: null }
 
       <hr className="dividingLine" />
       <motion.div
@@ -106,6 +153,7 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
         </Row>
       </Container>
         </motion.div>
+
   { vw > 800 ? null  :
       <Container className="selectionContainer mt-3">
       <Row>
@@ -169,6 +217,43 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
       </Row>
       </Container>
       }
+
+  { vw < 800 ? 
+          <>
+      <motion.div 
+        className="lpVideoDiv"
+        animate={ videoDisplay ? "show" : "hide"}
+        variants={hideState}>
+
+      <iframe className='landingPageVideo'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${platformExplainer}?start=0`}>
+        </iframe>
+      </motion.div>
+
+<div className="landingPageButtonDivMobile">
+  <button className="landingPageButton"
+  onClick={()=>{
+  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Vision</button>
+
+<button className="landingPageButton"
+onClick={()=>{
+  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Aim of the Platform</button>
+
+<button className="landingPageButton"
+onClick={()=>{
+  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Start the Tour</button>
+</div>
+</>
+: null }
+
       </main>
       :
       <Container className="landingPageNoLogin" fluid>
