@@ -66,12 +66,13 @@ export default function QuizScreen() {
             The <strong>Insight</strong> section of NWD is about giving anyone who wants it a completely different vantage point on their own life.
             <br />
             <br />
-            The view we get of life from our own eyes is phenomenal. It plays a key role in our connection with other humans, 
-            is great for studying details in our immediate surroundings and is fabulous at facilitating the visceral glory of being alive.
+             Our own eyes provide a view on life which in many ways is completely phenomenal. 
+            This view point and the eyes themselves are brilliantly at helping forge connections with other humans, are fabulous for studying details in our
+            immediate surroundings and terrific for the visceral glory of simply being alive.
             <br />
             <br />
-            However, this very same view is not good at all at allowing us to
-            break down our behaviours and turn the best and worst of what we do into greater joy and growth in a way that is reliable, resilient and regular.
+            However, this very same view is not good at all for 
+            breaking down our behaviours and turning the best and worst of what we do into greater joy and growth in a reliable, resilient and regular fashion.
           </span>
           <br />
             <br />
