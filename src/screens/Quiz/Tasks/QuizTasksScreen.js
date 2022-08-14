@@ -161,7 +161,7 @@ className="quizDiv">
       <h4 className="quizHeaderWhite">3 Key Starting Points</h4>
     </div>
   <br />
-  <span>In relation to my moments, there are 3 particular learnings that stand out in my mind as having the greatest positive impact on your
+  <span>In relation to the moments, there are 4 particular learnings that stand out in my mind as likely having the greatest positive impact on your
   initial interactions with the data.</span>
   <br />
   <br />
@@ -174,7 +174,7 @@ className="quizDiv">
       <span>3.</span><strong className="emphasis">"Wait? Surely that must be bad?"</strong>
     <br />
         <br />
-    <span>3.</span><strong className="emphasis">Balance of Running and Resting</strong>
+    <span>4.</span><strong className="emphasis">Balance of Running and Resting</strong>
 </div>
 <div className="rightCol">
 <div className="rightContent">
@@ -207,7 +207,7 @@ className="quizDiv">
   In the feeling score section, we kicked off by talking about peripeteia and anagorisis.
   Boy! I have had my fair share of those over my time using NWD, and
   there may be no better way to help you all cope with the uncomfortable revelations in your own data than to be
-  completely open with some of most revealing things my data has tried to tell me about myself.
+ share some of the most revealing things my data has tried to tell me about myself.
 </span>
 <br />
 <br />
@@ -219,12 +219,10 @@ className="quizDiv">
 <br />
 <br />
 <span>
-<strong className="emphasis">Signal says - "Ooh! I wonder what is causing..."</strong>
+<strong><i>Signal says - "Ooh! I wonder what is causing..."</i></strong>
 </span>
 <br />
 <br />
-
-
 <span>
 <strong>...you to not have many days where you do everything you said you would?</strong>
 </span>
@@ -241,32 +239,35 @@ className="quizDiv">
 <br />
 <br />
   <i className="aside">
-Drum beat heard in the depths again! These signals, just as your own will be, are objective forces, and not a value judgement.
+Drum beat heard in the depths again! 
+  <br />
+<br />
+Remember, these signals, just as your own will be, are objective forces without emotion and attachment, and not a value judgement.
 <br />
 <br />
-To spot a signal is a bit, if you like a cute metaphor, like walking through a forest on a glorious summers day - without a care in the world, enjoying the rustle of the wind in the trees and 
+If a cute metaphor helps To spot a signal is a bit like walking through a forest on a glorious summers day - without a care in the world, enjoying the rustle of the wind in the trees and 
 the melodic chirping of the birds in the trees - and then seeing a path that you've never noticed before.
 <br />
 <br />
 You wouldn't look at that path and be like, 'Man! I am such an idiot for not noticing that before!'. 
-You are far more likely to say, 'Ooh. I wonder where that leads!'.</i>
+You are far more likely to say, 'Ooh. I wonder where that leads!', and then, eyes and mind wide open, 
+take the excitable first steps down in the newly found direction.</i>
 <br />
 <br />
 <span>
-  By being a hugely effectual generator of such signals in a way that your own first person perspective never can and the impression of others cannot either, 
-NWD and two full buckets can be a massively helpful tool for great self-awareness. 
+By being a hugely effectual generator of such signals in a way that your own first person perspective never can 
+and the impression of others cannot either, NWD, and two full buckets, can be a massively helpful tool for greater self-awareness. 
 <br />
 <br />
-  Obviously, the signal cannot provide a solution, it can only point towards an area of inquiry and curiousity which, in time, can provide more clarity 
-(or comfort in the unknowing, which is ultimately the more powerful mental force).
+  Obviously, the signal cannot provide a solution, it can only point towards an area of inquiry and curiousity which, in time, 
+can provide more clarity (or comfort in the unknowing, which is ultimately the more powerful mental force).
   <br />
   <br />
-
- A slice of self-awareness I have been afforded is that I am confident that as a version of the human condition, a pretty accurate description of me, over the course of my life to date,
- would be as follows:  
+ A slice of self-awareness I have been afforded is that as a version of the human condition over the course of my life to date, 
+a pretty accurate description of me would be as follows...
   <br />
   <br />
-  I am a person whose suffering tends to manifest in terms of people pleasing,
+  ...that I am a person whose suffering tended to manifest in terms of people pleasing,
   suppressing my own ability and not seeing things through to the finish.
   <br />
   <br />
@@ -291,11 +292,14 @@ NWD and two full buckets can be a massively helpful tool for great self-awarenes
   both of which are likely to engender more empathy)</i>
   <br />
   <br />
-  I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, understanding them and transforming my relationship with them
+  I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, 
+understanding them and transforming my relationship with them
  - and getting the best from them.
-
-</span>
-<br />
+   <br />
+  <br />
+     Overall summary: XYZ
+  </span>
+  <br />
 
 </div>
 <div className="rightCol">
