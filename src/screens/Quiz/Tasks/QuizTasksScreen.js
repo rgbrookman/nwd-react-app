@@ -47,6 +47,8 @@ export default function QuizTasksScreen() {
     },
   }
 
+  const michealCaine = 'sqOgyNfHl1U';
+  
   return (
     <>
 
@@ -580,7 +582,11 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>map of learnings</p>
+   <iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${michealCaine}?start=0`}>
+        </iframe>
 </div>
 </div>
 <div className="buttonRow">
