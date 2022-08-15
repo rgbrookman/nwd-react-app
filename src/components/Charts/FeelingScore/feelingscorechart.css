@@ -1,4 +1,17 @@
+@media screen and (min-width: 1201px) {
+
 #d3demo {
   width: 40vw;
   height: 40vh;
 }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  #d3demo {
+    width: 100vw;
+    height: 40vh;
+  }
+  
+  }

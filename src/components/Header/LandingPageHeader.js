@@ -13,7 +13,7 @@ import { logout } from '../../actions/userActions';
 import * as d3 from 'd3';
 import './header.css';
 
-const Header = ({ history }) => {
+const LandingPageHeader = ({ history }) => {
   const [homepage, setHomepage] = useState(window.location.href === '/' ? true : false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -89,16 +89,7 @@ const Header = ({ history }) => {
   return (
 <>
  <Navbar className="navbarHeader navbar-dark align-items-center" expand="md">
-{
-   !days && !years && !weeks 
-  ?
 
-  <Navbar.Brand>
-  <Nav.Link href="/">
-  <Loading />
-  </Nav.Link>
-  </Navbar.Brand>
-   :
 
   <Navbar.Brand>
     <Nav.Link href="/">
@@ -112,7 +103,7 @@ const Header = ({ history }) => {
     </Nav.Link>
     </Navbar.Brand>
 
-}
+
 
 {!days ? null : days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
@@ -349,4 +340,4 @@ Create A New Year
   )
 }
 
-export default Header;
+export default LandingPageHeader;

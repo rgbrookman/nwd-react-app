@@ -33,7 +33,7 @@ export default function Register({ history }) {
      setMessage("Passwords do not match");
    } else {
      await dispatch(register(name, email, password ));
-     await navigate('/login');
+     navigate('/login');
    }
     };
 
