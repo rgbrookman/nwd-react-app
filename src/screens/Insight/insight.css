@@ -26,3 +26,9 @@
 #colBorder {
   border-left: 1px solid rgb(235, 244,250,0.5);
 }
+
+.testRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 48px 0;
+}

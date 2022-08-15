@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {useDispatch, useSelector } from 'react-redux';
 import './landingpage.css';
 import Header from '../../components/Header/Header';
+import LandingPageHeader from '../../components/Header/LandingPageHeader';
 import Footer from '../../components/Footer/Footer';
 import ReducedFooter from '../../components/Footer/ReducedFooter';
 import ControlledCarousel from '../../components/Carousel/Carousel';
@@ -82,7 +83,7 @@ const startTheTour = '/year/create';
 
     <>
 
-      <Header />
+      <LandingPageHeader />
 
     { userInfo ?
       <main className="landingPageLogInMain">
@@ -130,7 +131,7 @@ onClick={()=>{
 }}>Aim of the Platform</button>
 
 <button className="landingPageButton"
-href="/year/create">Start the Tour</button>
+><a className="lpLink" href="/year/create" >Start the Tour</a></button>
 </div>
 </>
 : null }
@@ -238,28 +239,31 @@ href="/year/create">Start the Tour</button>
       <iframe className='landingPageVideo'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${platformExplainer}?start=0`}>
+        src={videoID}>
         </iframe>
       </motion.div>
 
 <div className="landingPageButtonDivMobile">
+<button className="landingPageButton"
+  onClick={()=>{
+  setVideoID( videoID => mvpExplainer);
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Vision</button>
+
   <button className="landingPageButton"
   onClick={()=>{
-  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoID( videoID => visionExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
 }}>Vision</button>
 
 <button className="landingPageButton"
 onClick={()=>{
-  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
 }}>Aim of the Platform</button>
 
 <button className="landingPageButton"
-onClick={()=>{
-  setVideoID( videoID => 'SfQNtiEH3M4');
-  setVideoDisplay( videoDisplay => !videoDisplay);
-}}>Start the Tour</button>
+><a className="lpLinkMobile" href="/year/create">Start the Tour</a></button>
 </div>
 </>
 : null }

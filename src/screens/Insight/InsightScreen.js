@@ -126,6 +126,8 @@ useEffect(()=> {
   loadingTimeout();
 })
 
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
   return (
   <>
     <Header />
@@ -134,13 +136,15 @@ useEffect(()=> {
 
 <Row>
 
-<Col>
+<Col sm={12} lg={6}>
 <Row>
 
 <Col className="text-center" >
 <h3 className="chartTitle">Your Feeling Score over Time:</h3>
        <FeelingScore />
        </Col>
+
+{ vw > 500 ? 
 
        <Col id="colBorder" className="d-flex-col align-self-end">
          <Row className="justify-content-center align-center text-start mt-3 mb-4">
@@ -154,31 +158,60 @@ useEffect(()=> {
        <FeelingScoreTrend />
        </Row>
         </Col>
+:
+<div className="testRow">
+
+<h3 className="insightHeader">Average</h3>
+<FeelingScoreAverage />
+
+<h3 className="insightHeader">Deviation</h3>
+<FeelingScoreVariance />
+
+<h3 className="insightHeader">Recent</h3>
+<FeelingScoreTrend />
+</div>
+
+
+        }
        </Row>
 </Col>
 
-<Col>
+<Col sm={12} lg={6}>
 <Row>
 
 <Col className="text-center" >
 <h3 className="chartTitle">Moments Completed Over Time</h3>
        <TasksCompleted />
        </Col>
-       <Col id="colBorder" className="d-flex-col align-self-end">
-           <Row className="justify-content-start align-start text-start mt-3 mb-4">
-       <h3 className="insightHeader">Average</h3>
-       <TasksCompletedAverage />
+       { vw > 500 ? 
+
+<Col id="colBorder" className="d-flex-col align-self-end">
+  <Row className="justify-content-center align-center text-start mt-3 mb-4">
+<h3 className="insightHeader">Average</h3>
+<TasksCompletedAverage />
+
+<h3 className="insightHeader">Deviation</h3>
+<TasksCompletedVariance />
+
+<h3 className="insightHeader">Recent</h3>
+<TasksCompletedTrend />
+</Row>
+ </Col>
+:
+<div className="testRow">
+
+<h3 className="insightHeader">Average</h3>
+<TasksCompletedAverage />
+
+<h3 className="insightHeader">Deviation</h3>
+<TasksCompletedVariance />
+
+<h3 className="insightHeader">Recent</h3>
+<TasksCompletedTrend />
+</div>
 
 
-
-       <h3 className="insightHeader">Deviation</h3>
-       <TasksCompletedVariance />
-
-       <h3 className="insightHeader">Recent</h3>
-       <TasksCompletedTrend />
-       </Row>
-
-        </Col>
+ }
        </Row>
 </Col>
 
@@ -193,56 +226,84 @@ useEffect(()=> {
 
 
 
-<Col>
+<Col sm={12} lg={6}>
 <Row className="mt-3">
 
 <Col className="text-center">
 <h3 className="chartTitle">Moments Attempted Over Time</h3>
        <TasksAttempted />
        </Col>
-       <Col id="colBorder" className="d-flex-col align-self-end">
-       <Row className="justify-content-start align-start text-start mt-3 mb-4">
-       <h3 className="insightHeader">Average</h3>
+       { vw > 500 ? 
+
+<Col id="colBorder" className="d-flex-col align-self-end">
+  <Row className="justify-content-center align-center text-start mt-3 mb-4">
+<h3 className="insightHeader">Average</h3>
 <TasksAttemptedAverage />
 
-
-
-       <h3 className="insightHeader">Deviation</h3>
+<h3 className="insightHeader">Deviation</h3>
 <TasksAttemptedVariance />
 
 <h3 className="insightHeader">Recent</h3>
 <TasksAttemptedTrend />
-       </Row>
+</Row>
+ </Col>
+:
+<div className="testRow">
 
-        </Col>
+<h3 className="insightHeader">Average</h3>
+<TasksAttemptedAverage />
+
+<h3 className="insightHeader">Deviation</h3>
+<TasksAttemptedVariance />
+
+<h3 className="insightHeader">Recent</h3>
+<TasksAttemptedTrend />
+</div>
+
+
+ }
        </Row>
 </Col>
 
 
 
 
-<Col>
+<Col sm={12} lg={6}>
 <Row className="mt-3">
 
 <Col className="text-center">
 <h3 className="chartTitle">The Moment Realisation Rate Over Time</h3>
        <TasksCompletionRate />
        </Col>
-       <Col id="colBorder" className="d-flex-col align-self-end">
-       <Row className="justify-content-start align-start text-start mt-3 mb-4">
-       <h3 className="insightHeader">Average</h3>
-       <TasksCompletionRateAverage />
+       { vw > 500 ? 
+
+<Col id="colBorder" className="d-flex-col align-self-end">
+  <Row className="justify-content-center align-center text-start mt-3 mb-4">
+<h3 className="insightHeader">Average</h3>
+<TasksCompletionRateAverage />
+
+<h3 className="insightHeader">Deviation</h3>
+<TasksCompletionRateVariance />
+
+<h3 className="insightHeader">Recent</h3>
+<TasksCompletionRateTrend />
+</Row>
+ </Col>
+:
+<div className="testRow">
+
+<h3 className="insightHeader">Average</h3>
+<TasksCompletionRateAverage />
+
+<h3 className="insightHeader">Deviation</h3>
+<TasksCompletionRateVariance />
+
+<h3 className="insightHeader">Recent</h3>
+<TasksCompletionRateTrend />
+</div>
 
 
-
-       <h3 className="insightHeader">Deviation</h3>
-       <TasksCompletionRateVariance />
-
-       <h3 className="insightHeader">Recent</h3>
-       <TasksCompletionRateTrend />
-       </Row>
-
-        </Col>
+ }
        </Row>
 </Col>
 

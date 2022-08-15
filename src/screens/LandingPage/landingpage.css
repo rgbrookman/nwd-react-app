@@ -35,6 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 48px;
 }
 
 .landingPageButton {
@@ -165,4 +166,14 @@
   height: 42px;
   width: 42px;
   color: darkgreen;
+}
+
+.lpLink {
+  text-decoration: none;
+  color:  #46A46C;
+}
+
+.lpLinkMobile {
+  text-decoration: none;
+  color:   #EBF4FA;
 }
