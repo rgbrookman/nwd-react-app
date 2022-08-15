@@ -95,6 +95,8 @@ useEffect(() => {
   dispatch(listDays());
 }, [dispatch, userInfo, history])
 
+const diaryVideo = "sqOgyNfHl1U";
+
   return (
     <>
     <Header />
@@ -126,7 +128,14 @@ Learn About Your Diary Page.
     animate={videoDisplay ? "hide" : "show"}
     variants={valueState}
     >
-   
+     <div className="videoContainerDiv">
+<motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${diaryVideo}?start=0`}>
+</iframe>
+</div>
     </motion.div>
       <div className="boxA">
 

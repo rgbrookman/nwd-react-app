@@ -113,8 +113,7 @@ export default function QuizFeelingScreen() {
   The higher this number is, the larger the difference from the average is.</span>
         <br />
         <br />
-<span>3.</span><span className="emphasis">Recent Trend:</span><span> 
-The degree to which your average from the last 14 days is more or less than your overall average</span>
+<span>3.</span><span className="emphasis">Recent Trend:</span><span> The degree to which your average from the last 14 days is more or less than your overall average</span>
 </div>
 <div className="rightCol">
 <div className="rightContent">
@@ -177,21 +176,21 @@ className="quizDiv">
     As a result, how I feel moment-by-moment each day has seen a stark improvement over time.
     <br />
     <br />
-    This course couldn't possibly cram all of these learnings in.
+    This course couldn't possibly cram in all of these learnings.
     However, what it does do is share the learnings that will help the most
     in your early interactions with each part of the data.</span>
     <br />
     <br />
-    <span>In relation to my feeling score, there are 3 things that stand out as helping enrich those early interactions most:</span>
+    <span>In relation to your feeling score, there are 3 things that stand out as helping enrich those early interactions most:</span>
     <br />
     <br />
     <span>1.</span><strong className="emphasis">The Most Important Insight of Them All</strong>
     <br />
     <br />
-    <span>2.</span><strong className="emphasis">The Almighty Average :)</strong>
+    <span>2.</span><strong className="emphasis">The Almighty Average ;)</strong>
     <br />
     <br />
-    <span>3.</span><strong className="emphasis">Can someone turn the volume down!</strong>
+    <span>3.</span><strong className="emphasis">"Can someone turn the volume down!"</strong>
     <br />
     <br />
 </div>
@@ -223,7 +222,7 @@ className="quizDiv">
     </div>
     <br />
     <span>
-      We owe a lot to the ancient greeks, and I often wonder what on earth they would think of our global society in 2022.
+      We owe a lot to the ancient greeks, and I often wonder what on earth they would think of our global society today.
       <br />
         <br />
       One of their many legacies that survives today is that of the Greek tragic play.
@@ -256,36 +255,32 @@ className="quizDiv">
         <br />
       This course is written in an attempt to massively mitigate any potentially triggering effects of seeing your
       feeling, moments etc played out on screen.
-      This course is constructed expressly to give anyone all of the essential mental tools, the requistie calmness and confidence and
-      the benefit of my many mistakes so that they can capably manage any such discomfort, and, most importantly activate the growth that lays dormant behind it.
+      This course is constructed expressly to give anyone all of the essential mental tools, ample calmness and confidence and
+      the benefit of my many mistakes so that they can capably manage any such discomfort and, 
+      most importantly, activate the growth that lays dormant behind it.
       <br />
       <br />
       These intentions do not take away from the fact that if you even suspect you are going
       to find it too difficult, too triggering -
-      particulaly to the point where you may regress in joy and growth - <strong>this is where I would recommend you stop.</strong>
+      particularly to the point where you may regress in joy and growth - <strong>this is where I would recommend you stop.</strong>
         <br />
         <br />
-      I want NWD to help as many people as possible.
-      A surefire way <i><strong>not</strong></i> to do that is to pretend
+      I would like NWD to help as many people as possible and a surefire way <i><strong>not</strong></i> to do that is to pretend
       that this whole format will work impeccably - without treacherous trial or tribulation - for everyone who uses it.
         <br />
         <br />
       I believe that data and technology can facilitate the far more proactive processing and designing of our lives;
       helping any user reach levels of joy and growth that they would have perhaps struggled to reach in a
-      lifetime without this new unconditional perspective <i className="aside">
-        (and suffer far less risk of self-destruction and recrimination in the process).</i>
-      <br />
-      <br />
-      The human experience has changed in so many ways in the last 250 years. Thousands of years based on agricultural lives
-      and optimally sized community centric groups have
-      been usurped by industrial centres, smog, urban sprawl, the internet, smartphones, notifications, surveillance capitalism and many more such things.
+      lifetime without this new unconditional perspective. The human experience has changed in so many ways in the last 250 years. 
+      Thousands of years based on agricultural lives
+      and optimally sized community centric groups have been overrun by industrial centres, smog, urban sprawl, the internet, smartphones, notifications, surveillance capitalism and many more such things.
       <br />
       <br />
       How we process our experiences, make sense of our minds
       and relate to our environment, however, has stood weirdly still.
       <br />
       <br />
-      People are certainly empowered to talk more and, hopefully, with the rampant sharing of information that the internet has afforded,
+      In general, people are certainly empowered to talk more and, hopefully, with the rampant sharing of information that the internet has afforded,
       do this talking with more knowing people, and if some specialist (expensive or otherwise) or smart technology (expensive or otherwise)
       has helped along the way that is all the better.
       <br />
@@ -490,8 +485,8 @@ However, the times where I set myself 3 things, and did them all, carried far le
 <br />
 <br />
 <span>
-Predictably, setting my 5 moments as a combination of ambitious, highly prioritised and recovery reponsible things, and 'achieving' them all,
-did create the better feelings on average, the relentles push for that I was on did create more variance in feeling.
+Predictably, setting my 5 moments as a combination of ambitious, highly prioritised and recovery-responsible things, and 'achieving' them all,
+did create the better feelings on average, the relentless push for that I was on did create more variance in feeling.
 </span>
 <br />
 <br />

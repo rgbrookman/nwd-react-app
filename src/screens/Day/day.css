@@ -331,6 +331,12 @@ input::-webkit-inner-spin-button {
   width: auto;
 }
 
+.explainerButton:focus {
+  border-color: none;
+  box-shadow: none;
+  background-color: #EBF4FA;
+}
+
 @media (max-width: 500px) and (min-width: 0px) {
   .dayScreenContainer {
     display: flex;

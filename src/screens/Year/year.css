@@ -326,8 +326,8 @@
 }
 
 .videoContainer {
-  height: 500px;
-  width: 75%;
+  height: auto;
+  width: auto;
   background-color: #EBF4FA;
   display: flex;
   top: 20%;

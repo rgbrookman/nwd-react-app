@@ -77,9 +77,10 @@ export default function Contact({ history }) {
       name="enquiry_type">
       <option value="Bug Found">Report a Bug</option>
       <option value="Question">Ask a Question</option>
-      <option value="Suggestion">Make a Suggestion</option>
+      <option value="Suggestion">Recommend a New Feature</option>
+      <option value="Suggestion">Volunteer Your Skills</option>
       <option value="Complaint">Leave a Complaint</option>
-      <option value="Other">Other</option>
+      <option value="Other">Something Else</option>
     </select>
     </div>
     </Row>

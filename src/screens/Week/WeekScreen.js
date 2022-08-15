@@ -235,6 +235,8 @@ const [videoDisplay, setVideoDisplay] = useState(true);
     loadingTimeout();
   })
 
+  const weekVideo = 'https://share.vidyard.com/watch/Vry5iUQHge3eD6djb2k912?';
+
   return (
 <>
 <Header />
@@ -245,7 +247,14 @@ const [videoDisplay, setVideoDisplay] = useState(true);
 animate={videoDisplay ? "hide" : "show"}
 variants={valueState}
 className="videoContainer">
-<h1>Video</h1>
+ <div className="videoContainerDiv">
+<motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={weekVideo}>
+</iframe>
+</div>
 </motion.div>
 
   <Form onSubmit={updateHandler}>

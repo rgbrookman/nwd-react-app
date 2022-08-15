@@ -178,6 +178,8 @@ useEffect(()=> {
   loadingTimeout();
 })
 
+const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
+
   return (
     <>
       <Header />
@@ -216,6 +218,14 @@ onChange={(e) => setLogDate(e.target.value)}
     animate={videoDisplay ? "hide" : "show"}
     variants={valueState}
     className="videoContainer">
+       <div className="videoContainerDiv">
+<motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={todayVideo}>
+</iframe>
+</div>
     </motion.div>
       <div className="boxA">
 

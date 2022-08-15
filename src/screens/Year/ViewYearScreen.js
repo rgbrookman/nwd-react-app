@@ -244,6 +244,8 @@ useEffect(()=> {
    setContinuation(days1);
 })
 
+const createVideo = "https://share.vidyard.com/watch/ehLQSz77hWAmAJCJg6okNw?";
+
   return (
 
 <>
@@ -262,10 +264,10 @@ useEffect(()=> {
     <Dropdown.Item className="helpItem" eventKey="1" href="/values">
       Values
     </Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="2">Vision</Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="3">Ikigai</Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="4">Why NWD?</Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="4">Navigational Quote</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="2" href="https://youtu.be/zpzZumZCdWA">Vision</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="3" href="https://youtu.be/4LE5bel_GvU">Ikigai</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="4" href="https://youtu.be/TUDy6Rc81a4">Why NWD?</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="5" href="https://youtu.be/eqGenb4UHlE">Navigational Quote</Dropdown.Item>
 
   </DropdownButton>
 <Button className="explainerButton d-none d-sm-flex"
@@ -288,7 +290,14 @@ Learn About Your Year Page
     animate={videoDisplay ? "hide" : "show"}
     variants={valueState}
     className="videoContainer">
-    <h1>Video</h1>
+ <div className="videoContainerDiv">
+<motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={createVideo}>
+</iframe>
+</div>
     </motion.div>
       <motion.section className="yearMap"
       onReturn{...updateHandler}>

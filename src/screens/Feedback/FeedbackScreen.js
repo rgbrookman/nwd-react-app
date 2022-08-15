@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { Container, Button, Row, Col  } from 'react-bootstrap';
+import Header from "../../components/Header/Header";
 import { motion } from 'framer-motion';
 import Swal from 'sweetalert2'
 import './feedback.css';
@@ -40,7 +41,9 @@ export default function Feedback({ history }) {
 
 
   return (
-    <Container className="feedbackContainer">
+    <>
+<Header/>
+    <Container className="feedbackContainer mb-5">
 
       <form id="feedbackForm" className="feedback-form" ref={feedbackForm} onSubmit={sendEmail}>
       <Row className="justify-content-end">
@@ -52,7 +55,7 @@ export default function Feedback({ history }) {
       </Button>
       </Row>
     <Row>
-        <h3 className="rowHeader">The 'Year' Page - <a href="">Reminder of Page Objective</a></h3>
+        <h3 className="rowHeader">The 'Year' Page</h3>
     <Col>
     <div className="feedbackContainer">
     <label for="yearPG">Describe your experience of the Year Page</label>
@@ -84,7 +87,7 @@ export default function Feedback({ history }) {
       </Row>
 <hr className="dividingLine" />
       <Row className="mt-4">
-            <h3 className="rowHeader">The 'Today' Page - <a href="">Reminder of Page Objective</a></h3>
+            <h3 className="rowHeader">The 'Today' Page</h3>
       <Col>
       <div className="feedbackContainer">
       <label for="todayPG">Describe your experience of the Today Page</label>
@@ -116,7 +119,7 @@ export default function Feedback({ history }) {
         </Row>
 <hr className="dividingLine" />
         <Row className="mt-4">
-            <h3 className="rowHeader">The 'Week' Page - <a href="">Reminder of Page Objective</a></h3>
+            <h3 className="rowHeader">The 'Week' Page</h3>
         <Col>
         <div className="feedbackContainer">
         <label for="weekPG">Describe your experience of the Week Page</label>
@@ -148,7 +151,7 @@ export default function Feedback({ history }) {
           </Row>
 <hr className="dividingLine" />
           <Row className="mt-4">
-              <h3 className="rowHeader">The 'Values' Page - <a href="">Reminder of Page Objective</a></h3>
+              <h3 className="rowHeader">The 'Values' Page</h3>
           <Col>
           <div className="feedbackContainer">
           <label for="valuesPG">Describe your experience of the Values Page</label>
@@ -248,5 +251,6 @@ export default function Feedback({ history }) {
 
       </form>
     </Container>
+    </>
   );
 }

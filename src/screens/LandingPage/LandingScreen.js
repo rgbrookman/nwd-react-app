@@ -73,10 +73,10 @@ dispatch(listYears());
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-
-const platformExplainer = 'SfQNtiEH3M4';
-const visionExplainer = 'SfQNtiEH3M4';
-const startTheTour = 'SfQNtiEH3M4';
+const mvpExplainer = 'https://share.vidyard.com/watch/nnshF6YTAZXTyXCkBYj3pN?'
+const platformExplainer = 'https://share.vidyard.com/watch/G1CHWbTWFFE11HmSy5xecN?';
+const visionExplainer = 'https://share.vidyard.com/watch/gKm5iR3fmQHLqTZ8ZFM58P?';
+const startTheTour = '/year/create';
 
   return (
 
@@ -93,7 +93,7 @@ const startTheTour = 'SfQNtiEH3M4';
     variants={hideState}
     >
           {userInfo.name}, <br/>this is your NoWastedDays.</motion.h1>
-
+<hr className="dividingLine" />
           { vw > 800 ? 
           <>
       <motion.div 
@@ -104,31 +104,33 @@ const startTheTour = 'SfQNtiEH3M4';
       <iframe className='landingPageVideo'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${platformExplainer}?start=0`}>
+        src={videoID}>
         </iframe>
       </motion.div>
 
 <div className="landingPageButtonDiv">
+<button className="landingPageButton"
+  onClick={()=>{
+  setVideoID( videoID => mvpExplainer);
+  setVideoDisplay( videoDisplay => !videoDisplay);
+  setTextDisplay( textDisplay => !textDisplay);
+}}>MVP Testers</button>
   <button className="landingPageButton"
   onClick={()=>{
-  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoID( videoID => visionExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
   setTextDisplay( textDisplay => !textDisplay);
 }}>Vision</button>
 
 <button className="landingPageButton"
 onClick={()=>{
-  setVideoID( videoID => 'SfQNtiEH3M4');
+  setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
    setTextDisplay( textDisplay => !textDisplay);
 }}>Aim of the Platform</button>
 
 <button className="landingPageButton"
-onClick={()=>{
-  setVideoID( videoID => 'SfQNtiEH3M4');
-  setVideoDisplay( videoDisplay => !videoDisplay);
-   setTextDisplay( textDisplay => !textDisplay);
-}}>Start the Tour</button>
+href="/year/create">Start the Tour</button>
 </div>
 </>
 : null }

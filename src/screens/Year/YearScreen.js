@@ -93,6 +93,8 @@ export default function YearScreen({ history }) {
   })
 
 
+  const createVideo = "https://share.vidyard.com/watch/ehLQSz77hWAmAJCJg6okNw?";
+
   return (
     <>
     <Header />
@@ -105,8 +107,12 @@ export default function YearScreen({ history }) {
  variants={valueState}
  className="videoContainer">
  <div className="videoContainerDiv">
-
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={createVideo}>
+</iframe>
 </div>
  </motion.div>
     <main id="yearContainer">
@@ -118,9 +124,13 @@ export default function YearScreen({ history }) {
     drop="end"
     title="Help"
   >
-    <Dropdown.Item className="helpItem" eventKey="1"><Link className="helpLink"to="/values">Values</Link></Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="2">Vision</Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="3">Ikigai</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="1" href="/values">
+      Values
+    </Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="2" href="https://youtu.be/zpzZumZCdWA">Vision</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="3" href="https://youtu.be/4LE5bel_GvU">Ikigai</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="4" href="https://youtu.be/TUDy6Rc81a4">Why NWD?</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="5" href="https://youtu.be/eqGenb4UHlE">Navigational Quote</Dropdown.Item>
 
   </DropdownButton>
   <Button className="explainerButton"
@@ -140,7 +150,6 @@ export default function YearScreen({ history }) {
     </div>
 
     <div className="yearMap">
-
     <div className="nameBox">
     <span>My Name is...</span>
 
@@ -148,10 +157,8 @@ export default function YearScreen({ history }) {
        className="nameInput"
         type="text"
         value={yourName}
-
         onChange={(e) => setYourName(e.target.value)}
       />
-
     </div>
 
     <div className="visionBox">

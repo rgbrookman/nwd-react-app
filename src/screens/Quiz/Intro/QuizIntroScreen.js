@@ -67,8 +67,9 @@ export default function QuizScreen() {
             <br />
             <br />
              Our own eyes provide a view on life which in many ways is completely phenomenal. 
-            This view point and the eyes themselves are brilliantly at helping forge connections with other humans, are fabulous for studying details in our
-            immediate surroundings and terrific for the visceral glory of simply being alive.
+            Both the eyes themselves and the perspective they afford are brilliant at helping forge connections with other humans, 
+            fabulous for studying details in our
+            immediate surroundings and terrific for facilitating the visceral glory of simply being alive.
             <br />
             <br />
             However, this very same view is not good at all for 
@@ -84,7 +85,7 @@ export default function QuizScreen() {
             and empower you, with a bit of time and understanding, to positively transform your level of self-awareness and self-assurance.
                 <br />
           <br />
-            However, not a single iota of insight, ounce of possiblility or plane of perspective can be created by simply playing back
+            However, not a single iota of insight, ounce of possibility or plane of perspective can be created by simply playing back
             the data in a few simple charts.
           <br />
           <br />
@@ -184,7 +185,7 @@ className="quizDiv">
       <br />
       <br />
       <span>
-    This predicament is created for many reasons, but three principle causes stand out in my opinion:
+    This predicament has come to pass for many reasons, but three principle causes stand out in my opinion:
     </span>
       <br />
       <br />

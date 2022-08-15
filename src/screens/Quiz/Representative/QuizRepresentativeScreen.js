@@ -10,6 +10,9 @@ import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../NWD_Logo_White.png';
+import obama from '../../../giphy.gif';
+import lampAnimation from '../../../lamp-animation.gif';
+import consistent from '../../../consistent.gif';
 import './quizrepresentative.css';
 
 export default function QuizRepresentativeScreen() {
@@ -51,8 +54,8 @@ export default function QuizRepresentativeScreen() {
   setKickOff(kickOff => true);
 }}>
   <span>Making the Data Deeply Representative</span>
-  <h1>Deeply Representative</h1>
-  <span><strong>Guaranteeing You Top Quality Data</strong></span>
+  <h1>Top Quality Data</h1>
+  <span><strong>The ingredients for the best insight</strong></span>
 </motion.div>
 
 <motion.div
@@ -66,11 +69,11 @@ className="quizDiv">
     </div>
     <br />
     <span>
-As we explored in the opening of the 'Art of Looking', one of the key components of having the right information is being able to trust your data source,
-and for the source to be full of data that is representative of the problem to be solved.
+As we explored in the opening of the <strong>'Art of Looking'</strong>, one of the key components of having the right information is being able to trust your data source,
+and for the data source to be full of data that is representative of the problem to be solved.
 <br />
 <br />
-Obviously, the source of all the data on your NWD is <strong className="emphasis">you! :)</strong>
+Obviously, on NWD the source of all your data is <strong className="emphasis">you! :)</strong>
 <br />
 <br />
 The question is then how we can ensure that the information you provide is of the most trustworthy, representative and valuable kind.
@@ -120,29 +123,36 @@ className="quizDiv">
 Trust is the bedrock of a thriving civil society.
 <br />
 <br />
-People can only act calmy and conscientiously if they know people will honour their commitments and speak openly and honestly to them, and adhere the codes - written and unwritten -
-that perpetuate peace and co-operation.
+People can only act calmly and conscientiously 
+if they know people will honour their commitments and speak openly and honestly to them, 
+and adhere to the codes - written and unwritten -
+that perpetuate peace and foster co-operation.
 <br />
 <br />
-Similarly, to get the efficiencies and opportunities that come with money, you have to trust that when you pay someone they will give you a product, and that the money is worth something.
+Similarly, to get the efficiencies and opportunities that come with money, you have to trust that when you pay someone they will give you something in return, 
+and you both have to trust and believe that money is has a value.
 <br />
 <br />
 The same is true with your entries.
 <br />
 <br />
-Lay down your honest thoughts; the ones you trust that summarise what you felt and tried to do on any particularly day. This honesty, as in life generally, will pay you back
-tenfold in calmness and confidence.
+By lay down your honest thoughts - the ones you trust that summarise 
+what you felt and tried to do on any particularly day - and this act will pay you back in insight down the line.
 <br />
 <br />
-Don't hold something back to paint an a picture of the day as your diary entry was an instagram post; some curious highlight reel of your life.
+NWD is not Instagram 
 <br />
 <br />
-Put your honest thoughts and feelings in, and reep the reward of better data and insight down the line.
+Here you are not incentivised or quietly encouraged to paint a higlight-reel picture of your life. 
+<br />
+<br />
+Here a key currency is honesty as that truth is positively correlated with greater potential for insight and, in turn, a greater 
+likelihood of transformation.
 </span>
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>Ways of ensuring honesty</p>
+<img src={obama} width="80%" />
 
 </div>
 </div>
@@ -165,7 +175,7 @@ variants={showHideGrid}
 className="quizDiv">
   <div className="leftCol">
     <div className="colTitle">
-      <h4 className="quizHeaderWhite">Specificity</h4>
+      <h4 className="quizHeaderWhite">Can you be more specific?</h4>
     </div>
     <br />
     <span>
@@ -176,9 +186,15 @@ className="quizDiv">
       over time and contribute to a lot more not only data for insight.
         <br />
         <br />
+        <h3 className="quizHeaderWhite">How does it help?</h3>
+        <br />
       I find that when I have seen a signal and am looking through my diary as a result,
       the details on the page spark other memories from the day that I hadn't
-      even written down. The days where I have been more specific with these details, the greater this memory spark power is.
+      even written down. This phenomenon is key to the value of NWD days. Those sparks represent how the platform is trying to stop
+       invaluable insight about yourself from going to waste.
+      <br />
+      <br />
+      The days where I have been more specific with these details in my diary, the greater this memory spark power is.
       <br />
       <br />
       As we've mentioned many times in this course, being able to find an action or relationship that can be transformed courtesy of
@@ -190,7 +206,8 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>Examples</p>
+<img src={lampAnimation} width="50%" />
+
 
 </div>
 </div>
@@ -224,31 +241,32 @@ className="quizDiv">
       It is as important because it will give you the views of your habits that you are particularly interested in.
         <br />
         <br />
-      How does my week look?
+      <strong>How does my week look?</strong>
       <br />
       <br />
-      How does a month look?
+      <strong>How does a month look?</strong>
       <br />
       <br />
-      How does this month differ from last month?
+      <strong>How does this month differ from last month?</strong>
       <br />
       <br />
-      This quarter from last quarter?
+      <strong>This quarter from last quarter?</strong>
       <br />
       <br />
-      This year from last year?
+      <strong>This year from last year?</strong>
       <br />
       <br />
-      This day this year from the same day last year?
+      <strong>This day this year from the same day last year?</strong>
       <br />
       <br />
       This ability to compare equivalent periods of time will give you extraordinary insights, and the only way to build it is this
-      daily consistency; one day after the other of honest and specific inputs.
+      daily consistency; one day after the other of honest and specific inputs over as long a time as you possibly can. 
+      <i className="aside">(That all being true, remember: you can learn from why you didn't do a daily entry to as well!).</i>
         </span>
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>Examples</p>
+<img src={consistent} width="50%" />
 
 </div>
 </div>
