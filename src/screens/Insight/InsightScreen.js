@@ -119,7 +119,7 @@ export default function InsightScreen({ history }) {
 const loadingTimeout = () => {
   setTimeout(()=> {
     setPageLoading(false)
-  }, 3000)
+  }, 5000)
 }
 
 useEffect(()=> {
@@ -266,13 +266,11 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 </Col>
 
 
-
-
 <Col sm={12} lg={6}>
 <Row className="mt-3">
 
 <Col className="text-center">
-<h3 className="chartTitle">The Moment Realisation Rate Over Time</h3>
+<h3 className="chartTitle">Moment Realisation Rate Over Time</h3>
        <TasksCompletionRate />
        </Col>
        { vw > 500 ? 

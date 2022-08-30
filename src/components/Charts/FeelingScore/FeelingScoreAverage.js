@@ -21,8 +21,6 @@ const [data, setData] = useState();
 	const parseDate = d3.timeParse('%Y-%m-%d')
 
 const avgArray = [];
-
-
     days && days.map(each => avgArray.push(each.endScore));
 
 
@@ -35,12 +33,9 @@ const zeroRemove = () => {
     return avgArray;
   }
 }
-
+  
 zeroRemove();
-console.log(avgArray);
     const avg = Math.round(d3.mean(avgArray) * 10) / 10;
-
-
 
 	return (
 

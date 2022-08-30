@@ -647,6 +647,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    margin: auto;
   }
 
   .name {
@@ -655,6 +656,19 @@
     color: #46A46C;
     font-size: clamp(6vw, 8vw, 10vw);
     line-height: 1;
+  }
+
+  .nameBox {
+    background-color: #EBF4FA;
+    color: #1D1F20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: auto;
+    margin: 0 12px;
   }
 
   .visionheader {

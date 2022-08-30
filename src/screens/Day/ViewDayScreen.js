@@ -469,7 +469,7 @@ required
       animate={isDisplay5 ? "show" : "hide"}
       variants={showHideMomentState}>
       <div className="questionTitleButtonsDisplay">
-      {momentOneScore == 0 ? <h5>Moment One is {momentOne}</h5> :   <h5>Moment One is {momentOne} - {momentOneScore}/10</h5>}
+      {momentOneScore === 0 ? <h5>Moment One is {momentOne}</h5> :   <h5>Moment One is {momentOne} - {momentOneScore}/10</h5>}
 
       <div className="editDelete">
         <FontAwesomeIcon
@@ -547,7 +547,7 @@ required
   animate={isDisplay6 ? "show" : "hide"}
   variants={showHideMomentState}>
   <div className="questionTitleButtonsDisplay">
-    {momentTwoScore == 0 ? <h5>Moment Two is {momentTwo}</h5> :   <h5>Moment Two is {momentTwo} - {momentTwoScore}/10</h5>}
+    {momentTwoScore === 0 ? <h5>Moment Two is {momentTwo}</h5> :   <h5>Moment Two is {momentTwo} - {momentTwoScore}/10</h5>}
   <div className="editDelete">
     <FontAwesomeIcon
       className="editIcon"
@@ -625,7 +625,7 @@ className="eraseIcon"
   animate={isDisplay7 ? "show" : "hide"}
   variants={showHideMomentState}>
   <div className="questionTitleButtonsDisplay">
-    {momentThreeScore == 0 ? <h5>Moment Three is {momentThree}</h5> :   <h5>Moment Three is {momentThree} - {momentThreeScore}/10</h5>}
+    {momentThreeScore === 0 ? <h5>Moment Three is {momentThree}</h5> :   <h5>Moment Three is {momentThree} - {momentThreeScore}/10</h5>}
   <div className="editDelete">
     <FontAwesomeIcon
       className="editIcon"
@@ -702,7 +702,7 @@ className="eraseIcon"
   animate={isDisplay8 ? "show" : "hide"}
   variants={showHideMomentState}>
   <div className="questionTitleButtonsDisplay">
-    {momentFourScore == 0 ? <h5>Moment Four is {momentFour}</h5> :   <h5>Moment Four is {momentFour} - {momentFourScore}/10</h5>}
+    {momentFourScore === 0 ? <h5>Moment Four is {momentFour}</h5> :   <h5>Moment Four is {momentFour} - {momentFourScore}/10</h5>}
   <div className="editDelete">
     <FontAwesomeIcon
       className="editIcon"
@@ -779,7 +779,7 @@ className="eraseIcon"
   animate={isDisplay9 ? "show" : "hide"}
   variants={showHideMomentState}>
   <div className="questionTitleButtonsDisplay">
-    {momentFiveScore == 0 ? <h5>Moment Five is {momentFive}</h5> :   <h5>Moment Five is {momentFive} - {momentFiveScore}/10</h5>}
+    {momentFiveScore === 0 ? <h5>Moment Five is {momentFive}</h5> :   <h5>Moment Five is {momentFive} - {momentFiveScore}/10</h5>}
   <div className="editDelete">
     <FontAwesomeIcon
       className="editIcon"

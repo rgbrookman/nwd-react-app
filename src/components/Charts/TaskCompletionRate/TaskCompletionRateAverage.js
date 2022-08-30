@@ -46,7 +46,6 @@ const TasksCompletionRate = () => {
   }
 
   zeroRemove();
-  console.log(avgArray);
 
   const avg = Math.round(d3.mean(avgArray) * 10) / 10 * 100 + "%";
 

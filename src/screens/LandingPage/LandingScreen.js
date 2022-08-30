@@ -215,16 +215,7 @@ onClick={()=>{
         )  )}
 
       </Col>
-      <Col>
-        <div className="landingPageBox inactive"
-        onClick={()=> {
-          setClickBox(clickBox => !clickBox);
-          setLinkRefCreate('/values');
-          setLinkRefUpdate('');
-        }}>
-        <h1>Experiences</h1>
-        </div>
-      </Col>
+
       </Row>
       </Container>
       }
@@ -244,11 +235,6 @@ onClick={()=>{
       </motion.div>
 
 <div className="landingPageButtonDivMobile">
-<button className="landingPageButton"
-  onClick={()=>{
-  setVideoID( videoID => mvpExplainer);
-  setVideoDisplay( videoDisplay => !videoDisplay);
-}}>Vision</button>
 
   <button className="landingPageButton"
   onClick={()=>{
@@ -260,10 +246,10 @@ onClick={()=>{
 onClick={()=>{
   setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
-}}>Aim of the Platform</button>
+}}>Platform Aim</button>
 
 <button className="landingPageButton"
-><a className="lpLinkMobile" href="/year/create">Start the Tour</a></button>
+><a className="lpLinkMobile" href="/today">Log Your Day</a></button>
 </div>
 </>
 : null }

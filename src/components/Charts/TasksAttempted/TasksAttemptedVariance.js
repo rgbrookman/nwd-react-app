@@ -30,7 +30,6 @@ const TasksAttemptedVariance = () => {
   //Getting Dates
     const tasksAttemptedData = days && days.map(each => {
       return {date: parseDate(each.logDate.slice(0,10)), ta: each.tasksAttempted}});
-        console.log(tasksAttemptedData);
 
     const taDataFinal = tasksAttemptedData.sort((a,b) => a.date - b.date);
   
@@ -52,7 +51,6 @@ const zeroRemove = () => {
 }
 
 zeroRemove();
-console.log(avgArray);
 
     const deviation = Math.round(d3.deviation(avgArray) * 10) / 10;
 

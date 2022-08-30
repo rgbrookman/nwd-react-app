@@ -100,7 +100,7 @@ const Header = ({ history }) => {
   </Navbar.Brand>
    :
 
-  <Navbar.Brand>
+  <Navbar.Brand id="navbar-brand">
     <Nav.Link href="/">
        <img
       src={logo}

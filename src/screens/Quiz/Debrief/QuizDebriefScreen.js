@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from 'react-router-dom';
 import Header from '../../../components/Header/Header';
-import { updateProfile } from '../../../actions/dayActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
-import Loading from '../../../components/Loading/Loading';
-import { ErrorMessage } from '../../../components/Error/ErrorMessage';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
-import logo from '../../../NWD_Logo_White.png';
-import confidence from '../../../overly-confident-8.gif';
 import './quizdebrief.css';
 
 export default function QuizDebriefScreen() {
@@ -73,8 +64,8 @@ export default function QuizDebriefScreen() {
     </div>
     <br />
 <span>
-  When you get into your groove with NWD, you will find yourself doing a lof of dissecting decisions and their ensuing outcomes; alot 
-  trying to make sense of what was <i className="aside">(to use our lazy terms for a second)</i> 'good', 'bad' or somewhere inbetween.
+  When you get into your groove with NWD, 
+  you will find yourself doing a lof of dissecting decisions, making sense of various moments and evaluating outcomes.
 </span>
   <br />
   <br />
@@ -278,7 +269,8 @@ thought, but there are truths about confidence that can empower anyone build the
     <br />
     <br />
     To help you get filling out the column well, 
-find below a list of things you may be forgetting to capture confidence from or evaluate amongst the things you contributed positively to a situation.
+    find below a list of things you may be forgetting to capture confidence from or 
+    evaluate amongst the things you contributed positively to a situation.
     <strong>Things you may forget to consolidate confidence from:</strong>
     <ul>
     <br />
