@@ -671,6 +671,17 @@
     margin: 0 12px;
   }
 
+  .dobBox,
+  .ikigaiBox,
+  .quoteBox,
+  .valuesBox,
+  .whyBox,
+  .memoryBox
+   {
+    padding: auto;
+    margin: 0 12px;
+  }
+
   .visionheader {
     font-family: 'caveat', cursive;
     color: #46A46C;
