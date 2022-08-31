@@ -175,7 +175,10 @@ const updateHandler = (e) => {
       endScore));
 
         resetHandler();
-        window.location.reload();
+        
+        setTimeout(()=> {
+          window.location.reload();
+        }, 250);
 
 };
 
@@ -189,11 +192,16 @@ useEffect(()=> {
   loadingTimeout();
 })
 
+useEffect(() => {
+  document.title = "Today | Update";
+}, []);
+
 const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
 
   return (
     <>
-       <Header />
+    { pageLoading && !days ? null : <> <Header /></> }
+       
         { pageLoading && !days ?
           <div className="pageLoading">
             <PropagateLoader color={"#fff"} size={30} /></div> :

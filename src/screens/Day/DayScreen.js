@@ -21,15 +21,15 @@ const [thankYou, setThankYou] = useState(localStorage.thankYou ? localStorage.th
 const [selfLess, setSelfLess] = useState(localStorage.selfLess ? localStorage.selfLess : "");
 const [mindBody, setMindBody] = useState(localStorage.mindBody ? localStorage.mindBody : "");
 const [momentOne, setMomentOne] = useState(localStorage.momentOne ? localStorage.momentOne : "");
-const [momentOneScore, setMomentOneScore] = useState(localStorage.momentOneScore ? localStorage.momentOneScore : null);
+const [momentOneScore, setMomentOneScore] = useState(localStorage.momentOneScore ? localStorage.momentOneScore : "");
 const [momentTwo, setMomentTwo] = useState(localStorage.momentTwo ? localStorage.momentTwo : "");
-const [momentTwoScore, setMomentTwoScore] = useState(localStorage.momentTwoScore ? localStorage.momentTwoScore : null);
+const [momentTwoScore, setMomentTwoScore] = useState(localStorage.momentTwoScore ? localStorage.momentTwoScore : "");
 const [momentThree, setMomentThree] = useState(localStorage.momentThree ? localStorage.momentThree : "");
-const [momentThreeScore, setMomentThreeScore] = useState(localStorage.momentThreeScore ? localStorage.momentThreeScore : null);
+const [momentThreeScore, setMomentThreeScore] = useState(localStorage.momentThreeScore ? localStorage.momentThreeScore : "");
 const [momentFour, setMomentFour] = useState(localStorage.momentFour ? localStorage.momentFour : "");
-const [momentFourScore, setMomentFourScore] = useState(localStorage.momentFourScore ? localStorage.momentFourScore : null);
+const [momentFourScore, setMomentFourScore] = useState(localStorage.momentFourScore ? localStorage.momentFourScore : "");
 const [momentFive, setMomentFive] = useState(localStorage.momentFive ? localStorage.momentFive : "");
-const [momentFiveScore, setMomentFiveScore] = useState(localStorage.momentFiveScore ? localStorage.momentFiveScore : null);
+const [momentFiveScore, setMomentFiveScore] = useState(localStorage.momentFiveScore ? localStorage.momentFiveScore : "");
 const [rememberToday, setRememberToday] = useState(localStorage.rememberToday ? localStorage.rememberToday : "");
 const [leaveBehind, setLeaveBehind] = useState(localStorage.leaveBehind ? localStorage.leaveBehind : "");
 const [endScore, setEndScore] = useState(localStorage.endScore ? localStorage.endScore : 0);
@@ -177,6 +177,10 @@ const loadingTimeout = () => {
 useEffect(()=> {
   loadingTimeout();
 })
+
+useEffect(() => {
+  document.title = "Today | Create";
+}, []);
 
 const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
 
