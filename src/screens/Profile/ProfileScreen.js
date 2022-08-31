@@ -51,6 +51,9 @@ confirmPassword
   navigate('/today');
 };
 
+useEffect(() => {
+  document.title = "Edit Profile";
+}, []);
 
 
   return (

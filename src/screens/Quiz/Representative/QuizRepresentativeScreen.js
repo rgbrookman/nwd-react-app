@@ -40,6 +40,10 @@ export default function QuizRepresentativeScreen() {
     },
   }
 
+  useEffect(() => {
+    document.title = "Art of Looking";
+  }, []);
+
   return (
     <>
  

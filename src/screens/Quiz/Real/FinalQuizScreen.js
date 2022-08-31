@@ -101,6 +101,11 @@ export default function FinalQuizScreen(history) {
 
     const daysRemaining = 10 - daysLogged;
 
+
+    useEffect(() => {
+      document.title = "Art of Looking";
+    }, []);
+    
   return (
     <>
 

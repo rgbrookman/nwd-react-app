@@ -72,6 +72,10 @@ dispatch(listYears());
     },
   };
 
+  useEffect(() => {
+    document.title = "Your NWD";
+  }, []);
+
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
 const mvpExplainer = 'https://share.vidyard.com/watch/nnshF6YTAZXTyXCkBYj3pN?'

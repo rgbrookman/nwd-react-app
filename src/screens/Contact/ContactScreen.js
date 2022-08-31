@@ -31,6 +31,10 @@ export default function Contact({ history }) {
       navigate('/');
   };
 
+  useEffect(() => {
+    document.title = "Contact Us";
+  }, []);
+
 
 
   return (

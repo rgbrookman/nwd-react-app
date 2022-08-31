@@ -38,6 +38,10 @@ export default function Feedback({ history }) {
       navigate('/');
   };
 
+  useEffect(() => {
+    document.title = "Feedback";
+  }, []);
+
 
 
   return (

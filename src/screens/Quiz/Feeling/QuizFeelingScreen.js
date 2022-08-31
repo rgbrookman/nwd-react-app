@@ -49,6 +49,10 @@ export default function QuizFeelingScreen() {
     },
   }
 
+  useEffect(() => {
+    document.title = "Art of Looking";
+  }, []);
+
   return (
     <>
 

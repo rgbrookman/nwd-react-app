@@ -12,6 +12,9 @@ import Intro from '../../components/ValuesProcess/Intro'
 
 export default function ValuesScreen() {
 
+  useEffect(() => {
+    document.title = "Your Values";
+  }, []);
 
   return (
 <main>

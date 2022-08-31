@@ -52,6 +52,10 @@ export default function QuizWaveScreen() {
 
   const dianaVreeland = '3wRmpc-Fh3o';
 
+  useEffect(() => {
+    document.title = "Art of Looking";
+  }, []);
+
   return (
     <>
 

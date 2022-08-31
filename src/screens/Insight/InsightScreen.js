@@ -72,6 +72,10 @@ export default function InsightScreen({ history }) {
     dispatch(listDays());
   }, [dispatch, userInfo, history]);
 
+  useEffect(() => {
+    document.title = "View Insights";
+  }, []);
+
 
   const parseDate = d3.timeParse('%Y-%m-%d')
 

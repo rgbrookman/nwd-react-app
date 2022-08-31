@@ -92,6 +92,10 @@ export default function YearScreen({ history }) {
     loadingTimeout();
   })
 
+  useEffect(() => {
+    document.title = "Year | Create";
+  }, []);
+
 
   const createVideo = "https://share.vidyard.com/watch/ehLQSz77hWAmAJCJg6okNw?";
 

@@ -122,6 +122,10 @@ color: "red",
     },
   }
 
+  useEffect(() => {
+    document.title = "Art of Looking";
+  }, []);
+
   return (
     <>
 

@@ -49,6 +49,10 @@ export default function QuizTasksScreen() {
 
   const michealCaine = 'sqOgyNfHl1U';
   
+  useEffect(() => {
+    document.title = "Art of Looking";
+  }, []);
+
   return (
     <>
 

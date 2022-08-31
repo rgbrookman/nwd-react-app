@@ -106,6 +106,10 @@ closed: {
 },
 };
 
+useEffect(() => {
+  document.title = "About Us";
+}, []);
+
 
   return (
     <>

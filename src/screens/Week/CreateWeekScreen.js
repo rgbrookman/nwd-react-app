@@ -83,6 +83,10 @@ export default function WeekScreen({ history }) {
 
   const weekVideo = 'https://share.vidyard.com/watch/Vry5iUQHge3eD6djb2k912?';
 
+  useEffect(() => {
+    document.title = "Week | Create";
+  }, []);
+
   return (
 <>
 <Header />

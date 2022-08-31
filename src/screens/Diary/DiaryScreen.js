@@ -97,6 +97,10 @@ useEffect(() => {
 
 const diaryVideo = "sqOgyNfHl1U";
 
+useEffect(() => {
+  document.title = "View Diary";
+}, []);
+
   return (
     <>
     <Header />

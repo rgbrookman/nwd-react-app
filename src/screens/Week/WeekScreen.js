@@ -235,6 +235,10 @@ const [videoDisplay, setVideoDisplay] = useState(true);
     loadingTimeout();
   })
 
+  useEffect(() => {
+    document.title = "Week | Update";
+  }, []);
+
   const weekVideo = 'https://share.vidyard.com/watch/Vry5iUQHge3eD6djb2k912?';
 
   return (

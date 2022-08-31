@@ -51,6 +51,10 @@ export default function QuizMindsetScreen() {
   const steveJobs = 'UF8uR6Z6KLc';
   const peterUstinov = 'ooCIpYOxaoo';
 
+  useEffect(() => {
+    document.title = "Art of Looking";
+  }, []);
+  
   return (
     <>
 <Header />

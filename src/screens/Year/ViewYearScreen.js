@@ -244,6 +244,10 @@ useEffect(()=> {
    setContinuation(days1);
 })
 
+useEffect(() => {
+  document.title = "Year | Update";
+}, []);
+
 const createVideo = "https://share.vidyard.com/watch/ehLQSz77hWAmAJCJg6okNw?";
 
   return (
