@@ -165,13 +165,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 :
 <div className="testRow">
 
-<h3 className="insightHeader">Average</h3>
+<h5 className="insightHeader">Average</h5>
 <FeelingScoreAverage />
 
-<h3 className="insightHeader">Deviation</h3>
+<h5 className="insightHeader">Deviation</h5>
 <FeelingScoreVariance />
 
-<h3 className="insightHeader">Recent</h3>
+<h5 className="insightHeader">Recent</h5>
 <FeelingScoreTrend />
 </div>
 
@@ -204,13 +204,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 :
 <div className="testRow">
 
-<h3 className="insightHeader">Average</h3>
+<h5 className="insightHeader">Average</h5>
 <TasksCompletedAverage />
 
-<h3 className="insightHeader">Deviation</h3>
+<h5 className="insightHeader">Deviation</h5>
 <TasksCompletedVariance />
 
-<h3 className="insightHeader">Recent</h3>
+<h5 className="insightHeader">Recent</h5>
 <TasksCompletedTrend />
 </div>
 
@@ -254,13 +254,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 :
 <div className="testRow">
 
-<h3 className="insightHeader">Average</h3>
+<h5 className="insightHeader">Average</h5>
 <TasksAttemptedAverage />
 
-<h3 className="insightHeader">Deviation</h3>
+<h5 className="insightHeader">Deviation</h5>
 <TasksAttemptedVariance />
 
-<h3 className="insightHeader">Recent</h3>
+<h5 className="insightHeader">Recent</h5>
 <TasksAttemptedTrend />
 </div>
 
@@ -294,13 +294,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 :
 <div className="testRow">
 
-<h3 className="insightHeader">Average</h3>
+<h5 className="insightHeader">Average</h5>
 <TasksCompletionRateAverage />
 
-<h3 className="insightHeader">Deviation</h3>
+<h5 className="insightHeader">Deviation</h5>
 <TasksCompletionRateVariance />
 
-<h3 className="insightHeader">Recent</h3>
+<h5 className="insightHeader">Recent</h5>
 <TasksCompletionRateTrend />
 </div>
 
