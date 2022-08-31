@@ -200,8 +200,7 @@ const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
 
   return (
     <>
-    { !days ? null : <> <Header /></> }
-       
+    <Header />       
         { pageLoading && !days ?
           <div className="pageLoading">
             <PropagateLoader color={"#fff"} size={30} /></div> :
