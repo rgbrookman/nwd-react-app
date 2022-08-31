@@ -108,15 +108,15 @@ const resetHandler = () => {
   setSelfLess('');
   setMindBody('');
   setMomentOne('');
-  setMomentOneScore(null);
+  setMomentOneScore('');
   setMomentTwo('');
-  setMomentTwoScore(null);
+  setMomentTwoScore('');
   setMomentThree('');
-  setMomentThreeScore(null);
+  setMomentThreeScore('');
   setMomentFour('');
-  setMomentFourScore(null);
+  setMomentFourScore('');
   setMomentFive('');
-  setMomentFiveScore(null);
+  setMomentFiveScore('');
   setRememberToday('');
   setLeaveBehind('');
   setEndScore(0);
@@ -200,7 +200,7 @@ const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
 
   return (
     <>
-    { pageLoading && !days ? null : <> <Header /></> }
+    { !days ? null : <> <Header /></> }
        
         { pageLoading && !days ?
           <div className="pageLoading">
