@@ -54,8 +54,8 @@ zeroRemove();
 console.log(avgArray);
 const recentView = avgArray.length - 1 === 0 ? avgArray.slice(avgArray.length - 14) :  avgArray.slice(-15, -1) 
 
-const avg = Math.round(d3.mean(avgArray) * 10) / 10;
-const recent = Math.round(d3.mean(recentView) * 10) / 10;
+const avg = d3.mean(avgArray);
+const recent = d3.mean(recentView);
 
 
 const newIndex = Number(recent / avg - 1).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:2});

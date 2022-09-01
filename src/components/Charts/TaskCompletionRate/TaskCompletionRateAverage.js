@@ -47,7 +47,8 @@ const TasksCompletionRate = () => {
 
   zeroRemove();
 
-  const avg = Math.round(d3.mean(avgArray) * 10) / 10 * 100 + "%";
+  const avg = d3.mean(avgArray).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:0});
+ 
 
 	return (
 	<span className="statSpan">{avg}</span>

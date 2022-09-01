@@ -40,6 +40,8 @@ export default function QuizScreen() {
     document.title = "Art of Looking";
   }, []);
 
+  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
   return (
     <>
 <Header />
@@ -51,10 +53,15 @@ export default function QuizScreen() {
   setTitleDiv(titleDiv => false);
   setKickOff(kickOff => true);
 }}>
+
   <h1>The Art of Looking</h1>
-  <span><strong>Setup for Speedily and Safely Turning Your Insights into Greater Joy & Growth</strong></span>
-  <hr className="dividingLine" />
-  <span className="clickAnywhere">Click anywhere to start</span>
+{ vw < 800 ?  
+<span><strong>Experience Only Available on Desktop</strong></span> 
+: <><span><strong>Setup for Speedily and Safely Turning Your Insights into Greater Joy & Growth</strong></span>  
+<hr className="dividingLine" />
+  <span className="clickAnywhere">Click anywhere to start</span></> }
+ 
+
 </motion.div>
 
     <motion.div

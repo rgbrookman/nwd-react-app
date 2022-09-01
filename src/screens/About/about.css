@@ -96,7 +96,46 @@
   margin-top: 24px;
 }
 
-@media only screen and (max-width: 768px) {
+.aboutSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 6px 48px 48px 48px;
+}
+
+.whatIsNwd {
+  text-align: center;
+}
+
+.aboutOne,
+.aboutTwo,
+.aboutThree {
+  height: 25vh;
+  width: 100%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.explanationLeft {
+  width: 70%;
+text-align: start;
+}
+
+.explanationLeft h3,
+.explanationRight h3
+ {
+color: #fff;
+}
+
+.explanationRight {
+  width: 70%;
+text-align: end;
+}
+
+@media (max-width: 768px) and (min-width: 0px) {
   .fortuneDiv {
     grid-row: 2 / 3;
     grid-column: 1 / span 3;

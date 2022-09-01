@@ -40,8 +40,9 @@ const zeroRemove = (array) => {
 
 zeroRemove(avgArray);
 
-const avg = Math.round(d3.mean(avgArray) * 10) / 10;
-const recent = Math.round(d3.mean(recentView) * 10) / 10;
+
+const avg = d3.mean(avgArray);
+const recent = d3.mean(recentView);
 
 
 

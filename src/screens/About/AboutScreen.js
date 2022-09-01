@@ -196,8 +196,42 @@ useEffect(() => {
     <motion.span className="existStatement">NWD exists because both of these responses are correct.</motion.span>
     <motion.h1 className="missionHeader">Our mission is to unconditionally support people with being alive.</motion.h1>
         </motion.div>
-          <Footer />
+
+       
+
     </Container>
+    <section className="aboutSection">
+
+    <div className="whatIsNwd">
+          <h3>NWD is a digital mindfulness journal and daily planner with a difference.</h3>
+          
+        </div>
+
+        <div className="aboutOne">
+          <div className="explanationLeft">
+          <h3>Plan your day simply and smartly using our unique format designed for productivity and peace of mind.</h3>
+          </div>
+          
+          <h1 className="supportingImage">image</h1>
+        </div>
+
+
+        <div className="aboutTwo">
+          
+        <h1 className="supportingImage">image</h1>
+        <div className="explanationRight">
+        <h3 >Guarantee the dreams of a day match the meaning of your life using our interactive experiences and year mapping.</h3>
+        </div>
+        </div>
+
+        <div className="aboutThree">
+        <div className="explanationLeft">
+        <h3>Immerse yourself in your diary through playback and insights to unlock deeper self-understanding.</h3>
+        </div>
+          <h1 className="supportingImage">image</h1>
+</div>
+</section>
+<Footer />
         </>
   );
 }

@@ -39,7 +39,7 @@ zeroRemove();
 
 	return (
 
-			<span className="statSpan">{avg}</span>
+			<span id="averageStat" className="statSpan">{avg}</span>
 
 
 	)

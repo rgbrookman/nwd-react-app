@@ -28,9 +28,8 @@ useEffect(() => {
 
     const ssDataFinal = startScoreData.sort((a,b) => a.date - b.date);
 
-
 //Load as Default Props
-		const margin = {top: 20, right: 30, bottom: 30, left: 30}
+	const margin = {top: 20, right: 30, bottom: 30, left: 30}
     const width = parseInt(d3.select('#d3demo').style('width')) - margin.left - margin.right
     const height = parseInt(d3.select('#d3demo').style('height')) - margin.top - margin.bottom
 

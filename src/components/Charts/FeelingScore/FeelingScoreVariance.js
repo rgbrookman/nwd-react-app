@@ -26,24 +26,23 @@ const avgArray = [];
     days && days.map(each => avgArray.push(each.endScore));
 
 
-const zeroRemove = () => {
-  let lastItem = avgArray.length - 1;
+    const zeroRemove = (array) => {
+      let lastItem = array.length - 1;
+    
+      if (array[lastItem] === 0) {
+        return array.pop();
+      } else {
+        return array;
+      }
+    }
+    
 
-  if (avgArray[lastItem] === 0) {
-    return avgArray.pop();
-  } else {
-    return avgArray;
-  }
-}
+  zeroRemove(avgArray);
 
-zeroRemove();
 
-    const deviation = Math.round(d3.deviation(avgArray)* 10) / 10;
-
+    const deviation = Math.round(d3.deviation(avgArray) * 10) / 10;
+console.log(avgArray);
 	return (
-
 			<span className="statSpan">{deviation}</span>
-
-
 	)
 }
