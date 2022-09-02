@@ -352,7 +352,9 @@ input::-webkit-inner-spin-button {
   }
   
   .boxA {
-    margin: auto;
+    width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   
   .questionTitleButtonsDisplay {
@@ -371,7 +373,7 @@ input::-webkit-inner-spin-button {
   .momentDisplay h5
   {
     font-family: 'Caveat', cursive;
-    font-size: 0.8em;
+    font-size: clamp(0.8em, 2em, 4em);
     color: #46A46C;
   }
   
@@ -436,7 +438,7 @@ input::-webkit-inner-spin-button {
   }
   
   .boxB {
-margin: auto;
+    margin: auto;
   }
   
   .boxC {

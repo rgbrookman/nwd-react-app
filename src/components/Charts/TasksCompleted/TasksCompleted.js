@@ -30,6 +30,7 @@ const getDataTransform = () => {
 
   const tcDataFinal = tasksCompletedData.sort((a,b) => a.date - b.date);
   return tcDataFinal;
+  
 
 
 };
@@ -42,7 +43,7 @@ const getDataTransform = () => {
 
   useEffect(() => {
 let tcData = getDataTransform();
-
+tcData.pop();
         const margin = {top: 20, right: 30, bottom: 30, left: 30}
         const width = parseInt(d3.select('#d3demo5').style('width')) - margin.left - margin.right
         const height = parseInt(d3.select('#d3demo5').style('height')) - margin.top - margin.bottom

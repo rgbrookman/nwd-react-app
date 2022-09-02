@@ -32,7 +32,7 @@ const TasksAttempted = () => {
 
 
     const taDataFinal = tasksAttemptedData.sort((a,b) => a.date - b.date);
-
+    taDataFinal.pop();
 
 
   //Getting

@@ -1516,7 +1516,7 @@ const valuesState = {
                   setIsIntro(isIntro => false);
                   setIsExplanation(isExplanation => true);}}>
                     <h1>Thinking about your Values</h1>
-                    <p>Making a tricky little topic a bit easier to explore{vw}</p>
+                    <p>Making a tricky little topic a bit easier to explore</p>
                     <span><strong>Click this box to get started.</strong></span>
                 </motion.div>
 
@@ -2182,7 +2182,7 @@ const valuesState = {
                     className="finalDisplayContainer"
                     animate={ isDisplayContainer ? "open" : "closed" }
                     initial="hidden"
-                    variants={finalDisplayState}>
+                    variants={finalDisplayStateMob}>
 
                     <h1>Your Values</h1>
                     <p>How do these feel? Continue to play with the traits and explanations. Then, when you are happy, add them into your 'Year' view</p>

@@ -39,7 +39,7 @@ day.taskCompletionRate = tcr;
 
 
     const tcrDataFinal = taskCompletionRateData.sort((a,b) => a.date - b.date);
-
+    tcrDataFinal.pop();
 
 
   //Getting

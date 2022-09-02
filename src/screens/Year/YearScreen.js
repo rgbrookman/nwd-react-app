@@ -199,10 +199,7 @@ export default function YearScreen({ history }) {
       onChange={(e) => setMyVision_5(e.target.value)}
     />
 </div>
-<div className="memoryBox">
-<h4>Memory that you wanted to remember</h4>
 
-</div>
     <div className="quoteBox">
     <span>This weeks navigational quote is...</span>
     <input

@@ -26,7 +26,9 @@ useEffect(() => {
     const startScoreData = days && days.map(each => {
       return {date: parseDate(each.logDate.slice(0,10)), es: each.endScore}});
 
+	  
     const ssDataFinal = startScoreData.sort((a,b) => a.date - b.date);
+	 ssDataFinal.pop();
 
 //Load as Default Props
 	const margin = {top: 20, right: 30, bottom: 30, left: 30}

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Container } from 'react-bootstrap';
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
 
 function AboutScreen() {
@@ -85,11 +86,13 @@ closed: {
 
 const hiddenMissionState = {
   hidden: {
+    display: "none",
     opacity: 0,
     scale: 0.1,
     zIndex: -5,
   },
 open: {
+  display: 'flex',
   opacity: 1,
   scale: 1,
   zIndex: 5,
@@ -102,7 +105,7 @@ open: {
   }
 },
 closed: {
-  opacity: 0,
+  display: "none",
 },
 };
 
@@ -203,13 +206,13 @@ useEffect(() => {
     <section className="aboutSection">
 
     <div className="whatIsNwd">
-          <h3>NWD is a digital mindfulness journal and daily planner with a difference.</h3>
+          <h1 className="aboutHeader">NWD is a digital mindfulness journal and daily planner with a difference.</h1>
           
         </div>
 
         <div className="aboutOne">
           <div className="explanationLeft">
-          <h3>Plan your day simply and smartly using our unique format designed for productivity and peace of mind.</h3>
+          <h1 className="aboutPageHeader">Plan your day simply and smartly using our unique format designed for productivity and peace of mind.</h1>
           </div>
           
           <h1 className="supportingImage">image</h1>
@@ -220,13 +223,13 @@ useEffect(() => {
           
         <h1 className="supportingImage">image</h1>
         <div className="explanationRight">
-        <h3 >Guarantee the dreams of a day match the meaning of your life using our interactive experiences and year mapping.</h3>
+        <h1 className="aboutPageHeader">Guarantee the dedication of a day matches the meaning of your life using our interactive experiences and year mapping.</h1>
         </div>
         </div>
 
         <div className="aboutThree">
         <div className="explanationLeft">
-        <h3>Immerse yourself in your diary through playback and insights to unlock deeper self-understanding.</h3>
+        <h1 className="aboutPageHeader">Immerse yourself in your diary through playback and insights to unlock deeper self-understanding.</h1>
         </div>
           <h1 className="supportingImage">image</h1>
 </div>
