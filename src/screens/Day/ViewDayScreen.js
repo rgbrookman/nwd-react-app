@@ -200,7 +200,7 @@ const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
 
   return (
     <>
-    { pageLoading && !days ? null : <> <Header /></> }
+  <Header />
        
         { pageLoading && !days ?
           <div className="pageLoading">

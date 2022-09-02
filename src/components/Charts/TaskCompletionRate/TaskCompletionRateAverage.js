@@ -47,7 +47,7 @@ const TasksCompletionRate = () => {
 
   zeroRemove();
 
-  const avg = d3.mean(avgArray).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:0});
+  const avg = Number(d3.mean(avgArray)).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:0});
  
 
 	return (

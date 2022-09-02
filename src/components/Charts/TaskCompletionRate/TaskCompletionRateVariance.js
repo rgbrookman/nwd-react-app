@@ -47,7 +47,7 @@ const TasksCompletionRate = () => {
 
   zeroRemove();
 
-      const deviation = d3.deviation(avgArray).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:0});;
+      const deviation = Number(d3.deviation(avgArray)).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:0});;
 
 	return (
 	<span className="statSpan">{deviation}</span>

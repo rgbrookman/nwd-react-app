@@ -150,12 +150,12 @@ onClick={()=>{
       <Col>
       <div className="landingPageBox"
       >
-        <a href={linkRefCreate}>Create</a>
+        <a href={linkRefCreate.toString()}>Create</a>
       </div>
         </Col>
         <Col>
         <div className="landingPageBox">
-          <a href={linkRefUpdate}>Update</a>
+          <a href={linkRefUpdate.toString()}>Update</a>
         </div>
           </Col>
           <Col>
@@ -253,7 +253,7 @@ onClick={()=>{
 }}>Platform Aim</button>
 
 <button className="landingPageButton"
-><a className="lpLinkMobile" href="/today">Log Your Day</a></button>
+><a className="lpLinkMobile" href="/today" >Log Your Day</a></button>
 </div>
 </>
 : null }
