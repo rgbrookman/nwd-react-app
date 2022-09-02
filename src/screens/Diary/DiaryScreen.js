@@ -108,11 +108,16 @@ useEffect(() => {
 
 <div className="topRow">
 
-<input
-type="date"
-value={datePicker}
-onChange={(e) => setDatePicker(e.target.value)}
-/>
+<select name="datePicker"
+      defaultValue={datePicker} onChange={(e) => setDatePicker(e.target.value)}>
+
+
+{ days && days.map(day => 
+<option key={day._id}
+
+>{day.logDate.slice(0,10)}</option> )}
+
+</select>
 
 <Button className="explainerButton d-none d-sm-flex"
 onClick={()=> {
