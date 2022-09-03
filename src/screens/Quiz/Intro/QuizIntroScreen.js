@@ -10,6 +10,7 @@ import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../NWD_Logo_White.png';
+import why from '../../../lnwh.gif';
 import './quizintro.css';
 
 export default function QuizScreen() {
@@ -77,21 +78,21 @@ export default function QuizScreen() {
             The <strong>Insight</strong> section of NWD is about giving anyone who wants it a completely different vantage point on their own life.
             <br />
             <br />
-             Our own eyes provide a view on life which in many ways is completely phenomenal. 
+             Our own eyes provide a view on life which is in many ways completely phenomenal. 
             Both the eyes themselves and the perspective they afford are brilliant at helping forge connections with other humans, 
             fabulous for studying details in our
-            immediate surroundings and terrific for facilitating the visceral glory of simply being alive.
+            immediate surroundings and terrific at facilitating the visceral glory of simply being alive.
             <br />
             <br />
-            However, this very same view is not good at all for 
-            breaking down our behaviours and turning the best and worst of what we do into greater joy and growth in a reliable, resilient and regular fashion.
+            However, this very same view is not well suited to
+            breaking down our behaviours and turning the best and worst of what we do into greater joy and growth reliably and regularly.
           </span>
           <br />
             <br />
           <hr className="dividingLine" />
           <br />
           <span>
-            All of the sections that compose NoWastedDays are especially designed to make many different vantage points possible.
+            All of the sections that make up NoWastedDays are especially designed to make many different vantage points on life possible.
             In the <strong>Insight</strong> section, you will find a host of graphs and charts that take your <strong>Today</strong> diary data
             and empower you, with a bit of time and understanding, to positively transform your level of self-awareness and self-assurance.
                 <br />
@@ -100,7 +101,7 @@ export default function QuizScreen() {
             the data in a few simple charts.
           <br />
           <br />
-            To open the door to safe, significant insight and action, there are two big buckets that need filling up first (see diagram).</span>
+            To open the door to safe, significant insight and action, there are two big buckets that need filling up first (see box on your right).</span>
           <br />
           <br />
           <strong className='emphasis'>‘The Art of Looking’</strong>
@@ -108,8 +109,7 @@ export default function QuizScreen() {
           <br />
           <br />
             The 'Art of Looking' encompasses my own personal experience from <s>700</s> over 800 days of NoWastedDays
-            diary inputs to all of the key mental and practical pillars that build a firm foundation from which you can reliably
-            and resiliently find a new perspective that transforms your life.</span>
+            diary inputs and the key mental and practical pillars that build a firm foundation from which you can reliably find a new perspective that transforms your life.</span>
     </div>
   <div className="rightCol">
   <div className="rightContent">
@@ -203,7 +203,7 @@ className="quizDiv">
       <span>
       <strong>
     a) knowing what data it is most worthwhile to collect is hard </strong><i className="aside">(and data is leveraged most
-    in spaces where what is most worth measuring is very easy to perceive)</i>
+    in spaces where measurement is considered obvious and easy)</i>
       <br />
       <br />
       <strong>
@@ -213,25 +213,25 @@ className="quizDiv">
       <br />
       <strong>
     c) being able to present it in a way that can systemically and safely create a positive change for most people is even harder still as
-    the last thing anyone wants is iatrogenic effects </strong><i className="aside">(a word for when medical interventions actually make the patient more sick)</i>
+    the last thing anyone wants is iatrogenic effects.</strong><i className="aside">(a word for when medical interventions actually make the patient more sick)</i>
     </span>
       <br />
       <br />
       <span>
-    This is a situation that NWD is trying to resolve and, in time, why that is a worth doing will take up more space on the site.
-    In the meantime, our vision is to support people unconditionally with being alive,
-    and providing this platform on a pay as you can (PAYC) model is one of many ways we hope to realise that vision.
+    NWD is trying to remedy these issues and, in time, why that is a worth doing will take up more space on the site.
+    However, in the meantime, our mission is clear - to support people unconditionally with being alive.
+    Providing this platform on a pay as you can (PAYC) model is one of many ways we can start to realise that goal.
     </span>
       <br />
       <br />
       <span>
-    In the present, however, lets turn our eyes to the <br /><strong className="emphasis">'Art of Looking'!</strong>
+    Back to the present, however, lets turn our eyes to the <br /><strong className="emphasis">'Art of Looking'!</strong>
     </span>
 
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<span><strong>Cool Image Explaining What I Am Talking About</strong></span>
+<img src={why} width="80%" />
 </div>
 </div>
 <div className="buttonRow">

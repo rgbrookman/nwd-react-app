@@ -55,6 +55,7 @@
   border-top: 2px solid lightgrey;
   height: 100%;
   padding: 6px;
+  overflow: hidden;
 }
 
 .negativeOutControl {
@@ -80,4 +81,8 @@
 padding: 0 6px 0 6px;
   border-radius: 5px;
   margin-top: 12px;
+}
+
+.why span {
+  font-size: 0.8em;
 }

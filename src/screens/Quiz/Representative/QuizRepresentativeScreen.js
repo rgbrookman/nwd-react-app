@@ -140,18 +140,21 @@ and you both have to trust and believe that money is has a value.
 The same is true with your entries.
 <br />
 <br />
-By lay down your honest thoughts - the ones you trust that summarise 
-what you felt and tried to do on any particularly day - and this act will pay you back in insight down the line.
+By laying down your honest thoughts - the ones you trust that summarise 
+what you felt and tried to do on any particularly day most intimately - you will be paid back with a far greater level of opportunity of insight down the line.
 <br />
 <br />
-NWD is not Instagram 
+Thought of another way, NWD is not Instagram.
 <br />
 <br />
 Here you are not incentivised or quietly encouraged to paint a higlight-reel picture of your life. 
 <br />
 <br />
-Here a key currency is honesty as that truth is positively correlated with greater potential for insight and, in turn, a greater 
-likelihood of transformation.
+Equally, the opposite is also not true. Honesty needn't mean a damning indictment or a crushingly cold assessment of your day. 
+<br />
+<br />
+Here on NWD, perhaps the key currency is complete honesty as that is positively correlated with greater potential for insight and, in turn, a greater 
+likelihood of self-transformation.
 </span>
 </div>
 <div className="rightCol">
@@ -265,7 +268,7 @@ className="quizDiv">
       <br />
       This ability to compare equivalent periods of time will give you extraordinary insights, and the only way to build it is this
       daily consistency; one day after the other of honest and specific inputs over as long a time as you possibly can. 
-      <i className="aside">(That all being true, remember: you can learn from why you didn't do a daily entry to as well!).</i>
+      <i className="aside">(That all being true, remember: you can learn from why you didn't do a daily entry to as well, so don't fall off the wagon completely if you miss a few days).</i>
         </span>
 </div>
 <div className="rightCol">

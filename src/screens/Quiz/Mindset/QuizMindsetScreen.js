@@ -107,7 +107,7 @@ className="quizDiv">
     <strong className="emphasis">The Present Moment</strong>
     <br />
     <br />
-    <strong className="emphasis">and an strong undercurrent Optimism</strong>
+    <strong className="emphasis">and a Strong Undercurrent of Optimism</strong>
     </span>
 
     <br />
@@ -147,10 +147,7 @@ className="quizDiv">
     <br />
     <span>
       Whilst it is not something we normally think of as being a part of working with data,
-      enabling creativity and free thinking when studying your insights is essential.
-      <br />
-      <br />
-      It is the particular skill and state that will join the hard to unite spaces, prompt the interesting questions
+      enabling creativity and free thinking when studying your insights is essential. It is the particular skill and state that will join the hard to unite spaces, prompt the interesting questions
       and create the mental distance required to turn signals into growth.
       </span>
         <br />
@@ -186,7 +183,7 @@ className="quizDiv">
       genuinely deep and creative thinking.</li>
           <br />
       <li><strong className="emphasis">Define</strong> the slot of time you are going to think within.</li>
-        <ul className="subList"><i className="aside">What makes a good time slot</i>
+        <ul className="subList"><i className="aside">(What makes a good time slot)</i>
           <li>
           This slot needs a pre-defined start
           </li>
@@ -278,35 +275,34 @@ className="quizDiv">
   <h2 className="quizHeaderWhite">A Chunk of Healthy Skepticism</h2>
 
     <span>
-    Sceptism is often mistaken for cyncism in our society - and both tend to be accompanied by a negative connotation
-    - but they are most certainly not the same.</span>
+    Skepticism is often mistaken for cynicism in our society but they are most certainly not the same.</span>
     <br />
     <br />
     <span>
-    Whilst just like any trait or outlook has its extremes, a level of sceptism that hugs the aristotliean mean <i className="aside">(as in, deployed smartly between the extremes whilst
-    accounting for your own natural tendencies)</i>, is a hugely healthy outlook.
+    Whilst just like any trait or outlook, it has its extremes, a level of skepticism that hugs the Aristotliean mean <i className="aside">(as in, is deployed smartly between the extremes whilst
+    accounting for your own natural tendencies)</i> is a hugely healthy outlook.
     <br />
     <br />
-    It is the backbone of progress. The scientist who doesn't just settle for an apparently correct solution and rather asks, 'how could this be wrong?'
+    It is the backbone of progress. The scientist who doesn't just settle for an apparently correct solution and rather asks skeptically, 'how could this be wrong?'
     is the one far more likely to get to the truth of a subject than the one in it to simply confirm his/her pre-existing belief, or simply takes the face value
     of the evidence laid in front of them as gospel.
     <br />
     <br />
     Furthermore, in general life, when we cease to be skeptical, we tend to accept whatever we are told as fact, when even minor scrutiny would lead to a better outcome
     for all parties. On the other side of the equation, when we are exclusively, billigerently skeptical, we do strafe in to cynicism;
-    and find outselves reluctant to believe in anything, undertake any action or believe
+    and find ourselves reluctant to believe in anything, undertake any action or believe
     anyone is putting good action behind a good intention.</span>
     <br />
     <br />
     <span>
-    But there is more we can add here; again, illucidated by a quote:
+    But there is more we can add here; again, with the help of a quote:
     </span>
     <br />
     <br />
     <hr className="dividingLine" />
     <br />
     <span>
-    John Berger was a famous art evangelist and tv presenter in the UK. His series of programmes called
+    John Berger was a famous art history scholar and tv presenter in the UK. His series of programmes called
     <strong> 'Ways of Seeing'</strong> in the 1970s were beautifully pitched
     to use art as a means of exploring how we have come to look at some many things in everyday life.
     </span>
@@ -345,21 +341,21 @@ className="quizDiv">
     It is arranged and presented according to its potential for good, but also it has inevitable limitations.
     <br />
     <br />
-    It is not your every waking thought, movement, feeling or foible.
+    Example limitation: It is not your every waking thought, movement, feeling or foible.
     <br />
     <br />
-    Your data is just the expression of a few self-reported intentions, actions and feelings.
+    Example limitation: Your data is just the expression of a few self-reported intentions, actions and feelings.
     <br />
     <br />
-    What you are looking at is just a mixture of lines, dots, marks and numbers on a page.
+    Example limitation: What you are looking at is just a mixture of lines, dots, marks and numbers on a page.
     <br />
     <br />
     Yet, for all their limitations, when looked at in the open mode, with due skepticism and an understanding of the context, these limited
-    arrangements can help you see deep inside yourself and change your very existence for the better.
+    arrangements can help you see deep inside yourself and change your very existence for the better, and can do even more so if you are good at asking 
+    'why' and 'how could my insight here be wrong', in a healthily contrarian manner.
     <br />
     <br />
-    Overall, to summarise, treat every signal you find in the open mode with skepticism. This due scrutiny -
-    the extra asking of <strong>'why is this happening?'</strong> in a calm, curious way - will help you get to the deepest
+   To summarise, treat every signal you find in the open mode with skepticism. This diligent scrutiny will help you get to the deepest
     lying truth and be less shaken by the things you saw and felt on first glance.
     </span>
 
@@ -401,33 +397,29 @@ Presence and mindfulness are much talked about and engaged with nowadays, partic
 <br />
 <br />
 Further and further engagement with mindfulness practices have the power to not only allow you to extricate yourself from stress and anxiety,
-but distant you from notions of self, and attachment to the past and the future more generally.
+but distance you from notions of self, and attachment to the past and the future more generally.
 <br />
 <br />
-In this state, people often describe themselves as feeling more and more connected with all facets of the world. They no feel like an isolated
+In this state, people often describe themselves as feeling more and more connected with all facets of the world. They no longer feel like an isolated
 ego with a past and a future, but rather as a pulsating node in one giant organism; completely alike and united with the rest of existence.
 </span>
 <br />
 <br />
 <span>
-Whilst I am definitely not saying that the only way to get value from your insights is to be a zen buddhist monk or think in
-some crazily esoteric fashion, however, this disintegrating of self and existing only in the present moment is really worth flagging.
+Whilst I am definitely not saying that the only way to get value from your insights reach this level of existential one-ness, 
+however, this disintegrating of self and existing only in the present moment is something we can use with real effect.
 </span>
 <br />
 <br />
 <span>
 As we explored earlier, looking at your habits played back in data can be a quite a triggering experience for people.
-It is so easy to lurch to thoughts such as, 'Man, I regret doing that', 'Why on earth did I do that?' or
-'I definitely want to do that more in the future', but all of these thoughts should be looked at with certain caution.
-You can't change the past and you can't effect the future ahead of time...
-<br />
-<br />
-<strong>All you can ever do is take care of the present moment as best as possibly can.</strong>
+It is so easy to lurch to thoughts such as, 'Man, I regret doing that' or 'Why on earth did I do that?' or look at even a great day and be like, 
+'thank goodness for that; that is more like me.' All of these thoughts should be looked at with certain caution.
 </span>
 <br />
 <br />
 <span>
-On the present moment, Johnny Wilkinson says something inparticular in the talk to the right that has stuck in my mind:</span>
+Why that is true is something I learned from Johnny Wilkinson in the talk to the right.</span>
 <br />
 <br />
 <span>
@@ -436,7 +428,7 @@ He says, <br /><strong className="emphasis">'you never live a consequence in the
 <br />
 <br />
 <span>
-Most people I have relayed that quote too wriggle and writhe a little bit, and go "what? obviously there are consequences.
+Most people I have relayed that quote to wriggle and writhe a little bit, and go "what? obviously there are consequences.
 Everything I do has a consequence, everything has a cause and effect".
 </span>
 <br />
@@ -445,8 +437,8 @@ Everything I do has a consequence, everything has a cause and effect".
   In physical sense, this is undeniable, but we are dealing in the realm of the mental and emotional.
   <br />
   <br />
-  In short, Wilkinsons remark is saying that the suffering or triggers we experience are a product of an attachment with the past,
-  or projections into the future, and that if are you alive entirely and solely in the present moment, you will avoid that suffering.
+  In short, Wilkinson's remark is saying that the suffering or triggers we experience are a product of an attachment with the past,
+  or projections into the future, and that if you are, instead, exclusively alive entirely and solely in the present moment, you will avoid that suffering.
   <br />
   <br />
   <hr className="dividingLine" />
@@ -472,7 +464,8 @@ Everything I do has a consequence, everything has a cause and effect".
   There is nothing wrong with having a vision for the future,
   and this whole thing is about growing so I am obviously not against that, but don't mistake a commitment to grow
   with projecting your self into the future,
-  panicking over whether the projections you make will come to pass.
+  panicking over whether the projections you make will come to pass, and seeing your only just of standing upright as a confidence person 
+  if that vision plays out.
 <br />
 <br />
   <strong>To summarise, as Johnny Wilkinson said, there are no consequences in the present moment.
@@ -516,10 +509,9 @@ className="quizDiv">
       Another human outlook that can get a bit of kicking in life at the moment is optimism.
       <br />
       <br />
-    In a perpetually alarming and negative news cycle, pessimsim about the human condition - entipified by a bleak outlook on the future
+    In a perpetually alarming and negative news cycle, pessimism about the human condition - a solely bleak outlook on the future
     and a dwindling association with hope - has become over valued by the apparently wise and perceptive.
-    This tends to leave optimism relegated
-    to the presumed shallow and naive.
+    This tends to leave optimism relegated to the presumed shallow and naive.
       <br />
       <br />
     However, whilst there is no denying that the kind of absent optimism that just assumes things will get better without
@@ -531,7 +523,7 @@ className="quizDiv">
     I have three lovely gobbets that I refer back to in mind when I reflect on optimism that you can explore by clicking on the buttons below.
       <br />
       <br />
-    Elaine Stritch describes the balance of optimism and presence well, in her classic raw edged style.
+    #1: Elaine Stritch describes the balance of optimism and presence well, in her classic raw edged style.
       <br />
       <br />
     <strong>"I pray that I may live expectantly. To live expectantly. "What's going to happen on Sunday?", and on Sunday, "What's going to happen on Monday?"
@@ -562,13 +554,13 @@ Finally, a third quote: the actor, raconteur and humanitarian Peter Ustinov said
     could be, and a pessimist was someone who finds out anew every morning."</strong>
     <br />
       <br />
-    This beautiful demonstrates the difference between mindless hope without action or awareness of reality,
-    and the kind of optimism I am advocating.
+    These three thouts beautifully demonstrate the difference between mindless hope without action or awareness of reality,
+    and the use of optimism in an honest, empowering way.
     <br />
       <br />
     You know it will be hard, you know the world can be ruthless, but that isn't reason to despair
-    - it is more reason to be confident that the effort you make will be a) its own rewards and b) worth it in the end, regardless
-    if things go exactly to plan or not, and c) a better option for maintain a joyful perspective than the former.
+    - it is more reason to be confident that the optimistic effort and attitude you bring will be a) its own rewards, b) worth it in the end, regardless
+    if things go exactly to plan or not, and c) an antidote, rather than a salve, to life's harder to hit curve balls.
 </span>
 
 </div>

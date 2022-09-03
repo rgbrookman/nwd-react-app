@@ -99,7 +99,7 @@ export default function QuizFeelingScreen() {
     <br />
     <br />
     <span>
-      This score is mapped in a time series line graph (click on 'view output to see it').
+      This score is mapped in a time series line graph <i className="aside">(click on 'view output to see it')</i>.
       This enables you to see how that 0.0 to 5.0 score has looked over time.
     </span>
     <br />
@@ -113,7 +113,7 @@ export default function QuizFeelingScreen() {
     number of days you have logged. This is otherwise known as the 'mean'.</span>
         <br />
             <br />
-  <span>2.</span><span className="emphasis">Variance:</span><span> How much your feeling score is likely to differ from your average.
+  <span>2.</span><span className="emphasis">Deviation:</span><span> How much your feeling score is likely to differ from your average.
   The higher this number is, the larger the difference from the average is.</span>
         <br />
         <br />
@@ -200,7 +200,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>map of learnings</p>
+<p>some super cool diagram</p>
 </div>
 </div>
 <div className="buttonRow">
@@ -322,6 +322,7 @@ className="quizDiv">
 <div className="rightCol">
 <div className="rightContent">
 <span><strong>Some sick video of me talking through all the stuff you've just read</strong></span>
+<a>The Links I mentioned</a>
 </div>
 </div>
 <div className="buttonRow">

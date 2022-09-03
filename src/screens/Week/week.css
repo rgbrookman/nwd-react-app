@@ -64,7 +64,7 @@ margin: 0 12px;
 }
 
 .form-control {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   font-weight: '700';
   color: #46A46C;
   font-size: clamp(1rem, 1vw, 5vw);

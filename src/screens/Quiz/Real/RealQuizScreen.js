@@ -2037,7 +2037,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>No, because you may find that the thing you did instead is the thing you should be optimising your life around.</span>
+  <span className="failingSpan">No, because you may find that the thing you did instead is the thing you should be optimising your life around.</span>
   </motion.div>
 
 
@@ -2053,7 +2053,7 @@ className="quizDiv">
     is3Selected(selected2 => false);
     is4Selected(selected2 => false);
   }}>
-  <span>No, because that is a reality to which you are now more aware. This anagorisis has put you in a position to act more knowingly.</span>
+  <span className="failingSpan">No, because that is a reality to which you are now more aware. This anagorisis has put you in a position to act more knowingly.</span>
   </motion.div>
 
 
@@ -2068,7 +2068,7 @@ className="quizDiv">
     is3Selected(selected2 => true);
     is4Selected(selected2 => false);
   }}>
-  <span>No, because we are not dealing in terms of bad or good as the way we relate to things that feel bad now is capable of 
+  <span className="failingSpan">No, because we are not dealing in terms of bad or good as the way we relate to things that feel bad now is capable of 
 huge transformation</span>
   </motion.div>
 
@@ -2087,7 +2087,7 @@ huge transformation</span>
     is3Selected(selected2 => false);
     is4Selected(selected2 => true);
   }}>
-  <span>Whilst it is nice and worthy to do the things we said we would do, the awakening that can accompany 
+  <span className="failingSpan">Whilst it is nice and worthy to do the things we said we would do, the awakening that can accompany 
 understanding why we didn't do them - as described in the 3 other answers - is certainly sufficient to not see any isolated 
 event as "bad".
 </span>

@@ -105,7 +105,7 @@ className="quizDiv">
         <span>1.</span><span className="emphasis">Average:</span><span> The result of adding up all of your moment scores, and dividing them by the total number of days you have logged.</span>
               <br />
               <br />
-                        <span>2.</span><span className="emphasis">Variance:</span><span> How much any of your moment related scores are likely to differ from the average.
+                        <span>2.</span><span className="emphasis">Deviation:</span><span> How much any of your moment related scores are likely to differ from the average.
                         The higher this number is, the more likely your score is to be significantly different from the average.</span>
                     <br />
                     <br />
@@ -212,7 +212,7 @@ className="quizDiv">
 <span>
   In the feeling score section, we kicked off by talking about peripeteia and anagorisis.
   Boy! I have had my fair share of those over my time using NWD, and
-  there may be no better way to help you all cope with the uncomfortable revelations in your own data than to be
+  there may be no better way to help you all cope with the uncomfortable revelations in your own data than to
  share some of the most revealing things my data has tried to tell me about myself.
 </span>
 <br />
@@ -249,23 +249,15 @@ Drum beat heard in the depths again!
   <br />
 <br />
 Remember, these signals, just as your own will be, are objective forces without emotion and attachment, and not a value judgement.
-<br />
-<br />
-If a cute metaphor helps To spot a signal is a bit like walking through a forest on a glorious summers day - without a care in the world, enjoying the rustle of the wind in the trees and 
-the melodic chirping of the birds in the trees - and then seeing a path that you've never noticed before.
-<br />
-<br />
-You wouldn't look at that path and be like, 'Man! I am such an idiot for not noticing that before!'. 
-You are far more likely to say, 'Ooh. I wonder where that leads!', and then, eyes and mind wide open, 
-take the excitable first steps down in the newly found direction.</i>
+</i>
 <br />
 <br />
 <span>
-By being a hugely effectual generator of such signals in a way that your own first person perspective never can 
-and the impression of others cannot either, NWD, and two full buckets, can be a massively helpful tool for greater self-awareness. 
+By being a hugely effectual generator of such signals (in a way that your own first person perspective never can
+and the impression of others cannot do consistently), NWD, and two full buckets, can be a massively helpful tool for greater self-awareness. 
 <br />
 <br />
-  Obviously, the signal cannot provide a solution, it can only point towards an area of inquiry and curiousity which, in time, 
+  Obviously, the signal cannot provide a solution, it can only point towards an area of enquiry and curiousity which, in time, 
 can provide more clarity (or comfort in the unknowing, which is ultimately the more powerful mental force).
   <br />
   <br />
@@ -303,7 +295,7 @@ understanding them and transforming my relationship with them
  - and getting the best from them.
    <br />
   <br />
-     Overall summary: XYZ
+     Overall summary, expect your data to look like a hot mess, remember the signals it provides are objective and unemotional, not personal and emotional.
   </span>
   <br />
 
@@ -352,8 +344,8 @@ setMyLearnings2(myLearnings2 => true);
   This is another thing which is obvious to us in some realms, but often escapes us when referring to our own lives and minds.
 <br />
 <br />
-  For example, if you are trying to gain some weight, having a large portion of white rice with your protein, fibre, fats etc, is a good thing i.e. it is good
-  for the end of gaining weight. However, if you are trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
+  For example, if you are trying to gain some weight, having a large portion of white rice and with your protein, fibre, fats etc and a dessert for afters, is a good thing i.e. it is good
+  for the end of gaining weight - what you are optimising for. However, if you are trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
 <br />
 <br />
   We tend to use words bad or good quite lazily in everyday discourse;
@@ -363,30 +355,30 @@ setMyLearnings2(myLearnings2 => true);
   over time (usually ameliorating from initial bad perception to anywhere between somewhat good and really good!).
 <br />
 <br />
-  This final point is the exact murky we space we are dealing with by optimising for joy and growth.
+  This final point is the exact murky space we are dealing with by optimising for joy and growth.
   When you are dealing with bad or good in relation to individual joy and growth,
   it is spectacularly unhelpful to perceive the vast swathe of life as 'bad'.
 <br />
 <br />
   All you can say with anything like certainty is that something either is 'good' because
-  it is helping provide in the moment or nurture for the future a relationship
+  it is helping provide in the moment, or confidently nurture for the future, a relationship
   with joy and growth that you know deeply resonates with yourself and is of deep authentic value,
-  or that something has the potential to be good
-  by offering  you a chance to transform your relationship with a habit,
-    behaviour, force that in turn will provide moments and nurturing ability described above.
+  or that something has the potential for good
+  by offering you a chance to transform your relationship with a habit or 
+    behaviour that in turn will provide the kind of 'good' moments and nurturing ability described above.
 </span>
 <br />
 <br />
 <span>
-  It's a bit like when atheletes are asked as a veiled reference to struggles in their life, 'Looking back, do you think you would you have changed anything?'.
+  It's a bit like when athletes are asked as a veiled reference to struggles in their life, 'Looking back, do you think you would you have changed anything?'.
   Far more often than not, they say something to the affect of "No, because without that difficult time in my life, I might never have made it here today".
 </span>
 <br />
 <br />
 <span>
-As such, as I refer back to the mentions of my particular sufferings, the many days, decisions and moments that were shaped by their 'worst' compoments, all help them fall in the
-bucket of 'potential for good'. No one comes through their early life and early adult life unscathed i.e. free from trauma, incident, perfectly calibrated with such peak
-levels of existential conscious that result in a near divine experience of every present moment. 
+As such, as I refer back to the mentions of my particular sufferings, the many days, decisions and moments that were shaped by their 'worst' components, all help them fall in the
+bucket of 'potential for good'. No one comes through their early life and early adult life unscathed i.e. free from trauma, incident or anywhere neear perfectly calibrated with such peak
+levels of existential conscience that result in a near divine experience of every present moment. 
 <br />
 <br />
   We all have a long list of a 'potential for goods' in our live,
@@ -394,6 +386,9 @@ and this is a joy in life; finding a way to transform our condition each day. Ev
   <br />
   <br />
   NWD has taught me to relish this opportunity that each day presents and will endeavour to do so every day of my life.
+  <br />
+  <br />
+  Overall, remember in the largest, most prevailing sense, we are not dealing in the realms of good and bad; simply good and the potential for good.
 </span>
 <br />
 
@@ -444,19 +439,19 @@ Remember our core truths:
 <strong>Every action is presently good or capable for transformation to good.</strong>
 <br />
 <br />
-  Similarly to this wholly not bad or good point, what is getting in the way of me doing what I said I would do could be anywhere on the following scale:
+  Similarly to this wholly not bad or good point, what is getting in the way of me doing what I said I would do could fall anywhere on the following scale:
   <br />
   <br />
   <strong className="emphasis">something I should 100% avoid doing and or craving because I have near complete confidence it is inversely correlatd with joy and growth.</strong>
   <br />
   or...
   <br />
-  <strong className="emphasis">something that I should optimise lots of my life towards because, without me realising it before now, it is something I experience huge joy and or growth from every time I do it.</strong>
+  <strong className="emphasis">something that I should, in fact, optimise lots of my life towards because, without me realising it before now, it is something I experience huge joy and or growth from every time I do it.</strong>
 <br />
 <br />
   To repeat, what is getting in the way of you doing what you said you would do, which is really the umbrella question the covers each of the moment scores,
-  may be something that feels like a classic habit faux-pas like (think: getting distracted by instagram, or losing time due to poor time management). But,
-  it could also be the actual joys of your lifetime getting in the way, that you are suppressing or not simply not aware of yet, to use Jim Carrey's line,
+  may be something that feels like a classic habit faux-pas (think: getting distracted by instagram, or losing time due to poor management of your day). But,
+  it could also be the actual joys of your lifetime getting in the way, that you are suppressing or not simply not aware of yet perhaps, to use Jim Carrey's line,
   due to 'fear disguised as practicality'.
 <br />
 <br />
@@ -465,7 +460,7 @@ Remember our core truths:
 I have had many such days, and it does hit you over the head when you see it on the screen.
 <br />
 <br />
-You stare at a day where in the morning you mapped out this temporal mindfield of a plan featuring a million things,
+You stare at a day where in the morning you mapped out this temporal mind-field of a plan featuring a million things,
 juggling work and play in some cartesian web of personal 'mastery'.
 <br />
 <br />
@@ -473,7 +468,7 @@ But all you did in the end is have a coffee, get an ice cream with your girlfrie
 taking the odd moment to dance together in the fading light.
 <br />
 <br />
-You see a big feeling score attached to such 'disastrous' day in terms of those pre-planned moments and it gets your attention.
+You see a big feeling score attached to such a 'disastrous' day in terms of those pre-planned moments and it gets your attention.
 </span>
 <span>
 <br />
@@ -484,7 +479,7 @@ The signals start popping up off the page:
 "Am I optimising for the right things?"
 <br />
 <br />
-"How much time to I make for some serendepitity and quality time now compared to how much ?"
+"How much time should I make for some serendipity and such quality time now compared to now?"
 <br />
 <br />
 <hr className="dividingLine" />
@@ -492,35 +487,37 @@ The signals start popping up off the page:
 On the flip side, here are a few things that, when delving into my diary, I found were getting in my way in the more conventional sense.
 <br />
 <br />
-Not blocking time: I would say I wanted to do something, but not block out some time to focus on it specifically.
+<strong>Not blocking time:</strong> I would say I wanted to do something, but not block out a specific time window to focus on and complete it.
 <br />
 <br />
-Not making a moment easier to action: Often true of exercise. Writing in 'Back and Biceps workout' means think of what exercise to do, in what order,
+<strong>Not making a moment easier to action:</strong> (Often true of exercise.) Writing in 'Back and Biceps workout' means think of what exercises to do, in what order,
 how many sets, reps, rest, where are you are going to do it. But instead linking to a pre-made plan or a YouTube workout really reduces
 decision fatigue and helps increase all my moment scores.
 <br />
 <br />
-Not asking for help: Your moments don't all expressly relate to things you have to do yourself. Putting things in motion and calling on the help
+<strong>Not asking for help:</strong> Your moments don't all expressly relate to things you have to do yourself. Putting things in motion and calling on the help
 of experts and friends is essential for a) achieving the things you'd like to do, b) getting more joy via sharing the journey with others and c) learning
 more yourself.
 <br />
 <br />
-Not blocking websites on my laptop: I can definitely be guilty of falling into a concentration catastrophe by loading up YouTube, whatsapp, BBC news, etc
+<strong>Not blocking websites on my laptop:</strong> I can definitely be guilty of falling into a concentration catastrophe by loading up YouTube, whatsapp, BBC news, etc
 when my brain is working on a hard task. Using the google chrome extension 'Focus' really helps with that.
 <br />
 <br />
-Looking at social media first thing: I have found this recently. I finally put an iPhone 5C I had been using to rest, and replaced it with a refurbished
+<strong>Looking at social media first thing:</strong> I have found this recently. I finally put an iPhone 5C I had been using to rest, and replaced it with a refurbished
 iPhone 13. One of the huge virtues of an old phone is that is much harder to get distracted, even more so when the tiny screen is cracked. But on this brand new
 device, everything is big, pretty and crystal clear.
 <br />
 <br />
-Not saying no to things that came up but weren't on the list: As I referred to earlier,
+<strong>Not saying no to things that came up but weren't on the list:</strong> As I referred to earlier, I have certainly been a bit of a people pleaser in my past, and sometimes this would 
+derail my day simply because I couldn't say no.
 <br />
 <br />
-Not engaging with my list more: I like to keep the browser tab open or my today page linked in my bookmarks so I can easily come back to it.
+<strong>Not engaging with my list more:</strong> I like to keep the browser tab open or my today page linked in my bookmarks so I can easily come back to it, and now 
+I can view it on my phone as well. But when it was just a spreadsheet in its very early days, this was harder to do. 
 <br />
 <br />
-Not writing moments specifically enough: How are you meant to complete a task with no parameters, of time, of detail
+<strong>Not writing moments specifically enough:</strong> How are you meant to complete a task to the full with no parameters, of time, of detail.
 </span>
 </div>
 <div className="rightCol">

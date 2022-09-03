@@ -89,3 +89,7 @@
   border: 1px solid #46A46C;
   margin: 0 6px 0 6px;
 }
+
+.failingSpan {
+  font-size: 0.8em;
+}

@@ -41,6 +41,8 @@ export default function QuizDebriefScreen() {
     document.title = "Art of Looking";
   }, []);
 
+  const school = '1JCJVaK48RM';
+
   return (
     <>
     
@@ -143,7 +145,6 @@ variants={showHideState}>
 <motion.div className="why"
 animate={pic ? "hide" :"show"}
 variants={showHideState}>
-<h2 className="quizHeaderGreen">Why?</h2>
 <span><strong>Confidence</strong> -  There will always be things that you
 contributed positively and you deserve to consolidate the confidence from those actions.</span>
 </motion.div>
@@ -152,7 +153,7 @@ className="debriefButton"
 onClick={()=> {
   setPic(pic => !pic);
 }}
->Why role does this bucket play?</motion.button>
+>What role does this bucket play?</motion.button>
 </motion.div>
 
 <div className="positiveOutControl">
@@ -165,7 +166,6 @@ variants={showHideState}>
 <motion.div className="why"
 animate={poc ? "hide" :"show"}
 variants={showHideState}>
-<h2 className="quizHeaderGreen">Why?</h2>
 <span><strong>Gratitude</strong> - There will always be things that benefitted a situation
 over which you had less than zero control over. Giving gratitude to these things will help you feel better more often.</span>
 </motion.div>
@@ -174,7 +174,7 @@ className="debriefButton"
 onClick={()=> {
   setPoc(poc => !poc);
 }}
->Why role does this bucket play?</motion.button>
+>What role does this bucket play?</motion.button>
 </div>
 
 <div className="negativeInControl">
@@ -187,9 +187,8 @@ variants={showHideState}>
 <motion.div className="why"
 animate={nic ? "hide" :"show"}
 variants={showHideState}>
-<h2 className="quizHeaderGreen">Why?</h2>
 <span><strong>Construction</strong> - There will always be things you could have instigated in better time or owned more entirely.
-Articulating these things will help you heathily detach from them; seeing them only in objective opportunity terms versus
+Articulating these things will help you healthily detach from them; seeing them only in objective opportunity terms versus
 character flaws.</span>
 </motion.div>
 <motion.button
@@ -197,7 +196,7 @@ className="debriefButton"
 onClick={()=> {
   setNic(nic => !nic);
 }}
->Why role does this bucket play?</motion.button>
+>What role does this bucket play?</motion.button>
 </div>
 <div className="negativeOutControl">
 <motion.div className="explain"
@@ -209,7 +208,6 @@ variants={showHideState}>
 <motion.div className="why"
 animate={noc ? "hide" :"show"}
 variants={showHideState}>
-<h2 className="quizHeaderGreen">Why?</h2>
 <span><strong>Transcendence</strong> - Your emotional response to a situation is a force that blurs the boundary between what you could and could not control.
 Honestly articulating what you could not control will allow you to detach and, in time, perhaps even forgive and then love those forces
 for how they have shaped and strengthened your outlook.</span>
@@ -219,7 +217,7 @@ className="debriefButton"
 onClick={()=> {
   setNoc(noc => !noc);
 }}
->Why role does this bucket play?</motion.button>
+>What role does this bucket play?</motion.button>
 </div>
 
 
@@ -249,7 +247,7 @@ onClick={()=> {
   <span>
     There can be few more talked about things online than confidence; how you get it, how you exude it, how you keep it. 
     If you are man in your teens, 20's or 30's, you are only ever one Youtube advert or social media suggestions away from being 
-littered with advice from a certain brand of charisma experts, and confidence masters.
+littered with advice from a certain brand of charisma experts, and self-certified confidence gurus.
   </span>
   <br />
   <br />
@@ -260,9 +258,9 @@ thought, but there are truths about confidence that can empower anyone build the
   <br />
   <br />
   <span>
-    A fundamental truth about consilidating confidence is that within any outcome that you have exerted some genuine control over
-    - whether it was the most culturally celebrated, intelllectually exuberant, physically magnificent,
-    god-like accomplishment or was the most apparently abject mistep leading to an painful, reputation tainting defeat
+    A fundamental truth about consolidating confidence is that within any outcome that you have exerted some genuine control over
+    - whether it was the most culturally celebrated, intellectually exuberant, physically magnificent,
+    god-like accomplishment or the most apparently abject misstep leading to an painful, reputation tainting defeat
     - there will be something that you contributed to the situation that was represents a positive impact
     towards the goal in question. 
         <br />
@@ -293,6 +291,10 @@ thought, but there are truths about confidence that can empower anyone build the
 <li>Nurturing trust to the point that someone believed that you could play your role in achieving a team outcome.</li>
       <br />
   <li>Believing in yourself</li>
+      <br />
+      <li>Emotional control</li>
+      <br />
+      <li>Application of technical skills</li>
       <br />
 </ul>
 Be careful here as overstating your impact on something is as bad as failing to capture what confidence you did earn. 
@@ -350,12 +352,13 @@ className="quizDiv">
       intersect...
 
       - all the love, hate, pioneering effort, balking chance, migration, stagnation, inflation and procrastination;
-      the dizzing lineage of people, places, processes, postulations, perambulations and prognostications that go back even just a
+      each of the dizzying lineage of people, places, processes, postulations, perambulations and prognostications that go back even just a
       couple of generations, let alone a longer period of time and space -
 
-
-      for you to even to have a chance to exist in
-      the first place. The chance is so mind boggling small that you can't help but be brought back to the present moment 
+      for you to even to have a chance to exist in the first place. 
+      <br />
+    <br />
+      The chance is so mind bogglingly small that you can't help but be brought back to the present moment 
       and with a bit of perspective in tow.
     </span>
     <br />
@@ -366,7 +369,7 @@ that happened before your life that put you in a position to live you had no con
  but it is possible to feel intense gratitude for, and that is what this section is about.
       <br />
       <br />
-      In a more distilled and present tense fashion, there is so much good that is afforded to us by others on a daily
+      In a more distilled and present tense fashion, there is so much good that is afforded to us by other people and things on a daily
       basis that it is important to be grateful for it.
     </span>
     <br />
@@ -385,7 +388,7 @@ that happened before your life that put you in a position to live you had no con
     over which you had less than zero control.
     <br />
     <br />
-    To summarise, ply your 'Positive & Out of Your Control' box with all of this environmental factors and
+    To summarise, ply your 'Positive & Out of Your Control' box with, in order of importance, as many of the environmental factors that helped you as possible and
     you will feel a huge wash of gratitude and goodness!
     </span>
 </div>
@@ -431,7 +434,7 @@ className="quizDiv">
     <br />
     <br />
     We assume that we are not idiots and, as a result, should only be making choices that represent the best of our accumulated knowledge
-    and demonstrate our godly apprehension.
+    and demonstrate our near-godly apprehension.
   </span>
   <br />
   <br />
@@ -470,7 +473,11 @@ as the kind of self-insight and awareness that is beautifully symbolic of both y
 </div>
 <div className="rightCol">
 <div className="rightContent">
-
+<iframe className='video'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${school}?start=0`}>
+</iframe>
 
 </div>
 </div>
