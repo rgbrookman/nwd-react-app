@@ -56,6 +56,8 @@ const TasksAttempted = () => {
         svg.append('g')
           .attr('transform', 'translate(0,' + height + ')')
           .call(d3.axisBottom(x))
+          .style("font-family", "'caveat', cursive")
+          .style("opacity", "0.3")
 
         // Get the max value of counts
         const max = d3.max(taDataFinal, function(d){return d.ta})
@@ -64,9 +66,15 @@ const TasksAttempted = () => {
         const y = d3.scaleLinear()
               .domain([0, max])
               .range([height,0])
+              
 
         svg.append('g')
           .call(d3.axisLeft(y))
+          .style("font-family", "'caveat', cursive")
+          .style("font-family", "'caveat', cursive")
+					.style("font-weight", "700")
+					.style("font-size", "16px")
+          .style("opacity", "0.3")
 
         // Draw line
         svg.append('path')
@@ -78,6 +86,60 @@ const TasksAttempted = () => {
                 .x(function(d){return x(d.date)})
                 .y(function(d){return y(d.ta)})
             )
+
+          const Tooltip3 = d3.select('#d3demo2')
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "2px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
+            .style("font-size", "8px")
+        
+          const mouseover = function(d) {
+            Tooltip3
+              .style("opacity", 1)
+              
+            d3.select(this)
+              .style("stroke", "black")
+              .style("opacity", 1)
+            }
+
+      
+          const mousemove = (event, d) => {
+
+          const [x, y] = d3.pointer(event);
+
+          Tooltip3
+            .text(`Date: ${d.date} TA: ${d.ta} `)
+            .style("left", x + "px")
+            .style("top", (y + 100) + "px")
+        };
+
+          const mouseleave = function(d) {
+          Tooltip3
+            .style("opacity", 0)
+
+          d3.select(this)
+            .style("stroke", "none")
+            .style("opacity", 0.8)
+          }
+
+            svg
+						.append("g")
+						.selectAll("dot")
+						.data(taDataFinal)
+						.enter()
+						.append("circle")
+						  .attr("cx", function(d) { return x(d.date) } )
+						  .attr("cy", function(d) { return y(d.ta) } )
+						  .attr("r", 6)
+						  .attr("fill", "#fff")
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
 
   }, []);
 

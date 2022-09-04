@@ -63,6 +63,8 @@ day.taskCompletionRate = tcr;
         svg.append('g')
           .attr('transform', 'translate(0,' + height + ')')
           .call(d3.axisBottom(x))
+          .style("font-family", "'caveat', cursive")
+          .style("opacity", "0.3")
 
         // Get the max value of counts
         const max = d3.max(tcrDataFinal, function(d){return d.tcr})
@@ -74,6 +76,10 @@ day.taskCompletionRate = tcr;
 
         svg.append('g')
           .call(d3.axisLeft(y))
+          .style("font-family", "'caveat', cursive")
+					.style("font-weight", "700")
+					.style("font-size", "16px")
+          .style("opacity", "0.3")
 
         // Draw line
         svg.append('path')
@@ -85,6 +91,61 @@ day.taskCompletionRate = tcr;
                 .x(function(d){return x(d.date)})
                 .y(function(d){return y(d.tcr)})
             )
+
+            const Tooltip1 = d3.select('#d3demo4')
+            .append("div")
+            .style("opacity", 0)
+            .attr("class", "tooltip")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "2px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
+            .style("font-size", "8px")
+        
+          var mouseover = function(d) {
+          Tooltip1
+            .style("opacity", 1)
+            
+          d3.select(this)
+            .style("stroke", "black")
+            .style("opacity", 1)
+          }
+
+      
+          const mousemove = (event, d) => {
+
+          const [x, y] = d3.pointer(event);
+
+          Tooltip1
+            .text(`Date: ${d.date} MRR: ${d.tcr} `)
+            .style("left", x + "px")
+            .style("top", (y + 100) + "px")
+        };
+
+          var mouseleave = function(d) {
+          Tooltip1
+            .style("opacity", 0)
+
+          d3.select(this)
+            .style("stroke", "none")
+            .style("opacity", 0.8)
+          }
+
+            svg
+						.append("g")
+						.selectAll("dot")
+						.data(tcrDataFinal)
+						.enter()
+						.append("circle")
+						  .attr("cx", function(d) { return x(d.date) } )
+						  .attr("cy", function(d) { return y(d.tcr) } )
+						  .attr("r", 6)
+						  .attr("fill", "#fff")
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
+              
 
 
   }, []);

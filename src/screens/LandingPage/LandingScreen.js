@@ -173,7 +173,7 @@ onClick={()=>{
       <Container className="selectionContainer mt-3">
       <Row>
       <Col>
-        {years && years.map((year) =>
+        {!years ? <Loading /> : years.map((year) =>
         <div key={year._id} className="landingPageBox inactive"
         onClick={()=> {
           setClickBox(clickBox => !clickBox);
@@ -185,7 +185,7 @@ onClick={()=>{
               )}
       </Col>
       <Col>
-      {weeks && weeks
+      {!weeks ? <Loading /> :weeks
             .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1 )
             .map((week) => (
 
@@ -204,7 +204,7 @@ onClick={()=>{
       </Row>
       <Row className="mt-3">
       <Col>
-      {days && days
+      {!days ? <Loading /> : days
             .filter((day, i, days) => days.indexOf(day) === days.length -1 )
             .map((day) => (
 
