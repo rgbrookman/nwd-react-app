@@ -10,8 +10,6 @@ export default function RegisterScreen() {
 
   return (
     <main id="registerScreen">
-
-
     <Register />
       <span>Already have a NWD, login <a href="/login">here...</a></span>
     </main>

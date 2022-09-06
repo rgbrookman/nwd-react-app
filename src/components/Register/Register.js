@@ -27,13 +27,12 @@ export default function Register({ history }) {
 
 
   const submitHandler = async (e) => {
-    e.preventDefault();
-
+    await e.preventDefault();
    if (password !== confirmPassword) {
-     setMessage("Passwords do not match");
+     await setMessage("Passwords do not match");
    } else {
      await dispatch(register(name, email, password ));
-     navigate('/login');
+     await navigate('/login');
    }
     };
 

@@ -353,8 +353,8 @@ input::-webkit-inner-spin-button {
   
   .boxA {
     width: 100%;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .questionTitleButtonsDisplay {
@@ -373,7 +373,7 @@ input::-webkit-inner-spin-button {
   .momentDisplay h5
   {
     font-family: 'Caveat', cursive;
-    font-size: clamp(0.8em, 2em, 4em);
+    font-size: clamp(0.8em, 1.2em, 2em);
     color: #46A46C;
   }
   
@@ -395,6 +395,7 @@ input::-webkit-inner-spin-button {
   .momentDisplay .questionTitleButtonsDisplay .editDelete
   {
     display: none;
+    height: auto;
   }
   
   .thankYouDisplay:hover .editDelete,

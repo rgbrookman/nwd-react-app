@@ -24,7 +24,7 @@ const TasksCompletionRate = () => {
     let sum = day.momentOneScore + day.momentTwoScore + day.momentThreeScore + day.momentFourScore + day.momentFiveScore;
     day.total = sum;
 
-    let count = (day.momentOneScore / day.momentOneScore === 1 ? 1 : 0) + (day.momentTwoScore / day.momentTwoScore === 1 ? 1 : 0) + (day.momentThreeScore / day.momentThreeScore === 1 ? 1 : 0) + (day.momentFourScore / day.momentFourScore === 1 ? 1 : 0) + (day.momentFiveScore / day.momentFiveScore === 1 ? 1 : 0);
+    let count = (day.momentOneScore / day.momentOneScore === 1 || day.momentOneScore === 0 ? 1 : 0) + (day.momentTwoScore / day.momentTwoScore === 1 || day.momentTwoScore === 0 ? 1 : 0) + (day.momentThreeScore / day.momentThreeScore === 1 || day.momentThreeScore === 0? 1 : 0) + (day.momentFourScore / day.momentFourScore === 1 || day.momentFourScore === 0? 1 : 0) + (day.momentFiveScore / day.momentFiveScore === 1 || day.momentFiveScore === 0 ? 1 : 0);
     day.tasksAttempted = count;
 
     let tcr = ((day.total / 10) / day.tasksAttempted)
