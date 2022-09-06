@@ -105,7 +105,7 @@ const LandingPageHeader = ({ history }) => {
 
 
 
-{!days ? null : days
+{!days ? <Loading /> : days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
       .map((day) => (
 <span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate.toLocaleString().substring(0,10)}</strong></span>

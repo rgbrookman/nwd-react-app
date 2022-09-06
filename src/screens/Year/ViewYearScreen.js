@@ -1087,7 +1087,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
       <div className="memoryBox">
       <span>Memory that you wanted to remember</span>
-      { days && days
+      { !days ? <Loading /> : days
         .filter((day, i, days) => days.indexOf(day) === Math.floor((Math.random() * days.length )))
         .filter((day, i, days) => days.indexOf(day) === 0 )
         .map((day, index, days) =>

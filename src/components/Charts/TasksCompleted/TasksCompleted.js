@@ -119,7 +119,7 @@ tcData.pop();
 
           Tooltip4
             .text(`Date: ${d.date} Total: ${d.total} `)
-            .style("left", x + "px")
+            .style("left", (x + 700) + "px")
             .style("top", (y + 100) + "px")
         };
 

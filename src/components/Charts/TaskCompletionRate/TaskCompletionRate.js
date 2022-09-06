@@ -93,15 +93,15 @@ day.taskCompletionRate = tcr;
             )
 
             const Tooltip1 = d3.select('#d3demo4')
-            .append("div")
-            .style("opacity", 0)
-            .attr("class", "tooltip")
-            .style("background-color", "white")
-            .style("border", "solid")
-            .style("border-width", "2px")
-            .style("border-radius", "5px")
-            .style("padding", "5px")
-            .style("font-size", "8px")
+              .append("div")
+              .style("opacity", 0)
+              .attr("class", "tooltip")
+              .style("background-color", "white")
+              .style("border", "solid")
+              .style("border-width", "2px")
+              .style("border-radius", "5px")
+              .style("padding", "5px")
+              .style("font-size", "8px")
         
           var mouseover = function(d) {
           Tooltip1
@@ -119,8 +119,8 @@ day.taskCompletionRate = tcr;
 
           Tooltip1
             .text(`Date: ${d.date} MRR: ${d.tcr} `)
-            .style("left", x + "px")
-            .style("top", (y + 100) + "px")
+            .style("left", (x + 700) + "px")
+            .style("top", (y + 400) + "px")
         };
 
           var mouseleave = function(d) {

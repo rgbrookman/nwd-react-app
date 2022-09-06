@@ -115,7 +115,7 @@ const TasksAttempted = () => {
           Tooltip3
             .text(`Date: ${d.date} TA: ${d.ta} `)
             .style("left", x + "px")
-            .style("top", (y + 100) + "px")
+            .style("top", (y + 400) + "px")
         };
 
           const mouseleave = function(d) {

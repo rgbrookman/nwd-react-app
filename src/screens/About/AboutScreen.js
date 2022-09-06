@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './about.css';
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useViewportScroll, useSpring, useTransform } from "framer-motion";
 import { Container } from 'react-bootstrap';
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
@@ -52,7 +52,6 @@ function AboutScreen() {
   open: {
     opacity: 1,
     scale: 1,
-
     transition: {
       duration: 2,
       ease: "easeInOut",
@@ -113,13 +112,16 @@ useEffect(() => {
   document.title = "About Us";
 }, []);
 
+const { scrollYProgress, scrollY } = useViewportScroll();
+const scrollAmount = 700;
+const opacity = useTransform(scrollY, [0, scrollAmount], [0, 1]);
+
 
   return (
     <>
     <Header />
     <Container fluid className="aboutScreenMain">
-
-
+  
     <div className="itemA">
     <motion.h1
     className="aboutHeader"
@@ -205,34 +207,45 @@ useEffect(() => {
     </Container>
     <section className="aboutSection">
 
-    <div className="whatIsNwd">
+    <motion.div 
+    className="whatIsNwd"
+    style={{ opacity: opacity }}
+    >
           <h1 className="aboutHeader">NWD is a digital mindfulness journal and daily planner with a difference.</h1>
           
-        </div>
+        </motion.div>
 
-        <div className="aboutOne">
+        <motion.div 
+        className="aboutOne"
+>
           <div className="explanationLeft">
           <h1 className="aboutPageHeader">Plan your day simply and smartly using our unique format designed for productivity and peace of mind.</h1>
           </div>
           
           <h1 className="supportingImage">image</h1>
-        </div>
+        </motion.div>
 
 
-        <div className="aboutTwo">
+        <motion.div className="aboutTwo"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}>
           
         <h1 className="supportingImage">image</h1>
         <div className="explanationRight">
         <h1 className="aboutPageHeader">Guarantee the dedication of a day matches the meaning of your life using our interactive experiences and year mapping.</h1>
         </div>
-        </div>
+        </motion.div>
 
-        <div className="aboutThree">
+        <motion.div className="aboutThree"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}>
         <div className="explanationLeft">
         <h1 className="aboutPageHeader">Immerse yourself in your diary through playback and insights to unlock deeper self-understanding.</h1>
         </div>
           <h1 className="supportingImage">image</h1>
-</div>
+</motion.div>
 </section>
 <Footer />
         </>
