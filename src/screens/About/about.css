@@ -104,6 +104,11 @@
   margin: 6px 48px 48px 48px;
 }
 
+.scrollDownIcon {
+  height: 100px;
+  width: 100px;
+}
+
 .whatIsNwd {
   text-align: center;
   margin-bottom: 48px;
@@ -142,81 +147,10 @@ text-align: end;
   color: #fff;
 }
 
-@media (max-width: 768px) and (min-width: 0px) {
-  .fortuneDiv {
-    grid-row: 2 / 3;
-    grid-column: 1 / span 3;
-    background-color: #EBF4FA;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 16px;
-    margin: 24px 24px 24px;
-    color: #46A46C;
-  }
-
-  .fortuneAnswerDiv {
-    grid-row: 2 / 3;
-    grid-column: 1 / span 3;
-    background-color: #EBF4FA;
-    border-radius: 10px;
+@media (max-width: 500px) and (min-width: 0px) {
+  .aboutScreenMain {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 16px;
-    margin: 24px;
-    color: #46A46C;
-  }
-
-  .itemC {
-    grid-row: 2 / 3;
-    grid-column: 4 / span 3;
-    background-color: #EBF4FA;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 16px;
-    margin: 24px 24px 24px;
-    color: #46A46C;
-  }
-
-  .difficultDiv {
-    grid-row: 2 / 3;
-    grid-column: 4 / span 3;
-    background-color: #EBF4FA;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 16px;
-    margin: 24px;
-    color: #46A46C;
-  }
-
-  .missionContainer {
-    grid-row: 3 / 5;
-    grid-column: 1 / span 6;
-    color: #EBF4FA;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-top: 24px;
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .missionHeader {
-    font-size: 48px;
-    margin-top: 24px;
+    height: auto;
   }
   }

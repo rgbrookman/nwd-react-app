@@ -4,7 +4,8 @@ import { motion, AnimatePresence, useViewportScroll, useSpring, useTransform } f
 import { Container } from 'react-bootstrap';
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown  } from '@fortawesome/free-solid-svg-icons'
 
 
 function AboutScreen() {
@@ -83,6 +84,27 @@ closed: {
 },
 };
 
+const hiddenScrollState = {
+  hidden: {
+    opacity: 0,
+    scale: 0.7,
+    zIndex: -5,
+  },
+open: {
+  opacity: 1,
+  scale: 1,
+  zIndex: 5,
+  opacity: [0,1,0,1,0,1,0,1,0],
+  transition: {
+    duration: 10,
+    ease: "easeInOut",
+  }
+},
+closed: {
+  opacity: 0,
+},
+};
+
 const hiddenMissionState = {
   hidden: {
     display: "none",
@@ -112,10 +134,13 @@ useEffect(() => {
   document.title = "About Us";
 }, []);
 
-const { scrollYProgress, scrollY } = useViewportScroll();
-const scrollAmount = 700;
-const opacity = useTransform(scrollY, [0, scrollAmount], [0, 1]);
+const [scrollStart, setScrollStart] = useState(false);
 
+const { scrollYProgress, scrollY } = useViewportScroll();
+const scrollAmount = 550;
+const scrollAmount1 = 900;
+const opacity = useTransform(scrollY, [100, scrollAmount], [0, 1]);
+const opacity1 = useTransform(scrollY, [500, scrollAmount1], [0, 1]);
 
   return (
     <>
@@ -137,6 +162,7 @@ const opacity = useTransform(scrollY, [0, scrollAmount], [0, 1]);
     animate={{ opacity: 1 }}
     transition={{ duration: 2, delay: 1 }}
     >Click to cast your answer below.</motion.span>
+ 
     </div>
 
 
@@ -200,7 +226,14 @@ const opacity = useTransform(scrollY, [0, scrollAmount], [0, 1]);
     animate={ clickCount > 1 ? "open" : "hidden" }>
     <motion.span className="existStatement">NWD exists because both of these responses are correct.</motion.span>
     <motion.h1 className="missionHeader">Our mission is to unconditionally support people with being alive.</motion.h1>
+    <motion.div
+    animate={ clickCount > 1 ? "open" : "hidden" }
+    variants={hiddenScrollState}>
+    <FontAwesomeIcon
+    className="scrollDownIcon"
+    icon={faChevronDown} />
         </motion.div>
+    </motion.div>
 
        
 
@@ -211,13 +244,13 @@ const opacity = useTransform(scrollY, [0, scrollAmount], [0, 1]);
     className="whatIsNwd"
     style={{ opacity: opacity }}
     >
-          <h1 className="aboutHeader">NWD is a digital mindfulness journal and daily planner with a difference.</h1>
+      <h1 className="aboutHeader">NWD is a digital mindfulness journal and daily planner with a difference.</h1>
           
         </motion.div>
 
         <motion.div 
-        className="aboutOne"
->
+        className="aboutOne" 
+        style={{ opacity: opacity1 }}>
           <div className="explanationLeft">
           <h1 className="aboutPageHeader">Plan your day simply and smartly using our unique format designed for productivity and peace of mind.</h1>
           </div>
@@ -227,9 +260,7 @@ const opacity = useTransform(scrollY, [0, scrollAmount], [0, 1]);
 
 
         <motion.div className="aboutTwo"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}>
+            style={{ opacity: opacity1 }}>
           
         <h1 className="supportingImage">image</h1>
         <div className="explanationRight">

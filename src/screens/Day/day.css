@@ -43,7 +43,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: start;
   height: 12vh;
+}
+
+.thankYouDisplay,
+.selfLessDisplay,
+.mindBodyDisplay,
+.leaveBehindDisplay,
+.rememberTodayDisplay,
+.momentDisplay
+{
+text-align: start;
 }
 
 .thankYouDisplay h5,
@@ -361,7 +372,8 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    text-align: start;
     height: 12vh;
   }
   
