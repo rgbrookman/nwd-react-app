@@ -226,8 +226,9 @@ onChange={(e) => setLogDate(e.target.value)}
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
 <iframe className='video'
         title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={todayVideo}>
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+        src={`https://youtube.com/embed/${videoLink}?start=0`}
+        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
 </div>
     </motion.div>
@@ -356,7 +357,7 @@ onChange={(e) => setLogDate(e.target.value)}
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('4oGXepCXM6g');
+                setVideoLink('oSCpAljlyvI');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
             </div>
@@ -421,7 +422,7 @@ onChange={(e) => setLogDate(e.target.value)}
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('4oGXepCXM6g');
+                setVideoLink('SuUsOTKos5U');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
             </div>
@@ -489,7 +490,7 @@ onChange={(e) => setLogDate(e.target.value)}
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('4oGXepCXM6g');
+              setVideoLink('m6cqdrnl6TA');
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
           </div>
@@ -572,7 +573,7 @@ onChange={(e) => setLogDate(e.target.value)}
           className="questionIcon"
         icon={faQuestion}
         onClick={() => {
-          setVideoLink('4oGXepCXM6g');
+          setVideoLink('m6cqdrnl6TA');
           setVideoDisplay(videoDisplay => !videoDisplay);
         }} />
       </div>
@@ -655,7 +656,7 @@ className="eraseIcon"
           className="questionIcon"
         icon={faQuestion}
         onClick={() => {
-          setVideoLink('4oGXepCXM6g');
+          setVideoLink('m6cqdrnl6TA');
           setVideoDisplay(videoDisplay => !videoDisplay);
         }} />
       </div>
@@ -737,7 +738,7 @@ className="eraseIcon"
           className="questionIcon"
         icon={faQuestion}
         onClick={() => {
-          setVideoLink('4oGXepCXM6g');
+          setVideoLink('m6cqdrnl6TA');
           setVideoDisplay(videoDisplay => !videoDisplay);
         }} />
       </div>
@@ -819,7 +820,7 @@ className="eraseIcon"
           className="questionIcon"
         icon={faQuestion}
         onClick={() => {
-          setVideoLink('4oGXepCXM6g');
+          setVideoLink('m6cqdrnl6TA');
           setVideoDisplay(videoDisplay => !videoDisplay);
         }} />
       </div>
@@ -960,7 +961,7 @@ className="eraseIcon"
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('4oGXepCXM6g');
+                  setVideoLink('Ts2FQ2kef3g');
                   setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
               </div>
@@ -1024,7 +1025,7 @@ className="eraseIcon"
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('4oGXepCXM6g');
+                  setVideoLink('jIO12lLZavA');
                   setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
               </div>

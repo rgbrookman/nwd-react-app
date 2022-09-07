@@ -245,8 +245,9 @@ required
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
 <iframe className='video'
         title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={todayVideo}>
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+        src={`https://youtube.com/embed/${videoLink}?start=0`}
+        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
 </div>
     </motion.div>
@@ -367,11 +368,11 @@ required
             onClick={()=> {
               setSelfLess('');
             }} />
-            <FontAwesomeIcon
+         <FontAwesomeIcon
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('TDBQ3qMxpOk');
+                setVideoLink('oSCpAljlyvI');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
             </div>
@@ -429,11 +430,12 @@ required
             onClick={()=> {
               setMindBody('');
             }} />
-            <FontAwesomeIcon
+          <FontAwesomeIcon
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('');
+                setVideoLink('SuUsOTKos5U');
+                setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
             </div>
           </div>
@@ -492,11 +494,12 @@ required
           onClick={()=> {
             setMomentOne('');
           }} />
-          <FontAwesomeIcon
+           <FontAwesomeIcon
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('');
+              setVideoLink('m6cqdrnl6TA');
+              setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
           </div>
         </div>
@@ -569,12 +572,13 @@ required
       onClick={()=> {
         setMomentTwo("");
       }} />
-      <FontAwesomeIcon
-          className="questionIcon"
-        icon={faQuestion}
-        onClick={() => {
-          setVideoLink('');
-        }} />
+       <FontAwesomeIcon
+              className="questionIcon"
+            icon={faQuestion}
+            onClick={() => {
+              setVideoLink('m6cqdrnl6TA');
+              setVideoDisplay(videoDisplay => !videoDisplay);
+            }} />
       </div>
     </div>
   </motion.div>
@@ -648,11 +652,12 @@ className="eraseIcon"
         setMomentThree("");
       }} />
       <FontAwesomeIcon
-          className="questionIcon"
-        icon={faQuestion}
-        onClick={() => {
-          setVideoLink('');
-        }} />
+              className="questionIcon"
+            icon={faQuestion}
+            onClick={() => {
+              setVideoLink('m6cqdrnl6TA');
+              setVideoDisplay(videoDisplay => !videoDisplay);
+            }} />
       </div>
     </div>
   </motion.div>
@@ -724,12 +729,13 @@ className="eraseIcon"
       onClick={()=> {
         setMomentFour("");
       }} />
-      <FontAwesomeIcon
-          className="questionIcon"
-        icon={faQuestion}
-        onClick={() => {
-          setVideoLink('');
-        }} />
+     <FontAwesomeIcon
+              className="questionIcon"
+            icon={faQuestion}
+            onClick={() => {
+              setVideoLink('m6cqdrnl6TA');
+              setVideoDisplay(videoDisplay => !videoDisplay);
+            }} />
       </div>
     </div>
   </motion.div>
@@ -801,12 +807,13 @@ className="eraseIcon"
       onClick={()=> {
         setMomentFive("");
       }} />
-      <FontAwesomeIcon
-          className="questionIcon"
-        icon={faQuestion}
-        onClick={() => {
-          setVideoLink('');
-        }} />
+        <FontAwesomeIcon
+              className="questionIcon"
+            icon={faQuestion}
+            onClick={() => {
+              setVideoLink('m6cqdrnl6TA');
+              setVideoDisplay(videoDisplay => !videoDisplay);
+            }} />
       </div>
     </div>
   </motion.div>
@@ -934,11 +941,12 @@ className="eraseIcon"
               onClick={()=> {
                   setRememberToday("");
               }} />
-              <FontAwesomeIcon
+                 <FontAwesomeIcon
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('');
+                  setVideoLink('Ts2FQ2kef3g');
+                  setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
               </div>
             </div>
@@ -994,11 +1002,12 @@ className="eraseIcon"
               onClick={()=> {
                 setLeaveBehind("");
               }} />
-              <FontAwesomeIcon
+               <FontAwesomeIcon
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('');
+                  setVideoLink('jIO12lLZavA');
+                  setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
               </div>
             </div>

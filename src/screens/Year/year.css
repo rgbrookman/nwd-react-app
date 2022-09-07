@@ -356,6 +356,8 @@
  {
   background-color: #46A46C;
   color: #EBF4FA;
+  padding: 2px;
+  border-radius: 5px;
 }
 
 .helpLink {
@@ -640,6 +642,77 @@
     border: 1px solid #46A46C;
     margin-bottom: 12px;
   }
+
+  .helpItem {
+    background-color: #EBF4FA;
+  min-width: 100%;
+    font-family: 'caveat', cursive;
+    font-size: 1.2em;
+  display: inline-flex;
+  flex-direction: row;
+    color: #46A46C;
+}
+
+.helpItem:hover,
+.helpLink:hover
+ {
+  background-color: #46A46C;
+  color: #EBF4FA;
+}
+
+.helpLink {
+    background-color: #EBF4FA;
+  text-decoration: none;
+  color: #46A46C;
+}
+
+.nameBox:hover .editDeleteName,
+.dobBox:hover .editDeleteDOB,
+.valuesIntBoxView1:hover .editDeleteValues1,
+.valuesIntBoxView1:hover .editDeleteValuesText1,
+.valuesIntBoxView2:hover .editDeleteValues2,
+.valuesIntBoxView2:hover .editDeleteValuesText2,
+.valuesIntBoxView3:hover .editDeleteValues3,
+.valuesIntBoxView3:hover .editDeleteValuesText3,
+.valuesIntBoxView4:hover .editDeleteValues4,
+.valuesIntBoxView4:hover .editDeleteValuesText4,
+.valuesIntBoxView5:hover .editDeleteValues5,
+.valuesIntBoxView5:hover .editDeleteValuesText5,
+.visionDiv1:hover .editDeleteVision1,
+.visionDiv2:hover .editDeleteVision2,
+.visionDiv3:hover .editDeleteVision3,
+.visionDiv4:hover .editDeleteVision4,
+.visionDiv5:hover .editDeleteVision5,
+.whyBox:hover .editDeleteWhy,
+.ikigaiBox:hover .editDeleteIkigai,
+.quoteBox:hover .editDeleteQuote {
+  display: block;
+}
+
+.editDeleteName,
+.editDeleteDOB,
+.editDeleteValues1,
+.editDeleteValuesText1,
+.editDeleteValues2,
+.editDeleteValuesText2,
+.editDeleteValues3,
+.editDeleteValuesText3,
+.editDeleteValues4,
+.editDeleteValuesText4,
+.editDeleteValues5,
+.editDeleteValuesText5,
+.editDeleteVision1,
+.editDeleteVision2,
+.editDeleteVision3,
+.editDeleteVision4,
+.editDeleteVision5,
+.editDeleteWhy,
+.editDeleteIkigai,
+.editDeleteQuote {
+  display: none;
+  margin-left: 12px;
+  margin-right: 12px;
+}
 }
 
 @media (max-width: 501px) and (min-width: 0px) {
@@ -783,5 +856,76 @@
     color: #46A46C;
     font-size: clamp(4vw, 6vw, 8vw);
   }
+
+  .helpItem {
+    background-color: #EBF4FA;
+  min-width: 100%;
+    font-family: 'caveat', cursive;
+    font-size: 1.2em;
+  display: inline-flex;
+  flex-direction: row;
+    color: #46A46C;
+}
+
+.helpItem:hover,
+.helpLink:hover
+ {
+  background-color: #46A46C;
+  color: #EBF4FA;
+}
+
+.helpLink {
+    background-color: #EBF4FA;
+  text-decoration: none;
+  color: #46A46C;
+}
+
+.nameBox:hover .editDeleteName,
+.dobBox:hover .editDeleteDOB,
+.valuesIntBoxView1:hover .editDeleteValues1,
+.valuesIntBoxView1:hover .editDeleteValuesText1,
+.valuesIntBoxView2:hover .editDeleteValues2,
+.valuesIntBoxView2:hover .editDeleteValuesText2,
+.valuesIntBoxView3:hover .editDeleteValues3,
+.valuesIntBoxView3:hover .editDeleteValuesText3,
+.valuesIntBoxView4:hover .editDeleteValues4,
+.valuesIntBoxView4:hover .editDeleteValuesText4,
+.valuesIntBoxView5:hover .editDeleteValues5,
+.valuesIntBoxView5:hover .editDeleteValuesText5,
+.visionDiv1:hover .editDeleteVision1,
+.visionDiv2:hover .editDeleteVision2,
+.visionDiv3:hover .editDeleteVision3,
+.visionDiv4:hover .editDeleteVision4,
+.visionDiv5:hover .editDeleteVision5,
+.whyBox:hover .editDeleteWhy,
+.ikigaiBox:hover .editDeleteIkigai,
+.quoteBox:hover .editDeleteQuote {
+  display: block;
+}
+
+.editDeleteName,
+.editDeleteDOB,
+.editDeleteValues1,
+.editDeleteValuesText1,
+.editDeleteValues2,
+.editDeleteValuesText2,
+.editDeleteValues3,
+.editDeleteValuesText3,
+.editDeleteValues4,
+.editDeleteValuesText4,
+.editDeleteValues5,
+.editDeleteValuesText5,
+.editDeleteVision1,
+.editDeleteVision2,
+.editDeleteVision3,
+.editDeleteVision4,
+.editDeleteVision5,
+.editDeleteWhy,
+.editDeleteIkigai,
+.editDeleteQuote {
+  display: none;
+  margin-left: 12px;
+  margin-right: 12px;
+}
 
 }

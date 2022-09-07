@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {useDispatch, useSelector } from 'react-redux';
-import './landingpage.css';
 import Header from '../../components/Header/Header';
 import LandingPageHeader from '../../components/Header/LandingPageHeader';
 import Footer from '../../components/Footer/Footer';
@@ -18,6 +17,7 @@ import axios from "axios";
 import logo from '../../NWD_Logo_White.png';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import './landingpage.css';
 
 
 export default function LandingScreen(history) {
@@ -78,10 +78,8 @@ dispatch(listYears());
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-const mvpExplainer = 'https://share.vidyard.com/watch/nnshF6YTAZXTyXCkBYj3pN?'
-const platformExplainer = 'https://share.vidyard.com/watch/G1CHWbTWFFE11HmSy5xecN?';
-const visionExplainer = 'https://share.vidyard.com/watch/gKm5iR3fmQHLqTZ8ZFM58P?';
-const startTheTour = '/year/create';
+const platformExplainer = 'https://youtu.be/oSCpAljlyvI';
+const visionExplainer = 'oSCpAljlyvI';
 
   return (
 
@@ -106,36 +104,36 @@ const startTheTour = '/year/create';
         animate={ videoDisplay ? "show" : "hide"}
         variants={hideState}>
 
-      <iframe className='landingPageVideo'
+<iframe className='landingPageVideo'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={videoID}>
-        </iframe>
+        src={`https://youtube.com/embed/${visionExplainer}?start=0`}>
+</iframe>
       </motion.div>
 
 <div className="landingPageButtonDiv">
-<button className="landingPageButton"
-  onClick={()=>{
-  setVideoID( videoID => mvpExplainer);
-  setVideoDisplay( videoDisplay => !videoDisplay);
-  setTextDisplay( textDisplay => !textDisplay);
-}}>MVP Testers</button>
+
   <button className="landingPageButton"
   onClick={()=>{
   setVideoID( videoID => visionExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
   setTextDisplay( textDisplay => !textDisplay);
-}}>Vision</button>
+}}>The Vision</button>
 
 <button className="landingPageButton"
 onClick={()=>{
   setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
    setTextDisplay( textDisplay => !textDisplay);
-}}>Aim of the Platform</button>
+}}>How to Guide</button>
 
 <button className="landingPageButton"
-><a className="lpLink" href="/year/create" >Start the Tour</a></button>
+onClick={()=>{
+  setVideoID( videoID => platformExplainer);
+  setVideoDisplay( videoDisplay => !videoDisplay);
+   setTextDisplay( textDisplay => !textDisplay);
+}}>Your Feedback</button>
+
 </div>
 </>
 : null }

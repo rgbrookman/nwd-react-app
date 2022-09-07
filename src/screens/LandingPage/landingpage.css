@@ -104,10 +104,6 @@
     padding: 6px;
   }
 
-  .landingPageVideo {
-    width: clamp(75vw, 50vw, 30vw);
-    height: clamp(30vh, 25vw, 20vw);
-  }
 
 .landingPageBox h1 {
   font-family: 'caveat', cursive;
@@ -177,4 +173,13 @@
   text-decoration: none;
   color:   #EBF4FA;
   font-size: 0.8em;
+}
+
+.landingPageVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width: 75%;
 }

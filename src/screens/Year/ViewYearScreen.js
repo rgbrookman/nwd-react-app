@@ -248,7 +248,14 @@ useEffect(() => {
   document.title = "Year | Update";
 }, []);
 
-const createVideo = "https://share.vidyard.com/watch/ehLQSz77hWAmAJCJg6okNw?";
+const explainVideo = "";
+const dobVideo = "";
+const valuesVideo = "";
+const visionVideo = "";
+const whyVideo = "";
+const ikigaiVideo = "";
+const quoteVideo = "eTbICJoQrsM";
+const memoryVideo = "";
 
   return (
 
@@ -298,8 +305,9 @@ Learn About Your Year Page
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
 <iframe className='video'
         title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={createVideo}>
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+        src={`https://youtube.com/embed/${videoLink}?start=0`}
+        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
 </div>
     </motion.div>
@@ -401,7 +409,7 @@ Learn About Your Year Page
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('TDBQ3qMxpOk');
+                setVideoLink('J1M7AMG9z98');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
 
@@ -798,7 +806,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('TDBQ3qMxpOk');
+              setVideoLink('eTbICJoQrsM');
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
 
@@ -1077,7 +1085,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('_tcpDxI5LbQ');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
 
@@ -1092,7 +1100,20 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
         .filter((day, i, days) => days.indexOf(day) === 0 )
         .map((day, index, days) =>
         <h6 key={day._id[0]} className="ikigaiText">{day.rememberToday}</h6>)}
+         <motion.div
+    className="editDeleteMemory"
+    > 
+        <FontAwesomeIcon
+            className="questionIcon"
+          icon={faQuestion}
+          onClick={() => {
+            setVideoLink('XpzXR6oG8mA');
+            setVideoDisplay(videoDisplay => !videoDisplay);
+          }} />
+
+      </motion.div>
       </div>
+
 
       <div className="buttonBox">
 

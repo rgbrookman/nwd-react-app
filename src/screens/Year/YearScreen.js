@@ -8,6 +8,8 @@ import Header from '../../components/Header/Header';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { Button, Dropdown, DropdownButton } from 'react-bootstrap';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPenToSquare, faEraser, faQuestion } from '@fortawesome/free-solid-svg-icons'
 import './createyear.css';
 
 export default function YearScreen({ history }) {
@@ -97,7 +99,6 @@ export default function YearScreen({ history }) {
   }, []);
 
 
-  const createVideo = "https://share.vidyard.com/watch/ehLQSz77hWAmAJCJg6okNw?";
 
   return (
     <>
@@ -115,7 +116,8 @@ export default function YearScreen({ history }) {
 <iframe className='video'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={createVideo}>
+        src={`https://youtube.com/embed/${videoLink}?start=0`}
+        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
 </div>
  </motion.div>
@@ -163,6 +165,13 @@ export default function YearScreen({ history }) {
         value={yourName}
         onChange={(e) => setYourName(e.target.value)}
       />
+           <FontAwesomeIcon
+            className="questionIcon"
+          icon={faQuestion}
+          onClick={() => {
+            setVideoLink('TDBQ3qMxpOk');
+            setVideoDisplay(videoDisplay => !videoDisplay);
+          }} />
     </div>
 
     <div className="visionBox">
@@ -198,6 +207,13 @@ export default function YearScreen({ history }) {
       placeholder="Vision 5"
       onChange={(e) => setMyVision_5(e.target.value)}
     />
+         <FontAwesomeIcon
+            className="questionIcon"
+          icon={faQuestion}
+          onClick={() => {
+            setVideoLink('TDBQ3qMxpOk');
+            setVideoDisplay(videoDisplay => !videoDisplay);
+          }} />
 </div>
 
     <div className="quoteBox">
@@ -208,6 +224,13 @@ export default function YearScreen({ history }) {
       placeholder=""
       onChange={(e) => setNavigationalQuote(e.target.value)}
     />
+         <FontAwesomeIcon
+              className="questionIcon"
+            icon={faQuestion}
+            onClick={() => {
+              setVideoLink('eTbICJoQrsM');
+              setVideoDisplay(videoDisplay => !videoDisplay);
+            }} />
     </div>
 
     <div className="dobBox">
@@ -219,7 +242,13 @@ export default function YearScreen({ history }) {
       placeholder=""
       onChange={(e) => setBirthDate(e.target.value)}
     />
-
+     <FontAwesomeIcon
+            className="questionIcon"
+          icon={faQuestion}
+          onClick={() => {
+            setVideoLink('TDBQ3qMxpOk');
+            setVideoDisplay(videoDisplay => !videoDisplay);
+          }} />
     </div>
     <div className="whyBox">
     <span>I want to have No Wasted Days because...</span>
@@ -232,7 +261,13 @@ export default function YearScreen({ history }) {
       placeholder=""
       onChange={(e) => setWhyNWD(e.target.value)}
     />
-
+     <FontAwesomeIcon
+            className="questionIcon"
+          icon={faQuestion}
+          onClick={() => {
+            setVideoLink('TDBQ3qMxpOk');
+            setVideoDisplay(videoDisplay => !videoDisplay);
+          }} />
     </div>
     <div className="valuesBox">
     <span>My personal values are...</span>
@@ -309,8 +344,15 @@ export default function YearScreen({ history }) {
       placeholder=""
       onChange={(e) => setMyValues_5_Text(e.target.value)}
     />
+       
 </div>
-
+<FontAwesomeIcon
+            className="questionIcon"
+          icon={faQuestion}
+          onClick={() => {
+            setVideoLink('TDBQ3qMxpOk');
+            setVideoDisplay(videoDisplay => !videoDisplay);
+          }} />
     </div>
     <div className="ikigaiBox">
     <span>My ikigia is...</span>
@@ -320,7 +362,13 @@ export default function YearScreen({ history }) {
       placeholder=""
       onChange={(e) => setMyIkigai(e.target.value)}
     />
-
+     <FontAwesomeIcon
+            className="questionIcon"
+          icon={faQuestion}
+          onClick={() => {
+            setVideoLink('TDBQ3qMxpOk');
+            setVideoDisplay(videoDisplay => !videoDisplay);
+          }} />
     </div>
         <div className="buttonBox">
           </div>
