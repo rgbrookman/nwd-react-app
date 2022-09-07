@@ -108,7 +108,7 @@ useEffect(() => {
 
 <div className="topRow">
 
-<select name="datePicker"
+<select className="datePicker" name="datePicker"
       defaultValue={datePicker} onChange={(e) => setDatePicker(e.target.value)}>
 
 
