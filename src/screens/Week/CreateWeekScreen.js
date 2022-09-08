@@ -34,6 +34,7 @@ export default function WeekScreen({ history }) {
   const [objectiveTen_score, setObjectiveTen_score] = useState(0);
 
   const [videoDisplay, setVideoDisplay] = useState(true);
+  const [videoLink, setVideoLink] = useState('GQzaJ3qCo4k');
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -81,7 +82,6 @@ export default function WeekScreen({ history }) {
     },
   };
 
-  const weekVideo = 'https://share.vidyard.com/watch/Vry5iUQHge3eD6djb2k912?';
 
   useEffect(() => {
     document.title = "Week | Create";
@@ -100,8 +100,9 @@ className="videoContainer">
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
 <iframe className='video'
         title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={weekVideo}>
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+        src={`https://youtube.com/embed/${videoLink}?start=0`}
+        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
 </div>
 </motion.div>
@@ -110,6 +111,7 @@ className="videoContainer">
   <Row id="buttonRow" >
   <Button className="explainerButton"
   onClick={()=> {
+    setVideoLink('GQzaJ3qCo4k');
     setVideoDisplay(videoDisplay => !videoDisplay);
   }}>
   Learn About Your Week Page

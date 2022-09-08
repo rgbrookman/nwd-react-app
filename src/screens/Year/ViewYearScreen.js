@@ -248,15 +248,6 @@ useEffect(() => {
   document.title = "Year | Update";
 }, []);
 
-const explainVideo = "";
-const dobVideo = "";
-const valuesVideo = "";
-const visionVideo = "";
-const whyVideo = "";
-const ikigaiVideo = "";
-const quoteVideo = "eTbICJoQrsM";
-const memoryVideo = "";
-
   return (
 
 <>
@@ -283,6 +274,7 @@ const memoryVideo = "";
   </DropdownButton>
 <Button className="explainerButton d-none d-sm-flex"
 onClick={()=> {
+  setVideoLink('N-lf8NgD6-o');
   setVideoDisplay(videoDisplay => !videoDisplay);
 }}>
 Learn About Your Year Page
@@ -300,8 +292,9 @@ Learn About Your Year Page
     <motion.div
     animate={videoDisplay ? "hide" : "show"}
     variants={valueState}
-    className="videoContainer">
- <div className="videoContainerDiv">
+    className="videoContainer"
+    style={{backgroundColor: "none"}}>
+ <div className="videoContainerDiv" style={{backgroundColor: "none"}}>
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
 <iframe className='video'
         title='Youtube player'
@@ -351,7 +344,7 @@ Learn About Your Year Page
                         className="questionIcon"
                       icon={faQuestion}
                       onClick={() => {
-                        setVideoLink('TDBQ3qMxpOk');
+                        setVideoLink('J1M7AMG9z98');
                         setVideoDisplay(videoDisplay => !videoDisplay);
                       }} />
                 </motion.div>
@@ -412,7 +405,6 @@ Learn About Your Year Page
                 setVideoLink('J1M7AMG9z98');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
-
         </motion.div>
         </motion.div>
       </motion.div>
@@ -434,7 +426,7 @@ Learn About Your Year Page
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('TDBQ3qMxpOk');
+                setVideoLink('HtKEwNHXLC8');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
         </motion.div>
@@ -483,7 +475,7 @@ Learn About Your Year Page
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('TDBQ3qMxpOk');
+                  setVideoLink('HtKEwNHXLC8');
                   setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
 
@@ -552,7 +544,7 @@ Learn About Your Year Page
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('TDBQ3qMxpOk');
+                      setVideoLink('HtKEwNHXLC8');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -573,7 +565,7 @@ Learn About Your Year Page
                     className="questionIcon"
                   icon={faQuestion}
                   onClick={() => {
-                    setVideoLink('TDBQ3qMxpOk');
+                    setVideoLink('HtKEwNHXLC8');
                     setVideoDisplay(videoDisplay => !videoDisplay);
                   }} />
             </motion.div>
@@ -621,7 +613,7 @@ Learn About Your Year Page
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('TDBQ3qMxpOk');
+                      setVideoLink('HtKEwNHXLC8');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -645,7 +637,7 @@ Learn About Your Year Page
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('HtKEwNHXLC8');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </motion.div>
@@ -692,7 +684,7 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('TDBQ3qMxpOk');
+              setVideoLink('HtKEwNHXLC8');
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
       </motion.div>
@@ -714,7 +706,7 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('HtKEwNHXLC8');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </motion.div>
@@ -762,7 +754,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('TDBQ3qMxpOk');
+              setVideoLink('HtKEwNHXLC8');
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
 
@@ -848,7 +840,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('TDBQ3qMxpOk');
+                  setVideoLink('RJiCSvHdSmo');
                   setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
 
@@ -888,7 +880,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('TDBQ3qMxpOk');
+                      setVideoLink('RJiCSvHdSmo');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -927,7 +919,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('TDBQ3qMxpOk');
+                      setVideoLink('RJiCSvHdSmo');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -966,7 +958,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('TDBQ3qMxpOk');
+                      setVideoLink('RJiCSvHdSmo');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -1005,7 +997,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('TDBQ3qMxpOk');
+                      setVideoLink('RJiCSvHdSmo');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -1047,7 +1039,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('8_y_yKKAJIE');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
 

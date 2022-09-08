@@ -49,7 +49,7 @@ const [isDisplay10, setIsDisplay10] = useState(true);
 
 const [videoDisplay, setVideoDisplay] = useState(true);
 
-const [videoLink, setVideoLink] = useState('TpLVtoE6bFg');
+const [videoLink, setVideoLink] = useState('Wp2tWyWpMF8');
 
 const [pageLoading, setPageLoading] = useState(true);
 
@@ -181,8 +181,6 @@ useEffect(()=> {
 useEffect(() => {
   document.title = "Today | Create";
 }, []);
-
-const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
 
   return (
     <>

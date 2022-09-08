@@ -78,8 +78,8 @@ dispatch(listYears());
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-const platformExplainer = 'https://youtu.be/oSCpAljlyvI';
-const visionExplainer = 'oSCpAljlyvI';
+const platformExplainer = 'oSCpAljlyvI';
+const visionExplainer = 'tSuRg3bqgIg';
 
   return (
 
@@ -102,12 +102,14 @@ const visionExplainer = 'oSCpAljlyvI';
       <motion.div 
         className="lpVideoDiv"
         animate={ videoDisplay ? "show" : "hide"}
-        variants={hideState}>
+        variants={hideState}
+        style={{marginBottom: "24px"}}>
 
 <iframe className='landingPageVideo'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${visionExplainer}?start=0`}>
+        src={`https://youtube.com/embed/${visionExplainer}?start=0`}
+        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
       </motion.div>
 

@@ -53,7 +53,7 @@ const [loadingAnimation, setLoadingAnimation] = useState(false);
 
 const [videoDisplay, setVideoDisplay] = useState(true);
 
-const [videoLink, setVideoLink] = useState('TpLVtoE6bFg');
+const [videoLink, setVideoLink] = useState('Wp2tWyWpMF8');
 
 const [pageLoading, setPageLoading] = useState(true);
 
@@ -195,8 +195,6 @@ useEffect(()=> {
 useEffect(() => {
   document.title = "Today | Update";
 }, []);
-
-const todayVideo = 'https://share.vidyard.com/watch/XhWB9ssUVe2YWaFxugqG7Q?';
 
   return (
     <>

@@ -141,6 +141,7 @@ export default function YearScreen({ history }) {
   </DropdownButton>
   <Button className="explainerButton"
   onClick={()=> {
+    setVideoLink('N-lf8NgD6-o');
     setVideoDisplay(videoDisplay => !videoDisplay);
   }}>
   Learn About Your Year Page
@@ -169,7 +170,7 @@ export default function YearScreen({ history }) {
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('J1M7AMG9z98');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </div>
@@ -211,7 +212,7 @@ export default function YearScreen({ history }) {
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('RJiCSvHdSmo');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
 </div>
@@ -265,7 +266,7 @@ export default function YearScreen({ history }) {
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('8_y_yKKAJIE');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </div>
@@ -350,7 +351,7 @@ export default function YearScreen({ history }) {
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('HtKEwNHXLC8');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </div>
@@ -366,7 +367,7 @@ export default function YearScreen({ history }) {
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('TDBQ3qMxpOk');
+            setVideoLink('_tcpDxI5LbQ');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </div>

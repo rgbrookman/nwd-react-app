@@ -79,6 +79,7 @@ const [isCircleCheck10, setCircleCheck10] = useState(false);
 const [isEditIcon10, setEditIcon10] = useState(true);
 
 const [videoDisplay, setVideoDisplay] = useState(true);
+const [videoLink, setVideoLink] = useState('GQzaJ3qCo4k');
 
   const [pageLoading, setPageLoading] = useState(true);
 
@@ -255,8 +256,9 @@ className="videoContainer">
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
 <iframe className='video'
         title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={weekVideo}>
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+        src={`https://youtube.com/embed/${videoLink}?start=0`}
+        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
 </div>
 </motion.div>
@@ -271,6 +273,7 @@ className="videoContainer">
 
       <Button className="explainerButton"
       onClick={()=> {
+        setVideoLink('GQzaJ3qCo4k');
         setVideoDisplay(videoDisplay => !videoDisplay);
       }}>
       Learn About Your Week Page
