@@ -153,4 +153,13 @@ text-align: end;
     flex-direction: column;
     height: auto;
   }
+
+  .aboutSection {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 3px 24px 24px 24px;
+  }
+
+
   }

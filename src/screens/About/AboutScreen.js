@@ -3,9 +3,10 @@ import './about.css';
 import { motion, AnimatePresence, useViewportScroll, useSpring, useTransform } from "framer-motion";
 import { Container } from 'react-bootstrap';
 import Footer from "../../components/Footer/Footer";
+import ReducedFooter from "../../components/Footer/ReducedFooter";
 import Header from "../../components/Header/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown  } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faSolarPanel, faPlugCircleBolt, faRepeat  } from '@fortawesome/free-solid-svg-icons'
 
 
 function AboutScreen() {
@@ -134,19 +135,23 @@ useEffect(() => {
   document.title = "About Us";
 }, []);
 
+const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
 const [scrollStart, setScrollStart] = useState(false);
 
 const { scrollYProgress, scrollY } = useViewportScroll();
 const scrollAmount = 550;
-const scrollAmount1 = 900;
+const scrollAmount1 = 650;
 const opacity = useTransform(scrollY, [100, scrollAmount], [0, 1]);
 const opacity1 = useTransform(scrollY, [500, scrollAmount1], [0, 1]);
 
   return (
     <>
     <Header />
+    { vw > 800 ? 
+    <>
     <Container fluid className="aboutScreenMain">
-  
+
     <div className="itemA">
     <motion.h1
     className="aboutHeader"
@@ -255,14 +260,18 @@ const opacity1 = useTransform(scrollY, [500, scrollAmount1], [0, 1]);
           <h1 className="aboutPageHeader">Plan your day simply and smartly using our unique format designed for productivity and peace of mind.</h1>
           </div>
           
-          <h1 className="supportingImage">image</h1>
+          <FontAwesomeIcon
+            className="planningIcon"
+          icon={faSolarPanel}/>
         </motion.div>
 
 
         <motion.div className="aboutTwo"
             style={{ opacity: opacity1 }}>
           
-        <h1 className="supportingImage">image</h1>
+          <FontAwesomeIcon
+            className="planningIcon"
+          icon={faSolarPanel}/>
         <div className="explanationRight">
         <h1 className="aboutPageHeader">Guarantee the dedication of a day matches the meaning of your life using our interactive experiences and year mapping.</h1>
         </div>
@@ -275,10 +284,61 @@ const opacity1 = useTransform(scrollY, [500, scrollAmount1], [0, 1]);
         <div className="explanationLeft">
         <h1 className="aboutPageHeader">Immerse yourself in your diary through playback and insights to unlock deeper self-understanding.</h1>
         </div>
-          <h1 className="supportingImage">image</h1>
+        <FontAwesomeIcon
+            className="planningIcon"
+          icon={faSolarPanel}/>
 </motion.div>
 </section>
 <Footer />
+</>
+    :  <><section className="aboutSection">
+
+    <motion.div 
+    className="whatIsNwd"
+    >
+      <h1 className="aboutHeader"
+      style={{fontSize: "36px"}}>NWD is a digital mindfulness journal and daily planner with a difference.</h1>
+          
+        </motion.div>
+
+        <motion.div 
+        className="aboutOne">
+          <div className="explanationLeft">
+          <h1 className="aboutPageHeader">Plan your day simply and smartly using our unique format designed for productivity and peace of mind.</h1>
+          </div>
+          
+          <FontAwesomeIcon
+            className="planningIcon"
+          icon={faSolarPanel}/>
+        </motion.div>
+
+
+        <motion.div className="aboutTwo">
+          
+        <FontAwesomeIcon
+            className="planningIcon"
+          icon={faSolarPanel}/>
+        <div className="explanationRight">
+        <h1 className="aboutPageHeader">Guarantee the dedication of a day matches the meaning of your life using our interactive experiences and year mapping.</h1>
+        </div>
+        </motion.div>
+
+        <motion.div className="aboutThree"
+            initial="hidden"
+>
+        <div className="explanationLeft">
+        <h1 className="aboutPageHeader">Immerse yourself in your diary through playback and insights to unlock deeper self-understanding.</h1>
+        </div>
+        <FontAwesomeIcon
+            className="planningIcon"
+          icon={faSolarPanel}/>
+</motion.div>
+</section> 
+<ReducedFooter />
+   </>
+}
+    
+
         </>
   );
 }
