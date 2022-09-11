@@ -257,11 +257,17 @@ By being a hugely effectual generator of such signals (in a way that your own fi
 and the impression of others cannot do consistently), NWD, and two full buckets, can be a massively helpful tool for greater self-awareness. 
 <br />
 <br />
-  Obviously, the signal cannot provide a solution, it can only point towards an area of enquiry and curiousity which, in time, 
-can provide more clarity (or comfort in the unknowing, which is ultimately the more powerful mental force).
+  Obviously, the signal cannot provide a solution with suitable scrutiny and ensuing exploration. The exploration will, in time, birth an 
+  observation that will, in turn, prompt a new behaviour born from greater self-awareness, which in turn will create different kinds of 
+  signals in your data. And, the cycle will continue anew. 
   <br />
   <br />
- A slice of self-awareness I have been afforded is that as a version of the human condition over the course of my life to date, 
+ Later sections of this course talk more the mindset and mental tools that can help cope with self-revelation, 
+ but I want to take another brief moment to empower you to see your distant or recent past with empathy, even if that 
+ involves baring myself a bit more than you'd expect from the average digital course.
+ <br />
+ <br />
+As a version of the human condition over the course of my life to date, 
 a pretty accurate description of me would be as follows...
   <br />
   <br />
@@ -269,33 +275,35 @@ a pretty accurate description of me would be as follows...
   suppressing my own ability and not seeing things through to the finish.
   <br />
   <br />
-  I feel I have some of the virtues that often accompany these psychoses:
+  This accidental preoccupations are not without their benefits. They do serve do make you more...
   <br />
   <br />
-  <strong className="emphasis">Curiousity</strong>
+  <strong className="emphasis">Curious</strong>
   <br />
   <i className="aside">(not finishing one thing has usually meant the starting of another quite divergent thing)</i>
   <br />
   <br />
   <strong className="emphasis">
-  Creativity</strong>
+  Creative</strong>
   <br />
   <i className="aside">(if you have explored many divergent things,
     you can see joins that others struggle to and or have a larger plain of reference from which to make imaginative suggestions)</i>
   <br />
   <br />
-  <strong className="emphasis">Empathy</strong>
+  <strong className="emphasis">Empathetic</strong>
   <br />
   <i className="aside">(playing in different spaces usually means being prepared to be vulnerable and having experienced a greater diversity of human story;
   both of which are likely to engender more empathy)</i>
   <br />
   <br />
+  That being said, they were certainly acting as blockers in my relationship with my own mind and how I related to the world.
   I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, 
 understanding them and transforming my relationship with them
- - and getting the best from them.
+ - and getting the best from them. I would never have reached this clarity so calmly had it not been for the NWD format; the signals it spawn, 
+ the questions they prompted, the explorations they afford and the observations that were translated to action.
    <br />
   <br />
-     Overall summary, expect your data to look like a hot mess, remember the signals it provides are objective and unemotional, not personal and emotional.
+     <strong>In summary, as one my favourite sports coaches says, 'Doers make mistakes'; expect your data to look like a hot mess if you are pushing yourself and remember the signals it provides are objective and unemotional, not personal and carrying a distinct value judgement.</strong>
   </span>
   <br />
 
@@ -328,13 +336,13 @@ setMyLearnings2(myLearnings2 => true);
     </div>
   <br />
 <span>
-  From all this time, I have, importantly, gained many revelations about myself and, less importantly but with a certain sense of
+  As I just shared, thanks to the NWD format, I have, importantly, gained many revelations about myself and, less importantly but with a certain sense of
   satisfaction, seen a quiet improvement in each measure over time; even if some habits still persist.
 <br />
 <br />
-<strong>
-  A key takeaway from this time and experience is that I can say with utter confidence that the <strong>action(s) that sit behind any signal
-  (i.e. the cause for which the data displayed in the graph is an effect) are never wholly bad or wholly good.</strong></strong>
+
+  A key takeaway from this time and experience is that I can say with utter confidence that<strong>the action(s) that sit behind any signal
+  </strong><i className="aside">(i.e. the cause for which the data displayed in the graph is an effect)</i><strong> are never wholly bad or wholly good.</strong>
 <br />
 <br />
 <strong className="emphasis">Why is that?</strong>
@@ -344,8 +352,8 @@ setMyLearnings2(myLearnings2 => true);
   This is another thing which is obvious to us in some realms, but often escapes us when referring to our own lives and minds.
 <br />
 <br />
-  For example, if you are trying to gain some weight, having a large portion of white rice and with your protein, fibre, fats etc and a dessert for afters, is a good thing i.e. it is good
-  for the end of gaining weight - what you are optimising for. However, if you are trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
+  For example, if you are trying to gain some weight, having a large portion of white rice and with your protein, fibre, fats etc and a dessert for afters, is a good thing i.e. if you are optimising for weight gain, extra 
+  calories and muscle building nutrients are 'good' / what you are optimising for. However, if you are trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
 <br />
 <br />
   We tend to use words bad or good quite lazily in everyday discourse;
@@ -388,7 +396,7 @@ and this is a joy in life; finding a way to transform our condition each day. Ev
   NWD has taught me to relish this opportunity that each day presents and will endeavour to do so every day of my life.
   <br />
   <br />
-  Overall, remember in the largest, most prevailing sense, we are not dealing in the realms of good and bad; simply good and the potential for good.
+  <strong>Overall, remember in the largest, most prevailing sense, we are not dealing in the realms of good and bad; simply good and the potential for good.</strong>
 </span>
 <br />
 
@@ -423,20 +431,26 @@ setMyLearnings3(myLearnings3 => true);
 <h2 className="quizHeaderWhite">What is getting in the way of me doing what I said I would do?</h2>
 <br />
 <span>
-As we were just starting to explore in the previous step, the action that is impacting any metric is never wholly bad or good
-because that paradigm is not sufficiently applicable to the nurturing of greater joy and growth.
+  As we were just starting to explore in the previous step, the action that is impacting any metric is never wholly bad or good
+  because that paradigm is not sufficiently applicable to the nurturing of greater joy and growth.
 <br />
 <br />
-Remember our core truths:
+  Quick Reminder of Our Value Dynamic:
 <br />
 <br />
-<strong>Every data point is a signal.</strong>
+  <strong>Every metric, shift in the graph and data point is a signal.</strong>
 <br />
 <br />
-<strong>Every signal is ultimately underpinned by an action.</strong>
+  <strong>Every signal helps us ask a better question.</strong>
 <br />
 <br />
-<strong>Every action is presently good or capable for transformation to good.</strong>
+  <strong>Every question helps prompt more purposeful, specific self-explorations.</strong>
+<br />
+<br />
+<strong>Every exploration is capable of producing an observation than can inspire new actions.</strong>
+<br />
+<br />
+<strong>Therefore, whichever action caused the initial shift in data, is clearly either good or capable for transformation to good through this process.</strong>
 <br />
 <br />
   Similarly to this wholly not bad or good point, what is getting in the way of me doing what I said I would do could fall anywhere on the following scale:

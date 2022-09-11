@@ -29,6 +29,8 @@ import TasksCompletionRateAverage from '../../components/Charts/TaskCompletionRa
 import TasksCompletionRateVariance from '../../components/Charts/TaskCompletionRate/TaskCompletionRateVariance.js'
 import TasksCompletionRateTrend from '../../components/Charts/TaskCompletionRate/TaskCompletionRateTrend.js'
 
+//Wave Chart
+import WaveChart from '../../components/Charts/Wave/WaveChart.js'
 
 //Loading
 import Loading from '../../components/Loading/Loading';
@@ -302,6 +304,45 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
 <h5 className="insightHeader">Recent</h5>
 <TasksCompletionRateTrend />
+</div>
+
+
+ }
+       </Row>
+</Col>
+
+<Col sm={12} lg={6}>
+<Row className="mt-3">
+
+<Col className="text-center">
+<h3 className="chartTitle">Your Wave</h3>
+       <WaveChart />
+       </Col>
+       { vw > 500 ? 
+
+<Col id="colBorder" className="d-flex-col align-self-end">
+  <Row className="justify-content-center align-center text-start mt-3 mb-4">
+<h3 className="insightHeader">Average</h3>
+Average
+
+<h3 className="insightHeader">Deviation</h3>
+Deviation
+
+<h3 className="insightHeader">Recent</h3>
+Recent
+</Row>
+ </Col>
+:
+<div className="testRow">
+
+<h5 className="insightHeader">Average</h5>
+Average
+
+<h5 className="insightHeader">Deviation</h5>
+Variance
+
+<h5 className="insightHeader">Recent</h5>
+Recent
 </div>
 
 

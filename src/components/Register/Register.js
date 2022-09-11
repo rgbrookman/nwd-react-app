@@ -49,7 +49,7 @@ export default function Register({ history }) {
       className="registerInput"
       type="text"
       value={name}
-      placeholder="name"
+      placeholder="Your Name"
       onChange={(e) => setName(e.target.value)}
       />
       </div>
@@ -60,7 +60,7 @@ export default function Register({ history }) {
     className="registerInput"
     type="text"
     value={email}
-    placeholder="email"
+    placeholder="Email"
     onChange={(e) => setEmail(e.target.value)}
     />
       </div>
@@ -71,7 +71,7 @@ export default function Register({ history }) {
     className="registerInput"
     type="password"
     value={password}
-    placeholder="password"
+    placeholder="Password"
     onChange={(e) => setPassword(e.target.value)}
     />
       </div>
@@ -82,7 +82,7 @@ export default function Register({ history }) {
     className="registerInput"
     type="password"
     value={confirmPassword}
-    placeholder=" Confirm password"
+    placeholder="Confirm password"
     onChange={(e) => setConfirmPassword(e.target.value)}
     />
     </div>

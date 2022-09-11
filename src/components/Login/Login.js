@@ -40,7 +40,7 @@ const override = {
     setTimeout(()=> {
       setLoadingSpinner(false);
     }, 1500);
-    navigate('/today');
+    navigate('/');
   };
 
   return (
