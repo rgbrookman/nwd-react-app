@@ -108,15 +108,15 @@ const resetHandler = () => {
   setSelfLess('');
   setMindBody('');
   setMomentOne('');
-  setMomentOneScore(null);
+  setMomentOneScore("");
   setMomentTwo('');
-  setMomentTwoScore(null);
+  setMomentTwoScore("");
   setMomentThree('');
-  setMomentThreeScore(null);
+  setMomentThreeScore("");
   setMomentFour('');
-  setMomentFourScore(null);
+  setMomentFourScore("");
   setMomentFive('');
-  setMomentFiveScore(null);
+  setMomentFiveScore("");
   setRememberToday('');
   setLeaveBehind('');
   setEndScore(0);
@@ -177,6 +177,7 @@ const updateHandler = (e) => {
         resetHandler();
         
         setTimeout(()=> {
+          navigate('/');
           window.location.reload();
         }, 250);
 
