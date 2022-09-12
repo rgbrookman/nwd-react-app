@@ -174,7 +174,7 @@ const updateHandler = (e) => {
       leaveBehind,
       endScore));
 
-      if (!logDate ||
+      if ( !logDate ||
         !startScore ||
         !thankYou ||
         !selfLess ||
@@ -196,7 +196,6 @@ const updateHandler = (e) => {
         resetHandler();
         
         setTimeout(()=> {
-          navigate('/');
           window.location.reload();
         }, 250);
 
@@ -218,7 +217,8 @@ useEffect(() => {
 
   return (
     <>
-  <Header />
+    { pageLoading  ? 
+ null :  <><Header /> </>}
        
         { pageLoading && !days ?
           <div className="pageLoading">
@@ -263,7 +263,7 @@ required
 <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
 <iframe className='videoPlayer'
         title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${videoLink}?start=0`}>
 </iframe>
 </div>

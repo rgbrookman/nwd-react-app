@@ -75,16 +75,8 @@ const Header = ({ history }) => {
           loadingTimeout();
         })
 
-        const daysLoggedArray = [];
-          days && days.map(each => daysLoggedArray.push(each.startScore));
+   
 
-        const daysLogged = d3.count(daysLoggedArray, d => d);
-
-        const yearsArray = [];
-
-        years && years.map(each => yearsArray.push(each.yourName));
-
-        const yearsLogged = d3.count(yearsArray, d => d);
 
   return (
 <>
@@ -114,7 +106,7 @@ const Header = ({ history }) => {
 
 }
 
-{!days ? null : days
+{!days ? null : days && days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
       .map((day) => (
 <span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate.toLocaleString().substring(0,10)}</strong></span>
@@ -278,7 +270,7 @@ Create A New Year
                id="weekDropdownMenu"
                className="dropdowMenu">
 
-{ daysLogged > 9 ? <Dropdown.Item
+{ days && days.length > 9 ? <Dropdown.Item
        id="viewSelector"
        className="dropdownItem"
        href="/insight">
