@@ -174,6 +174,25 @@ const updateHandler = (e) => {
       leaveBehind,
       endScore));
 
+      if (!logDate ||
+        !startScore ||
+        !thankYou ||
+        !selfLess ||
+        !mindBody ||
+        !momentOne ||
+        !momentOneScore ||
+        !momentTwo ||
+        !momentTwoScore ||
+        !momentThree ||
+        !momentThreeScore ||
+        !momentFour ||
+        !momentFourScore ||
+        !momentFive ||
+        !momentFiveScore ||
+        !rememberToday ||
+        !leaveBehind ||
+        !endScore) return;
+
         resetHandler();
         
         setTimeout(()=> {

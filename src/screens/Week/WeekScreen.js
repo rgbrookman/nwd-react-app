@@ -183,25 +183,26 @@ const [videoLink, setVideoLink] = useState('GQzaJ3qCo4k');
       objectiveTen_score));
 
       if (!objectiveOne_text ||
-          !objectiveOne_score ||
-          !objectiveTwo_text ||
-          !objectiveTwo_score ||
-          !objectiveThree_text ||
-          !objectiveThree_score ||
-          !objectiveFour_text ||
-          !objectiveFour_score ||
-          !objectiveFive_text ||
-          !objectiveFive_score ||
-          !objectiveSix_text ||
-          !objectiveSix_score ||
-          !objectiveSeven_text ||
-          !objectiveSeven_score ||
-          !objectiveEight_text ||
-          !objectiveEight_score ||
-          !objectiveNine_text ||
-          !objectiveNine_score ||
-          !objectiveTen_text ||
-          !objectiveTen_score) return;
+        !objectiveOne_score ||
+        !objectiveTwo_text ||
+        !objectiveTwo_score ||
+        !objectiveThree_text ||
+        !objectiveThree_score ||
+        !objectiveFour_text ||
+        !objectiveFour_score ||
+        !objectiveFive_text ||
+        !objectiveFive_score ||
+        !objectiveSix_text ||
+        !objectiveSix_score ||
+        !objectiveSeven_text ||
+        !objectiveSeven_score ||
+        !objectiveEight_text ||
+        !objectiveEight_score ||
+        !objectiveNine_text ||
+        !objectiveNine_score ||
+        !objectiveTen_text ||
+        !objectiveTen_score) return;
+
       resetHandler();
       setTimeout(()=> {
         window.location.reload();
