@@ -38,20 +38,15 @@ useEffect(() => {
 
 	let wave = (day.total / 3) + (day.taskCompletionRate / 3) + day.endScore;
 	day.waveScore = wave;
-
 	
 	  });
 
     const startScoreData = days && days.map(each => {
       return {date: parseDate(each.logDate.slice(0,10)), fWS: each.feelingWaveScore, tcr: each.taskCompletionRate, tc: each.total, wave: each.waveScore}});
 
-	  
+
     const ssDataFinal = startScoreData.sort((a,b) => a.date - b.date);
 	 ssDataFinal.pop();
-
-
-
-
 
 	const margin = {top: 20, right: 30, bottom: 30, left: 30}
     const width = parseInt(d3.select('#d3demo').style('width')) - margin.left - margin.right
@@ -85,70 +80,63 @@ useEffect(() => {
 							.domain([0, max])
 							.range([height,0])
 
-				svg.append('g')
-					.call(d3.axisLeft(y))
-					.style("font-family", "'caveat', cursive")
-					.style("font-weight", "700")
-					.style("font-size", "16px")
-					.style("opacity", "0.3")
-
 			
-			
-						svg
-						.append("g")
-						.selectAll("dot")
-						.data(ssDataFinal)
-						.enter()
-						.append("circle")
-						  .attr("cx", function(d) { return x(d.date) } )
-						  .attr("cy", function(d) { return y(d.fWS) } )
-						  .attr("r", 6)
-						  .attr("fill", "yellow")
-						  .attr("opacity", "0.25")
 
-						  svg
-						  .append("g")
-						  .selectAll("dot")
-						  .data(ssDataFinal)
-						  .enter()
-						  .append("circle")
-							.attr("cx", function(d) { return x(d.date) } )
-							.attr("cy", function(d) { return y(d.tcr) } )
-							.attr("r", 6)
-							.attr("fill", "red")
-							.attr("opacity", "0.25")
+				svg
+				.append("g")
+				.selectAll("dot")
+				.data(ssDataFinal)
+				.enter()
+				.append("circle")
+					.attr("cx", function(d) { return x(d.date) } )
+					.attr("cy", function(d) { return y(d.fWS) } )
+					.attr("r", 6)
+					.attr("fill", "yellow")
+					.attr("opacity", "0.25")
 
-							svg
-							.append("g")
-							.selectAll("dot")
-							.data(ssDataFinal)
-							.enter()
-							.append("circle")
-							  .attr("cx", function(d) { return x(d.date) } )
-							  .attr("cy", function(d) { return y(d.tc) } )
-							  .attr("r", 6)
-							  .attr("fill", "blue")
-							  .attr("opacity", "0.25")
+				svg
+				.append("g")
+				.selectAll("dot")
+				.data(ssDataFinal)
+				.enter()
+				.append("circle")
+				.attr("cx", function(d) { return x(d.date) } )
+				.attr("cy", function(d) { return y(d.tcr) } )
+				.attr("r", 6)
+				.attr("fill", "red")
+				.attr("opacity", "0.25")
 
-							  svg.append('path')
-							  .datum(ssDataFinal)
-							  .attr('fill', 'none')
-							  .attr('stroke','white')
-							  .attr('stroke-width', 5)
-							  .attr('d', d3.line()
-										  .x(function(d){return x(d.date)})
-										  .y(function(d){return y(d.wave)})
-								  )
-			
+				svg
+				.append("g")
+				.selectAll("dot")
+				.data(ssDataFinal)
+				.enter()
+				.append("circle")
+					.attr("cx", function(d) { return x(d.date) } )
+					.attr("cy", function(d) { return y(d.tc) } )
+					.attr("r", 6)
+					.attr("fill", "blue")
+					.attr("opacity", "0.25")
+
+				svg.append('path')
+				.datum(ssDataFinal)
+				.attr('fill', 'none')
+				.attr('stroke','white')
+				.attr('stroke-width', 5)
+				.attr('d', d3.line()
+							.x(function(d){return x(d.date)})
+							.y(function(d){return y(d.wave)})
+					)
 
 },[]);
 
 
 	return (
-
+<>
 		<div id='d3demo6'>
 			<svg ref={d3Chart}></svg>
 		</div>
-
+<div id="legend"></div>
+</>
 	)
 }

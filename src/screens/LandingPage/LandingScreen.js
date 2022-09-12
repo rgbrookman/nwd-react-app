@@ -95,7 +95,7 @@ const visionExplainer = 'tSuRg3bqgIg';
      animate={ textDisplay ? "show" :  "hide" }
     variants={hideState}
     >
-          {userInfo.name}, <br/>this is your NoWastedDays.</motion.h1>
+          {userInfo.name}, <br/>this is your NoWastedDays.{process.env.REACT_APP_JWT_SECRET}</motion.h1>
 <hr className="dividingLine" />
           { vw > 800 ? 
           <>

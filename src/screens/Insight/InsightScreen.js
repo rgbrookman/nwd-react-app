@@ -322,27 +322,27 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
 <Col id="colBorder" className="d-flex-col align-self-end">
   <Row className="justify-content-center align-center text-start mt-3 mb-4">
-<h3 className="insightHeader">Average</h3>
-Average
+<h3 className="insightHeader" style={{color: "yellow", opacity: "0.25"}}>Feeling</h3>
 
-<h3 className="insightHeader">Deviation</h3>
-Deviation
 
-<h3 className="insightHeader">Recent</h3>
-Recent
+<h3 className="insightHeader" style={{color: "blue", opacity: "0.25"}}>Moments Completed</h3>
+
+
+<h3 className="insightHeader" style={{color: "red", opacity: "0.25"}}>MCR%</h3>
+
 </Row>
  </Col>
 :
 <div className="testRow">
 
-<h5 className="insightHeader">Average</h5>
-Average
+<h5 className="insightHeader" style={{color: "yellow", opacity: "0.25"}}>Feeling</h5>
 
-<h5 className="insightHeader">Deviation</h5>
-Variance
 
-<h5 className="insightHeader">Recent</h5>
-Recent
+<h5 className="insightHeader" style={{color: "blue", opacity: "0.25"}}>Moments Completed</h5>
+
+
+<h5 className="insightHeader" style={{color: "red", opacity: "0.25"}}>MCR%</h5>
+
 </div>
 
 
@@ -350,14 +350,8 @@ Recent
        </Row>
 </Col>
 
-
-
-
-
 </Row>
         </Container>
-
-
 
       }
         </>

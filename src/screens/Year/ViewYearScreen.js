@@ -294,16 +294,16 @@ Learn About Your Year Page
     variants={valueState}
     className="videoContainer"
     style={{backgroundColor: "none"}}>
- <div className="videoContainerDiv" style={{backgroundColor: "none"}}>
-<motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
-<iframe className='video'
-        title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
-        src={`https://youtube.com/embed/${videoLink}?start=0`}
-        style={{width: "600px", height: "400px", borderRadius: "10px"}}>
-</iframe>
-</div>
+      <div className="videoContainerDiv" style={{backgroundColor: "none"}}>
+        <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
+        <iframe className='videoPlayer'
+          title='Youtube player'
+          sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+          src={`https://youtube.com/embed/${videoLink}?start=0`}>
+          </iframe>
+        </div>
     </motion.div>
+
       <motion.section className="yearMap"
       onReturn{...updateHandler}>
 

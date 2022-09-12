@@ -473,7 +473,7 @@ as the kind of self-insight and awareness that is beautifully symbolic of both y
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<iframe className='video'
+<iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${school}?start=0`}>

@@ -242,7 +242,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<iframe className='video'
+<iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${johnCleese}?start=823`}>
@@ -362,7 +362,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<iframe className='video'
+<iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${johnBerger}?start=1681`}>
@@ -476,7 +476,7 @@ Everything I do has a consequence, everything has a cause and effect".
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<iframe className='video'
+<iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${johnnyWilkinson}?start=3068`}>
@@ -571,7 +571,7 @@ className="video One"
 animate={ video1 ? "show" : "hide" }
 variants={showHideState}
 >
-<iframe className='video'
+<iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${elaineStritch}?start=26`}>
@@ -582,7 +582,7 @@ className="video Two"
 animate={ video2 ? "show" : "hide" }
 variants={showHideState}
 >
-<iframe className='video'
+<iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${steveJobs}?start=302`}>
@@ -593,7 +593,7 @@ className="video Three"
 animate={ video3 ? "show" : "hide" }
 variants={showHideState}
 >
-<iframe className='video'
+<iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${peterUstinov}?start=0`}>

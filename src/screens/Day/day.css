@@ -305,23 +305,6 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 
-.videoContainer {
-  background-color: #EBF4FA;
-  min-height: auto;
-  padding: 10px;
-  min-width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  top: 20%;
-  left: 12.5%;
-  position: fixed;
-  border: 1px solid #46A46C;
-  border-radius: 10px;
-  z-index: 1000;
-}
-
 .explainerButton {
   background-color: #46A46C;
   color: #EBF4FA;
@@ -616,22 +599,6 @@ input::-webkit-inner-spin-button {
     align-items: center;
   }
   
-  .videoContainer {
-    background-color: #EBF4FA;
-    min-height: auto;
-    padding: 10px;
-    min-width: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    top: 20%;
-    left: 12.5%;
-    position: fixed;
-    border: 1px solid #46A46C;
-    border-radius: 10px;
-    z-index: 1000;
-  }
   
   .explainerButton {
     background-color: #46A46C;

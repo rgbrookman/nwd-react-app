@@ -257,13 +257,13 @@ By being a hugely effectual generator of such signals (in a way that your own fi
 and the impression of others cannot do consistently), NWD, and two full buckets, can be a massively helpful tool for greater self-awareness. 
 <br />
 <br />
-  Obviously, the signal cannot provide a solution with suitable scrutiny and ensuing exploration. The exploration will, in time, birth an 
-  observation that will, in turn, prompt a new behaviour born from greater self-awareness, which in turn will create different kinds of 
+  Obviously, the signal cannot provide a solution without suitable scrutiny and an ensuing exploration. 
+  The exploration will, in time, birth an observation that will, in turn, prompt a new behaviour from the new found self-awareness, which in turn will create different kinds of 
   signals in your data. And, the cycle will continue anew. 
   <br />
   <br />
- Later sections of this course talk more the mindset and mental tools that can help cope with self-revelation, 
- but I want to take another brief moment to empower you to see your distant or recent past with empathy, even if that 
+ Later sections of this course talk more the mindset and mental tools that can help you cope with self-revelation, 
+ but I want to take another brief moment to empower you to see your distant or recent past with lots of empathy, even if that 
  involves baring myself a bit more than you'd expect from the average digital course.
  <br />
  <br />
@@ -275,12 +275,12 @@ a pretty accurate description of me would be as follows...
   suppressing my own ability and not seeing things through to the finish.
   <br />
   <br />
-  This accidental preoccupations are not without their benefits. They do serve do make you more...
+  The preoccupations that accompany these psychoses are not without their benefits. They do serve do make you more...
   <br />
   <br />
   <strong className="emphasis">Curious</strong>
   <br />
-  <i className="aside">(not finishing one thing has usually meant the starting of another quite divergent thing)</i>
+  <i className="aside">(not finishing one thing, and subconsciously being organised to not finish any, means the starting of another quite divergent thing)</i>
   <br />
   <br />
   <strong className="emphasis">
@@ -292,15 +292,14 @@ a pretty accurate description of me would be as follows...
   <br />
   <strong className="emphasis">Empathetic</strong>
   <br />
-  <i className="aside">(playing in different spaces usually means being prepared to be vulnerable and having experienced a greater diversity of human story;
+  <i className="aside">(playing in different spaces usually means being prepared to be vulnerable and having experienced a greater diversity of human stories;
   both of which are likely to engender more empathy)</i>
   <br />
   <br />
-  That being said, they were certainly acting as blockers in my relationship with my own mind and how I related to the world.
+  That being said, the manifestations of my suffering were certainly also acting as blockers in my relationship with my own mind and how I related to the world.
   I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, 
-understanding them and transforming my relationship with them
- - and getting the best from them. I would never have reached this clarity so calmly had it not been for the NWD format; the signals it spawn, 
- the questions they prompted, the explorations they afford and the observations that were translated to action.
+understanding them and transforming my relationship with them in order to get the best from them. I would never have reached this clarity so calmly had it not been for the NWD format; the signals it spawn, 
+ the questions it then prompted, the explorations they then afford and the observations they unlocked that were translated into action.
    <br />
   <br />
      <strong>In summary, as one my favourite sports coaches says, 'Doers make mistakes'; expect your data to look like a hot mess if you are pushing yourself and remember the signals it provides are objective and unemotional, not personal and carrying a distinct value judgement.</strong>
@@ -337,7 +336,7 @@ setMyLearnings2(myLearnings2 => true);
   <br />
 <span>
   As I just shared, thanks to the NWD format, I have, importantly, gained many revelations about myself and, less importantly but with a certain sense of
-  satisfaction, seen a quiet improvement in each measure over time; even if some habits still persist.
+  satisfaction, have seen a quiet improvement in each measure over time; even if some habits still persist.
 <br />
 <br />
 
@@ -352,51 +351,38 @@ setMyLearnings2(myLearnings2 => true);
   This is another thing which is obvious to us in some realms, but often escapes us when referring to our own lives and minds.
 <br />
 <br />
-  For example, if you are trying to gain some weight, having a large portion of white rice and with your protein, fibre, fats etc and a dessert for afters, is a good thing i.e. if you are optimising for weight gain, extra 
-  calories and muscle building nutrients are 'good' / what you are optimising for. However, if you are trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
+  For example, if you are trying to gain some weight, having a large portion of white rice and with your protein, fibre, fats etc and a dessert for afters, is a good thing as the extra nutrients and calories are highly correlated with 
+  the singular objective. However, if you are actually trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
 <br />
 <br />
-  We tend to use words bad or good quite lazily in everyday discourse;
-  assuming we know what someone else was deeply and distinctly trying to do,
-  or by simply relegating something as good or bad due to the cultural context when,
-  in fact, we should know that the things we think of as good or bad can change
-  over time (usually ameliorating from initial bad perception to anywhere between somewhat good and really good!).
-<br />
-<br />
-  This final point is the exact murky space we are dealing with by optimising for joy and growth.
-  When you are dealing with bad or good in relation to individual joy and growth,
+  However, when you are dealing with bad or good in relation to increasing joy and growth,
   it is spectacularly unhelpful to perceive the vast swathe of life as 'bad'.
 <br />
 <br />
-  All you can say with anything like certainty is that something either is 'good' because
+This is because something either is 'good' because
   it is helping provide in the moment, or confidently nurture for the future, a relationship
   with joy and growth that you know deeply resonates with yourself and is of deep authentic value,
-  or that something has the potential for good
-  by offering you a chance to transform your relationship with a habit or 
-    behaviour that in turn will provide the kind of 'good' moments and nurturing ability described above.
+  or that something has the <strong>potential for good</strong> by offering you a chance to transform your relationship with it - whether it is a habit or isolated behaviour - 
+  that, with some introspection and a degree of effort, will provide the kind of 'good' moments and nurturing ability described formerly.
 </span>
 <br />
 <br />
 <span>
-  It's a bit like when athletes are asked as a veiled reference to struggles in their life, 'Looking back, do you think you would you have changed anything?'.
+  It's a bit like when athletes are asked, as a veiled reference to struggles in their life, 'Looking back, do you think you would you have changed anything?'.
   Far more often than not, they say something to the affect of "No, because without that difficult time in my life, I might never have made it here today".
 </span>
 <br />
 <br />
 <span>
 As such, as I refer back to the mentions of my particular sufferings, the many days, decisions and moments that were shaped by their 'worst' components, all help them fall in the
-bucket of 'potential for good'. No one comes through their early life and early adult life unscathed i.e. free from trauma, incident or anywhere neear perfectly calibrated with such peak
-levels of existential conscience that result in a near divine experience of every present moment. 
-<br />
-<br />
-  We all have a long list of a 'potential for goods' in our live,
-and this is a joy in life; finding a way to transform our condition each day. Every incremental, even infinitesimal improvement in condition, is a huge and captivating victory.
+bucket of 'potential for good'. No one comes through their early life and early adult life unscathed i.e. free from trauma, incident or anywhere near perfectly calibrated with such peak
+levels of existential conscience that result in a near divine experience of every present moment. As a result, we all have a long list of a 'potential for goods' in our live, and this is a joy in life; finding a way to transform our condition each day. Every incremental (even infinitesimal) improvement in condition is a huge and captivating victory.
   <br />
   <br />
-  NWD has taught me to relish this opportunity that each day presents and will endeavour to do so every day of my life.
+  Unfortunately, there is not easy word for these 'potential for goods' at the moment. Let me know if you have any ideas! 
   <br />
   <br />
-  <strong>Overall, remember in the largest, most prevailing sense, we are not dealing in the realms of good and bad; simply good and the potential for good.</strong>
+  <strong>Overall, remember in the largest, most prevailing sense, we are not dealing in the realms of good and bad; simply good and the potential for good thanks to self-awareness turning trauma into transformation.</strong>
 </span>
 <br />
 
@@ -432,7 +418,7 @@ setMyLearnings3(myLearnings3 => true);
 <br />
 <span>
   As we were just starting to explore in the previous step, the action that is impacting any metric is never wholly bad or good
-  because that paradigm is not sufficiently applicable to the nurturing of greater joy and growth.
+  because that paradigm is not sufficiently applicable to the nurturing of greater joy and growth over time within the human experience.
 <br />
 <br />
   Quick Reminder of Our Value Dynamic:
@@ -453,10 +439,10 @@ setMyLearnings3(myLearnings3 => true);
 <strong>Therefore, whichever action caused the initial shift in data, is clearly either good or capable for transformation to good through this process.</strong>
 <br />
 <br />
-  Similarly to this wholly not bad or good point, what is getting in the way of me doing what I said I would do could fall anywhere on the following scale:
+  Similarly to this wholly not bad or good point, whatever is getting in the way of me doing what I said I would do could fall anywhere on the following scale:
   <br />
   <br />
-  <strong className="emphasis">something I should 100% avoid doing and or craving because I have near complete confidence it is inversely correlatd with joy and growth.</strong>
+  <strong className="emphasis">something I should 100% avoid doing and or craving because I have near complete confidence it is inversely correlated with my joy and growth, both now and in the future.</strong>
   <br />
   or...
   <br />
@@ -478,7 +464,7 @@ You stare at a day where in the morning you mapped out this temporal mind-field 
 juggling work and play in some cartesian web of personal 'mastery'.
 <br />
 <br />
-But all you did in the end is have a coffee, get an ice cream with your girlfriend, sit and watch the sunset from that nice seat on the canal, and then wander home,
+But all you did in the end is have a lay-in, a read on the sofa with a coffee, get an ice cream with your girlfriend, sit and watch the sunset from that nice seat on the canal, and then wander home,
 taking the odd moment to dance together in the fading light.
 <br />
 <br />
@@ -494,6 +480,9 @@ The signals start popping up off the page:
 <br />
 <br />
 "How much time should I make for some serendipity and such quality time now compared to now?"
+<br />
+<br />
+"Why am I always optimising for the complex or complicated versus the simple and serene?"
 <br />
 <br />
 <hr className="dividingLine" />
@@ -520,7 +509,8 @@ when my brain is working on a hard task. Using the google chrome extension 'Focu
 <br />
 <strong>Looking at social media first thing:</strong> I have found this recently. I finally put an iPhone 5C I had been using to rest, and replaced it with a refurbished
 iPhone 13. One of the huge virtues of an old phone is that is much harder to get distracted, even more so when the tiny screen is cracked. But on this brand new
-device, everything is big, pretty and crystal clear.
+device, everything is big, pretty and crystal clear, and suddenly I have it by my side constantly and am checking instagram as soon as I wake up, and sometimes this can throw
+ my capacity to concentrate.
 <br />
 <br />
 <strong>Not saying no to things that came up but weren't on the list:</strong> As I referred to earlier, I have certainly been a bit of a people pleaser in my past, and sometimes this would 
@@ -571,7 +561,7 @@ className="quizDiv">
     <br />
     <span>
       NoWastedDays really refers to the notion that on any given day we don't want the information we need to learn more about ourselves - that will in time
-      help us become more self-aware and self-assured - to go be wasted.
+      help us become more self-aware and self-assured - to be wasted.
       We are generating this information constantly, and the daily diary format on NWD is a prime way to consolidate a lot of what would otherwise go missing.
     </span>
     <br />
@@ -597,7 +587,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-   <iframe className='video'
+   <iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/${michealCaine}?start=0`}>

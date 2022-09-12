@@ -194,3 +194,10 @@
 .subtitle {
   margin-bottom: 8px;
 }
+
+.videoPlayerQuiz {
+  height: 400px;
+  width: 700px;
+  border-radius: 20px;
+  border: 10px solid #46A46C;
+}

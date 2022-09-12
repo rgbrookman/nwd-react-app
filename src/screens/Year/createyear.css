@@ -27,23 +27,6 @@
   margin-bottom: 24px;
 }
 
-.videoExit {
-  width: auto;
-  padding: 4px;
-  margin: 6px;
-  border-radius: 10px;
-}
-
-.videoExit:hover {
-  background-color: grey;
-  color: white;
-  cursor: pointer;
-  width: auto;
-  padding: 4px;
-  margin: 6px;
-  border-radius: 10px;
-}
-
 .nameBox {
   grid-column: 1 / 1;
   grid-row: 1 / 1;
