@@ -13,7 +13,7 @@ import { logout } from '../../actions/userActions';
 import * as d3 from 'd3';
 import './header.css';
 
-const Header = ({ history }) => {
+const Header = () => {
   const [homepage, setHomepage] = useState(window.location.href === '/' ? true : false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -34,20 +34,22 @@ const Header = ({ history }) => {
 
     useEffect(() => {
   dispatch(listYears());
-    }, [dispatch, userInfo, history])
+    }, [dispatch, userInfo])
 
     useEffect(() => {
       dispatch(listWeeks());
-    }, [dispatch, userInfo, history]);
+    }, [dispatch, userInfo]);
 
     useEffect(() => {
       dispatch(listDays());
-    }, [dispatch, userInfo, history]);
+    }, [dispatch, userInfo]);
 
     const logoutHandler = () => {
       dispatch(logout());
       navigate('/');
     }
+
+
 
     useEffect(() => {
       setLoadingSpinner(true);
@@ -68,31 +70,29 @@ const Header = ({ history }) => {
         const loadingTimeout = () => {
           setTimeout(()=> {
             setPageLoading(false)
-          }, 3000)
+          }, 6000)
         }
 
         useEffect(()=> {
           loadingTimeout();
         })
 
-   
-
-
   return (
-<>
+
+<> 
  <Navbar className="navbarHeader navbar-dark align-items-center" expand="md">
-{
-   !days && !years && !weeks 
+{ !days && !years && !weeks 
   ?
-
+ 
   <Navbar.Brand>
-  <Nav.Link href="/">
-  <Loading />
-  </Nav.Link>
+    <Nav.Link href="/">
+      <Loading />
+    </Nav.Link>
   </Navbar.Brand>
+ 
    :
-
-  <Navbar.Brand id="navbar-brand">
+ 
+  <Navbar.Brand>
     <Nav.Link href="/">
        <img
       src={logo}
@@ -103,10 +103,10 @@ const Header = ({ history }) => {
     />
     </Nav.Link>
     </Navbar.Brand>
-
+   
 }
 
-{!days ? null : days && days
+{Array.isArray(days) === false ? <Loading />: days && days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
       .map((day) => (
 <span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate.toLocaleString().substring(0,10)}</strong></span>
@@ -119,7 +119,7 @@ const Header = ({ history }) => {
 { userInfo ?
   <Nav.Item className="navSection">
     <Nav.Link href="/feedback">Feedback</Nav.Link>
-  </Nav.Item> : null
+  </Nav.Item> : <></>
 }
 
 
@@ -136,8 +136,8 @@ const Header = ({ history }) => {
           id="yearDropdownMenu"
           className="dropdownMenu">
 
-{ years && years.yourName === null ?
-null :
+{ years && years.yourName === ""  ?
+<></> :
 <Dropdown.Item
   id="createSelector"
   className="listItem"
@@ -159,7 +159,7 @@ Create A New Year
     </Dropdown.Menu>
     </Dropdown>
       </Nav.Item>
-: null }
+: <></> }
 
     { userInfo
     ? <Nav.Item className="navSection">
@@ -183,7 +183,7 @@ Create A New Year
         <hr className="dividingLine" />
         </Dropdown.Item>
 
-        {weeks && weeks
+        {Array.isArray(weeks) === false ? <></> : weeks && weeks
               .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1 )
               .map((week) => (
             <Dropdown.Item
@@ -197,7 +197,7 @@ Create A New Year
     </Dropdown.Menu>
     </Dropdown>
     </Nav.Item>
-    : null
+    : <></>
     }
 
     { userInfo
@@ -210,7 +210,7 @@ Create A New Year
               className="dropdownToggle">
               Today
             </Dropdown.Toggle>
-            { !days ? null :
+            { !days ? <></> :
             <Dropdown.Menu
             id="weekDropdownMenu"
             className="dropdowMenu">
@@ -224,7 +224,7 @@ Create A New Year
             </Dropdown.Item>
 
 
-            {days && days
+            {Array.isArray(days) === false  ? <></>: days && days
                   .filter((day, i, days) => days.indexOf(day) === days.length -1 )
                   .map((day) => (
                 <Dropdown.Item
@@ -270,7 +270,7 @@ Create A New Year
                id="weekDropdownMenu"
                className="dropdowMenu">
 
-{ days && days.length > 9 ? <Dropdown.Item
+{ Array.isArray(days) && days.length > 9 ? <Dropdown.Item
        id="viewSelector"
        className="dropdownItem"
        href="/insight">
@@ -297,7 +297,7 @@ Create A New Year
            </Dropdown.Menu>
                </Dropdown>
     </Nav.Item>
-         : null
+         : <></>
          }
 
          { userInfo
@@ -313,7 +313,7 @@ Create A New Year
                </Dropdown.Toggle>
                </Dropdown>
     </Nav.Item>
-         : null
+         : <></>
          }
 
          { userInfo
@@ -332,11 +332,10 @@ Create A New Year
           </Dropdown>
      </Nav.Item>
 
-     : null }
+     : <></>}
 </Nav>
 </Navbar.Collapse>
   </Navbar>
-
 </>
   )
 }
