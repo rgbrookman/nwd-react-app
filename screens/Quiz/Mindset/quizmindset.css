@@ -1,0 +1,18 @@
+.subList {
+  line-height: 2;
+}
+
+.niceLink {
+  font-family: 'caveat', cursive;
+}
+
+.nameButtonRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aside.timestamp {
+  color: #000;
+}
+
