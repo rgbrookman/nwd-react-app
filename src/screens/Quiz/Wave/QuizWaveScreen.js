@@ -91,7 +91,8 @@ Diana Vreeland loved surfers.
 sky and water, would be, to me, the most wonderful thing"</strong>
     <br />
         <br />
-Surfers ably ride the waves the sea and moon create, and must experience such flow and serenity in doing so.
+Surfers ably ride the waves the sea, wind and moon create, and must experience such flow and serenity in doing so by treating 
+the pursuit of a wave, its building and cresting, and the ride towards the shore with equal presence, effort and attention.
     <br />
     <br />
   Whilst only fractionally as visceral as the experience of the surfer,
@@ -145,7 +146,7 @@ className="quizDiv">
     <br />
     <br />
       As you can see quite clearly now,
-      but was only revealing itself slowly and incrementally at the time, was this wave like pattern emerging.
+      but was only revealing itself slowly and incrementally at the time, there was this wave like pattern emerging.
     </span>
 <span>
 </span>
@@ -184,7 +185,7 @@ className="quizDiv">
   <span>
     At certain points, I would hit small strings of these peak days wherein I took care of every moment,
     attempted an ambitious quality of moment, made time for really suitable recovery and did the other things in my life that I was becoming
-    increasingly confident contributed to my joy and growth. This would manifest as nice crest on the top of the wave.
+    increasingly confident contributed to my joy and growth. This would manifest as a nice crest on the top of the wave.
     <br />
     <br />
     However, of course, that crest only shares one half of the story? What about how the wave breaks?
@@ -228,13 +229,15 @@ className="quizDiv">
     but is rather a near inevitable product of trying to find a way to break new genuine personal territory.
   <br />
   <br />
-    Really, deeply growing is hard and this difficulty is likely to manifest right across the NWD spectrum of inputs
-    - from feeling (as you start to contend with new challenges and test your condition in new ways),
-    to all of the different moment metrics (building the muscle to take on a bit more, prioritise things different and make new habits
-    is always going to come at a cost to the scores).
+    Really deep significant growth is hard to realise and this difficulty is likely to manifest right across your spectrum of NWD inputs. 
+    As you start to contend with new challenges and test your condition in new ways, and build the muscle to take on a bit more, prioritise things differently and make new habits,
+    a cost is always going to be paid to one of those core scores. However, this should not be look at as a failing
     <br />
     <br />
-    The crashing of a wave, again, in this context, is only a positive, a sign that you are pushing yourself significantly well, and are following up
+    Just as a surfer, whether he or she crashes off the board in the heart of a wave or gamely sails it to shore, that experience is engaged with only in the present and the experience itself has only moved them closer to greater engagement with the sea in the future.
+    <br />
+    <br />
+    The crashing of a NWD wave, again, in this context, is only a positive, a sign that you are pushing yourself significantly well, and are following up
     self-awareness with a commitment to grow.
   </span>
 
@@ -269,7 +272,7 @@ setMyLearnings1(myLearnings1 => false);
     </div>
     <br />
 <span>
-As I have been writing this, two quotes just sprang to mind:
+As I have been writing this treatise on the wave, two quotes just sprang to mind:
 </span>
 <br />
 <br />
@@ -288,7 +291,8 @@ Mike Posner articulates beautifully that, just like climbing a mountain where yo
 only to reach it and see the next peak strafing out ahead of you, the same is true of your own growth.
 <br />
 <br />
-This is sign that growth is perpetual and that the journey & present moment are the things to be relished above all else.
+This is sign that growth is perpetual and that the journey & present moment are the things to be relished above all else, because you the game of growth 
+- and the joy, interest, connection and affinity with all things that can come with it - is an infinite game, not one with a fixed, universally sanctified end.
 <br />
 <br />
 Our lives as humans on earth are so rich, diverse and challenging that you could live for a million years and still
@@ -308,12 +312,12 @@ enough, still worthy of love, still deserving of peace and safety.
 <br />
 <span>
 The second quote - a stanza from T.S Eliot's 'Little Gidding' - reminds me how, within the context of the graph,
-each wave can only peak so high, and on the face of it look the same.
-But the reality is that no one wave is ever the same as any before it, or any after it because we ourselves have changed.
+each wave can only peak so high, and on the face of it, every peak will look the same.
+But the reality is that no one wave is ever the same as any before it because we ourselves have changed.
 <br />
 <br />
 When approached the right way by you, the user, each numerically equivalent peak is in fact the indication that you are viewing your
-life from a new vantage point; one illucidated by greater condition, self-awareness and self-assurance.
+life from a new vantage point; one elucidated by greater condition, self-awareness and self-assurance.
 <br />
 <br />
 In this way, each peak is quite clearly an end
@@ -323,16 +327,16 @@ wherever that may be, and whatever form that might take.)
 <br />
 <br />
 <span>
-A nice wave to think of them as different is to know the same line can be expressed as a single line looping vertically in an energetic spiral,
+As my crude diagram to the left attempts to indicate, another way to think of the wave is as a line single line looping vertically in an energetic spiral,
 rather than cresting horizontally.
 Just as each wave rises, crests and then falls, each spiral has three distinct phases.
 <br />
 <br />
   1. Build: This nurturing of new condition.
   <br />
-  2. Crest: The  new condition rapidly autonomises.
+  2. Crest: The new condition starts to consolidate itself.
   <br />
-  3. Break & Pre-Build: Condition normalises and you recover before next build.
+  3. Break & Pre-Build: Condition autonomises, and then normalises, and you recover before next build.
 <br />
 <br />
 To summarise, the wave is a great way to experience and mentally manage the transition from one level of awareness, condition and assurance

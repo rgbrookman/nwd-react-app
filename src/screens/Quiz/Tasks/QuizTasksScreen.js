@@ -433,10 +433,10 @@ setMyLearnings3(myLearnings3 => true);
   <strong>Every question helps prompt more purposeful, specific self-explorations.</strong>
 <br />
 <br />
-<strong>Every exploration is capable of producing an observation than can inspire new actions.</strong>
+<strong>Every exploration is capable of producing either a new signal or an observation than can inspire new actions.</strong>
 <br />
 <br />
-<strong>Therefore, whichever action caused the initial shift in data, is clearly either good or capable for transformation to good through this process.</strong>
+<strong>Therefore, whichever action caused the initial shift in the data, is clearly either good or capable for transformation to good through this process.</strong>
 <br />
 <br />
   Similarly to this wholly not bad or good point, whatever is getting in the way of me doing what I said I would do could fall anywhere on the following scale:

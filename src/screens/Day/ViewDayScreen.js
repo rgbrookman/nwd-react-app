@@ -218,7 +218,7 @@ useEffect(() => {
   return (
     <>
     { pageLoading  ? 
- null :  <><Header /> </>}
+      <><Loading /></> :  <><Header /> </>}
        
         { pageLoading && !days ?
           <div className="pageLoading">

@@ -322,7 +322,7 @@ className="quizDiv">
 <div className="rightCol">
 <div className="rightContent">
 <span><strong>Some sick video of me talking through all the stuff you've just read</strong></span>
-<a>The Links I mentioned</a>
+<a href="/resources">The Links I mentioned</a>
 </div>
 </div>
 <div className="buttonRow">
@@ -354,14 +354,33 @@ className="quizDiv">
     <br />
     <br />
     <span>
-      To cut to the chase, your feeling score average only means what you know it means;
+      The first and most valuable way in which it can be understood is as a signal. 
+      <br />
+<br />
+      This thought will be the loudest, most consistent 
+      drum beat throughout this short course. Your feeling score metrics, just like every other metric or graph, are there to provide signals, and in being so, set in motion the following cycle of mental events:
+
+      <br />
+<br />
+  <strong>Every metric, shift in the graph and data point is a signal.</strong>
+<br />
+<br />
+  <strong>Every signal helps us ask a better question.</strong>
+<br />
+<br />
+  <strong>Every question helps prompt more purposeful, specific self-explorations.</strong>
+<br />
+<br />
+<strong>Every exploration is capable of producing either a new signal or an observation than can inspire new actions.</strong>
+<br />
+<br />
+<strong>These new actions will, in time, become new shifts in metrics and signals of their own.</strong>
+<br />
+<br />
+
+Another important insight surrounding the feeling score is that your feeling score average only means what you know it means;
       it has no other context outside of your own.
       In terms of this particular metric, comparison with others is very unlikely to be of any real value to you.
-    <br />
-    <br />
-      As with the other metrics too, and this is a drum I will beat relentlessly throughout this course, the value really comes
-      from using it as a provider of objective signals that inspire you to study your diary and explore the reems of unwritten but crucial
-      context bumbling around in your brain with more specificity, purpose and healthy detachment.
     <br />
     <br />
     <span>
@@ -386,27 +405,26 @@ className="quizDiv">
     Similarly, I know I am quite a tough judge when it comes to giving a day a 5.0, whereas others might use that score more liberally.
     <br />
     <br />
-    <strong>To repeat, it is the context that makes something potent;
-    your unique understanding of not only the score you have put in the feeling box,
-    but also the make up of your days and the honesty of your inputs.
-    Only you can scan through your previous days and spot a half-baked thought
-    from a fully fledged one; a deep piece of peripeteia from a surface level salutation.</strong>
+    <span>To repeat, it is the context that has a created a score that we are interested in. 
+      The scores and metrics are utterly irreplacable as a tool for providing signals, but completely pointless when it comes to 
+      the kind of deep, awakening we are trying to afford to each user of the platform. 
+      <br />
     <br />
-    <br />
-    Being able to recognise and respond to the signals your feeling score provides
-    - as that is all it is doing; just providing you signals; not a single ounce of value judgement or criticism
-    - and then delve into your diary of
-    previous inputs helps bring the powerful insights up from deep within the wealth of data you have accumulated due to each
-    diary days capacity to help you remember the prevailing context.
+    The awakening will always come from you.
+    You have reems of unwritten context bumbling around in your head, and the combination of the insight signals and access to your diary of days and the mental sparks they help create, hugely helps 
+    with exploring said context with more purpose, specificity and healthy detachment.
     </span>
     <br />
     <br />
+    </span>
+
     <span>
     Overall, to summarise, the key points here are as follows:
     <br />
     <br />
-    <strong>"Context is king - The metric itself is only a signal, not an insight. It is your reflections and understanding of the days you've
-    experienced and the things you've felt that turn that that signal into substaniative tool for change".</strong>
+    <strong>"Context is king - The metric itself is only a signal, not an insight. 
+      It is your reflections and understanding of the days you've experienced and 
+      the things you've felt that turn that that signal into substantive tool for change".</strong>
     <br />
     <br />
     <strong>"Comparison is near futile - you can absolutely learn from the rhetorical experiences of others, or how they have turn their data into actions that have come to enrich their life,

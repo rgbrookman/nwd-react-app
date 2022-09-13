@@ -231,7 +231,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<img src={why} width="80%" />
+<img src={why} width="80%" className="imageOrGif" />
 </div>
 </div>
 <div className="buttonRow">
