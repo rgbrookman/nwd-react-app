@@ -42,6 +42,7 @@ export default function QuizDebriefScreen() {
   }, []);
 
   const school = '1JCJVaK48RM';
+  const amorFati = '2Xzh1BjCA5Q';
 
   return (
     <>
@@ -80,7 +81,7 @@ export default function QuizDebriefScreen() {
   To look at an outcome objectively and in its entirety without a reliable prompt or piece of guidance is basically impossible.
   <br />
   <br />
-  This difficulty then, in turn, stands in the way of any of us learning from each day and the things we have tried to achieve within it as much as we possible could.
+  This difficulty then, in turn, stands in the way of any of us learning from each day and the things we have tried to achieve within it as much as we possibly could.
   As a result, more often than not, we end up short on insight and high on a poorly calibrated sense of your role in the outcome.
 </span>
 <br />
@@ -95,13 +96,13 @@ export default function QuizDebriefScreen() {
 <br />
   <strong className="emphasis">Form #2.</strong> We flood ourselves in praise and acclaim, and really start to believe our own hype.
   Then, in turn, we don't have a grateful word to say about the role of key people, the people upon whose shoulders we are standing
-  or sheer blind good fortune.
+  or sheer blind good fortune that afforded us an opportunity to succeed at all.
 </span>
 <br />
 <br />
 <span>
   I have worked in data for over a decade as a marketing analyst, as a performance development coach for a professional ice hockey team,
-  and as a founder of different start-ups. In that time I have needed to review many performances and outcomes.
+  and as a founder of different start-ups. In that time I have needed to review many performances and outcomes of many different types.
   Whilst depending on the situation there are a million ways to do this, one ultra-robust, really accessible framework that you
   can do on any scrap of paper, spare word doc or excel sheet, I am sharing in this section.
 </span>
@@ -247,7 +248,7 @@ onClick={()=> {
   <span>
     There can be few more talked about things online than confidence; how you get it, how you exude it, how you keep it. 
     If you are man in your teens, 20's or 30's, you are only ever one Youtube advert or social media suggestions away from being 
-littered with advice from a certain brand of charisma experts, and self-certified confidence gurus.
+littered with advice from a certain brand of charisma expert or self-certified confidence guru.
   </span>
   <br />
   <br />
@@ -299,12 +300,9 @@ thought, but there are truths about confidence that can empower anyone build the
 </ul>
 Be careful here as overstating your impact on something is as bad as failing to capture what confidence you did earn. 
 We explore what might fall in that former category in a coming section.
-    <strong>Things that may resulted in an overstated assessment of your own contribution:</strong>
-    <br />
-    <i className="aside">(We get to this in the next section)</i>
       <br />
       <br />
-    To summarise, whether you hit all your aims or fell short of every standard, their is confidence out there to be consolidated and you can
+    To summarise, whether you hit all of your aims or fell short of every standard, their is confidence out there to be consolidated and you can
     rely on the debrief format, win or lose, as a way to grasp it!
   </span>
   <span>
@@ -313,7 +311,7 @@ We explore what might fall in that former category in a coming section.
 </div>
 <div className="rightCol">
 <div className="rightContent">
-
+<p>A sick graphic describing what I've said</p>
 </div>
 </div>
 <div className="buttonRow">
@@ -347,15 +345,18 @@ className="quizDiv">
     <span>
       I stop and just reflect on the sheer infinitesimal chance that I am alive in the first place and how this lived
       experience I am having is so precious.
-
+      <br />
+    <br />
       If you are feeling up for it, consider for a second the curious courses of history that have had to
       intersect...
-
-      - all the love, hate, pioneering effort, balking chance, migration, stagnation, inflation and procrastination;
-      each of the dizzying lineage of people, places, processes, postulations, perambulations and prognostications that go back even just a
-      couple of generations, let alone a longer period of time and space -
-
-      for you to even to have a chance to exist in the first place. 
+      <br />
+    <br />
+      ...all the love, hate, pioneering effort, balking chance, migration, stagnation, inflation and procrastination;
+      each of the dizzying lineages of people, places, processes, postulations, perambulations and prognostications that go back even just a
+      couple of generations, let alone a longer period of time and space...
+      <br />
+    <br />
+      ...for you to even to have a chance to exist in the first place. 
       <br />
     <br />
       The chance is so mind bogglingly small that you can't help but be brought back to the present moment 
@@ -388,6 +389,43 @@ that happened before your life that put you in a position to live you had no con
     over which you had less than zero control.
     <br />
     <br />
+  For those of you that may find gratitude a bit difficult, I have included a list below that can help you build the muscle. 
+  Start with point number one, and when you find giving gratitude to that type of thing easy to do, move onto point number two. 
+    <br />
+    <br />
+    <ol>
+    <br />
+    <li><strong>People / Person:</strong> 
+      Start close to home or furthest from home - whatever you find easiest. 
+      Who has helped you? 
+      From whose wisdom have you made better decisions? 
+      Whose goodness have you witness or heard about?
+      Who is someone who you have never met but you feel an affinity for that transcends time and space?</li>
+    <br />
+  <li><strong>Place:</strong> 
+    What organisations have helped you succeed or feel more at home in the world? 
+    What places have you been grateful to spend time within or enjoyed visiting?
+  </li>
+  <br />
+    <li><strong>Part of your Body:</strong> 
+      Our limbs and organs work in unbelievable connectivity to afford us the chance to think, feel and act. Which have helped you the most recently?
+      Which have you perhaps never said thank you to, despite the fact they have worked continually, and perhaps without fail, since before you were born? 
+    </li>
+      <br />
+    <li><strong>Plant or Product:</strong> 
+      Which of the plants in your home, or plants in your surrounding area are you grateful to see each day? 
+      Which of the appliances that you use has helped you a lot recently?
+    </li>
+      <br />
+    <li><strong>Property:</strong> 
+      What force can you say has afforded you a chance to feel?
+    </li>
+    <br />
+    <li><strong>Pain or Perversity:</strong> 
+      What pain or perversity can you be grateful for because a) it is a sign you are alive in the world and b) because it is better than succumbing to greater pain or be trapped by greater levels of perverse thinking?
+    </li>
+      <br />
+</ol>
     To summarise, ply your 'Positive & Out of Your Control' box with, in order of importance, as many of the environmental factors that helped you as possible and
     you will feel a huge wash of gratitude and goodness!
     </span>
@@ -556,7 +594,11 @@ Overall, to map them is to detach from circumstances; to detach is to forgive an
 </div>
 <div className="rightCol">
 <div className="rightContent">
-
+<iframe className='videoPlayerQuiz'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${amorFati}?start=0`}>
+</iframe>
 
 
 </div>

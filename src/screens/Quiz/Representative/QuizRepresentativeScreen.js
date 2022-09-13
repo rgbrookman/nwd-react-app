@@ -147,13 +147,10 @@ what you felt and tried to do on any particularly day most intimately - you will
 Thought of another way, NWD is not Instagram.
 <br />
 <br />
-Here you are not incentivised or quietly encouraged to paint a higlight-reel picture of your life. 
+Here you are not incentivised or quietly encouraged to paint a higlight-reel picture of your life. You are simply, and for expressly your own benefit, encouraged to tell it exactly how it was and felt to you on that day.
 <br />
 <br />
-Equally, the opposite is also not true. Honesty needn't mean a damning indictment or a crushingly cold assessment of your day. 
-<br />
-<br />
-Here on NWD, perhaps the key currency is complete honesty as that is positively correlated with greater potential for insight and, in turn, a greater 
+Here on NWD, perhaps a key currency is complete honesty as that is positively correlated with greater potential for insight and, in turn, a greater 
 likelihood of self-transformation.
 </span>
 </div>

@@ -413,8 +413,8 @@ however, this disintegrating of self and existing only in the present moment is 
 <br />
 <span>
 As we explored earlier, looking at your habits played back in data can be a quite a triggering experience for people.
-It is so easy to lurch to thoughts such as, 'Man, I regret doing that' or 'Why on earth did I do that?' or look at even a great day and be like, 
-'thank goodness for that; that is more like me.' All of these thoughts should be looked at with certain caution.
+It is so easy to lurch to thoughts such as, 'Man, I regret doing that' or 'What does that say about me?' or look at even a great day and be like, 
+'thank goodness for that; that is more like it.' All of these thoughts should be looked at with certain level of caution.
 </span>
 <br />
 <br />
@@ -469,8 +469,7 @@ Everything I do has a consequence, everything has a cause and effect".
 <br />
 <br />
   <strong>To summarise, as Johnny Wilkinson said, there are no consequences in the present moment.
-  The present moment is your refuge from suffering wherein no challenge that can't be overcome, no level of suffering that can't be
-  processed and all of the growth you would hope to foster is earned.
+  The present moment is your refuge from suffering and where the acceptance, observation and orientation that is essential for action and growth can be fostered.
   </strong>
 </span>
 </div>

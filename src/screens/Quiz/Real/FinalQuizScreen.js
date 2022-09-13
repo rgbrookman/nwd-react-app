@@ -153,6 +153,11 @@ className="quizDiv">
     Also, we have a set of emerging experiences on the site including a process that helps you think about your personal values.
     Maybe give it a look if you have a moment. <br /><strong className="emphasis"><a href='/values'>Values Help</a></strong>
     </span>
+    <br />
+    <br />
+    <span>
+    Well done again! That is a really good effort! 
+    </span>
 </div>
 <div className="rightCol">
 <div className="rightContent">
@@ -164,14 +169,8 @@ className="quizDiv">
 </div>
 </div>
 <div className="buttonRow">
-<Button className="quizButton" onClick={()=> {
-  setTitleDiv(titleDiv => true);
-  setKickOff(kickOff => false);
-}}>Year Page</Button>
-<Button className="quizButton" onClick={()=> {
-  setKickOff(kickOff => false);
-  setQ1(q1 => true);
-}}>Today Page</Button>
+<Button className="quizButton" href="/">Homepage</Button>
+<Button className="quizButton" href="/today">Today Page</Button>
 </div>
 </motion.div>
 
