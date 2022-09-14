@@ -228,12 +228,16 @@ useEffect(() => {
 <main className="dayScreenMain">
 <div className="topRow">
 <div className="topRowLeft">
+  { !logDate ? null :
+  <>
 <input
 type="date"
-value={logDate}
+value={logDate.substring(0,10)}
 onChange={(e) => setLogDate(e.target.value)}
 required
 />
+</>
+ }
 <div className="resetDiv">
 <FontAwesomeIcon
     className="eraseIconUpper"
