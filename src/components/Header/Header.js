@@ -106,7 +106,7 @@ const Header = () => {
    
 }
 
-{Array.isArray(days) === false ? <Loading />: days && days
+{Array.isArray(days) === false ? <></>: days && days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
       .map((day) => (
 <span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate.toLocaleString().substring(0,10)}</strong></span>
