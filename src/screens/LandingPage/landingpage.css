@@ -187,7 +187,7 @@
 .landingPageVideoMobile {
   height: 35vh;
   width: 100%;
-  margin: 24px;
+  margin: 48px 24px 24px 24px;
   border-radius: 10px;
   border: 5px solid #EBF4FA;
 }

@@ -90,6 +90,42 @@ const visionExplainer = 'tSuRg3bqgIg';
     { userInfo ?
       <main className="landingPageLogInMain">
        
+       { vw < 800 ? 
+          <>
+      <motion.div 
+        className="lpVideoDiv"
+        animate={ videoDisplay ? "show" : "hide"}
+        variants={hideState}>
+
+<iframe className='landingPageVideoMobile'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${videoID}?start=0`}
+        >
+</iframe>
+      </motion.div>
+
+<div className="landingPageButtonDivMobile">
+
+  <button className="landingPageButton"
+  onClick={()=>{
+  setVideoID( videoID => visionExplainer);
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Vision</button>
+
+<button className="landingPageButton"
+onClick={()=>{
+  setVideoID( videoID => platformExplainer);
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>How To NWD</button>
+
+<button className="landingPageButton"
+><a className="lpLinkMobile" href="/today" >Log Your Day</a></button>
+</div>
+</>
+: null }
+
+
         <motion.h1 
      className="landingPageHeaderText"
      animate={ textDisplay ? "show" :  "hide" }
@@ -224,40 +260,7 @@ onClick={()=>{
       </Container>
       }
 
-  { vw < 800 ? 
-          <>
-      <motion.div 
-        className="lpVideoDiv"
-        animate={ videoDisplay ? "show" : "hide"}
-        variants={hideState}>
-
-<iframe className='landingPageVideoMobile'
-        title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${videoID}?start=0`}
-        >
-</iframe>
-      </motion.div>
-
-<div className="landingPageButtonDivMobile">
-
-  <button className="landingPageButton"
-  onClick={()=>{
-  setVideoID( videoID => visionExplainer);
-  setVideoDisplay( videoDisplay => !videoDisplay);
-}}>Vision</button>
-
-<button className="landingPageButton"
-onClick={()=>{
-  setVideoID( videoID => platformExplainer);
-  setVideoDisplay( videoDisplay => !videoDisplay);
-}}>Platform Aim</button>
-
-<button className="landingPageButton"
-><a className="lpLinkMobile" href="/today" >Log Your Day</a></button>
-</div>
-</>
-: null }
+ 
 
       </main>
       :
