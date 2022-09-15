@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { createWeekAction, listWeeks, updateWeekAction } from '../../actions/weekActions';
@@ -9,6 +9,8 @@ import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import './week.css';
 import axios from "axios";
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import Overlay from 'react-bootstrap/Overlay';
+import Tooltip from 'react-bootstrap/Tooltip';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
@@ -82,6 +84,9 @@ const [videoDisplay, setVideoDisplay] = useState(true);
 const [videoLink, setVideoLink] = useState('GQzaJ3qCo4k');
 
   const [pageLoading, setPageLoading] = useState(true);
+
+  const [show, setShow] = useState(false);
+const target = useRef(null);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -268,9 +273,16 @@ className="videoContainer">
 
   <Row id="buttonRow">
 
-      <Button className="submitWeekButton" type="submit">
+      <Button ref={target} className="submitWeekButton" type="submit" onClick={() => setShow(!show)}>
         Update
       </Button>
+      <Overlay id="overlay" target={target.current} show={show} placement="right">
+        {(props) => (
+          <Tooltip id="overlay-example" {...props}>
+            Updated
+          </Tooltip>
+        )}
+      </Overlay>
 
       <Button className="explainerButton"
       onClick={()=> {

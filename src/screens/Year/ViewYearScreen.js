@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { updateYearAction, listYears } from '../../actions/yearActions';
@@ -12,6 +12,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser, faQuestion } from '@fortawesome/free-solid-svg-icons'
 import { compareAsc, format } from 'date-fns'
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import Overlay from 'react-bootstrap/Overlay';
+import Tooltip from 'react-bootstrap/Tooltip';
 import axios from "axios";
 import './year.css';
 
@@ -63,6 +65,9 @@ export default function ViewYearScreen({ history }) {
   const [videoLink, setVideoLink] = useState('TpLVtoE6bFg');
 
   const [pageLoading, setPageLoading] = useState(true);
+
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -283,9 +288,18 @@ Learn About Your Year Page
   <Button
   className="submitYearButton"
   type="submit"
+  ref={target}
+  onClick={() => setShow(!show)}
   >
     Update
   </Button>
+  <Overlay id="overlay" target={target.current} show={show} placement="left">
+        {(props) => (
+          <Tooltip id="overlay-example" {...props}>
+            Updated
+          </Tooltip>
+        )}
+      </Overlay>
 
 
     </div>
