@@ -1,5 +1,5 @@
 .questionTitleButtonsDisplay {
-    overflow: scroll;
+    overflow: auto;
 }
 
 .datePicker {

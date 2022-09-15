@@ -210,9 +210,7 @@ const updateHandler = (e) => {
         !myIkigai ||
         !navigationalQuote ) return;
     resetHandler();
-    setTimeout(()=> {
-      window.location.reload();
-    }, 250);
+
 };
 
 
@@ -293,11 +291,25 @@ Learn About Your Year Page
   >
     Update
   </Button>
-  <Overlay id="overlay" target={target.current} show={show} placement="left">
-        {(props) => (
-          <Tooltip id="overlay-example" {...props}>
+  <Overlay target={target.current} show={show} placement="left">
+        {({ placement, arrowProps, show: _show, popper, ...props }) => (
+          <div
+            {...props}
+            style={{
+              position: 'absolute',
+              backgroundColor: 'green',
+              padding: '2px 10px',
+              color: 'white',
+              borderRadius: 3,
+              marginRight: "6px",
+              transform: "all",
+              transition: "2s",
+              fontFamily: 'Koulen, monospace',
+              ...props.style,
+            }}
+          >
             Updated
-          </Tooltip>
+          </div>
         )}
       </Overlay>
 

@@ -18,6 +18,10 @@ import './day.css';
 
 export default function ViewDayScreen({ history }) {
 
+  useEffect(() => {
+    document.title = "Today | Update";
+  }, []);
+
 // Form State
 const [startScore, setStartScore] = useState();
 const [logDate, setLogDate] = useState();
@@ -212,32 +216,14 @@ const loadingTimeout = () => {
   }, 3000)
 }
 
-const tickTimeout = () => {
-  setTimeout(()=> {
-    setPageLoading(true);
-  }, 3000)
-  setTimeout(()=> {
-    setPageLoading(false);
-  }, 500)
-}
 
 useEffect(()=> {
   loadingTimeout();
 })
 
-useEffect(() => {
-  document.title = "Today | Update";
-}, []);
 
-const tickState = {
-  "show": {
-    opacity: [0,1,0,1,0,1,0,1,0],
-    duration: 5,
-  },
-  "hide": {
-    opacity: 0
-  }
-}
+
+
 
   return (
     <>
@@ -280,10 +266,24 @@ required
   Update Day
 </Button>
 <Overlay target={target.current} show={show} placement="left">
-        {(props) => (
-          <Tooltip id="overlay-example" {...props}>
+        {({ placement, arrowProps, show: _show, popper, ...props }) => (
+          <div
+            {...props}
+            style={{
+              position: 'absolute',
+              backgroundColor: 'green',
+              padding: '2px 10px',
+              color: 'white',
+              borderRadius: 3,
+              marginRight: "6px",
+              transform: "all",
+              transition: "2s",
+              fontFamily: 'Koulen, monospace',
+              ...props.style,
+            }}
+          >
             Updated
-          </Tooltip>
+          </div>
         )}
       </Overlay>
       

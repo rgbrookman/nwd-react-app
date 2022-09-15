@@ -45,6 +45,8 @@
   align-items: center;
   text-align: start;
   height: 12vh;
+  background-color: #EBF4FA;
+  width: 100%;
 }
 
 .thankYouDisplay,

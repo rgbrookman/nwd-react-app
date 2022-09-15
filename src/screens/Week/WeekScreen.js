@@ -209,9 +209,7 @@ const target = useRef(null);
         !objectiveTen_score) return;
 
       resetHandler();
-      setTimeout(()=> {
-        window.location.reload();
-      }, 250);
+
   };
 
   const showHideState = {
@@ -276,11 +274,25 @@ className="videoContainer">
       <Button ref={target} className="submitWeekButton" type="submit" onClick={() => setShow(!show)}>
         Update
       </Button>
-      <Overlay id="overlay" target={target.current} show={show} placement="right">
-        {(props) => (
-          <Tooltip id="overlay-example" {...props}>
+      <Overlay target={target.current} show={show} placement="right">
+        {({ placement, arrowProps, show: _show, popper, ...props }) => (
+          <div
+            {...props}
+            style={{
+              position: 'absolute',
+              backgroundColor: 'green',
+              padding: '2px 10px',
+              color: 'white',
+              borderRadius: 3,
+              marginRight: "6px",
+              transform: "all",
+              transition: "2s",
+              fontFamily: 'Koulen, monospace',
+              ...props.style,
+            }}
+          >
             Updated
-          </Tooltip>
+          </div>
         )}
       </Overlay>
 
