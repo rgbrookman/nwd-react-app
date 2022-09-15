@@ -231,11 +231,12 @@ onClick={()=>{
         animate={ videoDisplay ? "show" : "hide"}
         variants={hideState}>
 
-      <iframe className='landingPageVideo'
+<iframe className='landingPageVideoMobile'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={videoID}>
-        </iframe>
+        src={`https://youtube.com/embed/${videoID}?start=0`}
+        >
+</iframe>
       </motion.div>
 
 <div className="landingPageButtonDivMobile">

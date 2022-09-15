@@ -75,17 +75,6 @@ const LandingPageHeader = ({ history }) => {
           loadingTimeout();
         })
 
-        const daysLoggedArray = [];
-          days && days.map(each => daysLoggedArray.push(each.startScore));
-
-        const daysLogged = d3.count(daysLoggedArray, d => d);
-
-        const yearsArray = [];
-
-        years && years.map(each => yearsArray.push(each.yourName));
-
-        const yearsLogged = d3.count(yearsArray, d => d);
-
   return (
 <>
  <Navbar className="navbarHeader navbar-dark align-items-center" expand="md">
@@ -105,7 +94,7 @@ const LandingPageHeader = ({ history }) => {
 
 
 
-{!days ? <Loading /> : days
+{Array.isArray(days) === false ? <div></div> : days && days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
       .map((day) => (
 <span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate.toLocaleString().substring(0,10)}</strong></span>
@@ -182,7 +171,7 @@ Create A New Year
         <hr className="dividingLine" />
         </Dropdown.Item>
 
-        {weeks && weeks
+        {Array.isArray(weeks) === false ? <></> : weeks && weeks
               .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1 )
               .map((week) => (
             <Dropdown.Item
@@ -223,7 +212,7 @@ Create A New Year
             </Dropdown.Item>
 
 
-            {days && days
+            {Array.isArray(days) === false ? <></> : days && days
                   .filter((day, i, days) => days.indexOf(day) === days.length -1 )
                   .map((day) => (
                 <Dropdown.Item
@@ -269,7 +258,7 @@ Create A New Year
                id="weekDropdownMenu"
                className="dropdowMenu">
 
-{ daysLogged > 9 ? <Dropdown.Item
+{ Array.isArray(days) && days.length > 9 ? <Dropdown.Item
        id="viewSelector"
        className="dropdownItem"
        href="/insight">

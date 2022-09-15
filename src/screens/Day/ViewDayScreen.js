@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { updateDayAction, listDays } from '../../actions/dayActions';
@@ -12,6 +12,8 @@ import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import axios from "axios";
 import Header from "../../components/Header/Header";
 import PropagateLoader from "react-spinners/PropagateLoader";
+import Overlay from 'react-bootstrap/Overlay';
+import Tooltip from 'react-bootstrap/Tooltip';
 import './day.css';
 
 export default function ViewDayScreen({ history }) {
@@ -56,6 +58,9 @@ const [videoDisplay, setVideoDisplay] = useState(true);
 const [videoLink, setVideoLink] = useState('Wp2tWyWpMF8');
 
 const [pageLoading, setPageLoading] = useState(true);
+
+const [show, setShow] = useState(false);
+const target = useRef(null);
 
 const showHideState = {
   hide: {
@@ -196,7 +201,7 @@ const updateHandler = (e) => {
         resetHandler();
         
         setTimeout(()=> {
-          window.location.reload();
+          navigate('/');
         }, 250);
 
 };
@@ -207,6 +212,15 @@ const loadingTimeout = () => {
   }, 3000)
 }
 
+const tickTimeout = () => {
+  setTimeout(()=> {
+    setPageLoading(true);
+  }, 3000)
+  setTimeout(()=> {
+    setPageLoading(false);
+  }, 500)
+}
+
 useEffect(()=> {
   loadingTimeout();
 })
@@ -215,10 +229,19 @@ useEffect(() => {
   document.title = "Today | Update";
 }, []);
 
+const tickState = {
+  "show": {
+    opacity: [0,1,0,1,0,1,0,1,0],
+    duration: 5,
+  },
+  "hide": {
+    opacity: 0
+  }
+}
+
   return (
     <>
-    { pageLoading  ? 
-      <><Loading /></> :  <><Header /> </>}
+  <Header />
        
         { pageLoading && !days ?
           <div className="pageLoading">
@@ -252,9 +275,18 @@ required
   }}>
   Learn About Your Today Page.
   </Button>
-<Button className="submitDayContainer" type="submit">
-  Tweak Day
+
+<Button ref={target} className="submitDayContainer" type="submit" onClick={() => setShow(!show)}>
+  Update Day
 </Button>
+<Overlay target={target.current} show={show} placement="left">
+        {(props) => (
+          <Tooltip id="overlay-example" {...props}>
+            Updated
+          </Tooltip>
+        )}
+      </Overlay>
+      
 </div>
 
     <section className="dayScreenContainer">
