@@ -30,16 +30,12 @@
 }
 
 .landingPageButtonDivMobile {
-  height: 10vh;
   width: 95%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 48px;
+  margin-bottom: 24px;
 }
 
 .landingPageButton {
-  background-color:     #EBF4FA; 
+  background-color:#EBF4FA; 
   color:  #46A46C;
   font-family: 'Montserrat', sans-serif;
   border: 1px solid #EBF4FA;
@@ -48,6 +44,10 @@
   padding: 10px;
   margin: 4px;
   border-radius: 10px;
+}
+
+.landingPageButton .vision  {
+width: 100%;
 }
 
 .landingPageButton:hover {
@@ -185,9 +185,9 @@
 }
 
 .landingPageVideoMobile {
-  height: 35vh;
+  height: 20vh;
   width: 100%;
-  margin: 48px 24px 24px 24px;
+  margin: 24px 12px 12px 12px;
   border-radius: 10px;
   border: 5px solid #EBF4FA;
 }

@@ -78,7 +78,7 @@ dispatch(listYears());
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-const platformExplainer = 'oSCpAljlyvI';
+const platformExplainer = 'zay0kp9MPFQ';
 const visionExplainer = 'tSuRg3bqgIg';
 
   return (
@@ -105,23 +105,30 @@ const visionExplainer = 'tSuRg3bqgIg';
 </iframe>
       </motion.div>
 
-<div className="landingPageButtonDivMobile">
-
-  <button className="landingPageButton"
+<Container className="landingPageButtonDivMobile" fluid>
+<Row>
+  <Col>
+<button className="landingPageButton" 
   onClick={()=>{
   setVideoID( videoID => visionExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
 }}>Vision</button>
-
-<button className="landingPageButton"
+</Col>
+</Row>
+<Row>
+  <Col>
+  <button className="landingPageButton"
 onClick={()=>{
   setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
 }}>How To NWD</button>
-
-<button className="landingPageButton"
+  </Col>
+  <Col >
+  <button className="landingPageButton"
 ><a className="lpLinkMobile" href="/today" >Log Your Day</a></button>
-</div>
+  </Col>
+</Row>
+</Container>
 </>
 : null }
 
@@ -133,6 +140,7 @@ onClick={()=>{
     >
           {userInfo.name}, <br/>this is your NoWastedDays.</motion.h1>
 <hr className="dividingLine" />
+         
           { vw > 800 ? 
           <>
       <motion.div 
@@ -144,7 +152,7 @@ onClick={()=>{
 <iframe className='landingPageVideo'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${visionExplainer}?start=0`}
+        src={`https://youtube.com/embed/${videoID}?start=0`}
         style={{width: "600px", height: "400px", borderRadius: "10px"}}>
 </iframe>
       </motion.div>
