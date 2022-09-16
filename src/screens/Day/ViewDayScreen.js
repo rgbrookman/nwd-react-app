@@ -203,10 +203,6 @@ const updateHandler = (e) => {
         !endScore) return;
 
         resetHandler();
-        
-        setTimeout(()=> {
-          navigate('/');
-        }, 250);
 
 };
 
