@@ -172,13 +172,14 @@ onClick={()=>{
   setVideoDisplay( videoDisplay => !videoDisplay);
    setTextDisplay( textDisplay => !textDisplay);
 }}>How to Guide</button>
-
-<button className="landingPageButton"
+<div id="feedbackButton" data-tooltip="Use Feedback Page in Header or Contact Page in Footer">
+<button   className="landingPageButton"
 onClick={()=>{
   setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
    setTextDisplay( textDisplay => !textDisplay);
 }}>Your Feedback</button>
+</div>
 
 </div>
 </>

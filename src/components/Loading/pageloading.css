@@ -2,3 +2,15 @@
 #page-loading {
   margin: 100px;
 }
+
+.loadingLeftRight {
+  height: 5vh; 
+  width: 100%;
+  background-color: red;
+  opacity: 1;
+  transform: all;
+  transition: 
+    background-color 4s , opacity 4s;
+}
+
+

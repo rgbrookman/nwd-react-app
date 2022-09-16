@@ -155,10 +155,10 @@ export default function Feedback({ history }) {
           </Row>
 <hr className="dividingLine" />
           <Row className="mt-4">
-              <h3 className="rowHeader">The 'Values' Page</h3>
+              <h3 className="rowHeader">The 'Values' Experience</h3>
           <Col sm={12} md={6} lg={6}>
           <div className="feedbackContainer">
-          <label for="valuesPG">Describe your experience of the Values Page</label>
+          <label for="valuesPG">Describe your experience of the Values Experience</label>
           <textarea
             id="valuesPG"
             className="textInput"
@@ -172,7 +172,7 @@ export default function Feedback({ history }) {
                 </Col>
                     <Col sm={12} md={6} lg={6}>
                     <div className="feedbackContainer">
-                    <label for="valuesPGHelp">How would you make the Week Page better?</label>
+                    <label for="valuesPGHelp">How would you make the Values Experience better?</label>
                     <textarea
                       id="valuesPGHelp"
                       className="textInput"

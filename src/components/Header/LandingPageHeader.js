@@ -5,6 +5,7 @@ import { listYears } from '../../actions/yearActions';
 import { listWeeks } from '../../actions/weekActions';
 import { listDays } from '../../actions/dayActions';
 import Loading from '../../components/Loading/Loading';
+import DropdownLoading from '../../components/Loading/DropdownLoading';
 import PageLoading from '../../components/Loading/PageLoading';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { DropdownButton, Dropdown, Nav, Navbar, Container  } from 'react-bootstrap';
@@ -171,7 +172,7 @@ Create A New Year
         <hr className="dividingLine" />
         </Dropdown.Item>
 
-        {Array.isArray(weeks) === false ? <></> : weeks && weeks
+        {Array.isArray(weeks) === false ? <DropdownLoading /> : weeks && weeks
               .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1 )
               .map((week) => (
             <Dropdown.Item
