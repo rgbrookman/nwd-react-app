@@ -29,11 +29,52 @@
   color: #EBF4FA;
 }
 
+.feedbackLabel {
+  color: #EBF4FA;
+  font-family: "Montserrat", sans-serif;
+}
+
 .textInput {
   border-style: solid;
   border: 1px solid #46A46C;
   outline-color: #46A46C;
   font-family: 'courier new', monospace;
   border-radius: 5px;
-  padding: 3px;
+  padding: 4px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 20px;
+  border-radius: 2px;
+  background: #46A46C;
+  outline: 1px dashed #EBF4FA;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-top: 6px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #EBF4FA;
+  outline: 1px dashed #46A46C;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #46A46C;
+  cursor: pointer;
 }

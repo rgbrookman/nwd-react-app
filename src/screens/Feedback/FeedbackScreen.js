@@ -62,7 +62,7 @@ export default function Feedback({ history }) {
         <h3 className="rowHeader">The 'Year' Page</h3>
     <Col sm={12} md={6} lg={6}>
     <div className="feedbackContainer">
-    <label for="yearPG">Describe your experience of the Year Page</label>
+    <label className="feedbackLabel" for="yearPG">Describe your experience of the Year Page</label>
     <textarea
       id="yearPG"
       className="textInput"
@@ -76,7 +76,7 @@ export default function Feedback({ history }) {
           </Col>
               <Col sm={12} md={6} lg={6}>
               <div className="feedbackContainer">
-              <label for="yearPGHelp">How would you make the Year Page better?</label>
+              <label className="feedbackLabel" for="yearPGHelp">How would you make the Year Page better?</label>
               <textarea
                 id="yearPGHelp"
                       className="textInput"
@@ -94,7 +94,7 @@ export default function Feedback({ history }) {
             <h3 className="rowHeader">The 'Today' Page</h3>
       <Col sm={12} md={6} lg={6}>
       <div className="feedbackContainer">
-      <label for="todayPG">Describe your experience of the Today Page</label>
+      <label className="feedbackLabel" for="todayPG">Describe your experience of the Today Page</label>
       <textarea
         id="todayPG"
         className="textInput"
@@ -108,7 +108,7 @@ export default function Feedback({ history }) {
             </Col>
                 <Col sm={12} md={6} lg={6}>
                 <div className="feedbackContainer">
-                <label for="yearPGHelp">How would you make the Today Page better?</label>
+                <label className="feedbackLabel" for="yearPGHelp">How would you make the Today Page better?</label>
                 <textarea
                   id="todayPGHelp"
                         className="textInput"
@@ -126,7 +126,7 @@ export default function Feedback({ history }) {
             <h3 className="rowHeader">The 'Week' Page</h3>
         <Col sm={12} md={6} lg={6}>
         <div className="feedbackContainer">
-        <label for="weekPG">Describe your experience of the Week Page</label>
+        <label className="feedbackLabel"for="weekPG">Describe your experience of the Week Page</label>
         <textarea
           id="weekPG"
           className="textInput"
@@ -140,7 +140,7 @@ export default function Feedback({ history }) {
               </Col>
                   <Col sm={12} md={6} lg={6}>
                   <div className="feedbackContainer">
-                  <label for="weekPGHelp">How would you make the Week Page better?</label>
+                  <label className="feedbackLabel" for="weekPGHelp">How would you make the Week Page better?</label>
                   <textarea
                     id="weekPGHelp"
                     className="textInput"
@@ -158,7 +158,7 @@ export default function Feedback({ history }) {
               <h3 className="rowHeader">The 'Values' Experience</h3>
           <Col sm={12} md={6} lg={6}>
           <div className="feedbackContainer">
-          <label for="valuesPG">Describe your experience of the Values Experience</label>
+          <label className="feedbackLabel" for="valuesPG">Describe your experience of the Values Experience</label>
           <textarea
             id="valuesPG"
             className="textInput"
@@ -172,7 +172,7 @@ export default function Feedback({ history }) {
                 </Col>
                     <Col sm={12} md={6} lg={6}>
                     <div className="feedbackContainer">
-                    <label for="valuesPGHelp">How would you make the Values Experience better?</label>
+                    <label className="feedbackLabel" for="valuesPGHelp">How would you make the Values Experience better?</label>
                     <textarea
                       id="valuesPGHelp"
                       className="textInput"
@@ -190,11 +190,11 @@ export default function Feedback({ history }) {
                 <h3 className="rowHeader"> Net Promoter Score </h3>
             <Col sm={12} md={6} lg={6}>
             <div className="feedbackContainer">
-            <label for="currentPG">How likely are you to recommend the app in its current state to family and friends? {currentPageGood} / 10</label>
+            <label className="feedbackLabel" for="currentPG">How likely are you to recommend the app in its current state to family and friends? {currentPageGood} / 10</label>
             <input
               id="currentPG"
               type="range"
-              className="textInput"
+              className="slider"
               value={currentPageGood}
               min="0"
               max="10"
@@ -205,11 +205,11 @@ export default function Feedback({ history }) {
                   </Col>
                       <Col sm={12} md={6} lg={6}>
                       <div className="feedbackContainer">
-                      <label for="futurePGHelp">How likely are you to recommend the app with your suggested changes to family and friends? {currentPageHelp} / 10</label>
+                      <label className="feedbackLabel" for="futurePGHelp">How likely are you to recommend the app with your suggested changes to family and friends? {currentPageHelp} / 10</label>
                       <input
                         id="futurePGHelp"
                         type="range"
-                              className="textInput"
+                        className="slider"
                         min={0}
                         max={10}
                         value={currentPageHelp}
@@ -224,11 +224,11 @@ export default function Feedback({ history }) {
                 <h3 className="rowHeader">Pay as You Can</h3>
             <Col sm={12} md={6} lg={6}>
             <div className="feedbackContainer">
-            <label for="currentPG">Per month, how much would you pay for access to this tool, if anything £{paycPrice} / £15</label>
+            <label className="feedbackLabel" for="currentPG">Per month, how much would you pay for access to this tool, if anything £{paycPrice} / £15</label>
             <input
               id="currentPG"
               type="range"
-              className="textInput"
+              className="slider"
               value={paycPrice}
               min="0"
               max="15"
@@ -239,7 +239,7 @@ export default function Feedback({ history }) {
                   </Col>
                       <Col sm={12} md={6} lg={6}>
                       <div className="feedbackContainer">
-                      <label for="valuesPGHelp">Do you think PAYC (pay as you can) is a bad idea?</label>
+                      <label className="feedbackLabel" for="valuesPGHelp">Do you think PAYC (pay as you can) is a bad idea?</label>
                  <textarea
                       id="valuesPGHelp"
                       className="textInput"

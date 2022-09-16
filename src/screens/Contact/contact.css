@@ -10,6 +10,7 @@
   margin: 12px 0;
 }
 
+
 .senderContainer label,
 .contactContainer label,
 .senderEmailContainer label,
@@ -18,6 +19,7 @@
 .messageDiv label {
   font-family: "Koulen", cursive;
   font-size: 1em;
+  color: #EBF4FA;
   margin-bottom: 4px;
 }
 
@@ -28,6 +30,7 @@
 .subjectLineDiv input,
 .messageDiv textarea {
   border-radius: 5px;
+  padding-left: 4px;
 }
 
 .sendButton {

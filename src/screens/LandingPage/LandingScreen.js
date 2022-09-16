@@ -121,7 +121,7 @@ const visionExplainer = 'tSuRg3bqgIg';
 onClick={()=>{
   setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
-}}>How To NWD</button>
+}}>How To Get Started</button>
   </Col>
   <Col >
   <button className="landingPageButton"
@@ -171,8 +171,8 @@ onClick={()=>{
   setVideoID( videoID => platformExplainer);
   setVideoDisplay( videoDisplay => !videoDisplay);
    setTextDisplay( textDisplay => !textDisplay);
-}}>How to Guide</button>
-<div id="feedbackButton" data-tooltip="Use Feedback Page in Header or Contact Page in Footer">
+}}>How to Get Started</button>
+<div id="feedbackButton" data-tooltip="Use Feedback Page in the Header or Contact Page in the Footer <3">
 <button   className="landingPageButton"
 onClick={()=>{
   setVideoID( videoID => platformExplainer);

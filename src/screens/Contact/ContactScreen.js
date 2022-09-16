@@ -43,30 +43,30 @@ export default function Contact({ history }) {
 
       <form id="contactForm" className="contact-form" ref={form} onSubmit={sendEmail}>
     <Row>
-    <Col className="formColumn col-6">
+    <Col sm={12} md={6} lg={6} xl={6} className="formColumn">
     <Row>
     <Col>
     <div className="senderContainer">
-    <label className="contactLabel"for="contactName">Name:</label>
+    <label className="contactLabel" for="contactName">Name:</label>
     <input
       id="contactName"
       type="text"
       value={name}
       name="from_name"
-      placeholder="name"
+      placeholder="Your Name"
       onChange={(e) => setName(e.target.value)}
       />
       </div>
     </Col>
     <Col>
     <div className="senderEmailContainer">
-  <label for="email">Email</label>
+  <label className="contactLabel"  for="email">Email</label>
   <input
   id="email"
   type="text"
   value={email}
     name="from_email"
-  placeholder="email"
+  placeholder="Email"
   onChange={(e) => setEmail(e.target.value)}
   />
     </div>
@@ -95,7 +95,7 @@ export default function Contact({ history }) {
 
     <Row>
     <div className="messageDiv">
-  <label for="messageArea">Message</label>
+  <label className="contactLabel"  for="messageArea">Message</label>
   <textarea
   id="messageArea"
   type="password"
@@ -115,7 +115,7 @@ export default function Contact({ history }) {
     </Button>
 
       </Col>
-      <Col className="explainerCol col-6">
+      <Col sm={12} md={6} lg={6} xl={6}  className="explainerCol ">
       <h1 className="quizHeaderWhite">Get in touch!</h1>
       <span className="contactSpan">Share, enquire, report away! </span>
       </Col>
