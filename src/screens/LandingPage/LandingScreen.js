@@ -78,7 +78,7 @@ dispatch(listYears());
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
-const platformExplainer = 'zay0kp9MPFQ';
+const platformExplainer = 'HZb2wQ-zAQo';
 const visionExplainer = 'tSuRg3bqgIg';
 
   return (
