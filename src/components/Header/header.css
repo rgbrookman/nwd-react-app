@@ -1,10 +1,10 @@
 .navbarHeader {
   margin: 10px 12px 10px 12px;
-  align-items: center;
 }
 
 .navSection {
 margin: 0 12px 0 12px;
+min-width: 60px;
 }
 
 .lastDayNudge {

@@ -1,16 +1,24 @@
-
 #page-loading {
   margin: 100px;
 }
 
-.loadingLeftRight {
-  height: 5vh; 
+.rect {
+  height: 20px;
   width: 100%;
-  background-color: red;
-  opacity: 1;
-  transform: all;
-  transition: 
-    background-color 4s , opacity 4s;
+  border-radius: 5px;
+  background-color: green;
+  margin: 12px 0px 0px 0px;
+  box-shadow: 26px 26px 51px 0 rgba(237, 237, 237, 0.8) inset, -26px -26px 51px 0 rgba(237, 237, 237, 0.8) inset;
+  animation: 1s linear .1s infinite alternate animating-multiple-properties;
+}
+
+@keyframes animating-multiple-properties {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 

@@ -90,47 +90,7 @@ const visionExplainer = 'tSuRg3bqgIg';
     { userInfo ?
       <main className="landingPageLogInMain">
        
-       { vw < 800 ? 
-          <>
-      <motion.div 
-        className="lpVideoDiv"
-        animate={ videoDisplay ? "show" : "hide"}
-        variants={hideState}>
 
-<iframe className='landingPageVideoMobile'
-        title='Youtube player'
-        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${videoID}?start=0`}
-        >
-</iframe>
-      </motion.div>
-
-<Container className="landingPageButtonDivMobile" fluid>
-<Row>
-  <Col>
-<button className="landingPageButton" 
-  onClick={()=>{
-  setVideoID( videoID => visionExplainer);
-  setVideoDisplay( videoDisplay => !videoDisplay);
-}}>Vision</button>
-</Col>
-</Row>
-<Row>
-  <Col>
-  <button className="landingPageButton"
-onClick={()=>{
-  setVideoID( videoID => platformExplainer);
-  setVideoDisplay( videoDisplay => !videoDisplay);
-}}>How To Get Started</button>
-  </Col>
-  <Col >
-  <button className="landingPageButton"
-><a className="lpLinkMobile" href="/today" >Log Your Day</a></button>
-  </Col>
-</Row>
-</Container>
-</>
-: null }
 
 
         <motion.h1 
@@ -268,6 +228,48 @@ onClick={()=>{
       </Row>
       </Container>
       }
+
+{ vw < 800 ? 
+          <>
+      <motion.div 
+        className="lpVideoDiv"
+        animate={ videoDisplay ? "show" : "hide"}
+        variants={hideState}>
+
+<iframe className='landingPageVideoMobile'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/${videoID}?start=0`}
+        >
+</iframe>
+      </motion.div>
+
+<Container className="landingPageButtonDivMobile" fluid>
+<Row>
+  <Col>
+<button className="landingPageButtonMobile" 
+  onClick={()=>{
+  setVideoID( videoID => visionExplainer);
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>Vision</button>
+</Col>
+
+  <Col>
+  <button className="landingPageButtonMobile"
+onClick={()=>{
+  setVideoID( videoID => platformExplainer);
+  setVideoDisplay( videoDisplay => !videoDisplay);
+}}>How To Get Started</button>
+  </Col>
+  <Col>
+  <button className="landingPageButtonMobile">
+    <a className="lpLinkMobile" href="/today" >Log Your Day</a>
+  </button>
+  </Col>
+</Row>
+</Container>
+</>
+: null }
 
  
 

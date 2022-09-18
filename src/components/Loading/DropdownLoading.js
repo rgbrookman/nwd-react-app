@@ -1,11 +1,11 @@
 import {
   Spinner
 } from 'react-bootstrap';
+import './pageloading.css';
 
 const DropdownLoading = () => {
 
-  return ( <div className="loadingLeftRight">
-    </div>
+  return ( <div className="rect"></div>
   )
 }
 

@@ -354,10 +354,11 @@ input::-webkit-inner-spin-button {
   }
   
   .questionTitleButtonsDisplay {
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     text-align: start;
     height: 12vh;
   }

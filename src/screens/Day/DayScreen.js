@@ -207,6 +207,7 @@ onChange={(e) => setLogDate(e.target.value)}
   <Button className="explainerButton d-none d-sm-flex"
   onClick={()=> {
     setVideoDisplay(videoDisplay => !videoDisplay);
+    setVideoLink(videoLink => 'Wp2tWyWpMF8')
   }}>
   Learn About Your Today Page.
   </Button>
@@ -288,7 +289,7 @@ onChange={(e) => setLogDate(e.target.value)}
                     className="questionIcon"
                   icon={faQuestion}
                   onClick={() => {
-                    setVideoLink('4oGXepCXM6g');
+                    setVideoLink('UtfZtB8Bbgc');
                     setVideoDisplay(videoDisplay => !videoDisplay);
                   }} />
                 </div>

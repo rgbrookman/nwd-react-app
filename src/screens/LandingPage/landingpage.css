@@ -30,7 +30,6 @@
 }
 
 .landingPageButtonDivMobile {
-  width: 95%;
   margin-bottom: 24px;
 }
 
@@ -44,6 +43,21 @@
   padding: 10px;
   margin: 4px;
   border-radius: 10px;
+}
+
+.landingPageButtonMobile {
+  background-color: #46A46C;
+
+  color:   #EBF4FA; 
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #EBF4FA;
+  box-shadow: none;
+  width: auto;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 10px;
+  font-size: 0.6em;
+  font-family: 'caveat', cursive;
 }
 
 .landingPageButton .vision  {
@@ -64,7 +78,7 @@ width: 100%;
 
 .landingPageButtonDivMobile .landingPageButton {
   background-color: #46A46C;
-  color:   #EBF4FA; 
+  color: #EBF4FA; 
   font-family: 'Montserrat', sans-serif;
   border: 1px solid #EBF4FA;
   box-shadow: none;
@@ -172,7 +186,7 @@ width: 100%;
 .lpLinkMobile {
   text-decoration: none;
   color:   #EBF4FA;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .landingPageVideo {

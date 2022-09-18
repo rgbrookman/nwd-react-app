@@ -961,4 +961,47 @@ justify-content: space-around;
   margin-right: 12px;
 }
 
+.videoContainer {
+  top: 12.5%;
+  left: 5%;
+  z-index: 1000;
+  position: fixed;
+}
+
+.videoContainerDiv {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.videoPlayer {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  border: 10px solid #46A46C;
+  box-shadow: 10px 10px 10px gray;
+}
+
+.videoExit {
+  background-color: #46A46C;
+  color: white;
+  width: auto;
+  height: 60px;
+  padding: 4px;
+  margin: 6px;
+  border-radius: 10px;
+  box-shadow: -10px 10px 10px gray;
+}
+
+.videoExit:hover {
+  background-color: white;
+  color: #46A46C;
+  cursor: pointer;
+  width: auto;
+  height: 60px;
+  padding: 4px;
+  margin: 6px;
+  border-radius: 10px;
+}
+
 }

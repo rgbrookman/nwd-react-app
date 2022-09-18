@@ -94,6 +94,8 @@ export default function ViewYearScreen({ history }) {
   }, [dispatch, userInfo, history]);
 
 
+
+
   const valueState = {
     hide: {
       display: "none",
@@ -214,12 +216,14 @@ const updateHandler = (e) => {
 };
 
 
-  
-const birthday =  years && years.map((year) => year.birthDate);
-console.log(birthday);
+let birthday = years && years.map((year) => year.birthDate);
+// birthday[0].toString();
 
-const bday = new Date(birthday); 
-console.log(bday);
+// let birthYear = Array.isArray(years) === false ? '1990' :  birthday[0].substring(0,4);
+
+// let birthDay = Array.isArray(years) && birthday !== undefined ? birthday[0].substring(5,7) : '01';
+
+// let birthMonth = Array.isArray(years) && birthday !== undefined ? birthday[0].substring(8,10) - 1 : '01';
 
 let day1 = new Date(birthday);
 console.log(day1);
@@ -257,7 +261,6 @@ useEffect(() => {
 <Header />
     <form onSubmit={updateHandler}>
 
-  
   { !years && !days && pageLoading ? <div className="pageLoading"><PageLoading /></div> :
     <main id="yearContainer">
       <div className="yearTopRow">
@@ -330,8 +333,7 @@ Learn About Your Year Page
         </div>
     </motion.div>
 
-      <motion.section className="yearMap"
-      onReturn{...updateHandler}>
+      <motion.section className="yearMap">
 
         <motion.div
         className="nameBox">
@@ -836,6 +838,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
       <span className="visionTitle">My vision for 2022 is...</span>
       
       <motion.div className="visionDiv1">
+
       {years && years.map((year) =>
           <motion.h4
           key={year._id}
@@ -847,13 +850,13 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
           <motion.input
             type="text"
-
                 animate={ inputVision_1 ? "show": "hide"}
             variants={valueState}
             value={myVision_1}
             onChange={(e) => setMyVision_1(e.target.value)}></motion.input>
 
               <motion.div className="outputButtons">
+          
           <motion.div
           className="editDeleteVision1"
           >   <FontAwesomeIcon

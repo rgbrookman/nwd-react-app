@@ -69,7 +69,7 @@ const LandingPageHeader = ({ history }) => {
         const loadingTimeout = () => {
           setTimeout(()=> {
             setPageLoading(false)
-          }, 3000)
+          }, 10000)
         }
 
         useEffect(()=> {
@@ -95,7 +95,7 @@ const LandingPageHeader = ({ history }) => {
 
 
 
-{Array.isArray(days) === false ? <div></div> : days && days
+{Array.isArray(days) === false ? <></> : days && days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
       .map((day) => (
 <span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate.toLocaleString().substring(0,10)}</strong></span>
@@ -105,14 +105,14 @@ const LandingPageHeader = ({ history }) => {
        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
        <Nav className="justify-content-flex-end">
 
-{ userInfo ?
+{ userInfo || pageLoading === false ?
   <Nav.Item className="navSection">
     <Nav.Link href="/feedback">Feedback</Nav.Link>
   </Nav.Item> : null
 }
 
 
-    { userInfo
+    { userInfo || pageLoading === false
     ?
     <Nav.Item className="navSection">
         <Dropdown className='navSection headerDropdown'>
@@ -148,9 +148,18 @@ Create A New Year
     </Dropdown.Menu>
     </Dropdown>
       </Nav.Item>
-: null }
+: <Nav.Item className="navSection">
+<DropdownLoading />
+<Dropdown className='navSection headerDropdown'>
+<Dropdown.Menu
+  id="yearDropdownMenu"
+  className="dropdownMenu">
 
-    { userInfo
+</Dropdown.Menu>
+</Dropdown>
+</Nav.Item> }
+
+    { userInfo || pageLoading === false
     ? <Nav.Item className="navSection">
 
       <Dropdown
@@ -172,7 +181,7 @@ Create A New Year
         <hr className="dividingLine" />
         </Dropdown.Item>
 
-        {Array.isArray(weeks) === false ? <DropdownLoading /> : weeks && weeks
+        {Array.isArray(weeks) === false && pageLoading === true ? <DropdownLoading /> : weeks && weeks
               .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1 )
               .map((week) => (
             <Dropdown.Item
@@ -186,10 +195,19 @@ Create A New Year
     </Dropdown.Menu>
     </Dropdown>
     </Nav.Item>
-    : null
+    : <Nav.Item className="navSection">
+    <DropdownLoading />
+    <Dropdown className='navSection headerDropdown'>
+    <Dropdown.Menu
+      id="yearDropdownMenu"
+      className="dropdownMenu">
+    
+    </Dropdown.Menu>
+    </Dropdown>
+    </Nav.Item>
     }
 
-    { userInfo
+    { userInfo || pageLoading === false
       ? <Nav.Item className="navSection">
           <Dropdown
           className='navSection headerDropdown'>
@@ -213,7 +231,7 @@ Create A New Year
             </Dropdown.Item>
 
 
-            {Array.isArray(days) === false ? <></> : days && days
+            {Array.isArray(days) === false && pageLoading === true ? <DropdownLoading /> : days && days
                   .filter((day, i, days) => days.indexOf(day) === days.length -1 )
                   .map((day) => (
                 <Dropdown.Item
@@ -231,6 +249,21 @@ Create A New Year
  </Nav.Item>
 
 
+      : <Nav.Item className="navSection">
+      <DropdownLoading />
+      <Dropdown className='navSection headerDropdown'>
+      <Dropdown.Menu
+        id="yearDropdownMenu"
+        className="dropdownMenu">
+      
+      </Dropdown.Menu>
+      </Dropdown>
+      </Nav.Item>
+         }
+
+{ userInfo
+      ? <></>
+
       : <><Nav.Item className="navSection">
            <Nav.Link
            className="navItem"
@@ -245,7 +278,7 @@ Create A New Year
                 </Nav.Item></>
          }
 
-         { userInfo
+         { userInfo || pageLoading === false
          ? <Nav.Item className="navSection">
              <Dropdown
              className='navSection headerDropdown'>
@@ -255,6 +288,7 @@ Create A New Year
                  className="dropdownToggle">
                  Insight
                </Dropdown.Toggle>
+
                <Dropdown.Menu
                id="weekDropdownMenu"
                className="dropdowMenu">
@@ -286,10 +320,19 @@ Create A New Year
            </Dropdown.Menu>
                </Dropdown>
     </Nav.Item>
-         : null
+         : <Nav.Item className="navSection">
+         <DropdownLoading />
+         <Dropdown className='navSection headerDropdown'>
+         <Dropdown.Menu
+           id="yearDropdownMenu"
+           className="dropdownMenu">
+         
+         </Dropdown.Menu>
+         </Dropdown>
+         </Nav.Item>
          }
 
-         { userInfo
+         { userInfo || pageLoading === false
          ? <Nav.Item className="navSection">
              <Dropdown
              className='navSection headerDropdown'>
@@ -302,10 +345,19 @@ Create A New Year
                </Dropdown.Toggle>
                </Dropdown>
     </Nav.Item>
-         : null
+         : <Nav.Item className="navSection">
+         <DropdownLoading />
+         <Dropdown className='navSection headerDropdown'>
+         <Dropdown.Menu
+           id="yearDropdownMenu"
+           className="dropdownMenu">
+         
+         </Dropdown.Menu>
+         </Dropdown>
+         </Nav.Item>
          }
 
-         { userInfo
+         { userInfo 
          ? <Nav.Item className="navSection">
           <Dropdown className="userDropdown">
             <Dropdown.Toggle
