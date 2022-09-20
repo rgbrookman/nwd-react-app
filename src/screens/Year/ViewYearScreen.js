@@ -342,7 +342,7 @@ Learn About Your Year Page
           <motion.div className="outputButtons">
 
            
-{ !years ? <DropdownLoading /> :
+{ Array.isArray(years) === false ? <DropdownLoading /> :
                 <motion.h4
                   className="name"
                   animate={ inputName ? "hide": "show"}
