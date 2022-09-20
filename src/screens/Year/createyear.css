@@ -43,7 +43,7 @@
 
 .name {
   font-size: clamp(1rem, 2vw, 10vw);
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   font-weight: '700';
   color: #46A46C;
 }
@@ -77,16 +77,16 @@
 }
 
 .dobText {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   font-weight: '700';
   color: #46A46C;
 }
 
 .dobText2 {
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   font-weight: '700';
   color: #46A46C;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 
@@ -116,7 +116,7 @@
 
 .visionheader {
   font-size: clamp(1em, 1.25vw, 3vw);
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   color: #46A46C;
 }
 
@@ -168,7 +168,7 @@
 
 .ikigaiText {
   font-size: clamp(1em, 1.75vw, 3vw);
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   color: #46A46C;
 }
 
@@ -193,7 +193,7 @@
 
 .whyText {
   font-size: clamp(1em, 2vw, 4vw);
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   color: #46A46C;
 }
 
@@ -246,7 +246,7 @@
   font-size: clamp(0.8em, 1.1em, 1.4em);
   font-weight: 700;
   color: #46A46C;
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
 }
 
 .valueExplanation {
@@ -279,7 +279,7 @@
 
 .quoteText {
   font-size: clamp(1em, 1.4vw, 3vw);
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'caveat', cursive;
   color: #46A46C;
 }
 
@@ -412,7 +412,7 @@
   }
 
   .name {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     font-weight: '700';
     color: #46A46C;
     font-size: clamp(3vw, 4vw, 8vw);
@@ -434,7 +434,7 @@
   }
 
   .visionheader {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
     font-size: clamp(1vw, 2.5vw, 5vw);
   }
@@ -484,7 +484,7 @@
   }
 
   .ikigaiText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
     font-size: clamp(2vw, 4vw, 5vw);
   }
@@ -504,7 +504,7 @@
   }
 
   .dobText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     font-weight: '700';
     color: #46A46C;
   }
@@ -528,7 +528,7 @@
   }
 
   .whyText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
     font-size: clamp(2vw, 3vw, 4vw);
   }
@@ -557,7 +557,7 @@
   .valueName {
     font-weight: 700;
     color: #46A46C;
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     font-size: clamp(4vw, 5vw, 8vw);
   }
 
@@ -591,7 +591,7 @@
   }
 
   .quoteText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
   }
 
@@ -622,21 +622,21 @@
   }
 
   .name {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     font-weight: '700';
     color: #46A46C;
     font-size: clamp(5vw, 10vw, 15vw);
   }
 
   .dobText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     font-weight: '700';
     color: #46A46C;
     font-size: clamp(5vw, 10vw, 15vw);
   }
 
   .visionheader {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
   }
 
@@ -720,7 +720,7 @@
   }
 
   .whyText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
   }
 
@@ -745,7 +745,7 @@
   .valueName {
     font-weight: 700;
     color: #46A46C;
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     font-size: 1.5em;
   }
 
@@ -770,7 +770,7 @@
   }
 
   .quoteText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
   }
 
@@ -780,7 +780,7 @@
   }
 
   .ikigaiText {
-    font-family: 'Gochi Hand', cursive;
+    font-family: 'caveat', cursive;
     color: #46A46C;
   }
 

@@ -6,6 +6,7 @@ import { listDays } from '../../actions/dayActions';
 import Header from '../../components/Header/Header';
 import Loading from '../../components/Loading/Loading';
 import PageLoading from '../../components/Loading/PageLoading';
+import DropdownLoading from '../../components/Loading/DropdownLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { Button, Container, Row, Col, Dropdown, DropdownButton } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -212,7 +213,7 @@ const updateHandler = (e) => {
         !myIkigai ||
         !navigationalQuote ) return;
     resetHandler();
-
+    navigate('/');
 };
 
 
@@ -327,7 +328,7 @@ Learn About Your Year Page
         <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
         <iframe className='videoPlayer'
           title='Youtube player'
-          sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
+          sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
           src={`https://youtube.com/embed/${videoLink}?start=0`}>
           </iframe>
         </div>
@@ -340,14 +341,12 @@ Learn About Your Year Page
           <motion.span className="myNameIs">My name is</motion.span>
           <motion.div className="outputButtons">
 
-            {years && years.map((year) =>
-
+           
+{ !years ? <DropdownLoading /> :
                 <motion.h4
-                  key={year._id}
                   className="name"
                   animate={ inputName ? "hide": "show"}
-                  variants={valueState}>{year.yourName}</motion.h4>
-                     )}
+                  variants={valueState}>{yourName}</motion.h4>}
 
                 <motion.input
                   type="text"
@@ -357,8 +356,6 @@ Learn About Your Year Page
                   animate={ inputName ? "show": "hide"}
                   variants={valueState}
                   onChange={(e) => setYourName(e.target.value)}></motion.input>
-
-
 
               <motion.div
               className="editDeleteName">
@@ -386,35 +383,38 @@ Learn About Your Year Page
         
                 <div>
            
-              {years && years.map((year) =>
-                  <>
+ 
+                { !years ? <DropdownLoading /> :
+                <>
                 <motion.h4
-    key={year._id}
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{year.birthDate.substring(0,10)}</motion.h4>
+                  >{birthDate.substring(0,10)}</motion.h4>
+               
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is
                     <br/>day <span className="dobText2">{continuation}</span> in my life.</span>
                   </div>
-           </>
- )}
+                  </>
+              }
+
+
                 
 
-                  {years && years.map((year) =>
-                  <>
+                  {!years ? <DropdownLoading /> :
+         
                 <motion.input
-                  key={year._id}
+        
                   type="date"
                   value={birthDate}
                   onChange={(e) => setBirthDate(e.target.value)}
                   animate={ inputBirthDate ? "show": "hide"}
                   variants={valueState}
                 ></motion.input>
-                </>
-                )}
+                  }
+  
 
 
                   </div>
@@ -466,25 +466,27 @@ Learn About Your Year Page
           variants={valueState}
           onChange={(e) => setMyValues_1(e.target.value)}
           ></motion.input>
-      {years && years.map((year) =>
 
+
+
+{!years ? <DropdownLoading /> :
 
             <motion.span
-            key={year._id}
             id="firstValue"
             className="valueName"
             animate={ inputValues_1 ? "hide": "show"}
-            variants={valueState}>{year.myValues_1}: </motion.span>
-    )}
+            variants={valueState}>{myValues_1}: </motion.span>
+    }
 
-    {years && years.map((year) =>
+{!years ? <DropdownLoading /> :
             <motion.span
-            key={year._id}
+
             className="valueExplanation"
             animate={ inputValues_1_Text ? "hide": "show"}
             variants={valueState}
-            >{year.myValues_1_Text}</motion.span>
-  )}
+            >{myValues_1_Text}</motion.span>
+  }
+
   <motion.input
     type="text"
     value={myValues_1_Text}
@@ -535,25 +537,25 @@ Learn About Your Year Page
               animate={ inputValues_2 ? "show": "hide"}
               variants={valueState}
               onChange={(e) => setMyValues_2(e.target.value)}></motion.input>
-          {years && years.map((year) =>
+ 
 
-
+ {!years ? <DropdownLoading /> :
                 <motion.span
-                key={year._id}
+ 
                 id="firstValue"
                 className="valueName"
                 animate={ inputValues_2 ? "hide": "show"}
-                variants={valueState}>{year.myValues_2}: </motion.span>
-        )}
+                variants={valueState}>{myValues_2}: </motion.span>
+        }
 
-        {years && years.map((year) =>
+{!years ? <DropdownLoading /> :
                 <motion.span
-                key={year._id}
                 className="valueExplanation"
                 animate={ inputValues_2_Text ? "hide": "show"}
                 variants={valueState}
-                >{year.myValues_2_Text}</motion.span>
-      )}
+                >{myValues_2_Text}</motion.span>
+      }
+
       <motion.input
         type="text"
         value={myValues_2_Text}
@@ -604,25 +606,25 @@ Learn About Your Year Page
               animate={ inputValues_3 ? "show": "hide"}
               variants={valueState}
               onChange={(e) => setMyValues_3(e.target.value)}></motion.input>
-          {years && years.map((year) =>
+    
 
-
+    {!years ? <DropdownLoading /> :
                 <motion.span
-                key={year._id}
+
                 id="firstValue"
                 className="valueName"
                 animate={ inputValues_3 ? "hide": "show"}
-                variants={valueState}>{year.myValues_3}: </motion.span>
-        )}
+                variants={valueState}>{myValues_3}: </motion.span>
+                }
 
-        {years && years.map((year) =>
+{!years ? <DropdownLoading /> :
                 <motion.span
-                key={year._id}
                 className="valueExplanation"
                 animate={ inputValues_3_Text ? "hide": "show"}
                 variants={valueState}
-                >{year.myValues_3_Text}</motion.span>
-      )}
+                >{myValues_3_Text}</motion.span>
+      }
+
       <motion.input
         type="text"
         value={myValues_3_Text}
@@ -676,24 +678,23 @@ Learn About Your Year Page
       animate={ inputValues_4 ? "show": "hide"}
       variants={valueState}
       onChange={(e) => setMyValues_4(e.target.value)}></motion.input>
-  {years && years.map((year) =>
 
+{!years ? <DropdownLoading /> :
         <motion.span
-        key={year._id}
+
         id="firstValue"
         className="valueName"
         animate={ inputValues_4 ? "hide": "show"}
-        variants={valueState}>{year.myValues_4}: </motion.span>
-)}
-
-{years && years.map((year) =>
+        variants={valueState}>{myValues_4}: </motion.span>
+}
+{!years ? <DropdownLoading /> :
         <motion.span
-        key={year._id}
         className="valueExplanation"
         animate={ inputValues_4_Text ? "hide": "show"}
         variants={valueState}
-        >{year.myValues_4_Text}</motion.span>
-)}
+        >{myValues_4_Text}</motion.span>
+}
+
 <motion.input
 type="text"
 value={myValues_4_Text}
@@ -745,25 +746,24 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
       animate={ inputValues_5 ? "show": "hide"}
       variants={valueState}
       onChange={(e) => setMyValues_5(e.target.value)}></motion.input>
-  {years && years.map((year) =>
 
 
+{!years ? <DropdownLoading /> :
         <motion.span
-        key={year._id}
         id="firstValue"
         className="valueName"
         animate={ inputValues_5 ? "hide": "show"}
-        variants={valueState}>{year.myValues_5}: </motion.span>
-)}
+        variants={valueState}>{myValues_5}: </motion.span>
+}
 
-{years && years.map((year) =>
+{!years ? <DropdownLoading /> :
         <motion.span
-        key={year._id}
         className="valueExplanation"
         animate={ inputValues_5_Text ? "hide": "show"}
         variants={valueState}
-        >{year.myValues_5_Text}</motion.span>
-)}
+        >{myValues_5_Text}</motion.span>
+}
+
 <motion.input
 type="text"
 value={myValues_5_Text}
@@ -795,13 +795,13 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
       <motion.div className="quoteBox">
       <span className="quoteTitle">This weeks navigational quote is...</span>
 
-      {years && years.map((year) =>
-            <motion.h6 key={year._id}
+      {!years ? <DropdownLoading /> :
+            <motion.h6 
               className="quoteText"
               animate={ inputQuote ? "hide": "show"}
               variants={valueState}
-            >{year.navigationalQuote}</motion.h6>
-      )}
+            >{navigationalQuote}</motion.h6>
+      }
 
       <motion.textarea
         type="text"
@@ -813,6 +813,8 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               animate={ inputQuote ? "show": "hide"}
         variants={valueState}
         onChange={(e) => setNavigationalQuote(e.target.value)}></motion.textarea>
+
+      
           <motion.div className="outputButtons">
       <motion.div
       className="editDeleteQuote"
@@ -839,14 +841,13 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
       
       <motion.div className="visionDiv1">
 
-      {years && years.map((year) =>
+      {!years ? <DropdownLoading /> :
           <motion.h4
-          key={year._id}
           className="visionheader"
           animate={ inputVision_1 ? "hide": "show"}
           variants={valueState}
-          >{year.myVision_1}</motion.h4>
-            )}
+          >{myVision_1}</motion.h4>
+            }
 
           <motion.input
             type="text"
@@ -879,14 +880,14 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
           <hr className="dividingLine"/>
           <motion.div className="visionDiv2">
-          {years && years.map((year) =>
+
+{!years ? <DropdownLoading /> :
               <motion.h4
-              key={year._id}
               className="visionheader"
               animate={ inputVision_2 ? "hide": "show"}
               variants={valueState}
-              >{year.myVision_2}</motion.h4>
-                )}
+              >{myVision_2}</motion.h4>
+                }
 
               <motion.input
                 type="text"
@@ -918,14 +919,14 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
         </motion.div>
           <hr className="dividingLine"/>
           <motion.div className="visionDiv3">
-          {years && years.map((year) =>
+
+  {!years ? <DropdownLoading /> :
               <motion.h4
-              key={year._id}
               className="visionheader"
               animate={ inputVision_3 ? "hide": "show"}
               variants={valueState}
-              >{year.myVision_3}</motion.h4>
-                )}
+              >{myVision_3}</motion.h4>
+                }
 
               <motion.input
                 type="text"
@@ -957,14 +958,13 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
         </motion.div>
           <hr className="dividingLine"/>
           <motion.div className="visionDiv4">
-          {years && years.map((year) =>
+          {!years ? <DropdownLoading /> :
               <motion.h4
-              key={year._id}
               className="visionheader"
               animate={ inputVision_4 ? "hide": "show"}
               variants={valueState}
-              >{year.myVision_4}</motion.h4>
-                )}
+              >{myVision_4}</motion.h4>
+                }
 
               <motion.input
                 type="text"
@@ -996,14 +996,13 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
         </motion.div>
           <hr className="dividingLine"/>
           <motion.div className="visionDiv5">
-          {years && years.map((year) =>
+          {!years ? <DropdownLoading /> :
               <motion.h4
-              key={year._id}
               className="visionheader"
               animate={ inputVision_5 ? "hide": "show"}
               variants={valueState}
-              >{year.myVision_5}</motion.h4>
-                )}
+              >{myVision_5}</motion.h4>
+                }
 
               <motion.input
                 type="text"
@@ -1039,11 +1038,11 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
       <motion.div className="whyBox">
       <span className="whyTitle">I want to have No Wasted Days because...</span>
-      {years && years.map((year) =>
-            <motion.h6 key={year._id} className="whyText"
+      {!years ? <DropdownLoading /> :
+            <motion.h6  className="whyText"
             animate={ inputWhy ? "hide": "show"}
-            variants={valueState}>{year.whyNWD}</motion.h6>
-      )}
+            variants={valueState}>{whyNWD}</motion.h6>
+      }
 
       <motion.textarea
         type="text"
@@ -1078,11 +1077,11 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
       <motion.div className="ikigaiBox">
       <span className="ikigaiTitle">My ikigia is...</span>
-      {years && years.map((year) =>
-            <motion.h6 key={year._id} className="ikigaiText"
+      {!years ? <DropdownLoading /> :
+            <motion.h6 className="ikigaiText"
             animate={ inputIkigai ? "hide": "show"}
-              variants={valueState}>{year.myIkigai}</motion.h6>
-      )}
+              variants={valueState}>{myIkigai}</motion.h6>
+      }
       <motion.textarea
         type="text"
         rows="8"
