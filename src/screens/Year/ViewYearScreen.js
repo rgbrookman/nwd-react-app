@@ -136,8 +136,15 @@ useEffect(() => {
 }
     }
   
-  fetching();   
+  const dateValid = async () =>{
+    await fetching();
+     setBirthDate(birthDate.replace(/-/g,"/"));
+  }
 
+  fetching()
+
+  dateValid();
+   
 }, [id]);
 
    const resetHandler = () => {
