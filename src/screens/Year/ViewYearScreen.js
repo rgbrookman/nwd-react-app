@@ -93,22 +93,10 @@ export default function ViewYearScreen({ history }) {
     dispatch(listDays());
   }, [dispatch, userInfo, history]);
 
-
-
-
-  const valueState = {
-    hide: {
-      display: "none",
-    },
-    show: {
-      display: "block",
-    },
-  };
-
 useEffect(() => {
   const fetching = async () => {
     try {
-      const { data } = await axios.get(`/api/years/year/${id}`);
+      const { data } = await axios.get(`https://nwd22-webapp.herokuapp.com/api/years/year/${id}`);
         setYourName(data.yourName);
         setBirthDate(data.birthDate);
         setMyValues_1(data.myValues_1);
@@ -142,7 +130,7 @@ useEffect(() => {
   dateValid();
    
 
-}, [id, birthDate]);
+}, [id]);
 
    const resetHandler = () => {
      setYourName("");
@@ -169,7 +157,6 @@ useEffect(() => {
 
 const updateHandler = (e) => {
   e.preventDefault();
-  
   try {
   dispatch(updateYearAction(id,
     yourName,
@@ -259,6 +246,18 @@ useEffect(()=> {
 useEffect(() => {
   document.title = "Year | Update";
 }, []);
+
+
+
+
+const valueState = {
+  hide: {
+    display: "none",
+  },
+  show: {
+    display: "block",
+  },
+};
 
   return (
 
