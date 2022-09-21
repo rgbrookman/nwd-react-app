@@ -336,7 +336,7 @@ Learn About Your Year Page
     </motion.div>
 
 
-      <motion.section className="yearMap">
+      <motion.section className="yearMap" onReturn{...updateHandler}>
 
         <motion.div
         className="nameBox">
