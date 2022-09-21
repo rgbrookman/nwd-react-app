@@ -19,47 +19,47 @@ import './year.css';
 
 export default function ViewYearScreen({ history }) {
   const [yourName, setYourName] = useState();
-  const [inputName, setInputName] = useState(false);
-  const [myValues_1, setMyValues_1] = useState("");
-  const [inputValues_1, setInputValues_1] = useState(false);
-  const [myValues_1_Text, setMyValues_1_Text] = useState("");
-  const [inputValues_1_Text, setInputValues_1_Text] = useState(false);
-  const [myValues_2, setMyValues_2] = useState("");
-  const [inputValues_2, setInputValues_2] = useState(false);
-  const [myValues_2_Text, setMyValues_2_Text] = useState("");
-  const [inputValues_2_Text, setInputValues_2_Text] = useState(false);
-  const [myValues_3, setMyValues_3] = useState("");
-  const [inputValues_3, setInputValues_3] = useState(false);
-  const [myValues_3_Text, setMyValues_3_Text] = useState("");
-  const [inputValues_3_Text, setInputValues_3_Text] = useState(false);
-  const [myValues_4, setMyValues_4] = useState("");
-  const [inputValues_4, setInputValues_4] = useState(false);
-  const [myValues_4_Text, setMyValues_4_Text] = useState("");
-  const [inputValues_4_Text, setInputValues_4_Text] = useState(false);
-  const [myValues_5, setMyValues_5] = useState("");
-  const [inputValues_5, setInputValues_5] = useState(false);
-  const [myValues_5_Text, setMyValues_5_Text] = useState("");
-  const [inputValues_5_Text, setInputValues_5_Text] = useState(false);
+  const [inputName, setInputName] = useState();
+  const [myValues_1, setMyValues_1] = useState();
+  const [inputValues_1, setInputValues_1] = useState();
+  const [myValues_1_Text, setMyValues_1_Text] = useState();
+  const [inputValues_1_Text, setInputValues_1_Text] = useState();
+  const [myValues_2, setMyValues_2] = useState();
+  const [inputValues_2, setInputValues_2] = useState();
+  const [myValues_2_Text, setMyValues_2_Text] = useState();
+  const [inputValues_2_Text, setInputValues_2_Text] = useState();
+  const [myValues_3, setMyValues_3] = useState();
+  const [inputValues_3, setInputValues_3] = useState();
+  const [myValues_3_Text, setMyValues_3_Text] = useState();
+  const [inputValues_3_Text, setInputValues_3_Text] = useState();
+  const [myValues_4, setMyValues_4] = useState();
+  const [inputValues_4, setInputValues_4] = useState();
+  const [myValues_4_Text, setMyValues_4_Text] = useState();
+  const [inputValues_4_Text, setInputValues_4_Text] = useState();
+  const [myValues_5, setMyValues_5] = useState();
+  const [inputValues_5, setInputValues_5] = useState();
+  const [myValues_5_Text, setMyValues_5_Text] = useState();
+  const [inputValues_5_Text, setInputValues_5_Text] = useState();
   const [myVision_1, setMyVision_1] = useState();
-  const [inputVision_1, setInputVision_1] = useState(false);
+  const [inputVision_1, setInputVision_1] = useState();
   const [myVision_2, setMyVision_2] = useState();
-  const [inputVision_2, setInputVision_2] = useState(false);
+  const [inputVision_2, setInputVision_2] = useState();
   const [myVision_3, setMyVision_3] = useState();
-  const [inputVision_3, setInputVision_3] = useState(false);
+  const [inputVision_3, setInputVision_3] = useState();
   const [myVision_4, setMyVision_4] = useState();
-  const [inputVision_4, setInputVision_4] = useState(false);
+  const [inputVision_4, setInputVision_4] = useState();
   const [myVision_5, setMyVision_5] = useState();
-  const [inputVision_5, setInputVision_5] = useState(false);
+  const [inputVision_5, setInputVision_5] = useState();
   const [whyNWD, setWhyNWD] = useState();
   const [rememberToday, setRememberToday] = useState();
-  const [inputWhy, setInputWhy] = useState(false);
+  const [inputWhy, setInputWhy] = useState();
   const [myIkigai, setMyIkigai] = useState();
-  const [inputIkigai, setInputIkigai] = useState(false);
+  const [inputIkigai, setInputIkigai] = useState();
   const [navigationalQuote, setNavigationalQuote] = useState();
-  const [inputQuote, setInputQuote] = useState(false);
+  const [inputQuote, setInputQuote] = useState();
 
-  const [birthDate, setBirthDate] = useState("09/03/1992");
-  const [inputBirthDate, setInputBirthDate] = useState(false);
+  const [birthDate, setBirthDate] = useState();
+  const [inputBirthDate, setInputBirthDate] = useState();
 
   const [videoDisplay, setVideoDisplay] = useState(true);
   const [videoLink, setVideoLink] = useState('TpLVtoE6bFg');
@@ -191,6 +191,7 @@ const updateHandler = (e) => {
     whyNWD,
     myIkigai,
     navigationalQuote));
+
     if (!yourName ||
         !birthDate ||
         !myValues_1 ||
@@ -211,6 +212,7 @@ const updateHandler = (e) => {
         !whyNWD ||
         !myIkigai ||
         !navigationalQuote ) return;
+        
     resetHandler();
 
 };
@@ -259,7 +261,7 @@ useEffect(() => {
 
 <>
 <Header />
-    <form onSubmit={updateHandler}>
+<form onSubmit={updateHandler}>
 
   { !years && !days && pageLoading ? <div className="pageLoading"><PageLoading /></div> :
     <main id="yearContainer">
@@ -332,6 +334,7 @@ Learn About Your Year Page
           </iframe>
         </div>
     </motion.div>
+
 
       <motion.section className="yearMap">
 
@@ -1141,9 +1144,10 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
       </div>
 
               </motion.section>
+       
     </main>
       }
-    </form>
+          </form>
 
     </>
 
