@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { updateYearAction, listYears } from '../../actions/yearActions';
@@ -12,62 +12,57 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser, faQuestion } from '@fortawesome/free-solid-svg-icons'
 import { compareAsc, format } from 'date-fns'
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
-import Overlay from 'react-bootstrap/Overlay';
-import Tooltip from 'react-bootstrap/Tooltip';
 import axios from "axios";
 import './year.css';
 
 export default function ViewYearScreen({ history }) {
-  const [yourName, setYourName] = useState("");
-  const [inputName, setInputName] = useState("");
-  const [myValues_1, setMyValues_1] = useState("");
-  const [inputValues_1, setInputValues_1] = useState("");
-  const [myValues_1_Text, setMyValues_1_Text] = useState("");
-  const [inputValues_1_Text, setInputValues_1_Text] = useState("");
-  const [myValues_2, setMyValues_2] = useState("");
-  const [inputValues_2, setInputValues_2] = useState("");
-  const [myValues_2_Text, setMyValues_2_Text] = useState("");
-  const [inputValues_2_Text, setInputValues_2_Text] = useState("");
-  const [myValues_3, setMyValues_3] = useState("");
-  const [inputValues_3, setInputValues_3] = useState("");
-  const [myValues_3_Text, setMyValues_3_Text] = useState("");
-  const [inputValues_3_Text, setInputValues_3_Text] = useState("");
-  const [myValues_4, setMyValues_4] = useState("");
-  const [inputValues_4, setInputValues_4] = useState("");
-  const [myValues_4_Text, setMyValues_4_Text] = useState("");
-  const [inputValues_4_Text, setInputValues_4_Text] = useState("");
-  const [myValues_5, setMyValues_5] = useState("");
-  const [inputValues_5, setInputValues_5] = useState("");
-  const [myValues_5_Text, setMyValues_5_Text] = useState("");
-  const [inputValues_5_Text, setInputValues_5_Text] = useState("");
-  const [myVision_1, setMyVision_1] = useState("");
-  const [inputVision_1, setInputVision_1] = useState("");
-  const [myVision_2, setMyVision_2] = useState("");
-  const [inputVision_2, setInputVision_2] = useState("");
-  const [myVision_3, setMyVision_3] = useState("");
-  const [inputVision_3, setInputVision_3] = useState("");
-  const [myVision_4, setMyVision_4] = useState("");
-  const [inputVision_4, setInputVision_4] = useState("");
-  const [myVision_5, setMyVision_5] = useState("");
-  const [inputVision_5, setInputVision_5] = useState("");
-  const [whyNWD, setWhyNWD] = useState("");
-  const [rememberToday, setRememberToday] = useState("");
-  const [inputWhy, setInputWhy] = useState("");
-  const [myIkigai, setMyIkigai] = useState("");
-  const [inputIkigai, setInputIkigai] = useState("");
-  const [navigationalQuote, setNavigationalQuote] = useState("");
-  const [inputQuote, setInputQuote] = useState("");
+  const [yourName, setYourName] = useState();
+  const [inputName, setInputName] = useState(false);
+  const [myValues_1, setMyValues_1] = useState();
+  const [inputValues_1, setInputValues_1] = useState(false);
+  const [myValues_1_Text, setMyValues_1_Text] = useState();
+  const [inputValues_1_Text, setInputValues_1_Text] = useState(false);
+  const [myValues_2, setMyValues_2] = useState();
+  const [inputValues_2, setInputValues_2] = useState(false);
+  const [myValues_2_Text, setMyValues_2_Text] = useState();
+  const [inputValues_2_Text, setInputValues_2_Text] = useState(false);
+  const [myValues_3, setMyValues_3] = useState();
+  const [inputValues_3, setInputValues_3] = useState(false);
+  const [myValues_3_Text, setMyValues_3_Text] = useState();
+  const [inputValues_3_Text, setInputValues_3_Text] = useState(false);
+  const [myValues_4, setMyValues_4] = useState();
+  const [inputValues_4, setInputValues_4] = useState(false);
+  const [myValues_4_Text, setMyValues_4_Text] = useState();
+  const [inputValues_4_Text, setInputValues_4_Text] = useState(false);
+  const [myValues_5, setMyValues_5] = useState();
+  const [inputValues_5, setInputValues_5] = useState(false);
+  const [myValues_5_Text, setMyValues_5_Text] = useState();
+  const [inputValues_5_Text, setInputValues_5_Text] = useState(false);
+  const [myVision_1, setMyVision_1] = useState();
+  const [inputVision_1, setInputVision_1] = useState(false);
+  const [myVision_2, setMyVision_2] = useState();
+  const [inputVision_2, setInputVision_2] = useState(false);
+  const [myVision_3, setMyVision_3] = useState();
+  const [inputVision_3, setInputVision_3] = useState(false);
+  const [myVision_4, setMyVision_4] = useState();
+  const [inputVision_4, setInputVision_4] = useState(false);
+  const [myVision_5, setMyVision_5] = useState();
+  const [inputVision_5, setInputVision_5] = useState(false);
+  const [whyNWD, setWhyNWD] = useState();
+  const [rememberToday, setRememberToday] = useState();
+  const [inputWhy, setInputWhy] = useState(false);
+  const [myIkigai, setMyIkigai] = useState();
+  const [inputIkigai, setInputIkigai] = useState(false);
+  const [navigationalQuote, setNavigationalQuote] = useState();
+  const [inputQuote, setInputQuote] = useState(false);
 
-  const [birthDate, setBirthDate] = useState("1992-03-09");
-  const [inputBirthDate, setInputBirthDate] = useState();
+  const [birthDate, setBirthDate] = useState("");
+  const [inputBirthDate, setInputBirthDate] = useState(false);
 
   const [videoDisplay, setVideoDisplay] = useState(true);
   const [videoLink, setVideoLink] = useState('TpLVtoE6bFg');
 
   const [pageLoading, setPageLoading] = useState(true);
-
-  const [show, setShow] = useState(false);
-  const target = useRef(null);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -92,8 +87,6 @@ export default function ViewYearScreen({ history }) {
   useEffect(() => {
     dispatch(listDays());
   }, [dispatch, userInfo, history]);
-
-
 
 
   const valueState = {
@@ -134,14 +127,7 @@ useEffect(() => {
   console.log(error);
 }
     }
-  
-  const dateValid = async () =>{
-    await fetching();
-     setBirthDate(birthDate.replace(/-/g,"/"));
-  }
-
-  dateValid();
-   
+  fetching();
 
 }, [id]);
 
@@ -211,35 +197,21 @@ const updateHandler = (e) => {
         !whyNWD ||
         !myIkigai ||
         !navigationalQuote ) return;
-        
     resetHandler();
-
+    setTimeout(()=> {
+      window.location.reload();
+    }, 250);
 };
 
 
-let birthday = years && years.map((year) => year.birthDate);
-// birthday[0].toString();
+  let day1 = new Date(birthDate);
+  let day2 = new Date();
+  
+  let diff = Math.abs(day2-day1);
+  let daysCalc = diff / (1000 * 3600 * 24)
+  let days1 = Math.floor(daysCalc);
 
-// let birthYear = Array.isArray(years) === false ? '1990' :  birthday[0].substring(0,4);
 
-// let birthDay = Array.isArray(years) && birthday !== undefined ? birthday[0].substring(5,7) : '01';
-
-// let birthMonth = Array.isArray(years) && birthday !== undefined ? birthday[0].substring(8,10) - 1 : '01';
-
-let day1 = new Date(birthday);
-console.log(day1);
-
-let day2 = new Date();
-console.log(day2);
-
-let diff = Math.abs(day2-day1);
-  console.log(diff);
-let daysCalc = diff / (1000 * 3600 * 24)
-  console.log(daysCalc);
-let days1 = Math.floor(daysCalc);
-    console.log(days1);
-
-const [continuation, setContinuation] = useState(80000);
 
 const loadingTimeout = () => {
   setTimeout(()=> {
@@ -249,20 +221,16 @@ const loadingTimeout = () => {
 
 useEffect(()=> {
   loadingTimeout();
-   setContinuation(days1);
 })
-
-useEffect(() => {
-  document.title = "Year | Update";
-}, []);
 
   return (
 
 <>
 <Header />
-<form onSubmit={updateHandler}>
+    <form onSubmit={updateHandler}>
 
-  { !years && !days && pageLoading ? <div className="pageLoading"><PageLoading /></div> :
+  
+  { pageLoading ? <div className="pageLoading"><PageLoading /></div> :
     <main id="yearContainer">
       <div className="yearTopRow">
 
@@ -273,15 +241,14 @@ useEffect(() => {
     <Dropdown.Item className="helpItem" eventKey="1" href="/values">
       Values
     </Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="2" href="https://youtu.be/zpzZumZCdWA">Vision</Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="3" href="https://youtu.be/4LE5bel_GvU">Ikigai</Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="4" href="https://youtu.be/TUDy6Rc81a4">Why NWD?</Dropdown.Item>
-    <Dropdown.Item className="helpItem" eventKey="5" href="https://youtu.be/eqGenb4UHlE">Navigational Quote</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="2">Vision</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="3">Ikigai</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="4">Why NWD?</Dropdown.Item>
+    <Dropdown.Item className="helpItem" eventKey="4">Navigational Quote</Dropdown.Item>
 
   </DropdownButton>
 <Button className="explainerButton d-none d-sm-flex"
 onClick={()=> {
-  setVideoLink('N-lf8NgD6-o');
   setVideoDisplay(videoDisplay => !videoDisplay);
 }}>
 Learn About Your Year Page
@@ -290,52 +257,20 @@ Learn About Your Year Page
   <Button
   className="submitYearButton"
   type="submit"
-  ref={target}
-  onClick={() => setShow(!show)}
   >
     Update
   </Button>
-  <Overlay target={target.current} show={show} placement="left">
-        {({ placement, arrowProps, show: _show, popper, ...props }) => (
-          <div
-            {...props}
-            style={{
-              position: 'absolute',
-              backgroundColor: 'green',
-              padding: '2px 10px',
-              color: 'white',
-              borderRadius: 3,
-              marginRight: "6px",
-              transform: "all",
-              transition: "2s",
-              fontFamily: 'Koulen, monospace',
-              ...props.style,
-            }}
-          >
-            Updated
-          </div>
-        )}
-      </Overlay>
 
 
     </div>
     <motion.div
     animate={videoDisplay ? "hide" : "show"}
     variants={valueState}
-    className="videoContainer"
-    style={{backgroundColor: "none"}}>
-      <div className="videoContainerDiv" style={{backgroundColor: "none"}}>
-        <motion.h1 className="videoExit" onClick={() => setVideoDisplay(videoDisplay => true) }>X</motion.h1>
-        <iframe className='videoPlayer'
-          title='Youtube player'
-          sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
-          src={`https://youtube.com/embed/${videoLink}?start=0`}>
-          </iframe>
-        </div>
+    className="videoContainer">
+    <h1>Video</h1>
     </motion.div>
-
-
-      <motion.section className="yearMap" onReturn{...updateHandler}>
+      <motion.section className="yearMap"
+      onReturn{...updateHandler}>
 
         <motion.div
         className="nameBox">
@@ -374,7 +309,7 @@ Learn About Your Year Page
                         className="questionIcon"
                       icon={faQuestion}
                       onClick={() => {
-                        setVideoLink('J1M7AMG9z98');
+                        setVideoLink('TDBQ3qMxpOk');
                         setVideoDisplay(videoDisplay => !videoDisplay);
                       }} />
                 </motion.div>
@@ -387,24 +322,23 @@ Learn About Your Year Page
             <motion.div className="outputButtons">
         
                 <div>
-           
-              {years && years.map((year) =>
-                  <>
-                <motion.h4 key={year._id}
+                {!years ? <Loading /> : years.map((year) =>
+                <>
+                <motion.h4
+                  key={year._id}
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{year.birthDate.substring(0,10)}</motion.h4>
+                  >{day1.toLocaleString().substring(0,10)}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
-                    <span className="contText">Today is
-                    <br/>day <span className="dobText2">{continuation}</span> in my life.</span>
+                    <span className="contText">Toda is {day2.toLocaleString().substring(0,10)}
+                    <br/>day <span className="dobText2">{days1}</span> in my life.</span>
                   </div>
-           </>
- )}
-                
+                  </>
+                  )}
 
-                  {years && years.map((year) =>
+                  {!years ? <Loading /> : years.map((year) =>
                   <>
                 <motion.input
                   key={year._id}
@@ -431,9 +365,10 @@ Learn About Your Year Page
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('J1M7AMG9z98');
+                setVideoLink('TDBQ3qMxpOk');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
+
         </motion.div>
         </motion.div>
       </motion.div>
@@ -443,7 +378,7 @@ Learn About Your Year Page
       <span className="valuesTitle">My personal values are...</span>
 
 
-      <div className="valuesIntBoxView1">
+      <div className="valuesIntBoxView">
       <motion.div className="editDeleteValues1">
           <FontAwesomeIcon
             className="editIcon"
@@ -455,7 +390,7 @@ Learn About Your Year Page
                 className="questionIcon"
               icon={faQuestion}
               onClick={() => {
-                setVideoLink('HtKEwNHXLC8');
+                setVideoLink('TDBQ3qMxpOk');
                 setVideoDisplay(videoDisplay => !videoDisplay);
               }} />
         </motion.div>
@@ -504,7 +439,7 @@ Learn About Your Year Page
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('HtKEwNHXLC8');
+                  setVideoLink('TDBQ3qMxpOk');
                   setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
 
@@ -513,7 +448,7 @@ Learn About Your Year Page
 
           <hr className="dividingLine"/>
 
-          <div className="valuesIntBoxView2">
+          <div className="valuesIntBoxView">
           <motion.div className="editDeleteValues2">
               <FontAwesomeIcon
                 className="editIcon"
@@ -573,7 +508,7 @@ Learn About Your Year Page
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('HtKEwNHXLC8');
+                      setVideoLink('TDBQ3qMxpOk');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -582,7 +517,7 @@ Learn About Your Year Page
 
           <hr className="dividingLine"/>
 
-          <div className="valuesIntBoxView3">
+          <div className="valuesIntBoxView">
           <motion.div className="editDeleteValues3">
               <FontAwesomeIcon
                 className="editIcon"
@@ -594,7 +529,7 @@ Learn About Your Year Page
                     className="questionIcon"
                   icon={faQuestion}
                   onClick={() => {
-                    setVideoLink('HtKEwNHXLC8');
+                    setVideoLink('TDBQ3qMxpOk');
                     setVideoDisplay(videoDisplay => !videoDisplay);
                   }} />
             </motion.div>
@@ -642,19 +577,19 @@ Learn About Your Year Page
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('HtKEwNHXLC8');
+                      setVideoLink('TDBQ3qMxpOk');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
               </motion.div>
             </div>
 
+    {  myValues_4  ?  <hr className="dividingLine"/> : null }
 
 
+{  myValues_4  ?
 
-
-
-  <div className="valuesIntBoxView4">
+  <div className="valuesIntBoxView">
   <motion.div className="editDeleteValues4">
       <FontAwesomeIcon
         className="editIcon"
@@ -666,7 +601,7 @@ Learn About Your Year Page
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('HtKEwNHXLC8');
+            setVideoLink('TDBQ3qMxpOk');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </motion.div>
@@ -713,17 +648,17 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('HtKEwNHXLC8');
+              setVideoLink('TDBQ3qMxpOk');
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
       </motion.div>
-    </div>    
+    </div>     : null }
 
 
+        { myValues_5 ? <hr className="dividingLine"/>    :   null    }
 
 
-
-  <div className="valuesIntBoxView5">
+{ myValues_5  ?    <div className="valuesIntBoxView">
   <motion.div className="editDeleteValues5">
       <FontAwesomeIcon
         className="editIcon"
@@ -735,7 +670,7 @@ onChange={(e) => setMyValues_4_Text(e.target.value)}></motion.input>
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('HtKEwNHXLC8');
+            setVideoLink('TDBQ3qMxpOk');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
     </motion.div>
@@ -783,12 +718,12 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('HtKEwNHXLC8');
+              setVideoLink('TDBQ3qMxpOk');
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
 
       </motion.div>
-    </div>              
+    </div>                 :   null               }
 
 
       </motion.div>
@@ -827,7 +762,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               className="questionIcon"
             icon={faQuestion}
             onClick={() => {
-              setVideoLink('eTbICJoQrsM');
+              setVideoLink('TDBQ3qMxpOk');
               setVideoDisplay(videoDisplay => !videoDisplay);
             }} />
 
@@ -835,11 +770,9 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
       </motion.div>
       </motion.div>
 
-       <motion.div className="visionBox">
+      <motion.div className="visionBox">
       <span className="visionTitle">My vision for 2022 is...</span>
-      
-      <motion.div className="visionDiv1">
-
+      <motion.div className="visionDiv">
       {years && years.map((year) =>
           <motion.h4
           key={year._id}
@@ -851,13 +784,13 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
           <motion.input
             type="text"
+
                 animate={ inputVision_1 ? "show": "hide"}
             variants={valueState}
             value={myVision_1}
             onChange={(e) => setMyVision_1(e.target.value)}></motion.input>
 
               <motion.div className="outputButtons">
-          
           <motion.div
           className="editDeleteVision1"
           >   <FontAwesomeIcon
@@ -870,7 +803,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                   className="questionIcon"
                 icon={faQuestion}
                 onClick={() => {
-                  setVideoLink('RJiCSvHdSmo');
+                  setVideoLink('TDBQ3qMxpOk');
                   setVideoDisplay(videoDisplay => !videoDisplay);
                 }} />
 
@@ -879,7 +812,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 </motion.div>
 
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv2">
+          <motion.div className="visionDiv">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
@@ -910,7 +843,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('RJiCSvHdSmo');
+                      setVideoLink('TDBQ3qMxpOk');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -918,7 +851,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               </motion.div>
         </motion.div>
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv3">
+          <motion.div className="visionDiv">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
@@ -949,7 +882,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('RJiCSvHdSmo');
+                      setVideoLink('TDBQ3qMxpOk');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -957,7 +890,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               </motion.div>
         </motion.div>
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv4">
+          <motion.div className="visionDiv">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
@@ -988,7 +921,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('RJiCSvHdSmo');
+                      setVideoLink('TDBQ3qMxpOk');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -996,7 +929,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
               </motion.div>
         </motion.div>
           <hr className="dividingLine"/>
-          <motion.div className="visionDiv5">
+          <motion.div className="visionDiv">
           {years && years.map((year) =>
               <motion.h4
               key={year._id}
@@ -1027,7 +960,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
                       className="questionIcon"
                     icon={faQuestion}
                     onClick={() => {
-                      setVideoLink('RJiCSvHdSmo');
+                      setVideoLink('TDBQ3qMxpOk');
                       setVideoDisplay(videoDisplay => !videoDisplay);
                     }} />
 
@@ -1069,7 +1002,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('8_y_yKKAJIE');
+            setVideoLink('TDBQ3qMxpOk');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
 
@@ -1107,7 +1040,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
             className="questionIcon"
           icon={faQuestion}
           onClick={() => {
-            setVideoLink('_tcpDxI5LbQ');
+            setVideoLink('TDBQ3qMxpOk');
             setVideoDisplay(videoDisplay => !videoDisplay);
           }} />
 
@@ -1117,35 +1050,21 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
       <div className="memoryBox">
       <span>Memory that you wanted to remember</span>
-      { !days ? <Loading /> : days
+      { days && days
         .filter((day, i, days) => days.indexOf(day) === Math.floor((Math.random() * days.length )))
         .filter((day, i, days) => days.indexOf(day) === 0 )
         .map((day, index, days) =>
         <h6 key={day._id[0]} className="ikigaiText">{day.rememberToday}</h6>)}
-         <motion.div
-    className="editDeleteMemory"
-    > 
-        <FontAwesomeIcon
-            className="questionIcon"
-          icon={faQuestion}
-          onClick={() => {
-            setVideoLink('XpzXR6oG8mA');
-            setVideoDisplay(videoDisplay => !videoDisplay);
-          }} />
-
-      </motion.div>
       </div>
-
 
       <div className="buttonBox">
 
       </div>
 
               </motion.section>
-       
     </main>
       }
-          </form>
+    </form>
 
     </>
 
