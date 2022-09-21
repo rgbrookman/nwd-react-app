@@ -347,14 +347,13 @@ Learn About Your Year Page
           <motion.span className="myNameIs">My name is</motion.span>
           <motion.div className="outputButtons">
 
-            {years && years.map((year) =>
+       
 
                 <motion.h4
-                  key={year._id}
                   className="name"
                   animate={ inputName ? "hide": "show"}
-                  variants={valueState}>{year.yourName}</motion.h4>
-                     )}
+                  variants={valueState}>{yourName}</motion.h4>
+             
 
                 <motion.input
                   type="text"
