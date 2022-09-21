@@ -53,11 +53,14 @@ const TasksAttempted = () => {
               .domain(d3.extent(taDataFinal, function(d){return d.date}))
               .range([0,width])
 
+              const xAxis2 = d3.axisBottom(x).tickFormat(d3.timeFormat("%-m/%Y"));
+
         svg.append('g')
           .attr('transform', 'translate(0,' + height + ')')
-          .call(d3.axisBottom(x))
+          .call(xAxis2.ticks(d3.timeMonth))
           .style("font-family", "'caveat', cursive")
           .style("opacity", "0.3")
+          .style("font-size", "12px")
 
         // Get the max value of counts
         const max = d3.max(taDataFinal, function(d){return d.ta})
@@ -73,7 +76,7 @@ const TasksAttempted = () => {
           .style("font-family", "'caveat', cursive")
           .style("font-family", "'caveat', cursive")
 					.style("font-weight", "700")
-					.style("font-size", "16px")
+          .style("font-size", "12px")
           .style("opacity", "0.3")
 
         // Draw line

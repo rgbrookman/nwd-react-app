@@ -64,11 +64,14 @@ useEffect(() => {
 							.domain(d3.extent(ssDataFinal, function(d){return d.date}))
 							.range([0,width])
 
+				const xAxis2 = d3.axisBottom(x).tickFormat(d3.timeFormat("%-m/%Y"));
+
 				svg.append('g')
 					.attr('transform', 'translate(0,' + height + ')')
-					.call(d3.axisBottom(x))
+					.call(xAxis2.ticks(d3.timeMonth))
 					.style("font-family", "'caveat', cursive")
 					.style("opacity", "0.3")
+					.style("font-size", "12px")
 	
 
 
