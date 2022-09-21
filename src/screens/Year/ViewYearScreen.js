@@ -130,7 +130,7 @@ useEffect(() => {
   dateValid();
    
 
-}, [id]);
+}, [id, birthDate]);
 
    const resetHandler = () => {
      setYourName("");
@@ -387,41 +387,26 @@ Learn About Your Year Page
         className="dobBox">
           <span>I was born on...</span>
             <motion.div className="outputButtons">
-        
-                <div>
-           
-              {years && years.map((year) =>
-                  <>
-                <motion.h4 key={year._id}
+        <div>
+                <motion.h4 
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{year.birthDate.substring(0,10)}</motion.h4>
+                  >{birthDate}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is
                     <br/>day <span className="dobText2">{continuation}</span> in my life.</span>
                   </div>
-           </>
- )}
-                
-
-                  {years && years.map((year) =>
-                  <>
+       
                 <motion.input
-                  key={year._id}
                   type="date"
                   value={birthDate}
                   onChange={(e) => setBirthDate(e.target.value)}
                   animate={ inputBirthDate ? "show": "hide"}
                   variants={valueState}
                 ></motion.input>
-                </>
-                )}
-
-
-                  </div>
-            
+                   </div>
       <motion.div className="editDeleteDOB">
           <FontAwesomeIcon
             className="editIcon"
@@ -798,13 +783,13 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
       <motion.div className="quoteBox">
       <span className="quoteTitle">This weeks navigational quote is...</span>
 
-      {years && years.map((year) =>
-            <motion.h6 key={year._id}
+
+            <motion.h6 
               className="quoteText"
               animate={ inputQuote ? "hide": "show"}
               variants={valueState}
-            >{year.navigationalQuote}</motion.h6>
-      )}
+            >{navigationalQuote}</motion.h6>
+     
 
       <motion.textarea
         type="text"
