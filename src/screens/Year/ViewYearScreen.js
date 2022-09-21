@@ -329,7 +329,7 @@ Learn About Your Year Page
         <iframe className='videoPlayer'
           title='Youtube player'
           sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation all-fullscreen'
-          src={`https://youtube.com/embed/${videoLink}?start=0`}>
+          src={`https://youtube-nocookie.com/embed/${videoLink}?start=0`}>
           </iframe>
         </div>
     </motion.div>
