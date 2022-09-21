@@ -124,7 +124,7 @@ useEffect(() => {
   
   const dateValid = async () =>{
     await fetching();
-     setBirthDate(birthDate.replace(/-/g,"/"));
+     setBirthDate(birthDate.replace(/-/g,"/").substring(0,10));
   }
 
   dateValid();
@@ -392,7 +392,7 @@ Learn About Your Year Page
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{birthDate.substring(0,10)}</motion.h4>
+                  >{birthDate}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is
