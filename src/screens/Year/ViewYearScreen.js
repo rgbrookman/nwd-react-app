@@ -58,7 +58,7 @@ export default function ViewYearScreen({ history }) {
   const [navigationalQuote, setNavigationalQuote] = useState();
   const [inputQuote, setInputQuote] = useState();
 
-  const [birthDate, setBirthDate] = useState("1992-03-09");
+  const [birthDate, setBirthDate] = useState();
   const [inputBirthDate, setInputBirthDate] = useState();
 
   const [videoDisplay, setVideoDisplay] = useState(true);
@@ -392,7 +392,7 @@ Learn About Your Year Page
                   className="dobText"
                   animate={ inputBirthDate ? "hide": "show"}
                   variants={valueState}
-                  >{birthDate}</motion.h4>
+                  >{birthDate.substring(0,10)}</motion.h4>
                   <hr className="dividingLine"/>
                   <div className="contDiv">
                     <span className="contText">Today is
@@ -454,25 +454,21 @@ Learn About Your Year Page
           variants={valueState}
           onChange={(e) => setMyValues_1(e.target.value)}
           ></motion.input>
-      {years && years.map((year) =>
+
 
 
             <motion.span
-            key={year._id}
             id="firstValue"
             className="valueName"
             animate={ inputValues_1 ? "hide": "show"}
-            variants={valueState}>{year.myValues_1}: </motion.span>
-    )}
-
-    {years && years.map((year) =>
+            variants={valueState}>{myValues_1}: </motion.span>
+ 
             <motion.span
-            key={year._id}
             className="valueExplanation"
             animate={ inputValues_1_Text ? "hide": "show"}
             variants={valueState}
-            >{year.myValues_1_Text}</motion.span>
-  )}
+            >{myValues_1_Text}</motion.span>
+
   <motion.input
     type="text"
     value={myValues_1_Text}
