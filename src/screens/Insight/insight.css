@@ -1,8 +1,8 @@
 /* Insight Screen */
 .insightHeader {
   font-family: 'caveat', cursive;
-  color: rgb(235, 244,250,0.5);
-  opacity: 0.5;
+  opacity: 0.15;
+  line-height: 0.5;
 }
 
 
@@ -14,8 +14,14 @@
 }
 
 .statSpan {
-  color: rgb(235, 244,250,0.5);
-  opacity: 0.5;
+  font-family: 'caveat', cursive;
+  opacity: 0.15;
+  margin-bottom: 16px;
+}
+
+
+.statSpan:last-child {
+  margin-bottom: 0;
 }
 
 .graphLid {
@@ -25,7 +31,7 @@
 }
 
 #colBorder {
-  border-left: 1px solid rgb(235, 244,250,0.25);
+  border-left: 1px solid rgb(0, 0,0,0.1);
 }
 
 .testRow {

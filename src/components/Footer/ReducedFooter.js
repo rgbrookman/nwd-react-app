@@ -54,7 +54,7 @@ const ReducedFooter = () => {
     <Nav.Item>
     <Nav.Link
     className="footerLink"
-    href="/help">F&Qs</Nav.Link>
+    href="/contact">Contact</Nav.Link>
     </Nav.Item>
     <Nav.Item>
     <Nav.Link

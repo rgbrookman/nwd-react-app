@@ -935,7 +935,7 @@ onChange={(e) => setMyValues_5_Text(e.target.value)}></motion.input>
 
                   <motion.div className="outputButtons">
               <motion.div
-              className="editDeleteVision3"
+              className="editDeleteVision4"
               >   <FontAwesomeIcon
                   className="editIcon"
                   icon={faPenToSquare}

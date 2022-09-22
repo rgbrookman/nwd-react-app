@@ -271,7 +271,7 @@ const opacity1 = useTransform(scrollY, [500, scrollAmount1], [0, 1]);
           
           <FontAwesomeIcon
             className="planningIcon"
-          icon={faSolarPanel}/>
+          icon={faPlugCircleBolt}/>
         <div className="explanationRight">
         <h1 className="aboutPageHeader">Guarantee the dedication of a day matches the meaning of your life using our interactive experiences and year mapping.</h1>
         </div>
@@ -286,7 +286,7 @@ const opacity1 = useTransform(scrollY, [500, scrollAmount1], [0, 1]);
         </div>
         <FontAwesomeIcon
             className="planningIcon"
-          icon={faSolarPanel}/>
+          icon={faRepeat}/>
 </motion.div>
 </section>
 <Footer />

@@ -154,13 +154,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
        <Col id="colBorder" className="d-flex-col align-self-end">
          <Row className="justify-content-center align-center text-start mt-3 mb-4">
-       <h3 className="insightHeader">Average</h3>
+       <h4 className="insightHeader">Average</h4>
        <FeelingScoreAverage />
 
-       <h3 className="insightHeader">Deviation</h3>
+       <h4 className="insightHeader">Deviation</h4>
        <FeelingScoreVariance />
 
-       <h3 className="insightHeader">Recent</h3>
+       <h4 className="insightHeader">Recent</h4>
        <FeelingScoreTrend />
        </Row>
         </Col>
@@ -193,13 +193,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
 <Col id="colBorder" className="d-flex-col align-self-end">
   <Row className="justify-content-center align-center text-start mt-3 mb-4">
-<h3 className="insightHeader">Average</h3>
+<h4 className="insightHeader">Average</h4>
 <TasksCompletedAverage />
 
-<h3 className="insightHeader">Deviation</h3>
+<h4 className="insightHeader">Deviation</h4>
 <TasksCompletedVariance />
 
-<h3 className="insightHeader">Recent</h3>
+<h4 className="insightHeader">Recent</h4>
 <TasksCompletedTrend />
 </Row>
  </Col>
@@ -243,13 +243,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
 <Col id="colBorder" className="d-flex-col align-self-end">
   <Row className="justify-content-center align-center text-start mt-3 mb-4">
-<h3 className="insightHeader">Average</h3>
+<h4 className="insightHeader">Average</h4>
 <TasksAttemptedAverage />
 
-<h3 className="insightHeader">Deviation</h3>
+<h4 className="insightHeader">Deviation</h4>
 <TasksAttemptedVariance />
 
-<h3 className="insightHeader">Recent</h3>
+<h4 className="insightHeader">Recent</h4>
 <TasksAttemptedTrend />
 </Row>
  </Col>
@@ -283,13 +283,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
 <Col id="colBorder" className="d-flex-col align-self-end">
   <Row className="justify-content-center align-center text-start mt-3 mb-4">
-<h3 className="insightHeader">Average</h3>
+<h4 className="insightHeader">Average</h4>
 <TasksCompletionRateAverage />
 
-<h3 className="insightHeader">Deviation</h3>
+<h4 className="insightHeader">Deviation</h4>
 <TasksCompletionRateVariance />
 
-<h3 className="insightHeader">Recent</h3>
+<h4 className="insightHeader">Recent</h4>
 <TasksCompletionRateTrend />
 </Row>
  </Col>
@@ -322,13 +322,13 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
 <Col id="colBorder" className="d-flex-col align-self-end">
   <Row className="justify-content-center align-center text-start mt-3 mb-4">
-<h3 className="insightHeader" style={{color: "yellow", opacity: "0.25"}}>Feeling</h3>
+<h5 className="insightHeader" style={{color: "yellow", opacity: "0.25", lineHeight: "1"}}>Feeling</h5>
 
 
-<h3 className="insightHeader" style={{color: "blue", opacity: "0.25"}}>Moments Completed</h3>
+<h5 className="insightHeader" style={{color: "blue", opacity: "0.25", lineHeight: "1"}}>Moments Completed</h5>
 
 
-<h3 className="insightHeader" style={{color: "red", opacity: "0.25"}}>MCR%</h3>
+<h5 className="insightHeader" style={{color: "red", opacity: "0.25", lineHeight: "1"}}>MRR%</h5>
 
 </Row>
  </Col>

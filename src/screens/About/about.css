@@ -151,7 +151,7 @@ text-align: end;
   .aboutScreenMain {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 150vh;
   }
 
   .aboutSection {

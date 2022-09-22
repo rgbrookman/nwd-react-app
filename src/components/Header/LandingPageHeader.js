@@ -105,14 +105,14 @@ const LandingPageHeader = ({ history }) => {
        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
        <Nav className="justify-content-flex-end">
 
-{ userInfo || pageLoading === false ?
+{ userInfo && pageLoading === false ?
   <Nav.Item className="navSection">
     <Nav.Link href="/feedback">Feedback</Nav.Link>
   </Nav.Item> : null
 }
 
 
-    { userInfo || pageLoading === false
+    { userInfo 
     ?
     <Nav.Item className="navSection">
         <Dropdown className='navSection headerDropdown'>
@@ -136,7 +136,7 @@ Create A New Year
   </Dropdown.Item>
 }
 
-      {years && years.map((year) =>
+      {!years && pageLoading === false ? <DropdownLoading /> : years && years.map((year) =>
     <Dropdown.Item
       key={year._id}
       id="viewSelector"
@@ -148,8 +148,10 @@ Create A New Year
     </Dropdown.Menu>
     </Dropdown>
       </Nav.Item>
+
 : <Nav.Item className="navSection">
-<DropdownLoading />
+
+
 <Dropdown className='navSection headerDropdown'>
 <Dropdown.Menu
   id="yearDropdownMenu"
@@ -159,7 +161,8 @@ Create A New Year
 </Dropdown>
 </Nav.Item> }
 
-    { userInfo || pageLoading === false
+
+    { userInfo 
     ? <Nav.Item className="navSection">
 
       <Dropdown
@@ -196,7 +199,7 @@ Create A New Year
     </Dropdown>
     </Nav.Item>
     : <Nav.Item className="navSection">
-    <DropdownLoading />
+  
     <Dropdown className='navSection headerDropdown'>
     <Dropdown.Menu
       id="yearDropdownMenu"
@@ -207,7 +210,7 @@ Create A New Year
     </Nav.Item>
     }
 
-    { userInfo || pageLoading === false
+    { userInfo 
       ? <Nav.Item className="navSection">
           <Dropdown
           className='navSection headerDropdown'>
@@ -231,7 +234,7 @@ Create A New Year
             </Dropdown.Item>
 
 
-            {Array.isArray(days) === false && pageLoading === true ? <DropdownLoading /> : days && days
+            {Array.isArray(days) === false && pageLoading === false ? <DropdownLoading /> : days && days
                   .filter((day, i, days) => days.indexOf(day) === days.length -1 )
                   .map((day) => (
                 <Dropdown.Item
@@ -249,16 +252,7 @@ Create A New Year
  </Nav.Item>
 
 
-      : <Nav.Item className="navSection">
-      <DropdownLoading />
-      <Dropdown className='navSection headerDropdown'>
-      <Dropdown.Menu
-        id="yearDropdownMenu"
-        className="dropdownMenu">
-      
-      </Dropdown.Menu>
-      </Dropdown>
-      </Nav.Item>
+      : <></>
          }
 
 { userInfo
@@ -278,7 +272,7 @@ Create A New Year
                 </Nav.Item></>
          }
 
-         { userInfo || pageLoading === false
+         { userInfo 
          ? <Nav.Item className="navSection">
              <Dropdown
              className='navSection headerDropdown'>
@@ -291,7 +285,7 @@ Create A New Year
 
                <Dropdown.Menu
                id="weekDropdownMenu"
-               className="dropdowMenu">
+               className="dropdownMenu">
 
 { Array.isArray(days) && days.length > 9 ? <Dropdown.Item
        id="viewSelector"
@@ -320,19 +314,10 @@ Create A New Year
            </Dropdown.Menu>
                </Dropdown>
     </Nav.Item>
-         : <Nav.Item className="navSection">
-         <DropdownLoading />
-         <Dropdown className='navSection headerDropdown'>
-         <Dropdown.Menu
-           id="yearDropdownMenu"
-           className="dropdownMenu">
-         
-         </Dropdown.Menu>
-         </Dropdown>
-         </Nav.Item>
+         : <></>
          }
 
-         { userInfo || pageLoading === false
+         { userInfo 
          ? <Nav.Item className="navSection">
              <Dropdown
              className='navSection headerDropdown'>
@@ -345,16 +330,7 @@ Create A New Year
                </Dropdown.Toggle>
                </Dropdown>
     </Nav.Item>
-         : <Nav.Item className="navSection">
-         <DropdownLoading />
-         <Dropdown className='navSection headerDropdown'>
-         <Dropdown.Menu
-           id="yearDropdownMenu"
-           className="dropdownMenu">
-         
-         </Dropdown.Menu>
-         </Dropdown>
-         </Nav.Item>
+         : <></>
          }
 
          { userInfo 

@@ -163,6 +163,9 @@ useEffect(() => {
 
 const updateHandler = (e) => {
  e.preventDefault();
+ 
+
+
  dispatch(updateDayAction(id,
     logDate,
       startScore,
@@ -182,6 +185,7 @@ const updateHandler = (e) => {
       rememberToday,
       leaveBehind,
       endScore));
+    
 
       if ( !logDate ||
         !startScore ||

@@ -31,6 +31,7 @@
 
 .landingPageButtonDivMobile {
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .landingPageButton {
@@ -47,17 +48,17 @@
 
 .landingPageButtonMobile {
   background-color: #46A46C;
-
   color:   #EBF4FA; 
   font-family: 'Montserrat', sans-serif;
   border: 1px solid #EBF4FA;
   box-shadow: none;
   width: auto;
-  padding: 10px;
+  padding: 6px 8px;
   margin-top: 12px;
   border-radius: 10px;
-  font-size: 0.6em;
+
   font-family: 'caveat', cursive;
+  white-space: nowrap;
 }
 
 .landingPageButton .vision  {

@@ -243,8 +243,8 @@ onClick={()=>{
         >
 </iframe>
       </motion.div>
-
-<Container className="landingPageButtonDivMobile" fluid>
+<hr />
+<Container className="landingPageButtonDivMobile d-flex justify-cfaffafafontent-evenly">
 <Row>
   <Col>
 <button className="landingPageButtonMobile" 
