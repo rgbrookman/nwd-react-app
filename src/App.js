@@ -60,13 +60,14 @@ import './index.css';
 //Misc
 import ExportScreen from './screens/Export/ExportScreen';
 import ExternalScreen from './screens/External/ExternalScreen';
-
+import GoogleAnalytics from './utils/googleanalytics.js'
 
 
 function App() {
 
   return (
     <Router>
+       { GoogleAnalytics.init() && <GoogleAnalytics.RouteTracker /> }
         <Routes>
           <Route path="/" element={<LandingScreen />} />
           <Route path="/login" element={<LoginScreen />} />
