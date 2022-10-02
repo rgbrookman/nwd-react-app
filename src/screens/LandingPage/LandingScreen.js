@@ -12,6 +12,7 @@ import { createWeekAction, listWeeks } from '../../actions/weekActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSolarPanel, faPlugCircleBolt, faRepeat } from '@fortawesome/free-solid-svg-icons'
 import Loading from '../../components/Loading/Loading';
+import {Helmet} from "react-helmet"
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import axios from "axios";
 import logo from '../../NWD_Logo_White.png';
@@ -72,9 +73,6 @@ dispatch(listYears());
     },
   };
 
-  useEffect(() => {
-    document.title = "Your NWD";
-  }, []);
 
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
@@ -84,6 +82,11 @@ const visionExplainer = 'tSuRg3bqgIg';
   return (
 
     <>
+    <>
+  <Helmet>
+                    <title>Welcome</title>
+                </Helmet>
+                </>
 
       <LandingPageHeader />
 
