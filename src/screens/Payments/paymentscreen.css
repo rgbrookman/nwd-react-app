@@ -17,7 +17,7 @@ grid-template-rows: 1fr;
 grid-template-rows: Repeat(23,1fr);
 }
 
-.topRow {
+.topRowPayments {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

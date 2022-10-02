@@ -13,7 +13,7 @@ export default function PaymentScreen() {
     <main className="payment">
  
    <section className="col1">
-    <div className="topRow">
+    <div className="topRowPayments">
         <h1>I use a Pay-As-You-Can model in order to include everyone yet also generate revenue that will help NWD's reach more and more people.</h1>
         <hr />
         <span>Each option is valid, available and I will never deviate from this model. 
