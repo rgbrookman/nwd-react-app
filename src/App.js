@@ -45,6 +45,7 @@ import HelpScreen from './screens/Help/HelpScreen';
 import AboutScreen from './screens/About/AboutScreen';
 import ContactScreen from './screens/Contact/ContactScreen';
 import ProfileScreen from './screens/Profile/ProfileScreen';
+import PaymentScreen from './screens/Payments/PaymentScreen';
 
 //Components
 import Header from "./components/Header/Header";
@@ -59,12 +60,14 @@ import './index.css';
 //Misc
 import ExportScreen from './screens/Export/ExportScreen';
 import ExternalScreen from './screens/External/ExternalScreen';
+import GA from './utils/googleanalytics.js'
 
 
 function App() {
 
   return (
     <Router>
+       { GA.init() && <GA.RouteTracker /> }
         <Routes>
           <Route path="/" element={<LandingScreen />} />
           <Route path="/login" element={<LoginScreen />} />
@@ -82,6 +85,7 @@ function App() {
           <Route path="/insight/quiz/debrief" element={<QuizDebriefScreen />} />
           <Route path="/insight/quiz/real_quiz" element={<RealQuizScreen />} />
           <Route path="/insight/quiz/real_quiz/end" element={<FinalQuizScreen />} />
+          <Route path="/payc" element={<PaymentScreen />} />
           <Route path="/profile" element={<ProfileScreen />} />
           <Route path="/week/create" element={<CreateWeekScreen />} />
           <Route path="/week/:id" element={<WeekScreen />} />
