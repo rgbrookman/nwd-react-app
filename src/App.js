@@ -67,7 +67,6 @@ function App() {
 
   return (
     <Router>
-       { GoogleAnalytics.init() && <GoogleAnalytics.RouteTracker /> }
         <Routes>
           <Route path="/" element={<LandingScreen />} />
           <Route path="/login" element={<LoginScreen />} />
