@@ -195,6 +195,7 @@ useEffect(() => {
 type="date"
 value={logDate}
 onChange={(e) => setLogDate(e.target.value)}
+required
 />
 <div className="resetDiv">
 <FontAwesomeIcon
