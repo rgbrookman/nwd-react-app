@@ -98,7 +98,7 @@ const LandingPageHeader = ({ history }) => {
 {Array.isArray(days) === false ? <></> : days && days
       .filter((day, i, days) => days.indexOf(day) === days.length -1 )
       .map((day) => (
-<span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate}</strong></span>
+<span className="lastDayNudge d-none d-sm-block" key={day._id}>Last Day Logged: <br /> <strong>{day.logDate.toLocaleString().substring(0,10)}</strong></span>
             ))}
 
     <Navbar.Toggle id="toggle" aria-controls="basic-navbar-nav" variant="light" />
