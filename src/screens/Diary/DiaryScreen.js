@@ -115,7 +115,7 @@ useEffect(() => {
 { days && days.map(day => 
 <option key={day._id}
 
->{day.logDate}</option> )}
+>{day.logDate.slice(0,10)}</option> )}
 
 </select>
 
