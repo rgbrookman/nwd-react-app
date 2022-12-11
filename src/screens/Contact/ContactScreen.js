@@ -6,7 +6,6 @@ import { Container, Button, Row, Col  } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import Swal from 'sweetalert2'
 import './contact.css';
-import Header from "../../components/Header/Header";
 
 export default function Contact({ history }) {
   const [name, setName] = useState('');
@@ -39,7 +38,6 @@ export default function Contact({ history }) {
 
   return (
     <Container className="contactContainer" fluid>
-    <Header />
 
       <form id="contactForm" className="contact-form" ref={form} onSubmit={sendEmail}>
     <Row>

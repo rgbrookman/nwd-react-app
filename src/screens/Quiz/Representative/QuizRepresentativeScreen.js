@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../../../components/Header/Header';
+import CentralHeader from '../../../components/Header/CentralHeader';
 import { updateProfile } from '../../../actions/dayActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
 import Loading from '../../../components/Loading/Loading';
@@ -47,7 +47,7 @@ export default function QuizRepresentativeScreen() {
   return (
     <>
  
-<Header />
+<CentralHeader />
 
 <motion.div
   className="titleDiv"

@@ -1,0 +1,125 @@
+.updateday.container,
+.createday.container {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+
+.tile {
+  margin-top: 24px;
+  background-color: whitesmoke;
+  padding: 16px 20px; 
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  min-height: 388px;
+  height: auto;
+  width: 388px;
+  margin: 0 1em;
+}
+
+.tile.centre {
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+
+.tile.centre textarea {
+  width: 90%;
+}
+
+.momentRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dateRow {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 0.5px dashed rgba(0,0,0,0.2);
+}
+
+.dateRow label {
+  margin-right: 12px;
+}
+
+.dateRow input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family:'Futura';
+}
+
+
+.tile.left, 
+.tile.right {
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  align-items: space-between;
+}
+
+
+      .statement.starter {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        color: #004a22;
+      }
+    
+      .formInput.moment {
+        width: 100%;
+      }
+
+      .formInput.moment::placeholder {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 200;
+        color: #004a22;
+      }
+
+
+
+      .formInput,
+      .formInput:focus,
+      .formInput:active {
+        background-color: transparent; 
+        border: none;
+        box-shadow: none;
+        text-decoration: none;
+        outline: none;
+      }
+
+      .dock.footer {
+        height: auto;
+        width: 100%;
+        position:fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sickTooltip {
+        width: auto;
+        font-weight: 700; 
+        color: #004a22;
+        opacity: 0.5;
+      }
+
+      .row.button {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .row.button button {
+        width: auto;
+      }

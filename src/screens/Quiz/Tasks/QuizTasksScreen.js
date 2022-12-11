@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../../../components/Header/Header';
+import CentralHeader from '../../../components/Header/CentralHeader';
 import { updateProfile } from '../../../actions/dayActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
 import Loading from '../../../components/Loading/Loading';
@@ -11,8 +11,8 @@ import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../NWD_Logo_White.png';
-import feelingscoretoday from '../../../FeelingScoreToday.png';
-import feelingscorechart from '../../../momentChart.png';
+import feelingscoretoday from '../../../endScoreFront.png';
+import feelingscorechart from '../../../tasksCompFront.png';
 import tasksCompleted from '../../../tasksCompleted.png';
 import tcr from '../../../TCR.png';
 import './quiztasks.css';
@@ -56,7 +56,7 @@ export default function QuizTasksScreen() {
   return (
     <>
 
-    <Header />
+    <CentralHeader />
 
 <motion.div
   className="titleDiv"
@@ -105,11 +105,11 @@ className="quizDiv">
         <span>1.</span><span className="emphasis">Average:</span><span> The result of adding up all of your moment scores, and dividing them by the total number of days you have logged.</span>
               <br />
               <br />
-                        <span>2.</span><span className="emphasis">Deviation:</span><span> How much any of your moment related scores are likely to differ from the average.
+                        <span>2.</span><span className="emphasis">Variance:</span><span> How much any of your moment related scores are likely to differ from the average.
                         The higher this number is, the more likely your score is to be significantly different from the average.</span>
                     <br />
                     <br />
-            <span>3.</span><span className="emphasis">Recent Trend:</span><span> The degree to which your average from the last 14 days is more or less than your overall average</span>
+            <span>3.</span><span className="emphasis">Recent v. Lifetime:</span><span> The degree to which your average from the last 14 days is more or less than your overall average</span>
 </div>
 <div className="rightCol">
   <div className="rightContent">

@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { Container, Button, Row, Col  } from 'react-bootstrap';
-import Header from "../../components/Header/Header";
 import { motion } from 'framer-motion';
 import Swal from 'sweetalert2'
 import './feedback.css';
@@ -46,7 +45,6 @@ export default function Feedback({ history }) {
 
   return (
     <>
-<Header/>
     <Container className="feedbackContainer mb-5">
 
       <form id="feedbackForm" className="feedback-form" ref={feedbackForm} onSubmit={sendEmail}>

@@ -24,31 +24,13 @@
   margin-right: 24px;
 }
 
-.toggleButton {
-  background-color: #46A46C;
-  color: #EBF4FA;
-  font-family: 'Koulen', cursive;
-  border: 1px solid #46A46C;
-  margin: 12px 6px 0 6px;
-  padding: 6px;
-  border-radius: 5px;
-}
 
-
-#feelingVariance {
-  display: inline-block;
-}
-
-.feelingVarianceChart {
-  border: 3px solid #46A46C;
-  border-radius: 10px;
-}
 
 #waveContent {
   display: inline-block;
 }
 
 .waveContentChart {
-  border: 3px solid #46A46C;
+  border: 3px solid #004a22;
   border-radius: 10px;
 }

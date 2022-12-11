@@ -1,0 +1,13 @@
+.datePickerNew {
+    background-color: whitesmoke;
+    border: none;
+    font-family: 'Futura';
+    font-weight: 500;
+    color: #000;
+    outline: none;
+}
+
+.datePickerOption {
+    background-color: whitesmoke;
+}
+

@@ -4,7 +4,6 @@ import { motion, AnimatePresence, useViewportScroll, useSpring, useTransform } f
 import { Container } from 'react-bootstrap';
 import Footer from "../../components/Footer/Footer";
 import ReducedFooter from "../../components/Footer/ReducedFooter";
-import Header from "../../components/Header/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faSolarPanel, faPlugCircleBolt, faRepeat  } from '@fortawesome/free-solid-svg-icons'
 
@@ -147,7 +146,6 @@ const opacity1 = useTransform(scrollY, [500, scrollAmount1], [0, 1]);
 
   return (
     <>
-    <Header />
     { vw > 800 ? 
     <>
     <Container fluid className="aboutScreenMain">

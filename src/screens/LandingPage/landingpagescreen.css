@@ -1,0 +1,41 @@
+.loggedInMain {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pC {
+  display: flex;
+  flex-direction: row;
+}
+
+#pcHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.pro, 
+.con {
+  width: 50%;
+}
+
+.featuredIn {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.lp {
+  font-weight: 500;
+}
+
+.tile.left .hidden {
+  display: none;
+}
+

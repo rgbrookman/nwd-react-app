@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../../../components/Header/Header';
+import CentralHeader from '../../../components/Header/CentralHeader';
 import { updateProfile } from '../../../actions/dayActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
 import Loading from '../../../components/Loading/Loading';
@@ -11,9 +11,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../NWD_Logo_White.png';
 import sameAverage from '../../../Same_Average.png';
+import starting from '../../../starting.gif';
 import waveConcept from '../../../wave_concept.png';
-import feelingscoretoday from '../../../FeelingScoreToday.png';
-import feelingscorechart from '../../../feelingChart.png';
+import feelingscoretoday from '../../../endScoreFront.png';
+import feelingscorechart from '../../../feelingScoreGraph.png';
 import spiral from '../../../spiral.png';
 import './quizfeeling.css';
 
@@ -56,7 +57,7 @@ export default function QuizFeelingScreen() {
   return (
     <>
 
-<Header />
+<CentralHeader  />
 
 <motion.div
   className="titleDiv"
@@ -113,11 +114,11 @@ export default function QuizFeelingScreen() {
     number of days you have logged. This is otherwise known as the 'mean'.</span>
         <br />
             <br />
-  <span>2.</span><span className="emphasis">Deviation:</span><span> How much your feeling score is likely to differ from your average.
+  <span>2.</span><span className="emphasis">Variance:</span><span> How much your feeling score is likely to differ from your average.
   The higher this number is, the larger the difference from the average is.</span>
         <br />
         <br />
-<span>3.</span><span className="emphasis">Recent Trend:</span><span> The degree to which your average from the last 14 days is more or less than your overall average</span>
+<span>3.</span><span className="emphasis">Recent v. Lifetime:</span><span> The degree to which your average from the last 14 days is more or less than your overall average</span>
 </div>
 <div className="rightCol">
 <div className="rightContent">
@@ -134,13 +135,13 @@ variants={showHideState}>
 setInput(input => false);
 setOutput(output => true);
 }}>View Output</Button>
-<h3 id="scoreHere" className="quizHeaderGreen">The Score You Put Here ^</h3>
+<h3 id="scoreHere" className="quizHeaderGreen">The Score You Put Above... </h3>
 </div>
 </motion.div>
 <motion.div className="toggleButtonDiv"
 animate={input ? "hide" : "show"}
 variants={showHideState}>
-<img className="feelingScoreChart" src={feelingscorechart} width="100%"/>
+<img className="feelingScoreChart" src={feelingscorechart} width="40%"/>
 <div className="toggleSpread">
 <h3 className="quizHeaderGreen">...is then displayed like this</h3>
 <Button id="output" className="toggleButton" onClick={()=> {
@@ -200,7 +201,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>some super cool diagram</p>
+<img src={starting} width="60%" className="imageOrGif" />
 </div>
 </div>
 <div className="buttonRow">

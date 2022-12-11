@@ -11,11 +11,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #004a22;
 }
 
 .question {
   font-size: 3em;
-  font-family: "caveat", cursive;
+  font-family: 'Futura';
   margin: 0 24px;
   text-align: center;
 }
@@ -84,8 +85,8 @@
 
 .checkAnswerButton {
   background-color: #EBF4FA;
-  color: #46A46C;
-  font-family: 'Koulen', cursive;
+  color: #004a22;
+  font-family: 'Futura';
   border: 1px solid #46A46C;
   margin: 0 6px 0 6px;
 }

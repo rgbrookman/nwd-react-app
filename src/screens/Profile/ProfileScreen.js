@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { updateProfile } from '../../actions/userActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
-import Header from '../../components/Header/Header';
+import CentralHeader from '../../components/Header/CentralHeader';
 import Loading from '../../components/Loading/Loading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import Footer from '../../components/Footer/Footer';
@@ -58,14 +58,14 @@ useEffect(() => {
 
   return (
     <>
-    <Header />
+    <CentralHeader />
 <Container fluid className="mainProfileScreen mt-5" >
 
 <Row>
 <Col sm={12} md={12} lg={8}>
 <form className="updateProfileForm" onSubmit={submitHandler} >
-<div className="profileContainer">
-<div className="nameContainer">
+<div className="container profile">
+<div className="container name">
 <label for="updateName">Name</label>
 <input
   id="updateName"
@@ -76,7 +76,7 @@ useEffect(() => {
   onChange={(e) => setName(e.target.value)}
   />
   </div>
-  <div className="emailContainer">
+  <div className="container email">
 <label for="email">Email</label>
 <input
 id="email"
@@ -87,7 +87,7 @@ placeholder="email"
 onChange={(e) => setEmail(e.target.value)}
 />
   </div>
-  <div className="passwordContainer">
+  <div className="container password">
 <label for="password">Password</label>
 <input
 id="password"
@@ -98,7 +98,7 @@ placeholder="password"
 onChange={(e) => setPassword(e.target.value)}
 />
   </div>
-    <div className="confirmPasswordContainer">
+    <div className="container confirmPassword">
 <label for="confPassword">Confirm Password</label>
 <input
 id="confPassword"
@@ -123,7 +123,6 @@ onChange={(e) => setConfirmPassword(e.target.value)}
 <h2 className="quoteTextAuthor">Herman Melville</h2>
 </Col>
 </Row>
-<Footer/>
 </Container>
 </>
   );

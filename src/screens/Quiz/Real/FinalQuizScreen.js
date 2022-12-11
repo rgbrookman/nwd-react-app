@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../../../components/Header/Header';
+import CentralHeader from '../../../components/Header/CentralHeader';
 import { listDays } from '../../../actions/dayActions';
 import { listYears } from '../../../actions/yearActions';
 import { listWeeks } from '../../../actions/weekActions';
@@ -109,7 +109,7 @@ export default function FinalQuizScreen(history) {
   return (
     <>
 
-<Header />
+<CentralHeader />
 
 <motion.div
   className="titleDiv"
@@ -118,6 +118,7 @@ export default function FinalQuizScreen(history) {
   onClick={()=> {
   setTitleDiv(titleDiv => false);
   setKickOff(kickOff => true);
+  localStorage.setItem("quiz_end", 1);
 }}>
   <span>You Have a Finished the Quiz!</span>
   <h1>Well Done</h1>

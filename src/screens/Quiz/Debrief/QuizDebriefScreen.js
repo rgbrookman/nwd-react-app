@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../../../components/Header/Header';
+import CentralHeader from '../../../components/Header/CentralHeader';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import './quizdebrief.css';
@@ -47,7 +47,7 @@ export default function QuizDebriefScreen() {
   return (
     <>
     
-<Header />
+    <CentralHeader  />
 
 <motion.div
   className="titleDiv"

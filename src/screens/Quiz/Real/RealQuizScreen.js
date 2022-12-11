@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../../../components/Header/Header';
+import CentralHeader from '../../../components/Header/CentralHeader';
 import { updateProfile } from '../../../actions/dayActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
 import Loading from '../../../components/Loading/Loading';
@@ -89,7 +89,7 @@ export default function RealQuizScreen() {
       color: "#000",
     },
     selected: {
-      backgroundColor: "green",
+      backgroundColor: "#004a22",
       margin: '8px 12px 8px 12px',
       padding: "6px 10px 6px 10px",
       borderRadius: "10px",
@@ -129,7 +129,7 @@ color: "red",
   return (
     <>
 
-<Header />
+<CentralHeader />
 
 <motion.div
   className="titleDiv"

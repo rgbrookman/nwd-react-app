@@ -6,7 +6,6 @@ import Loading from '../../components/Loading';
 import { ErrorMessage } from '../../components/ErrorMessage';
 import './week.css';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
-import Header from "../../components/Header/Header";
 
 export default function DataScreen() {
   const [objectiveOne_text, setObjectiveOne_text] = useState("");

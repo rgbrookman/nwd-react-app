@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
-import Header from '../../../components/Header/Header';
+import CentralHeader from '../../../components/Header/CentralHeader';
 import { updateProfile } from '../../../actions/dayActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
 import Loading from '../../../components/Loading/Loading';
@@ -14,6 +14,7 @@ import why from '../../../lnwh.gif';
 import './quizintro.css';
 
 export default function QuizScreen() {
+  const [titleMain, setTitleMain] = useState(true);
   const [titleDiv, setTitleDiv] = useState(true);
   const [kickOff, setKickOff] = useState(false);
   const [sceneSet, setSceneSet] = useState(false);
@@ -45,7 +46,15 @@ export default function QuizScreen() {
 
   return (
     <>
-<Header />
+<CentralHeader />
+<motion.main className="quizIntroMain"
+ animate={ titleMain ? "show" : "hide"}
+ variants={showHideState}
+ onClick={()=> {
+  setTitleMain(titleMain => false);
+ setTitleDiv(titleDiv => false);
+ setKickOff(kickOff => true);
+}}>
 <motion.div
   className="titleDiv"
   animate={ titleDiv ? "show" : "hide"}
@@ -55,7 +64,8 @@ export default function QuizScreen() {
   setKickOff(kickOff => true);
 }}>
 
-  <h1>The Art of Looking</h1>
+ <h1>The Art of Looking</h1>
+  
 { vw < 800 ?  
 <span><strong>Experience Only Available on Desktop</strong></span> 
 : <><span><strong>Setup for Speedily and Safely Turning Your Insights into Greater Joy & Growth</strong></span>  
@@ -64,6 +74,7 @@ export default function QuizScreen() {
  
 
 </motion.div>
+</motion.main>
 
     <motion.div
       animate={ kickOff ? "show" : "hide"}
@@ -262,15 +273,15 @@ className="quizDiv">
 <div className="rightCol">
 <div className="rightContentContent">
 <h2 className="quizHeaderGreen">Contents</h2>
-<span>1.<strong className="boldHeader">Looking at your Charts 101:</strong></span>
+<span>1.    <strong className="boldHeader">Looking at your Charts 101:</strong></span>
 <span className="subtitle">Quickly yet Completely Teaching the 4 Core Data Views</span>
-<span>2.<strong className="boldHeader">Harnessing the Wave:</strong></span>
+<span>2.    <strong className="boldHeader">Harnessing the Wave:</strong></span>
 <span className="subtitle">How to Best Use a Dynamic Hidden Deep in your Data</span>
-<span>3.<strong className="boldHeader">Making of a Mindset</strong></span>
+<span>3.    <strong className="boldHeader">Making of a Mindset</strong></span>
 <span className="subtitle">Why how you look at your data matters more than any other single thing.</span>
-<span>4.<strong className="boldHeader">Making the Data Deeply Representative</strong></span>
+<span>4.    <strong className="boldHeader">Making the Data Deeply Representative</strong></span>
 <span className="subtitle">Sharing the 3 Keys to Top Quality Data</span>
-<span>5.<strong className="boldHeader">Getting Value from Any Outcome</strong></span>
+<span>5.    <strong className="boldHeader">Getting Value from Any Outcome</strong></span>
 <span className="subtitle">The best way to break down any event (and its completely free!)</span>
 </div>
 </div>

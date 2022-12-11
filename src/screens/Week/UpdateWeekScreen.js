@@ -1,78 +1,151 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { createWeekAction, listWeeks, updateWeekAction } from '../../actions/weekActions';
 import Loading from '../../components/Loading/Loading';
+import PageLoading from '../../components/Loading/PageLoading';
 import { listYears } from '../../actions/yearActions';
 import { listDays } from '../../actions/dayActions';
+import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import CentralHeader from '../../components/Header/CentralHeader';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import HideDock from '../../components/Dock/HideDock';
-import MidDock from '../../components/Dock/MidDock';
-import { ErrorMessage } from '../../components/Error/ErrorMessage';
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
-import './weekscreen.css';
 import axios from "axios";
+import MidDock from '../../components/Dock/MidDock';
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import Overlay from 'react-bootstrap/Overlay';
+import Tooltip from 'react-bootstrap/Tooltip';
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPenToSquare, faEraser, faCircleCheck } from '@fortawesome/free-solid-svg-icons'
+import './weekscreen.css';
 
-export default function WeekScreenTest({ history }) {
-  const [objectiveOne_text, setObjectiveOne_text] = useState("");
-  const [objectiveOne_score, setObjectiveOne_score] = useState(0);
-  const [objectiveTwo_text, setObjectiveTwo_text] = useState("");
-  const [objectiveTwo_score, setObjectiveTwo_score] = useState(0);
-  const [objectiveThree_text, setObjectiveThree_text] = useState("");
-  const [objectiveThree_score, setObjectiveThree_score] = useState(0);
-  const [objectiveFour_text, setObjectiveFour_text] = useState("");
-  const [objectiveFour_score, setObjectiveFour_score] = useState(0);
-  const [objectiveFive_text, setObjectiveFive_text] = useState("");
-  const [objectiveFive_score, setObjectiveFive_score] = useState(0);
-  const [objectiveSix_text, setObjectiveSix_text] = useState("");
-  const [objectiveSix_score, setObjectiveSix_score] = useState(0);
-  const [objectiveSeven_text, setObjectiveSeven_text] = useState("");
-  const [objectiveSeven_score, setObjectiveSeven_score] = useState(0);
-  const [objectiveEight_text, setObjectiveEight_text] = useState("");
-  const [objectiveEight_score, setObjectiveEight_score] = useState(0);
-  const [objectiveNine_text, setObjectiveNine_text] = useState("");
-  const [objectiveNine_score, setObjectiveNine_score] = useState(0);
-  const [objectiveTen_text, setObjectiveTen_text] = useState("");
-  const [objectiveTen_score, setObjectiveTen_score] = useState(0);
+export default function ViewWeekScreen({ history }) {
 
-  const [videoDisplay, setVideoDisplay] = useState(true);
-  const [videoLink, setVideoLink] = useState('GQzaJ3qCo4k');
+  // Form State
+  const [objectiveOne_text, setObjectiveOne_text] = useState();
+  const [objectiveOne_score, setObjectiveOne_score] = useState();
+  const [objectiveTwo_text, setObjectiveTwo_text] = useState();
+  const [objectiveTwo_score, setObjectiveTwo_score] = useState();
+  const [objectiveThree_text, setObjectiveThree_text] = useState();
+  const [objectiveThree_score, setObjectiveThree_score] = useState();
+  const [objectiveFour_text, setObjectiveFour_text] = useState();
+  const [objectiveFour_score, setObjectiveFour_score] = useState();
+  const [objectiveFive_text, setObjectiveFive_text] = useState();
+  const [objectiveFive_score, setObjectiveFive_score] = useState();
+  const [objectiveSix_text, setObjectiveSix_text] = useState();
+  const [objectiveSix_score, setObjectiveSix_score] = useState();
+  const [objectiveSeven_text, setObjectiveSeven_text] = useState();
+  const [objectiveSeven_score, setObjectiveSeven_score] = useState();
+  const [objectiveEight_text, setObjectiveEight_text] = useState();
+  const [objectiveEight_score, setObjectiveEight_score] = useState();
+  const [objectiveNine_text, setObjectiveNine_text] = useState();
+  const [objectiveNine_score, setObjectiveNine_score] = useState();
+  const [objectiveTen_text, setObjectiveTen_text] = useState();
+  const [objectiveTen_score, setObjectiveTen_score] = useState();
+
+
+  const [pageLoading, setPageLoading] = useState(true);
   const [cursorDisplayState, setCursorDisplayState] = useState(true);
-
   const [cursorState, setCursorState] = useState('The dock allows you to look at your diary through the lens of your important frames and plans.');
 
   const [fontState, setFontState] = useState(96);
 
+  const [show, setShow] = useState(false);
+const target = useRef(null);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  let { id } = useParams();
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
-  const weekCreate = useSelector((state) => state.weekCreate);
-  const { loading, error, weeks } = weekCreate;
+  const weekList = useSelector((state) => state.weekList);
+  const { loading, error, weeks } = weekList;
+
+  const weekUpdate = useSelector((state) => state.weekUpdate);
+  const { success: successUpdate } = weekUpdate;
+
+
+  useEffect(() => {
+    dispatch(listWeeks());
+  }, [dispatch, userInfo, history]);
 
   const yearList = useSelector((state) => state.yearList);
-const { years } = yearList;
-
-const dayList = useSelector((state) => state.dayList); //
-const { days } = dayList;
-
-
-useEffect(() => {
-dispatch(listYears());
-}, [dispatch, userInfo, history])
-
-useEffect(() => {
-  dispatch(listDays());
+  const { years } = yearList;
+  
+  const dayList = useSelector((state) => state.dayList); //
+  const { days } = dayList;
+  
+  
+  useEffect(() => {
+  dispatch(listYears());
   }, [dispatch, userInfo, history])
+  
+  useEffect(() => {
+    dispatch(listDays());
+    }, [dispatch, userInfo, history])
+
+  useEffect(() => {
+
+    const fetching = async () => {
+      try {
+        const { data } = await axios.get(`https://nwd-backend.herokuapp.com/api/weeks/week/${id}`);
+          setObjectiveOne_text(data.objectiveOne_text);
+          setObjectiveOne_score(data.objectiveOne_score);
+          setObjectiveTwo_text(data.objectiveTwo_text);
+          setObjectiveTwo_score(data.objectiveTwo_score);
+          setObjectiveThree_text(data.objectiveThree_text);
+          setObjectiveThree_score(data.objectiveThree_score);
+          setObjectiveFour_text(data.objectiveFour_text);
+          setObjectiveFour_score(data.objectiveFour_score);
+          setObjectiveFive_text(data.objectiveFive_text);
+          setObjectiveFive_score(data.objectiveFive_score);
+          setObjectiveSix_text(data.objectiveSix_text);
+          setObjectiveSix_score(data.objectiveSix_score);
+          setObjectiveSeven_text(data.objectiveSeven_text);
+          setObjectiveSeven_score(data.objectiveSeven_score);
+          setObjectiveEight_text(data.objectiveEight_text);
+          setObjectiveEight_score(data.objectiveEight_score);
+          setObjectiveNine_text(data.objectiveNine_text);
+          setObjectiveNine_score(data.objectiveNine_score);
+          setObjectiveTen_text(data.objectiveTen_text);
+          setObjectiveTen_score(data.objectiveTen_score);
+  } catch(error) {
+    console.log(error);
+  }
+      }
+    fetching();
+  }, [id]);
 
 
-  const submitHandler = (e) => {
+  const resetHandler = () => {
+    setObjectiveOne_text("");
+    setObjectiveOne_score("");
+    setObjectiveTwo_text("");
+    setObjectiveTwo_score("");
+    setObjectiveThree_text("");
+    setObjectiveThree_score("");
+    setObjectiveFour_text("");
+    setObjectiveFour_score("");
+    setObjectiveFive_text("");
+    setObjectiveFive_score("");
+    setObjectiveSix_text("");
+    setObjectiveSix_score("");
+    setObjectiveSeven_text("");
+    setObjectiveSeven_score("");
+    setObjectiveEight_text("");
+    setObjectiveEight_score("");
+    setObjectiveNine_text("");
+    setObjectiveNine_score("");
+    setObjectiveTen_text("");
+    setObjectiveTen_score("");
+};
+
+  const updateHandler = (e) => {
     e.preventDefault();
-    dispatch(createWeekAction(
+    dispatch(updateWeekAction(id,
       objectiveOne_text,
       objectiveOne_score,
       objectiveTwo_text,
@@ -92,12 +165,63 @@ useEffect(() => {
       objectiveNine_text,
       objectiveNine_score,
       objectiveTen_text,
-      objectiveTen_score,
-    ));
+      objectiveTen_score));
+
+      if (!objectiveOne_text ||
+        !objectiveOne_score ||
+        !objectiveTwo_text ||
+        !objectiveTwo_score ||
+        !objectiveThree_text ||
+        !objectiveThree_score ||
+        !objectiveFour_text ||
+        !objectiveFour_score ||
+        !objectiveFive_text ||
+        !objectiveFive_score ||
+        !objectiveSix_text ||
+        !objectiveSix_score ||
+        !objectiveSeven_text ||
+        !objectiveSeven_score ||
+        !objectiveEight_text ||
+        !objectiveEight_score ||
+        !objectiveNine_text ||
+        !objectiveNine_score ||
+        !objectiveTen_text ||
+        !objectiveTen_score) return;
+
+      // resetHandler();
+
   };
 
+  const showHideState = {
+    hide: {
+      display: "none",
+    },
+    show: {
+      display: "block",
+    },
+  }
+
+  const valueState = {
+    hide: {
+      display: "none",
+    },
+    show: {
+      display: "block",
+    },
+  };
+
+  const loadingTimeout = () => {
+    setTimeout(()=> {
+      setPageLoading(false)
+    }, 3000)
+  }
+
+  useEffect(()=> {
+    loadingTimeout();
+  })
+
   useEffect(() => {
-    document.title = "Week | Create";
+    document.title = "Week | Update";
   }, []);
 
   const cursorDisplayToggle = () => {
@@ -152,6 +276,8 @@ useEffect(() => {
       {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
     };
 
+  const weekVideo = 'https://share.vidyard.com/watch/Vry5iUQHge3eD6djb2k912?';
+
   return (
 <>
 <CentralHeader />
@@ -163,13 +289,12 @@ useEffect(() => {
         >
         <h1 className="sickTooltip">{cursorState}</h1>
         </MouseTooltip>
-<Form onSubmit={submitHandler}>
+<form onChange={updateHandler}>
 <main className="weekContainer">
 <HideDock 
    toggleOverlay={cursorDisplayToggle}
-   saveWeek={submitHandler} />
-
-   <MidDock 
+   updateWeek={updateHandler} />
+    <MidDock 
    changeName={cursorChangeName}
    changeDOB={cursorChangeDOB}
    changeValues={cursorChangeValues} 
@@ -183,7 +308,7 @@ useEffect(() => {
     { objectiveOne_text ? <label for="objOne" className="statement starter">#1 </label> : <></>}
     <textarea
       id="objOne"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveOne_text}
@@ -206,7 +331,7 @@ useEffect(() => {
     { objectiveTwo_text ? <label for="objTwo" className="statement starter">#2 </label> : <></>}
     <textarea
       id="objTwo"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveTwo_text}
@@ -229,7 +354,7 @@ useEffect(() => {
 { objectiveThree_text ? <label for="objThree" className="statement starter">#3 </label> : <></>}
     <textarea
       id="objThree"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveThree_text}
@@ -252,7 +377,7 @@ useEffect(() => {
 { objectiveFour_text ? <label for="objFour" className="statement starter">#4 </label> : <></>}
     <textarea
       id="objFour"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveFour_text}
@@ -275,7 +400,7 @@ useEffect(() => {
 { objectiveFive_text ? <label for="objFive" className="statement starter">#5 </label> : <></>}
     <textarea
       id="objFive"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveFive_text}
@@ -298,7 +423,7 @@ useEffect(() => {
 { objectiveSix_text ? <label for="objSix" className="statement starter">#6 </label> : <></>}
     <textarea
       id="objSix"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveSix_text}
@@ -321,7 +446,7 @@ useEffect(() => {
 { objectiveSeven_text ? <label for="objSeven" className="statement starter">#7 </label> : <></>}
     <textarea
       id="objSeven"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveSeven_text}
@@ -344,7 +469,7 @@ useEffect(() => {
 { objectiveEight_text ? <label for="objEight" className="statement starter">#8 </label> : <></>}
     <textarea
       id="objEight"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveEight_text}
@@ -367,7 +492,7 @@ useEffect(() => {
 { objectiveNine_text ? <label for="objNine" className="statement starter">#9 </label> : <></>}
     <textarea
       id="objNine"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveNine_text}
@@ -390,7 +515,7 @@ useEffect(() => {
 { objectiveTen_text ? <label for="objTen" className="statement starter">#10 </label> : <></>}
     <textarea
       id="objTen"
-      className="formInput year"
+      className="formInput week"
       wrap="soft"
       autoComplete="off"
       value={objectiveTen_text}
@@ -411,7 +536,7 @@ useEffect(() => {
 </div>
   </div>
 </main>
-</Form>
+</form>
 </>
   );
 }

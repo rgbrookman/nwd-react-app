@@ -1,6 +1,5 @@
 import React from 'react';
 import './paymentscreen.css';
-import Header from "../../components/Header/Header";
 
 export default function PaymentScreen() {
 
@@ -8,7 +7,6 @@ export default function PaymentScreen() {
   return (
     <>
     <>
-    <Header />
     </>
     <main className="payment">
  

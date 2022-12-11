@@ -6,43 +6,45 @@
   height: 100%;
 }
 
-.profileContainer {
+.container.profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   padding: 24px 24px 12px 24px; 
-  color: #46A46C;
+  color: #004a22;
   border-radius: 10px;
+  text-align: start;
 }
 
 .updateProfileButton {
-  background-color: #46A46C;
-  color: #EBF4FA;
-  font-family: 'Koulen', cursive;
-  border: 1px solid #46A46C;
-  margin-bottom: 12px;
+  background-color: #004a22;
+  color: whitesmoke;
+  font-family: 'Futura';
+  border: 1px solid #004a22;
+  margin: 12px;
 }
 
-.nameContainer label,
-.emailContainer label,
-.passwordContainer label,
-.confirmPasswordContainer label {
+.container.name label,
+.container.email label,
+.container.password label,
+.container.confirmPassword label {
   justify-content: flex-end;
   margin-right: 12px;
-      color: #46A46C;
+      color: #004a22;
       font-size: 0.8em;
 }
 
 .quoteTextText {
-  font-family: 'caveat', cursive;
-  color: #EBF4FA;
+  font-family: 'Futura';
+  color: #004a22;
   font-size: 2.5em;
 }
 
 .quoteTextAuthor {
-  font-family: 'Courier New', monospace;
-  color: #EBF4FA;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
+  color: whitesmoke;
   font-size: 0.8em;
 }
 
@@ -52,7 +54,8 @@
 }
 
 .textInput {
-  font-family: "Courier New", monospace;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 100;
   font-size: 0.8em;
   width: 100%;
   border-style: solid;
