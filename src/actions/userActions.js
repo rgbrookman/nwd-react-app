@@ -19,11 +19,12 @@ export const login = (email, password) => async (dispatch) => {
     const config = {
       headers: {
         "Content-type": "application/json",
+        "Access-Control-Allow-Origin": "*"
       },
     };
 
     const { data } = await axios.post(
-      "https://nwd22-webapp.herokuapp.com/api/users/login",
+      "https://nwd-backend.herokuapp.com/api/users/login",
       { email, password },
       config
     );
@@ -54,11 +55,12 @@ export const register = (name, email, password ) => async (dispatch) => {
     const config = {
       headers: {
         "Content-type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
     };
 
     const { data } = await axios.post(
-      "https://nwd22-webapp.herokuapp.com/api/users",
+      "https://nwd-backend.herokuapp.com/api/users",
       { name, email, password },
       config
     );
@@ -90,11 +92,12 @@ export const updateProfile = (user) => async (dispatch, getState) => {
     const config = {
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
 
-    const { data } = await axios.post("https://nwd22-webapp.herokuapp.com/api/users/profile", user, config);
+    const { data } = await axios.post("https://nwd-backend.herokuapp.com/api/users/profile", user, config);
 
     dispatch({ type: USER_UPDATE_SUCCESS, payload: data });
 

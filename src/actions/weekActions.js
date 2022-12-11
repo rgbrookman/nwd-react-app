@@ -27,7 +27,7 @@ export const listWeeks = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`https://nwd22-webapp.herokuapp.com/api/weeks/`, config);
+    const { data } = await axios.get(`https://nwd-backend.herokuapp.com/api/weeks/`, config);
 
     dispatch({
       type: WEEKS_LIST_SUCCESS,
@@ -89,7 +89,7 @@ export const createWeekAction = (
     };
 
     const { data } = await axios.post(
-      `https://nwd22-webapp.herokuapp.com/api/weeks/week/create`,
+      `https://nwd-backend.herokuapp.com/api/weeks/week/create`,
       {
         objectiveOne_text,
         objectiveOne_score,
@@ -173,7 +173,7 @@ export const updateWeekAction = (
     };
 
     const { data } = await axios.put(
-      `https://nwd22-webapp.herokuapp.com/api/weeks/week/${id}`,
+      `https://nwd-backend.herokuapp.com/api/weeks/week/${id}`,
       {
         objectiveOne_text,
         objectiveOne_score,
