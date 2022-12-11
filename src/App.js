@@ -4,22 +4,27 @@ import { BrowserRouter as Router, Routes, Route, Link, useNavigate, useLocation 
 import { useDispatch, useSelector } from "react-redux";
 
 // Year
-import YearScreen from './screens/Year/YearScreen';
-import ViewYearScreen from './screens/Year/ViewYearScreen';
+import CreateYearScreen from './screens/Year/CreateYearScreen';
+import UpdateYearScreen from './screens/Year/UpdateYearScreen';
 
 // Day
-import DayScreen from './screens/Day/DayScreen';
-import ViewDayScreen from './screens/Day/ViewDayScreen';
+import CreateDayScreen from './screens/Day/CreateDayScreen';
+import UpdateDayScreen from './screens/Day/UpdateDayScreen';
 
 // Week
-import WeekScreen from './screens/Week/WeekScreen';
+import UpdateWeekScreen from './screens/Week/UpdateWeekScreen';
 import CreateWeekScreen from './screens/Week/CreateWeekScreen';
 
 // Landing
-import LandingScreen from './screens/LandingPage/LandingScreen';
+import ViewLandingScreen from './screens/LandingPage/ViewLandingScreen';
+
+// Diary 
+import ViewDiaryScreen from './screens/Diary/ViewDiaryScreen';
 
 // Insight
-import InsightScreen from './screens/Insight/InsightScreen';
+import ViewInsightScreen from './screens/Insight/ViewInsightScreen';
+
+// Quiz
 import QuizIntroScreen from './screens/Quiz/Intro/QuizIntroScreen';
 import QuizFeelingScreen from './screens/Quiz/Feeling/QuizFeelingScreen';
 import QuizTasksScreen from './screens/Quiz/Tasks/QuizTasksScreen';
@@ -30,14 +35,26 @@ import QuizDebriefScreen from './screens/Quiz/Debrief/QuizDebriefScreen';
 import RealQuizScreen from './screens/Quiz/Real/RealQuizScreen';
 import FinalQuizScreen from './screens/Quiz/Real/FinalQuizScreen';
 
-//Header
-import LoginScreen from './screens/Login/LoginScreen';
-import RegisterScreen from './screens/Register/RegisterScreen';
-import TransitionScreen from './screens/Transition/TransitionScreen';
+// Login / Register
+import ViewLoginScreen from './screens/Login/ViewLoginScreen';
+import ViewRegisterScreen from './screens/Register/ViewRegisterScreen';
 
-//Experiences
+//Experiences: Values
 import ValuesScreen from './screens/Values/ValuesScreen';
-import DiaryScreen from './screens/Diary/DiaryScreen';
+
+//Experiences: Vision
+// import VisionScreen from './screens/Values/VisionScreen';
+
+//Experiences: Ikigai
+// import IkigaiScreen from './screens/Values/IkigaiScreen';
+
+//Experiences: Why
+// import WhyScreen from './screens/Values/WhyScreen';
+
+//Experiences: Quote
+// import QuoteScreen from './screens/Values/QuoteScreen';
+
+// Feedback Screen
 import FeedbackScreen from './screens/Feedback/FeedbackScreen';
 
 //Footer
@@ -47,8 +64,6 @@ import ContactScreen from './screens/Contact/ContactScreen';
 import ProfileScreen from './screens/Profile/ProfileScreen';
 import PaymentScreen from './screens/Payments/PaymentScreen';
 
-//Components
-import Header from "./components/Header/Header";
 
 //Loading
 import PropagateLoader from "react-spinners/PropagateLoader";
@@ -68,12 +83,11 @@ function App() {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<LandingScreen />} />
-          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/" element={<ViewLandingScreen />} />
+          <Route path="/login" element={<ViewLoginScreen />} />
           <Route path="/about" element={<AboutScreen />} />
-          <Route path="/register" element={<RegisterScreen />} />
-          <Route path="/insight" element={<InsightScreen />} />
-          <Route path="/loading" element={<TransitionScreen />} />
+          <Route path="/register" element={<ViewRegisterScreen />} />
+          <Route path="/insight" element={<ViewInsightScreen />} />
           <Route path="/resources" element={<ExternalScreen />} />
           <Route path="/insight/quiz" element={<QuizIntroScreen />} />
           <Route path="/insight/quiz/feeling" element={<QuizFeelingScreen />} />
@@ -87,16 +101,16 @@ function App() {
           <Route path="/payc" element={<PaymentScreen />} />
           <Route path="/profile" element={<ProfileScreen />} />
           <Route path="/week/create" element={<CreateWeekScreen />} />
-          <Route path="/week/:id" element={<WeekScreen />} />
+          <Route path="/week/:id" element={<UpdateWeekScreen />} />
           <Route path="/help" element={<HelpScreen />} />
           <Route path="/feedback" element={<FeedbackScreen />} />
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/values" element={<ValuesScreen />} />
-          <Route path="/year/create" element={<YearScreen />} />
-          <Route path="/year/:id" element={<ViewYearScreen />} />
-          <Route path="/today" element={<DayScreen />} />
-          <Route path="/today/:id" element={<ViewDayScreen />} />
-          <Route path="/diary" element={<DiaryScreen />} />
+          <Route path="/year/create" element={<CreateYearScreen />} />
+          <Route path="/year/:id" element={<UpdateYearScreen />} />
+          <Route path="/today" element={<CreateDayScreen />} />
+          <Route path="/today/:id" element={<UpdateDayScreen />} />
+          <Route path="/diary" element={<ViewDiaryScreen />} />
         </Routes>
       </Router>
 
