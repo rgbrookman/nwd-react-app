@@ -4,21 +4,35 @@
 
 .rect {
   height: 20px;
-  width: 100%;
+  width: 7.5vw;
   border-radius: 5px;
-  background-color: green;
-  margin: 12px 0px 0px 0px;
-  box-shadow: 26px 26px 51px 0 rgba(237, 237, 237, 0.8) inset, -26px -26px 51px 0 rgba(237, 237, 237, 0.8) inset;
+  background-color: #004a22;
+  margin: 12px 12px 0px 0px;
+  box-shadow: 26px 26px 51px 0 rgba(0, 74, 35, 0.2) inset, -26px -26px 51px 0 rgba(0, 74, 35, 0.2) inset;
   animation: 1s linear .1s infinite alternate animating-multiple-properties;
 }
 
 @keyframes animating-multiple-properties {
   from {
     opacity: 0;
+    background-color: transparent;
   }
   to {
     opacity: 1;
+    background-color: rgba(0, 74, 35, 0.75);
   }
+}
+
+.dropdown, 
+.dropdown:hover, 
+.dropdown:active, 
+.dropdown:focus,
+.dropdown:visited,
+.dropdown:link
+{
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
 

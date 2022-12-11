@@ -1,0 +1,80 @@
+.nav.central {
+  height: 10vh;
+  width: 100%;
+  justify-self:first baseline; 
+  display: flex;
+  justify-content: space-between;
+  padding: 0 36px;
+}
+
+nav .box {
+  height: 8vh;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box.centre {
+  height: 8vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileDropdown {
+  display: none;
+}
+
+.profileNavLink:hover .profileDropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 16vh;
+  width: auto;
+}
+
+.navlink.today.new {
+  display: none;
+}
+
+.navlink.today:hover .navlink.today.new {
+  position: absolute;
+  display: block;
+}
+
+#nava {
+  font-family: 'futura', sans-serif;
+  font-weight: 500;
+  color: #004a22;
+  opacity: 1;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#nava a {
+  position: relative;
+  transition: all 1s linear;
+}
+
+#underline {
+  width: 100%;
+  height: 1.5px;
+  margin-top: 15px;
+  align-self: flex-end;
+  left: -200px;
+  background: #004a22;
+  position: absolute;
+  transition: all 1s linear;
+  bottom: 0;
+}
+
+#nava:hover #underline {
+  left: 0px;
+}
+
+
+

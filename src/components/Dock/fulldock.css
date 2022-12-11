@@ -1,0 +1,91 @@
+.dock.container {
+    height: 8vh;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0%;
+    margin: auto;
+  }
+  
+  .dock.node {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #004a22;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .dock.node:hover,
+  .dock.node:hover .dock.node .icon {
+    transform: scale3d(1.1,1.1,1.1);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .dock.node:hover::before {
+    content: attr(data-tooltip);
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin: 6px;
+    position: absolute;
+    bottom: 48px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  .dock.separator {
+    height: 40px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: transports;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icon {
+    color: #fff;
+    transform: scale(1.2);
+  }
+
+  .separator {
+    color: #004a22;
+    transform: scale(0.9);
+  }
+
+  .dock.node.save:hover {
+    background-color: whitesmoke;
+    color: #004a22;
+  }
+
+  .dock.node.save:hover #saveIcon {
+    color: #004a22;
+  }
+
+  .dock.node.save:active,
+  .dock.node.save:focus,
+  .dock.node.save:visited {
+    background-color: #004a22;
+    border: 3px solid whitesmoke;
+  }
+
+  .dock.node.save:active #saveIcon,
+  .dock.node.save:focus #saveIcon,
+  .dock.node.save:visited #saveIcon {
+    color: #fff;
+  }

@@ -55,35 +55,36 @@ useEffect(() => {
 				svg.append('g')
 					.attr('transform', 'translate(0,' + height + ')')
 					.call(xAxis2.ticks(d3.timeMonth))
-					.style("font-family", "'caveat', cursive")
-					.style("opacity", "0.3")
-					.style("font-size", "12px")
+					.style("font-family", "Futura")
+					.style("font-size", "8px")
+					.style("color", "#004a22")
 					
 				// Get the max value of feeling
 				const max = d3.max(ssDataFinal, function(d){return d.es})
 
 				// y axis scale
 				const y = d3.scaleLinear()
-							.domain([0, max])
+							.domain([0, 5])
 							.range([height,0])
 
 				svg.append('g')
 					.call(d3.axisLeft(y))
-					.style("font-family", "'caveat', cursive")
-					.style("font-weight", "700")
-					.style("font-size", "12px")
-					.style("opacity", "0.3")
+					.style("font-family", "Futura")
+					.style("font-size", "8px")
+					.style("color", "#004a22")
 					
 
 				// Draw line
 				svg.append('path')
 					.datum(ssDataFinal)
 					.attr('fill', 'none')
-					.attr('stroke','white')
-					.attr('stroke-width', 5)
+					.attr('stroke','#004a22')
+						.style('opacity', "0.3")
+					.attr('stroke-width', 4)
 					.attr('d', d3.line()
 								.x(function(d){return x(d.date)})
 								.y(function(d){return y(d.es)})
+								.curve(d3.curveBasis)
 						)
 
 						var Tooltip = d3.select('#d3demo')
@@ -111,9 +112,12 @@ useEffect(() => {
 
 						const [x, y] = d3.pointer(event);
 						Tooltip
-							.text(`Date: ${d.date} Feeling Score: ${d.es} `)
-							.style("left", x + "px")
+							.text(`Date: ${d.date} Feeling Score: ${d.es}`)
+							.style("left", (x + 400) + "px")
 							.style("top", (y + 100) + "px")
+							.style("font-family", "Futura")
+							.style("font-size", "8px")
+							.style("color", "#004a22")
 					};
 
 					  var mouseleave = function(d) {
@@ -133,8 +137,8 @@ useEffect(() => {
 						.append("circle")
 						  .attr("cx", function(d) { return x(d.date) } )
 						  .attr("cy", function(d) { return y(d.es) } )
-						  .attr("r", 6)
-						  .attr("fill", "#fff")
+						  .attr("r", 4)
+						  .attr("fill", "#004a22")
 						.on("mouseover", mouseover)
 						.on("mousemove", mousemove)
 						.on("mouseleave", mouseleave)

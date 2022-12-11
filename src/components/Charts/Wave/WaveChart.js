@@ -69,9 +69,9 @@ useEffect(() => {
 				svg.append('g')
 					.attr('transform', 'translate(0,' + height + ')')
 					.call(xAxis2.ticks(d3.timeMonth))
-					.style("font-family", "'caveat', cursive")
-					.style("opacity", "0.3")
-					.style("font-size", "12px")
+					.style("font-family", "Futura")
+					.style("font-size", "8px")
+					.style("color", "#004a22")
 	
 
 

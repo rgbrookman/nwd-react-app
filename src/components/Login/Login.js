@@ -8,7 +8,7 @@ import { login } from "../../actions/userActions";
 import Footer from '../../components/Footer/Footer';
 import PropagateLoader from "react-spinners/PropagateLoader";
 
-function Login({ history }) {
+export default function Login( props ) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loadingSpinner, setLoadingSpinner] = useState(false);
@@ -24,7 +24,7 @@ function Login({ history }) {
     if (userInfo) {
       navigate('/');
     }
-  }, [history, userInfo]);
+  }, [userInfo]);
 
 
 const override = {
@@ -40,52 +40,57 @@ const override = {
     setTimeout(()=> {
       setLoadingSpinner(false);
     }, 1500);
-    navigate('/today');
+    navigate('/');
   };
 
   return (
   <>
-    <section
-    className="loginContainer"
-    >
+    <section className="loginContainer" onMouseOver={props.hide}>
 
-    <Form
-    onSubmit={submitHandler}>
+      <form onSubmit={submitHandler}>
 
-      <Form.Group className="emailContainer" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control
-        type="email"
-        className="loginInput"
-        value={email}
-        placeholder="Enter email"
-        onChange={(e) => setEmail(e.target.value)}
-        />
 
-      </Form.Group>
+          <label className="statement starter" htmlFor="email">Email</label>
+          <br></br>
+        <input
+        style={{width: "100%"}}
+          id="email"
+          className="formInput"
+          type="email"
+          value={email}
+          placeholder="Enter email"
+          onChange={(e) => setEmail(e.target.value)}
+          />
+ <br></br>
+ <br></br>
 
-      <Form.Group className="passwordContainer" controlId="formBasicPassword">
-
-        <Form.Label>Password</Form.Label>
-        <Form.Control
+       
+          <label className="statement starter" htmlFor="password">Password</label>
+          <br></br>
+        <input
+        id="password"
+        style={{width: "100%"}}
+        className="formInput"
         type="password"
-        className="loginInput"
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        />
-      </Form.Group>
+          />
+ <br></br>
+ <br></br>
+        <button id="button-4" className="submit button" type="submit">
+        <div id="underline"></div>
+        <a >Submit!</a>
+      </button>
 
-      <Button className="submitButton" type="submit">
-        Submit
-      </Button>
 
-    </Form>
+      <br></br><br></br>
+      <span className="statement starter">If you haven't already registered, click <a href="/register">here...</a></span>
+      </form>
+
 
   </section>
-  <Footer />
+ 
 </>
   );
 }
-
-export default Login;
