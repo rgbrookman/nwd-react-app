@@ -6,12 +6,13 @@ import Loading from '../../components/Loading/Loading';
 import CentralHeader from '../../components/Header/CentralHeader';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import HideDock from '../../components/Dock/HideDock';
+import {Helmet} from "react-helmet";
 import PageLoading from '../../components/Loading/PageLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { Button, Dropdown, DropdownButton } from 'react-bootstrap';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenToSquare, faEraser, faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion, faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
 import './yearscreen.css';
 
 export default function CreateYearScreen({ history }) {
@@ -35,6 +36,7 @@ export default function CreateYearScreen({ history }) {
   const [whyNWD, setWhyNWD] = useState("");
   const [myIkigai, setMyIkigai] = useState("");
   const [navigationalQuote, setNavigationalQuote] = useState("");
+  const [tutorialState, setTutorialState] = useState('tutorial');
 
   const [videoDisplay, setVideoDisplay] = useState(false);
   const [videoLink, setVideoLink] = useState('N-lf8NgD6-o');
@@ -110,9 +112,22 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
     setCursorDisplayState(cursorDisplayState => !cursorDisplayState);
     };
 
+    const showTutorial = () => {
+      if(tutorialState === 'tutorial video') {
+        setTutorialState(tutorialState => 'tutorial');
+      } else {
+        setTutorialState(tutorialState => 'tutorial video');
+      }
+    }
+
 
   return (
     <>
+     <>
+        <Helmet>
+                      <title>Create | Year</title>
+                  </Helmet>
+                  </>
     <CentralHeader  />
     <MouseTooltip
           visible={cursorDisplayState}
@@ -122,11 +137,21 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
         >
         <h1 className="sickTooltip">Welcome to Your Year Map. It is the home for all of the best frames for your daily decisions.</h1>
         </MouseTooltip>
+        
     <form onSubmit={submitHandler}>
     <main className='yearContainer'>
+    <div className={tutorialState}>
+    <iframe className='videoPlayerQuiz'
+    width="560" height="315"
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
+</iframe>
+    </div>
     <HideDock 
    toggleOverlay={cursorDisplayToggle}
-   saveYear={submitHandler} />
+   saveYear={submitHandler}
+   showTutorial={showTutorial} />
     <div id="yeartest">
       
       <div className="yeartile yn">

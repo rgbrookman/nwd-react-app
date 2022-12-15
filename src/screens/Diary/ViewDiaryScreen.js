@@ -99,7 +99,7 @@ useEffect(() => {
 
     <div className="tile left">
     { days && days.filter(day => day.logDate.slice(0,10) == datePicker).map(day =>
-    <label key={day._id} htmlFor="beforeScoreID" className="statement starter">Morning Feeling: <strong>{day.startScore}</strong></label>        
+    <label key={day._id} htmlFor="beforeScoreID" className="statement starter">Before filling in my NWD today, I feel <strong>{day.startScore}</strong></label>        
     )}
 
   { days && days.filter(day => day.logDate.slice(0,10) == datePicker).map(day =>

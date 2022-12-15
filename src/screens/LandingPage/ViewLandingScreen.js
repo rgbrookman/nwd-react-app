@@ -14,7 +14,7 @@ import { faToggleOn, faToggleOff, faSolarPanel, faPlugCircleBolt, faRepeat } fro
 import Loading from '../../components/Loading/Loading';
 import FullDock from '../../components/Dock/FullDock';
 import HideDock from '../../components/Dock/HideDock';
-import {Helmet} from "react-helmet"
+import {Helmet} from "react-helmet";
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import axios from "axios";
 import logo from '../../NWD_Logo_White.png';
@@ -31,6 +31,7 @@ export default function ViewLandingScreen(history) {
   const [videoID, setVideoID] = useState('SfQNtiEH3M4');
   const [videoDisplay, setVideoDisplay] =useState(false);
   const [textDisplay, setTextDisplay] =useState(true);
+  const [dayIconState, setDayIconState] =useState(false);
   
 
   const [classState, setClassState] =useState('journal outer');
@@ -70,19 +71,33 @@ dispatch(listYears());
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
 
+const dayIconMethod = {
+  iconOff: {
+    backgroundColor: '#004a22',
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+      repeat: 20,
+    },
+  },
+iconOn: {
+  color: "whitesmoke",
+},
+};
+
 function tooltipSelector () {
   if(!userInfo) {
     setLpCursorState(lpCursorState => 'A mindfulness journal that works with you, not through');
     setCursorState(cursorState => "");
   } else if (days && days.length < 1 && userInfo){
     setLpCursorState(lpCursorState => "");
-    setCursorState(cursorState => 'Welcome to NWD! Time to start your first day!');
+    setCursorState(cursorState => 'Welcome to NWD! Time to start your first day! Click the calendar button below.');
   } else if (userInfo && days && days.length > 0 && weeks && weeks.length < 1) {
-    setCursorState(cursorState => 'Lovely! Now time to start a week!');
+    setCursorState(cursorState => 'Great stuff! Remember to check back in later to review and reflect! When you have a moment, try planning out your week.');
   } else if (userInfo && days && days.length > 0 && weeks && weeks.length > 0 && years && years.length < 1) {
-    setCursorState(cursorState => 'Oh shit! Time to plan a year!');
+    setCursorState(cursorState => 'Brilliant stuff. Week planning is very helpful, and even more so if you have a vision for the year you are working towards. Jump onto the year page and start mapping!');
   } else if (userInfo && days && days.length > 0 && weeks && weeks.length > 0 && years && years.length > 0) {
-    setCursorState(cursorState => 'Smashed it! Time to have a look at the quiz as you build you first week of logged days');
+    setCursorState(cursorState => 'Smashed it! Time to have a look at the quiz as you build your first week of logged days');
   } else if (userInfo && days && days.length >= 7 && weeks && weeks.length > 0 && years && years.length > 0 && localStorage.quiz_start === "0") {
     setCursorState(cursorState => 'You are well and truly heating up. Would you consider sharing NWD with a friend ');
   } else if (userInfo && days && days.length >= 7 && weeks && weeks.length > 0 && years && years.length > 0 && localStorage.quiz_start === "1" && localStorage.quiz_end === "1") {
@@ -119,7 +134,7 @@ useEffect(()=> {
         </MouseTooltip>
     <>
         <Helmet>
-                      <title>Welcome</title>
+                      <title>Homepage</title>
                   </Helmet>
                   </>
   
@@ -133,26 +148,31 @@ useEffect(()=> {
 
    <Sidebar />
    <HideDock 
-   toggleOverlay={cursorDisplayToggle} />
+   toggleOverlay={cursorDisplayToggle}
+   flashIcon={dayIconMethod}
+   iconState={dayIconState} />
    </main>
                  
    
    </>
    
    : 
-
+   vw > 600 ? 
    <>
-    <MouseTooltip
-      visible={cursorDisplayToggle}
-      offsetX={15}
-      offsetY={10}
-      zIndex={-1}
-       >
-       <h1 className="sickTooltip">{lpCursorState}</h1>
-       </MouseTooltip>
        <CentralHeaderLP />
 <main className="loggedInMain">
-
+<div class="main">
+  <div class="part one">Organising your</div>
+  <div class="part two">
+    <span> Mind</span>
+    <span> Day </span>
+    <span> Week </span>
+    <span> Year </span>
+    <span> Values </span>
+    <span> Vision </span>
+  </div>
+  <div class="part three">has never been better.</div>
+</div>
 {/* <div className="tile left">
 
 <h1>Simple</h1>
@@ -180,7 +200,14 @@ useEffect(()=> {
 
 <ClassicFooter />
 </>
-
+: 
+<>
+<main className="landingPage mobile">
+  <h1>App coming soon to mobile</h1>
+  <a href={'https://www.nowasteddays.org/'}>Sign up to Mailing List</a>
+  <a href={'https://www.instagram.com/nowasteddays/'}>Follow NWD on Instagram</a>
+</main>
+</>
 
 
 

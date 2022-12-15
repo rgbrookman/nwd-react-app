@@ -36,6 +36,7 @@ export default function WeekScreenTest({ history }) {
   const [objectiveNine_score, setObjectiveNine_score] = useState(0);
   const [objectiveTen_text, setObjectiveTen_text] = useState("");
   const [objectiveTen_score, setObjectiveTen_score] = useState(0);
+  const [tutorialState, setTutorialState] = useState('tutorial');
 
   const [videoDisplay, setVideoDisplay] = useState(true);
   const [videoLink, setVideoLink] = useState('GQzaJ3qCo4k');
@@ -43,7 +44,6 @@ export default function WeekScreenTest({ history }) {
 
   const [cursorState, setCursorState] = useState('The dock allows you to look at your diary through the lens of your important frames and plans.');
 
-  const [fontState, setFontState] = useState(96);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -114,17 +114,53 @@ useEffect(() => {
       {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
     };
     
-    const cursorChangeValues = () => {
-      setCursorState(cursorState => years && years.map((year) => 
-      `${year.myValues_1}: ${year.myValues_1_Text} /// ${year.myValues_2}: ${year.myValues_2_Text} /// ${year.myValues_3}: ${year.myValues_3_Text} /// ${year.myValues_4}: ${year.myValues_4_Text} /// ${year.myValues_5}: ${year.myValues_5_Text}`));
-      setFontState(fontState => 32);
+    const cursorChangeValuesOne = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myValues_1}: ${year.myValues_1_Text}`));
       {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
     };
-    
-    const cursorChangeVision = () => {
-      setCursorState(cursorState => years && years.map((year) => 
-      `${year.myVision_1} /// ${year.myVision_2} /// ${year.myVision_3} /// ${year.myVision_4} /// ${year.myVision_5}`));
-      setFontState(fontState => 32);
+  
+    const cursorChangeValuesTwo = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myValues_2}: ${year.myValues_2_Text}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeValuesThree = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myValues_3}: ${year.myValues_3_Text}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeValuesFour = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myValues_4}: ${year.myValues_4_Text}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeValuesFive = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myValues_5}: ${year.myValues_5_Text}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeVisionFive = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myVision_5}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeVisionOne = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myVision_1}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeVisionTwo = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myVision_2}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeVisionThree = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myVision_3}`));
+      {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+    };
+  
+    const cursorChangeVisionFour = () => {
+      setCursorState(cursorState => years && years.map((year) => `${year.myVision_4}`));
       {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
     };
     
@@ -152,6 +188,14 @@ useEffect(() => {
       {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
     };
 
+    const showTutorial = () => {
+      if(tutorialState === 'tutorial video') {
+        setTutorialState(tutorialState => 'tutorial');
+      } else {
+        setTutorialState(tutorialState => 'tutorial video');
+      }
+    }
+
   return (
 <>
 <CentralHeader />
@@ -165,6 +209,14 @@ useEffect(() => {
         </MouseTooltip>
 <Form onSubmit={submitHandler}>
 <main className="weekContainer">
+<div className={tutorialState}>
+    <iframe className='videoPlayerQuiz'
+    width="560" height="315"
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
+</iframe>
+    </div>
 <HideDock 
    toggleOverlay={cursorDisplayToggle}
    saveWeek={submitHandler} />
@@ -172,9 +224,16 @@ useEffect(() => {
    <MidDock 
    changeName={cursorChangeName}
    changeDOB={cursorChangeDOB}
-   changeValues={cursorChangeValues} 
-   changeWhy={cursorChangeWhy} 
-   changeVision={cursorChangeVision} 
+   changeValuesOne={cursorChangeValuesOne} 
+   changeValuesTwo={cursorChangeValuesTwo} 
+   changeValuesThree={cursorChangeValuesThree} 
+   changeValuesFour={cursorChangeValuesFour} 
+   changeValuesFive={cursorChangeValuesFive} 
+   changeVisionOne={cursorChangeVisionOne} 
+   changeVisionTwo={cursorChangeVisionTwo} 
+   changeVisionThree={cursorChangeVisionThree} 
+   changeVisionFour={cursorChangeVisionFour} 
+   changeVisionFive={cursorChangeVisionFive} 
    changeIkigai={cursorChangeIkigai} 
    changeQuote={cursorChangeQuote} 
    changeMemory={cursorChangeMemory} />

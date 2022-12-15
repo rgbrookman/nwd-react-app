@@ -7,6 +7,7 @@ import { listYears } from '../../actions/yearActions';
 import { listWeeks } from '../../actions/weekActions';
 import { listDays } from '../../actions/dayActions';
 import { Card, Button } from 'react-bootstrap';
+import { Helmet } from "react-helmet"
 import Loading from '../../components/Loading/Loading';
 import PageLoading from '../../components/Loading/PageLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
@@ -87,8 +88,10 @@ const [inputQuote, setInputQuote] = useState();
 const [classState, setClassState]= useState('journal outer');
 
 // Dock State
-const [cursorState, setCursorState] = useState('The dock allows you to look at your diary through the lens of your important frames and plans.');
+const [cursorState, setCursorState] = useState('Welcome to your Daily Diary. Click the "?" in the dock for a tutorial');
 const [cursorDisplayState, setCursorDisplayState] = useState(true);
+const [tutorialState, setTutorialState] = useState('tutorial');
+const [fontState, setFontState] = useState();
 
 // Loading State
 const [pageLoading, setPageLoading] = useState(true);
@@ -216,7 +219,7 @@ const stateChanger = () => {
 }
 
 const cursorDisplayHide = () => {
-setCursorDisplayState(cursorDisplayState => false);
+setCursorDisplayState(cursorDisplayState => !cursorDisplayState);
 };
 
 const cursorChangeName = () => {
@@ -229,31 +232,69 @@ const cursorChangeDOB= () => {
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
-const cursorChangeValues = () => {
-  setCursorState(cursorState => years && years.map((year) => year.myValues_1))
+const cursorChangeValuesOne = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myValues_1}: ${year.myValues_1_Text}`).toString());
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
-const cursorChangeVision = () => {
-  setCursorState(cursorState => 
-    'Vision #1') 
+const cursorChangeValuesTwo = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myValues_2}: ${year.myValues_2_Text}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeValuesThree = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myValues_3}: ${year.myValues_3_Text}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeValuesFour = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myValues_4}: ${year.myValues_4_Text}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeValuesFive = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myValues_5}: ${year.myValues_5_Text}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeVisionFive = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myVision_5}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeVisionOne = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myVision_1}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeVisionTwo = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myVision_2}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeVisionThree = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myVision_3}`).toString());
+  {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+};
+
+const cursorChangeVisionFour = () => {
+  setCursorState(cursorState => years && years.map((year) => `${year.myVision_4}`).toString());
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
 const cursorChangeIkigai = () => {
   setCursorState(cursorState => 
-    years && years.map((year) => year.myIkigai)) 
+    years && years.map((year) => year.myIkigai).toString()) 
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
 const cursorChangeQuote = () => {
-  setCursorState(cursorState => years && years.map((year) => year.navigationalQuote));
+  setCursorState(cursorState => years && years.map((year) => year.navigationalQuote).toString());
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
 const cursorChangeMemory = () => {
-  setCursorState(cursorState => 
-    '') 
+  setCursorState(cursorState => '') 
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
@@ -333,28 +374,54 @@ const cursorChangeObjTen = () => {
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
+const showTutorial = () => {
+  if(tutorialState === 'tutorial video') {
+    setTutorialState(tutorialState => 'tutorial');
+  } else {
+    setTutorialState(tutorialState => 'tutorial video');
+  }
+}
+
+const fontResizer = () => {
+  if (cursorState.length > 100) {
+    setFontState(fontState => 72);
+  } else {
+    setFontState(fontState => 96);
+  }
+}
+
 
 useEffect(()=> {
   loadingTimeout();
+  fontResizer();
 })
 
 
   return (
     <>
+       <Helmet>
+                      <title>Create | Today</title>
+                  </Helmet>
     <MouseTooltip
           visible={cursorDisplayState}
           offsetX={15}
           offsetY={10}
           zIndex={1000}
         >
-        <h1 className="sickTooltip">{cursorState}</h1>
+        <h1 className="sickTooltip" style={{ fontSize: `${fontState}px`}}>{cursorState}</h1>
         </MouseTooltip>
  <CentralHeader />
   
   <form onSubmit={submitHandler}>
 
-
   <main className="createday container">
+    <div className={tutorialState}>
+    <iframe className='tutorialPlayer'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
+</iframe>
+    </div>
     <div className="tile left">
       <div className="dateRow">
         <label for="loggedDate">Diary Entry Date:</label>
@@ -588,9 +655,16 @@ openClose={stateChanger}
 hideOverlay={cursorDisplayHide}
 changeName={cursorChangeName}
 changeDOB={cursorChangeDOB}
-changeValues={cursorChangeValues} 
-changeWhy={cursorChangeWhy} 
-changeVision={cursorChangeVision} 
+changeValuesOne={cursorChangeValuesOne} 
+changeValuesTwo={cursorChangeValuesTwo} 
+changeValuesThree={cursorChangeValuesThree} 
+changeValuesFour={cursorChangeValuesFour} 
+changeValuesFive={cursorChangeValuesFive} 
+changeVisionOne={cursorChangeVisionOne} 
+changeVisionTwo={cursorChangeVisionTwo} 
+changeVisionThree={cursorChangeVisionThree} 
+changeVisionFour={cursorChangeVisionFour} 
+changeVisionFive={cursorChangeVisionFive} 
 changeIkigai={cursorChangeIkigai} 
 changeQuote={cursorChangeQuote} 
 changeMemory={cursorChangeMemory} 
@@ -605,6 +679,7 @@ changeObjEight={cursorChangeObjEight}
 changeObjNine={cursorChangeObjNine}
 changeObjTen={cursorChangeObjTen}
 submitDay={submitHandler}
+showTutorial={showTutorial}
 />
 </footer>
 

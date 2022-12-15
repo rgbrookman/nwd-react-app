@@ -6,6 +6,7 @@ import { listDays } from '../../actions/dayActions';
 import HideDock from '../../components/Dock/HideDock';
 import Loading from '../../components/Loading/Loading';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
+import {Helmet} from "react-helmet"
 import PageLoading from '../../components/Loading/PageLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { Button, Container, Row, Col, Dropdown, DropdownButton } from 'react-bootstrap';
@@ -243,14 +244,13 @@ useEffect(()=> {
    setContinuation(days1);
 }, [days1]);
 
-useEffect(() => {
-  document.title = "Year | Update";
-});
-
 
   return (
 
 <>
+<Helmet>
+                      <title>Update | Year</title>
+                  </Helmet>
 <CentralHeader  />
 <MouseTooltip
           visible={cursorDisplayState}

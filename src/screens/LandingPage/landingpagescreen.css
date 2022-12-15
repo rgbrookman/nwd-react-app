@@ -2,6 +2,7 @@
   height: 75vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -39,3 +40,96 @@
   display: none;
 }
 
+/* Mobile Landing Page */ 
+
+.landingPage.mobile {
+  height: 100vh;
+  width: 100%;
+}
+
+.landingPage.mobile h1 {
+font-family: 'Futura';
+}
+
+.landingPage.mobile a {
+  font-family: 'Futura';
+  color: #004a22;
+  }
+
+  /* Animation */ 
+
+  .main {
+    height:auto;
+    width:100%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main h1 {
+    margin-bottom: 24px;
+    font-family: 'Futura';
+    font-weight: 700;
+  }
+  
+  .part {
+    font-family: 'Futura';
+    font-size: clamp(2vw, 3.5vw, 4vw);
+    font-weight: 700;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+  }
+    .part.one {
+  margin-right: 8px;
+  }
+      .part.three{
+  margin-left: 8px;
+  }
+  
+  .part.two {
+    display: flex;
+    flex-direction: column;
+      position: relative;
+    overflow: hidden; 
+    text-align: center;
+    height: 4rem;
+      background-color: #004a22;
+    color: #e3e3e3;
+    padding: 15px 10px;
+  }
+  
+  .part.two span {
+      height: 4rem;
+      font-family: 'Futura';
+    line-height: 6rem;
+    position: relative;
+    top: -1rem;
+    margin: 0 8px;
+    animation: slide 15s ease-in-out infinite alternate; 
+  }
+  
+  @keyframes slide {
+    0%{
+      top: 8rem;
+    }
+    5%{
+      top:-1.8rem;
+    }
+    20%{
+      top: -6.3rem;    
+    }
+    35%{
+      top: -10rem;
+    }
+    50%{
+      top: -14rem;
+    }
+    65%{
+      top: -18rem;
+    }
+      80%{
+      top: -22rem;
+    }
+  }

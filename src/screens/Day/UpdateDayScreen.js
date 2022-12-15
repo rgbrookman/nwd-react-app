@@ -38,7 +38,6 @@ const [momentFiveScore, setMomentFiveScore] = useState();
 const [rememberToday, setRememberToday] = useState();
 const [leaveBehind, setLeaveBehind] = useState();
 const [endScore, setEndScore] = useState();
-const [fontState, setFontState] = useState(96);
 
 const [loadingAnimation, setLoadingAnimation] = useState(false);
 
@@ -175,7 +174,7 @@ const updateHandler = (e) => {
         !leaveBehind ||
         !endScore) return;
 
-        // resetHandler();
+        resetHandler();
 
 };
 
@@ -203,17 +202,53 @@ const cursorDisplayHide = () => {
     {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
   };
   
-  const cursorChangeValues = () => {
-    setCursorState(cursorState => years && years.map((year) => 
-    `${year.myValues_1}: ${year.myValues_1_Text} /// ${year.myValues_2}: ${year.myValues_2_Text} /// ${year.myValues_3}: ${year.myValues_3_Text} /// ${year.myValues_4}: ${year.myValues_4_Text} /// ${year.myValues_5}: ${year.myValues_5_Text}`));
-    setFontState(fontState => 32);
+  const cursorChangeValuesOne = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myValues_1}: ${year.myValues_1_Text}`));
     {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
   };
-  
-  const cursorChangeVision = () => {
-    setCursorState(cursorState => years && years.map((year) => 
-    `${year.myVision_1} /// ${year.myVision_2} /// ${year.myVision_3} /// ${year.myVision_4} /// ${year.myVision_5}`));
-    setFontState(fontState => 32);
+
+  const cursorChangeValuesTwo = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myValues_2}: ${year.myValues_2_Text}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeValuesThree = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myValues_3}: ${year.myValues_3_Text}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeValuesFour = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myValues_4}: ${year.myValues_4_Text}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeValuesFive = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myValues_5}: ${year.myValues_5_Text}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeVisionFive = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myVision_5}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeVisionOne = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myVision_1}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeVisionTwo = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myVision_2}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeVisionThree = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myVision_3}`));
+    {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
+  };
+
+  const cursorChangeVisionFour = () => {
+    setCursorState(cursorState => years && years.map((year) => `${year.myVision_4}`));
     {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
   };
   
@@ -311,6 +346,13 @@ const cursorDisplayHide = () => {
     {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
   };
 
+  const valuesCount = () => {
+    let count = 0; 
+    if (years & years.map(year => year.myValues_1) === true) {
+      count++;
+    }
+  }
+
 
 useEffect(()=> {
   loadingTimeout();
@@ -335,7 +377,7 @@ const showState = {
     offsetY={10}
     zIndex={1000}
   >
-  <h1 className="sickTooltip" style={{fontSize: `${fontState}px`}}>{cursorState}</h1>
+  <h1 className="sickTooltip">{cursorState}</h1>
 
   </MouseTooltip>
   <CentralHeader />
@@ -526,7 +568,7 @@ onChange={(e) => setMomentFiveScore(e.target.value)}
   </div>
   <div className="tile left">
   {/* <h6 className="statement starter">The memories from today that will capture it forever <input className="formInput" type="text" placeholder="..."></input></h6> */}
-  { rememberToday ? <label htmlFor="rememberToday" className="statement starter">I am pleased to live in my mind and body today because </label> : <></>}
+  { rememberToday ? <label htmlFor="rememberToday" className="statement starter">The memories from today that will capture it forever are </label> : <></>}
    <textarea
    id="rememberToday"
     className="formInput moment"
@@ -539,14 +581,14 @@ onChange={(e) => setMomentFiveScore(e.target.value)}
     />
       <hr></hr>
       {/* <h6 className="statement starter">The thoughts and feelings from today I would like to leave behind are <input className="formInput" type="text" placeholder="..."></input></h6> */}
-      { leaveBehind ? <label htmlFor="leaveBehind" className="statement starter">I am pleased to live in my mind and body today because</label> : <></>}
+      { leaveBehind ? <label htmlFor="leaveBehind" className="statement starter">The thoughts and feelings from today I would like to leave behind are</label> : <></>}
    <textarea
    id="leaveBehind"
     className="formInput moment"
     wrap="soft"
     autoComplete="off"
     value={leaveBehind}
-    placeholder="I am pleased to live in my mind and body today because..."
+    placeholder="The thoughts and feelings from today I would like to leave behind are."
     onChange={(e) => setLeaveBehind(e.target.value)}
     rows={4}
     />
@@ -578,9 +620,16 @@ openClose={stateChanger}
 hideOverlay={cursorDisplayHide}
 changeName={cursorChangeName}
 changeDOB={cursorChangeDOB}
-changeValues={cursorChangeValues} 
-changeWhy={cursorChangeWhy} 
-changeVision={cursorChangeVision} 
+changeValuesOne={cursorChangeValuesOne} 
+changeValuesTwo={cursorChangeValuesTwo} 
+changeValuesThree={cursorChangeValuesThree} 
+changeValuesFour={cursorChangeValuesFour} 
+changeValuesFive={cursorChangeValuesFive} 
+changeVisionOne={cursorChangeVisionOne} 
+changeVisionTwo={cursorChangeVisionTwo} 
+changeVisionThree={cursorChangeVisionThree} 
+changeVisionFour={cursorChangeVisionFour} 
+changeVisionFive={cursorChangeVisionFive} 
 changeIkigai={cursorChangeIkigai} 
 changeQuote={cursorChangeQuote} 
 changeMemory={cursorChangeMemory} 
