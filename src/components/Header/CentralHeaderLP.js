@@ -82,14 +82,14 @@ const CentralHeader = () => {
 <nav className="nav central">
   <div className="box">
   <a id="nava" 
-  href={'/nowastedays'}>
+  href={'https://www.nowasteddays.org/'} target="_blank">
     NoWastedDays
     <div id="underline"></div>
     </a>
 
   <a id="nava" 
 
-  href={'/about'}>
+  href={'https://www.nowasteddays.org/about'} target="_blank">
    About
     <div id="underline"></div>
     </a>

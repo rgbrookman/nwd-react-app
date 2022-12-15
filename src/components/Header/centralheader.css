@@ -23,26 +23,7 @@ nav .box {
   align-items: center;
 }
 
-.profileDropdown {
-  display: none;
-}
 
-.profileNavLink:hover .profileDropdown {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: 16vh;
-  width: auto;
-}
-
-.navlink.today.new {
-  display: none;
-}
-
-.navlink.today:hover .navlink.today.new {
-  position: absolute;
-  display: block;
-}
 
 #nava {
   font-family: 'futura', sans-serif;

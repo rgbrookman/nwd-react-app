@@ -21,7 +21,7 @@ const TasksCompleted = () => {
 const getDataTransform = () => {
 
   days && days.forEach(day => {
-    let sum = (day.momentOneScore / 10) + (day.momentTwoScore / 10) + (day.momentThreeScore / 10) + (day.momentFourScore / 10) + (day.momentFiveScore / 10);
+    let sum = (day.momentOneScore) + (day.momentTwoScore) + (day.momentThreeScore ) + (day.momentFourScore) + (day.momentFiveScore);
     day.total = sum;
   });
 
@@ -100,7 +100,7 @@ tcData.pop();
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip")
-            .style("background-color", "white")
+            .style("background-color", "whitesmoke")
             .style("border", "solid")
             .style("border-width", "2px")
             .style("border-radius", "5px")
@@ -122,9 +122,12 @@ tcData.pop();
           const [x, y] = d3.pointer(event);
 
           Tooltip4
-            .text(`Date: ${d.date} Total: ${d.total} `)
-            .style("left", (x + 700) + "px")
-            .style("top", (y + 100) + "px")
+            .text(`Date: ${d.date.toLocaleDateString()} Total: ${d.total} `)
+            .style("left", (x + 400) + "px")
+            .style("top", (y + 130) + "px")
+            .style("font-family", "Futura")
+            .style("font-size", "8px")
+            .style("color", "#004a22")
         };
 
           const mouseleave = function(d) {

@@ -91,9 +91,9 @@ useEffect(() => {
 							.append("div")
 							.style("opacity", 0)
 							.attr("class", "tooltip")
-							.style("background-color", "white")
+							.style("background-color", "whitesmoke")
 							.style("border", "solid")
-							.style("border-width", "2px")
+							.style("border-width", "1px")
 							.style("border-radius", "5px")
 							.style("padding", "5px")
 							.style("font-size", "8px")
@@ -106,15 +106,14 @@ useEffect(() => {
 						  .style("stroke", "black")
 						  .style("opacity", 1)
 					  }
-
 				
 					  const mousemove = (event, d) => {
 
 						const [x, y] = d3.pointer(event);
 						Tooltip
-							.text(`Date: ${d.date} Feeling Score: ${d.es}`)
+							.text(`Date: ${d.date.toLocaleDateString()} Feeling Score: ${d.es}`)
 							.style("left", (x + 400) + "px")
-							.style("top", (y + 100) + "px")
+							.style("top", (y + 130) + "px")
 							.style("font-family", "Futura")
 							.style("font-size", "8px")
 							.style("color", "#004a22")

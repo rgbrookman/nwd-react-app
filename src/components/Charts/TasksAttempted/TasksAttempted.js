@@ -94,7 +94,7 @@ const TasksAttempted = () => {
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip")
-            .style("background-color", "white")
+            .style("background-color", "whitesmoke")
             .style("border", "solid")
             .style("border-width", "2px")
             .style("border-radius", "5px")
@@ -116,9 +116,13 @@ const TasksAttempted = () => {
           const [x, y] = d3.pointer(event);
 
           Tooltip3
-            .text(`Date: ${d.date} TA: ${d.ta} `)
-            .style("left", x + "px")
-            .style("top", (y + 400) + "px")
+            .text(`Date: ${d.date.toLocaleDateString()} TA: ${d.ta} `)
+            .style("left", (x + 400) + "px")
+            .style("top", (y + 130) + "px")
+            .style("font-family", "Futura")
+            .style("font-size", "8px")
+            .style("color", "#004a22")
+            
         };
 
           const mouseleave = function(d) {

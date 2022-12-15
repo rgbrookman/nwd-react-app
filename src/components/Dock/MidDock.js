@@ -8,6 +8,34 @@ import './fulldock.css';
 
 export default function MidDock ( props ) {
   const [yourName, setYourName] = useState();
+  const [valuesShowState, setValuesShowState] = useState('mini node inactive');
+  const [visionShowState, setVisionShowState] = useState('mini node inactive');
+
+  const valuesShow = () => {
+    if(valuesShowState === 'mini node inactive'){
+      setValuesShowState(valuesShowState => 'mini node');
+      setVisionShowState(visionShowState => 'mini node inactive');
+    } else {
+      setValuesShowState(valuesShowState => 'mini node inactive');
+    }
+  }
+
+  const visionShow = () => {
+    if(visionShowState === 'mini node inactive'){
+      setVisionShowState(visionShowState => 'mini node');
+      setValuesShowState(valuesShowState => 'mini node inactive');
+    } else {
+      setVisionShowState(visionShowState => 'mini node inactive');
+    }
+  }
+
+  const valuesHide = () => {
+    setValuesShowState(valuesShowState => 'dock node inactive');
+  }
+
+  const visionHide = () => {
+    setVisionShowState(visionShowState => 'dock node inactive');
+  }
 
   const currentWindow = window.location.href;
 
@@ -33,22 +61,105 @@ export default function MidDock ( props ) {
     className="icon"
     icon={faCalendarDays}/>
       </div>
-  <div className="dock node"
+
+      <div className="dockNodeWrapper">
+  <div className="nodeRow">
+    <div className={valuesShowState} data-tooltip="Value #1" onMouseOver={props.changeValuesOne}>
+ <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa1}/>
+      </div>
+      <div className={valuesShowState}
+  data-tooltip="Value #2" 
+  onMouseOver={props.changeValuesTwo}>
+  <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa2}/>
+      </div>
+      <div className={valuesShowState}
+  data-tooltip="Value #3"
+  onMouseOver={props.changeValuesThree}>
+  <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa3}/>
+      </div>
+      <div className={valuesShowState}
+  data-tooltip="Value #4"
+  onMouseOver={props.changeValuesFour}>
+  <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa4}/>
+      </div>
+      <div className={valuesShowState}
+  data-tooltip="Value #5"
+  onMouseOver={props.changeValuesFive}>
+  <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa5}/>
+      </div>
+      </div>
+      <div className="dock node"
   data-tooltip="Your Values"
-  onMouseOver={props.changeValues}>
+  onClick={valuesShow}>
+
   <FontAwesomeIcon
     id="valuesIcon"
     className="icon"
     icon={faCompassDrafting}/>
       </div>
+</div>
+  
+<div className="dockNodeWrapper">
+  <div className="nodeRow">
+
+  <div className={visionShowState} data-tooltip="Vision #1" onMouseOver={props.changeVisionOne}>
+ <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa1}/>
+      </div>
+      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionTwo}>
+ <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa2}/>
+      </div>
+      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionThree}>
+ <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa3}/>
+      </div>
+      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionFour}>
+ <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa4}/>
+      </div>
+      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionFive}>
+ <FontAwesomeIcon
+    id="miniValuesIcon"
+    className="icon"
+    icon={fa5}/>
+      </div>
+
+  </div>
+
   <div className="dock node"
   data-tooltip="Your Vision"
-  onMouseOver={props.changeVision}>
+  onClick={visionShow}>
   <FontAwesomeIcon
     id="visionIcon"
     className="icon"
     icon={faGlasses}/>
       </div>
+      </div>
+
   <div className="dock node"
   data-tooltip="Your Ikigai"
   onMouseOver={props.changeIkigai}>

@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faToggleOff, faEraser, faToggleOn, faSignature, faCalendarDays, faCompassDrafting, faLandmarkDome, faDna, faGlasses, faQuoteLeft, faPersonCircleQuestion, faGripLinesVertical, faBookOpen, faEyeSlash, fa1, fa2, fa3, fa4, fa5, fa6, fa7, fa8, fa9, faBolt, faFloppyDisk, faPlus, faCalendarPlus } from '@fortawesome/free-solid-svg-icons'
+import { faQuestion, faToggleOff, faEraser, faToggleOn, faSignature, faCalendarDays, faCompassDrafting, faLandmarkDome, faDna, faGlasses, faQuoteLeft, faPersonCircleQuestion, faGripLinesVertical, faBookOpen, faEyeSlash, fa1, fa2, fa3, fa4, fa5, fa6, fa7, fa8, fa9, faBolt, faFloppyDisk, faPlus, faCalendarPlus } from '@fortawesome/free-solid-svg-icons'
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import './hidedock.css';
 
 export default function HideDock ( props ) {
@@ -17,6 +18,7 @@ export default function HideDock ( props ) {
    
 
       { currentWindow.endsWith('/') ? 
+      <>
          <div className="hidedock node"
     data-tooltip="Toggle Help"
    onMouseOver={props.toggleOverlay}>
@@ -24,7 +26,17 @@ export default function HideDock ( props ) {
     id="openIcon"
     className="icon"
     icon={faEyeSlash}/>
-      </div> :
+    </div>
+    <div className="hidedock node"
+    data-tooltip="Start a New Day">
+      <a href={'/today'}>
+    <FontAwesomeIcon
+    id="openIcon"
+    className="icon"
+    icon={faCalendarPlus}/>
+    </a>
+      </div>
+      </> :
       currentWindow.endsWith('/create') 
       ? currentWindow.endsWith('/year/create') ?
       <>
@@ -44,6 +56,14 @@ export default function HideDock ( props ) {
       className="icon"
       icon={faFloppyDisk}/>
         </div>
+        <div className="dock node"
+    data-tooltip="Quick Tutorial"
+   onClick={props.showTutorial}>
+    <FontAwesomeIcon
+    id="questionIcon"
+    className="icon"
+    icon={faQuestion}/>
+      </div>
         </>
         :
         <>
@@ -63,7 +83,14 @@ export default function HideDock ( props ) {
         className="icon"
         icon={faFloppyDisk}/>
           </div>
-      
+          <div className="dock node"
+    data-tooltip="Quick Tutorial"
+   onClick={props.showTutorial}>
+    <FontAwesomeIcon
+    id="questionIcon"
+    className="icon"
+    icon={faQuestion}/>
+      </div>
           </>
       :
    currentWindow.match("/year/") ?

@@ -94,9 +94,15 @@ const CentralHeader = () => {
         }; 
 
         const dayMapChange = () => {
-          const id = days && days
-          .filter((day, i, days) => days.indexOf(day) === days.length -1 )
+          let id; 
+          
+          if(Array.isArray(days) === true) {
+            id = days && days.filter((day, i, days) => days.indexOf(day) === days.length -1 )
           .map((day) => day._id);
+          } else {
+            id = '';
+          }
+          
 
           if(days && days.length > 0) {
             setDaysMap(daysMap => `/today/${id}`);
@@ -131,6 +137,7 @@ const CentralHeader = () => {
           loadingTimeout();
           yearMapChange();
           weekMapChange();
+          dayMapChange();
         });
 
      
@@ -155,29 +162,35 @@ const CentralHeader = () => {
     <div id="underline"></div></a>
     }
 
-{ pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+{/* { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
  Array.isArray(days) === true ?  days && days
   .filter((day, i, days) => days.indexOf(day) === days.length -1 )
-  .map((day) => 
+  .map((day) => {  
     <a id="nava" 
-    className="navlink today"
     key={day._id}
   href={days && days.length > 0 ? `/today/${day._id}` : `/today`}>
     Today
     <div id="underline"></div>
     </a>
-    ) :  <a id="nava" 
-  href={`/`}>Today
+    }) :  <a id="nava" 
+  href={`/today`}>Today
     <div id="underline"></div>
     </a>
-  }
+  } */}
 
-{/* { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+{ pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+
+Array.isArray(days) === true ? 
     <a id="nava" 
   href={daysMap}>
     Today
     <div id="underline"></div></a>
-    } */}
+    :
+    <a id="nava" 
+    href={'/today'}>
+      Today
+      <div id="underline"></div></a>
+    }
 
   </div>
 
@@ -197,7 +210,7 @@ const CentralHeader = () => {
 { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
   <a id="nava"
   onClick={localStorage.setItem('quiz_start',1)}
-  href={"/insight/quiz"}>The Art of Looking
+  href={"/insight/quiz"}>Art of Looking
    <div id="underline"></div></a>
   }
 

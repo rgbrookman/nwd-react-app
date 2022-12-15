@@ -100,7 +100,7 @@ day.taskCompletionRate = tcr;
               .append("div")
               .style("opacity", 0)
               .attr("class", "tooltip")
-              .style("background-color", "white")
+              .style("background-color", "whitesmoke")
               .style("border", "solid")
               .style("border-width", "2px")
               .style("border-radius", "5px")
@@ -122,9 +122,12 @@ day.taskCompletionRate = tcr;
           const [x, y] = d3.pointer(event);
 
           Tooltip1
-            .text(`Date: ${d.date} MRR: ${d.tcr} `)
-            .style("left", (x + 700) + "px")
-            .style("top", (y + 400) + "px")
+            .text(`Date: ${d.date.toLocaleDateString()} MRR: ${d.tcr} `)
+            .style("left", (x + 400) + "px")
+            .style("top", (y + 130) + "px")
+            .style("font-family", "Futura")
+            .style("font-size", "8px")
+            .style("color", "#004a22")
         };
 
           var mouseleave = function(d) {

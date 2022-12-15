@@ -4,15 +4,17 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
     position: fixed;
     bottom: 0%;
-    margin: auto;
+    margin-bottom: 12px;
   }
   
   .dock.node {
-    height: 40px;
-    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    max-width: 40px;
     border-radius: 50%;
     background-color: #004a22;
     position: relative;
@@ -23,8 +25,17 @@
     transition: all 0.1s ease-in-out;
   }
 
+#finalnode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .dock.node:hover,
-  .dock.node:hover .dock.node .icon {
+  .dock.node:hover .dock.node .icon,
+  .mini.node:hover,
+  .mini.node:hover .mini.node .icon
+  {
     transform: scale3d(1.1,1.1,1.1);
     transition: all 0.1s ease-in-out;
   }
@@ -88,4 +99,47 @@
   .dock.node.save:focus #saveIcon,
   .dock.node.save:visited #saveIcon {
     color: #fff;
+  }
+
+  .dockNodeWrapper {
+    min-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    position: relative;
+    display: flex;
+    margin: 0 4px;
+    flex-direction: column;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mini.node.inactive {
+    display: none;
+    transition: all 1s linear;
+  }
+
+  .mini.node {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #004a22;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transition: all 0.1s ease-in-out;
+  }
+
+  #miniValuesIcon {
+    color: #fff;
+    transform: scale(0.6);
+  }
+
+  .nodeRow {
+    display: flex;
+    overflow: visible;
+    margin-bottom: 6px;
   }
