@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { createYearAction, listYears } from '../../actions/yearActions';
-import Loading from '../../components/Loading/Loading';
+import TileLoading from '../../components/Loading/TileLoading';
 import CentralHeader from '../../components/Header/CentralHeader';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import HideDock from '../../components/Dock/HideDock';
@@ -125,8 +125,8 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
     <>
      <>
         <Helmet>
-                      <title>Create | Year</title>
-                  </Helmet>
+          <title>Create | Year</title>
+        </Helmet>
                   </>
     <CentralHeader  />
     <MouseTooltip
@@ -140,8 +140,11 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
         
     <form onSubmit={submitHandler}>
     <main className='yearContainer'>
+      { pageLoading ? <TileLoading /> : 
+      <>
+
     <div className={tutorialState}>
-    <iframe className='videoPlayerQuiz'
+    <iframe className='tutorialPlayer'
     width="560" height="315"
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
@@ -430,6 +433,10 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
               />
       </div>
       </div>
+
+      </>
+      }
+      
     </main>
     </form>
         </>

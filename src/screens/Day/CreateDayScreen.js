@@ -9,7 +9,7 @@ import { listDays } from '../../actions/dayActions';
 import { Card, Button } from 'react-bootstrap';
 import { Helmet } from "react-helmet"
 import Loading from '../../components/Loading/Loading';
-import PageLoading from '../../components/Loading/PageLoading';
+import TileLoading from '../../components/Loading/TileLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser, faCircleCheck, faQuestion  } from '@fortawesome/free-solid-svg-icons'
@@ -88,7 +88,7 @@ const [inputQuote, setInputQuote] = useState();
 const [classState, setClassState]= useState('journal outer');
 
 // Dock State
-const [cursorState, setCursorState] = useState('Welcome to your Daily Diary. Click the "?" in the dock for a tutorial');
+const [cursorState, setCursorState] = useState('');
 const [cursorDisplayState, setCursorDisplayState] = useState(true);
 const [tutorialState, setTutorialState] = useState('tutorial');
 const [fontState, setFontState] = useState();
@@ -415,6 +415,9 @@ useEffect(()=> {
   <form onSubmit={submitHandler}>
 
   <main className="createday container">
+  
+  { pageLoading ? <TileLoading /> : 
+    <>
     <div className={tutorialState}>
     <iframe className='tutorialPlayer'
         title='Youtube player'
@@ -645,9 +648,11 @@ value={endScore}
 onChange={(e) => setEndScore(e.target.value)} 
 />
 </div>
-  
+</>
+}
 
 </main>
+
 </form>
 <footer className="dock footer">
 <FullDock 

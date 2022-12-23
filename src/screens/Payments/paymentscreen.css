@@ -28,18 +28,18 @@ grid-template-rows: Repeat(23,1fr);
 
 .topRow h1 {
     font-family: 'Futura';
-    color: #EBF4FA;
+    color: whitesmoke;
 }
 
 .topRow span {
-    color: #EBF4FA;
+    color: whitesmoke;
     margin-bottom: 24px;
 }
 
 .gridBlock {
     grid-column: auto / span 1;
     grid-row: auto / span 4;   
-    background-color: #EBF4FA;
+    background-color: whitesmoke;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -48,15 +48,15 @@ grid-template-rows: Repeat(23,1fr);
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: #46A46C;
+    color: #004a22;
 }
 
 .gridBlock:hover,
 .gridBlock:focus
  {
     background-color: rgba(70, 164, 108,0.3);
-    box-shadow: inset 0 0 6px #EBF4FA;
-    color: #EBF4FA;
+    box-shadow: inset 0 0 6px whitesmoke;
+    color: whitesmoke;
 }
 
 .gridBlock.former span, 
@@ -84,7 +84,7 @@ grid-template-rows: Repeat(23,1fr);
 .gridBlock.free:hover span {
     display:flex;
     font-size: 0.7em;
-    color: #46A46C;
+    color: #004a22;
     font-weight: 700;
 }
 

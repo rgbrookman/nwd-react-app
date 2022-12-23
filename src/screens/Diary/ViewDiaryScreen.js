@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { createDayAction, listDays } from '../../actions/dayActions';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import CentralHeader from '../../components/Header/CentralHeader';
+import TileLoading from '../../components/Loading/TileLoading';
 import './diaryscreen.css';
 
 export default function ViewDiaryScreen({ history }) {
@@ -94,7 +95,8 @@ useEffect(() => {
 
 </select>
     <main className="testName">
- 
+    { pageLoading ? <TileLoading /> : 
+    <>
 <div className="tileLeftOuter">
 
     <div className="tile left">
@@ -264,7 +266,8 @@ useEffect(() => {
                 )}
 </div>
         
-
+</>
+}
 </main>
 
 

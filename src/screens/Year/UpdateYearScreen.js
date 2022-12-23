@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import { updateYearAction, listYears } from '../../actions/yearActions';
 import { listDays } from '../../actions/dayActions';
 import HideDock from '../../components/Dock/HideDock';
-import Loading from '../../components/Loading/Loading';
+import TileLoading from '../../components/Loading/TileLoading';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import {Helmet} from "react-helmet"
 import PageLoading from '../../components/Loading/PageLoading';
@@ -262,6 +262,8 @@ useEffect(()=> {
         </MouseTooltip>
 <form onChange={updateHandler}>
 <main className='yearContainer'>
+  { pageLoading ? <TileLoading /> : 
+  <>
 <HideDock 
    toggleOverlay={cursorDisplayToggle}
    updateYear={updateHandler} />
@@ -542,7 +544,7 @@ useEffect(()=> {
   <div className="yeartile memory">
 <label htmlFor="memory" className="statement starter">Memory that you wanted to remember...</label>
 
-{ !days ? <Loading /> : days
+{ !days ? <></> : days
         .filter((day, i, days) => days.indexOf(day) === Math.floor((Math.random() * days.length )))
         .filter((day, i, days) => days.indexOf(day) === 0 )
         .map((day, index, days) =>
@@ -556,6 +558,9 @@ useEffect(()=> {
           />)}
   </div>
   </div>
+
+  </>
+}
 </main>
 </form>
     </>

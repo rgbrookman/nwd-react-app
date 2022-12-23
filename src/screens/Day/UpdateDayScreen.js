@@ -5,14 +5,12 @@ import { updateDayAction, listDays } from '../../actions/dayActions';
 import FullDock from '../../components/Dock/FullDock';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import CentralHeader from '../../components/Header/CentralHeader';
-import Loading from '../../components/Loading/Loading';
-import PageLoading from '../../components/Loading/PageLoading';
+import { Helmet } from "react-helmet";
+import TileLoading from '../../components/Loading/TileLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser, faCircleCheck, faQuestion } from '@fortawesome/free-solid-svg-icons'
-import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import axios from "axios";
-import PropagateLoader from "react-spinners/PropagateLoader";
 import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './dayscreens.css';
@@ -53,6 +51,7 @@ const [classState, setClassState]= useState('journal outer');
 // Dock State
 const [cursorState, setCursorState] = useState('');
 const [cursorDisplayState, setCursorDisplayState] = useState(true);
+const [opacity, setOpacity] = useState();
 
 const [show, setShow] = useState(false);
 const target = useRef(null);
@@ -174,7 +173,7 @@ const updateHandler = (e) => {
         !leaveBehind ||
         !endScore) return;
 
-        resetHandler();
+        // resetHandler();
 
 };
 
@@ -346,12 +345,48 @@ const cursorDisplayHide = () => {
     {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
   };
 
-  const valuesCount = () => {
-    let count = 0; 
-    if (years & years.map(year => year.myValues_1) === true) {
-      count++;
-    }
-  }
+
+    const valOne = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveOne_score / 10);
+
+      const valTwo = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveTwo_score / 10);
+
+      const valThree = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveThree_score / 10);
+
+      const valFour = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveFour_score / 10);
+
+      const valFive = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveFive_score / 10);
+
+      const valSix = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveSix_score / 10);
+
+      const valSeven = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveSeven_score / 10);
+
+      const valEight = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveEight_score / 10);
+
+      const valNine = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveNine_score / 10);
+
+      const valTen = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveTen_score / 10);
+
+
 
 
 useEffect(()=> {
@@ -371,6 +406,9 @@ const showState = {
 
   return (
     <>
+        <Helmet>
+          <title>Update | Today</title>
+        </Helmet>
     <MouseTooltip
     visible={cursorDisplayState}
     offsetX={15}
@@ -386,7 +424,8 @@ const showState = {
 
 
 <main className="updateday container">
-
+{ pageLoading ? <TileLoading /> : 
+<>
 <div className="tile left">
 <div className="dateRow">
   <label htmlFor="loggedDate">Diary Entry Date:</label>
@@ -611,11 +650,12 @@ onChange={(e) => setEndScore(e.target.value)}
 />
 </div>
   
-
+</>
+}
 </main>
 </form>
 <footer className="dock footer">
-<FullDock 
+  { pageLoading ? <></> : <FullDock 
 openClose={stateChanger} 
 hideOverlay={cursorDisplayHide}
 changeName={cursorChangeName}
@@ -644,7 +684,18 @@ changeObjEight={cursorChangeObjEight}
 changeObjNine={cursorChangeObjNine}
 changeObjTen={cursorChangeObjTen}
 updateDay={updateHandler}
-/>
+opacityOne={valOne[0]}
+opacityTwo={valTwo[0]}
+opacityFour={valFour[0]}
+opacityThree={valThree[0]}
+opacityFive={valFive[0]}
+opacitySix={valSix[0]}
+opacitySeven={valSeven[0]}
+opacityEight={valEight[0]}
+opacityNine={valNine[0]}
+opacityTen={valTen[0]}
+/>}
+
 </footer>
 
  </>

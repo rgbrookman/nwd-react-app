@@ -106,7 +106,7 @@ export default function QuizFeelingScreen() {
     <br />
     <br />
       <span>
-    To the right again of the chart itself are three revealing pieces of context about your feeling score.
+    Below the chart itself are three revealing pieces of context about your feeling score.
       </span>
         <br />
             <br />
@@ -363,7 +363,7 @@ className="quizDiv">
 
       <br />
 <br />
-  <strong>Every metric, shift in the graph and data point is a signal.</strong>
+  <strong>Every metric, shift in the graph or data point is a <strong>signal.</strong></strong>
 <br />
 <br />
   <strong>Every signal helps us ask a better question.</strong>
@@ -407,7 +407,7 @@ Another important insight surrounding the feeling score is that your feeling sco
     <br />
     <br />
     <span>To repeat, it is the context that has a created a score that we are interested in. 
-      The scores and metrics are utterly irreplacable as a tool for providing signals, but completely pointless when it comes to 
+      The scores and metrics are an utterly irreplaceable as a tool for providing signals, but completely pointless when it comes to 
       the kind of deep, awakening we are trying to afford to each user of the platform. 
       <br />
     <br />

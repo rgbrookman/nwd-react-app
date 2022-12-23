@@ -3,41 +3,41 @@
 }
 
 .feedbackButton {
-  background-color: #EBF4FA;
-  color: #46A46C;
-  font-family: 'Koulen', cursive;
-  border: 1px solid #46A46C;
+  background-color: whitesmoke;
+  color: #004a22;
+  font-family: 'Futura';
+  border: 1px solid #004a22;
   margin-bottom: 12px;
   width: 200px;
 }
 
 .returnButton {
-  background-color: #46A46C;
-  color: #EBF4FA;
-  font-family: 'Koulen', cursive;
-  border: 1px solid #46A46C;
+  background-color: #004a22;
+  color: whitesmoke;
+  font-family: 'Futura';
+  border: 1px solid #004a22;
   margin-bottom: 12px;
   width: 200px;
 }
 
 .rowHeader {
-    color: #EBF4FA;
+    color: whitesmoke;
     font-family: 'Futura';
 }
 
 .feedbackContainer label {
-  color: #EBF4FA;
+  color: whitesmoke;
 }
 
 .feedbackLabel {
-  color: #EBF4FA;
+  color: whitesmoke;
   font-family: "Montserrat", sans-serif;
 }
 
 .textInput {
   border-style: solid;
-  border: 1px solid #46A46C;
-  outline-color: #46A46C;
+  border: 1px solid #004a22;
+  outline-color: #004a22;
   font-family: 'courier new', monospace;
   border-radius: 5px;
   padding: 4px;
@@ -49,8 +49,8 @@
   width: 100%;
   height: 20px;
   border-radius: 2px;
-  background: #46A46C;
-  outline: 1px dashed #EBF4FA;
+  background: #004a22;
+  outline: 1px dashed whitesmoke;
   -webkit-transition: .2s;
   transition: opacity .2s;
   margin-top: 6px;
@@ -66,8 +66,8 @@
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #EBF4FA;
-  outline: 1px dashed #46A46C;
+  background: whitesmoke;
+  outline: 1px dashed #004a22;
   cursor: pointer;
   border-radius: 2px;
 }
@@ -75,6 +75,6 @@
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #46A46C;
+  background: #004a22;
   cursor: pointer;
 }

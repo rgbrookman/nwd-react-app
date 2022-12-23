@@ -8,7 +8,7 @@
 .itemA {
   grid-row: 1 / 2;
   grid-column: 1 / span 6;
-  color: #EBF4FA;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@
 .fortuneDiv {
   grid-row: 2 / 3;
   grid-column: 1 / span 3;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -27,13 +27,13 @@
   text-align: center;
   padding: 16px;
   margin: 24px 24px 24px;
-  color: #46A46C;
+  color: #004a22;
 }
 
 .fortuneAnswerDiv {
   grid-row: 2 / 3;
   grid-column: 1 / span 3;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -41,13 +41,13 @@
   text-align: center;
   padding: 16px;
   margin: 24px;
-  color: #46A46C;
+  color: #004a22;
 }
 
 .itemC {
   grid-row: 2 / 3;
   grid-column: 4 / span 3;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -55,13 +55,13 @@
   text-align: center;
   padding: 16px;
   margin: 24px;
-  color: #46A46C;
+  color: #004a22;
 }
 
 .difficultDiv {
   grid-row: 2 / 3;
   grid-column: 4 / span 3;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -69,13 +69,13 @@
   text-align: center;
   padding: 16px;
   margin: 24px;
-  color: #46A46C;
+  color: #004a22;
 }
 
 .missionContainer {
   grid-row: 3 / 5;
   grid-column: 1 / span 6;
-  color: #EBF4FA;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { createWeekAction, listWeeks, updateWeekAction } from '../../actions/weekActions';
-import Loading from '../../components/Loading/Loading';
+import TileLoading from '../../components/Loading/TileLoading';
 import { listYears } from '../../actions/yearActions';
 import { listDays } from '../../actions/dayActions';
 import CentralHeader from '../../components/Header/CentralHeader';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import HideDock from '../../components/Dock/HideDock';
 import MidDock from '../../components/Dock/MidDock';
+import { Helmet } from "react-helmet";
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import './weekscreen.css';
@@ -42,7 +43,8 @@ export default function WeekScreenTest({ history }) {
   const [videoLink, setVideoLink] = useState('GQzaJ3qCo4k');
   const [cursorDisplayState, setCursorDisplayState] = useState(true);
 
-  const [cursorState, setCursorState] = useState('The dock allows you to look at your diary through the lens of your important frames and plans.');
+  const [cursorState, setCursorState] = useState('');
+  const [pageLoading, setPageLoading] = useState(true);
 
 
   const dispatch = useDispatch();
@@ -96,9 +98,15 @@ useEffect(() => {
     ));
   };
 
-  useEffect(() => {
-    document.title = "Week | Create";
-  }, []);
+  const loadingTimeout = () => {
+    setTimeout(()=> {
+      setPageLoading(false)
+    }, 5000)
+  }
+
+  useEffect(()=> {
+    loadingTimeout();
+  })
 
   const cursorDisplayToggle = () => {
     setCursorDisplayState(cursorDisplayState => !cursorDisplayState);
@@ -198,6 +206,9 @@ useEffect(() => {
 
   return (
 <>
+<Helmet>
+  <title>Create | Week</title>
+</Helmet>
 <CentralHeader />
 <MouseTooltip
           visible={cursorDisplayState}
@@ -209,8 +220,10 @@ useEffect(() => {
         </MouseTooltip>
 <Form onSubmit={submitHandler}>
 <main className="weekContainer">
+  { pageLoading ? <TileLoading /> : 
+  <>
 <div className={tutorialState}>
-    <iframe className='videoPlayerQuiz'
+    <iframe className='tutorialPlayer'
     width="560" height="315"
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
@@ -219,7 +232,8 @@ useEffect(() => {
     </div>
 <HideDock 
    toggleOverlay={cursorDisplayToggle}
-   saveWeek={submitHandler} />
+   saveWeek={submitHandler} 
+   showTutorial={showTutorial} />
 
    <MidDock 
    changeName={cursorChangeName}
@@ -469,6 +483,8 @@ useEffect(() => {
       />
 </div>
   </div>
+  </>
+  }
 </main>
 </Form>
 </>

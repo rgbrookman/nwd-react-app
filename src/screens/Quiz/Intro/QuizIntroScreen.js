@@ -4,13 +4,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import CentralHeader from '../../../components/Header/CentralHeader';
 import { updateProfile } from '../../../actions/dayActions';
 import { Card, Button, Row, Col, Container, Form } from 'react-bootstrap';
-import Loading from '../../../components/Loading/Loading';
+import TileLoading from '../../../components/Loading/TileLoading';
 import { ErrorMessage } from '../../../components/Error/ErrorMessage';
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare, faEraser } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../NWD_Logo_White.png';
 import why from '../../../lnwh.gif';
+import { Helmet } from "react-helmet";
 import './quizintro.css';
 
 export default function QuizScreen() {
@@ -19,6 +20,7 @@ export default function QuizScreen() {
   const [kickOff, setKickOff] = useState(false);
   const [sceneSet, setSceneSet] = useState(false);
   const [threeParts, setThreeParts] = useState(false);
+  const [pageLoading, setPageLoading] = useState(true);
 
   const showHideState = {
     hide: {
@@ -37,16 +39,27 @@ export default function QuizScreen() {
       display: "grid",
     },
   }
+
+  const loadingTimeout = () => {
+    setTimeout(()=> {
+      setPageLoading(false)
+    }, 5000)
+  }
+
+  useEffect(()=> {
+    loadingTimeout();
+  })
   
-  useEffect(() => {
-    document.title = "Art of Looking";
-  }, []);
 
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
   return (
     <>
+    <Helmet>
+      <title>Art of Looking</title>
+    </Helmet>
 <CentralHeader />
+
 <motion.main className="quizIntroMain"
  animate={ titleMain ? "show" : "hide"}
  variants={showHideState}
@@ -55,6 +68,7 @@ export default function QuizScreen() {
  setTitleDiv(titleDiv => false);
  setKickOff(kickOff => true);
 }}>
+  { pageLoading ? <TileLoading /> : 
 <motion.div
   className="titleDiv"
   animate={ titleDiv ? "show" : "hide"}
@@ -74,6 +88,7 @@ export default function QuizScreen() {
  
 
 </motion.div>
+}
 </motion.main>
 
     <motion.div
@@ -89,14 +104,14 @@ export default function QuizScreen() {
             The <strong>Insight</strong> section of NWD is about giving anyone who wants it a completely different vantage point on their own life.
             <br />
             <br />
-             Our own eyes provide a view on life which is in many ways completely phenomenal. 
-            Both the eyes themselves and the perspective they afford are brilliant at helping forge connections with other humans, 
+             Our own eyes provide a view on the moments of our days which in many ways is completely phenomenal. 
+            Both the eyes themselves and the perspective they afford are brilliant for helping forge connections with other humans, 
             fabulous for studying details in our
             immediate surroundings and terrific at facilitating the visceral glory of simply being alive.
             <br />
             <br />
             However, this very same view is not well suited to
-            breaking down our behaviours and turning the best and worst of what we do into greater joy and growth reliably and regularly.
+            breaking down our behaviours and reliably and regularly turning the best and worst of what we do into greater joy and growth .
           </span>
           <br />
             <br />
@@ -112,15 +127,15 @@ export default function QuizScreen() {
             the data in a few simple charts.
           <br />
           <br />
-            To open the door to safe, significant insight and action, there are two big buckets that need filling up first (see box on your right).</span>
+            To open the door to safe, significant insight and action, there are two big buckets that need filling up first (and they can be found to your right).</span>
           <br />
           <br />
           <strong className='emphasis'>‘The Art of Looking’</strong>
             <span> is the digital faucet designed to help any user fill both buckets to the brim whilst their own dataset is getting sufficiently full.
           <br />
           <br />
-            The 'Art of Looking' encompasses my own personal experience from <s>700</s> over 800 days of NoWastedDays
-            diary inputs and the key mental and practical pillars that build a firm foundation from which you can reliably find a new perspective that transforms your life.</span>
+            The 'Art of Looking' encompasses both my own personal experience from <s>700</s> over 800 days of NoWastedDays
+            diary inputs and the key practical pillars that build a firm foundation from which you can reliably find a empowered perspective.</span>
     </div>
   <div className="rightCol">
   <div className="rightContent">

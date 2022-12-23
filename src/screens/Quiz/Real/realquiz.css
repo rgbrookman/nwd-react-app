@@ -3,8 +3,8 @@
 .questionContainer {
   grid-row: 1 / 11;
   grid-column: 1 / 51;
-  border-top: 3px solid #EBF4FA;
-  border-bottom: 3px solid #EBF4FA;
+  border-top: 3px solid whitesmoke;
+  border-bottom: 3px solid whitesmoke;
   overflow: scroll;
   padding: 12px;
   display: flex;
@@ -35,7 +35,7 @@
 .optionOne {
   grid-row: 1 / span 1;
   grid-column: 1 / span 1;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   margin: 8px 12px 8px 12px;
   padding: 6px 10px 6px 10px;
   border-radius: 10px;
@@ -53,7 +53,7 @@
 .optionTwo {
   grid-row: 1 / 1;
   grid-column: 2 / 2;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   margin: 8px 12px 8px 12px;
   padding: 6px 10px 6px 10px;
   border-radius: 10px;
@@ -64,7 +64,7 @@
 .optionThree {
   grid-row: 2 / 2;
   grid-column: 1 / 1;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   margin: 8px 12px 8px 12px;
   padding: 6px 10px 6px 10px;
   border-radius: 10px;
@@ -75,7 +75,7 @@
 .optionFour {
   grid-row: 2 / 2;
   grid-column: 2 / 2;
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   margin: 8px 12px 8px 12px;
   padding: 6px 10px 6px 10px;
   border-radius: 10px;
@@ -84,10 +84,10 @@
 }
 
 .checkAnswerButton {
-  background-color: #EBF4FA;
+  background-color: whitesmoke;
   color: #004a22;
   font-family: 'Futura';
-  border: 1px solid #46A46C;
+  border: 1px solid #004a22;
   margin: 0 6px 0 6px;
 }
 

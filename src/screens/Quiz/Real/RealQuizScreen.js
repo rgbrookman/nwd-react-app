@@ -81,7 +81,7 @@ export default function RealQuizScreen() {
 
   const selectedAnimation = {
     unselected: {
-      backgroundColor: "#EBF4FA",
+      backgroundColor: "whitesmoke",
       margin: '8px 12px 8px 12px',
       padding: "6px 10px 6px 10px",
       borderRadius: "10px",

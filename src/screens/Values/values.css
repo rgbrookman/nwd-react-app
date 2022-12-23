@@ -1,13 +1,13 @@
 
 /* Containers */
 .introStageMain {
-  height: 300vh;
+  height: 100vh;
 }
 
 .introContainer {
-  background-color: #EBF4FA;
-  color: #46A46C;
-  border: 1px solid #46A46C;
+  background-color: whitesmoke;
+  color: #004a22;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -15,11 +15,15 @@
   text-align: center;
   padding: 24px;
   width: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .introContainer h1 {
   font-size: clamp(2.5vw, 3vw, 4vw);
+}
+
+#titleOn {
+    color: #004a22;
 }
 
 .stepsList {
@@ -33,11 +37,11 @@
 .explanationContainer,
 .specificityContainer,
 .finalDisplayContainer {
-  background-color: #EBF4FA;
-  color: #46A46C;
-  border: 1px solid #46A46C;
+  background-color: whitesmoke;
+  color: #004a22;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   padding: 24px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -51,9 +55,10 @@
 .valuesIntBox4,
 .valuesIntBox5
 {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -92,31 +97,33 @@
 .consistencyContainer,
 .experienceContainer
 {
-  background-color: #EBF4FA;
-  color: #46A46C;
-  border: 1px solid #46A46C;
+  background-color: whitesmoke;
+  color: #004a22;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   padding: 24px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
-  text-align: center;
+  text-align: start;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .fourFiveDiv {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
+  height: 36px;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .minusIcon,
 .bullseyeIcon {
   margin-left: 8px;
-  margin-bottom: 6px;
+}
+
+.addIcon {
+  margin: 6px;
 }
 
 .consistencyContainer input,
@@ -124,9 +131,8 @@
 .experienceContainer input,
 .specificityContainer input
 {
-  font-family: "Courier New", monospace;
-  width: 50%;
-  margin: 0 0 10px 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 200;
   padding-left: 4px;
   padding-right: 4px;
   padding-top: 3px;
@@ -134,33 +140,34 @@
 }
 
 .specificityContainer {
-  background-color: #EBF4FA;
-  color: #46A46C;
-  border: 1px solid #46A46C;
+  width: 100%;
+  background-color: whitesmoke;
+  color: #004a22;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: start;
+  border-radius: 5px;
+
 }
 
 .specificityContainer input:first-child {
 width: 25%;
-margin: 0 0 10px 0;
 }
 
 .specificityContainer input:last-child {
-width: 70%;
-margin: 0 0 10px 0;
+width: 75%;
 }
 
 
 .explanationButton, .valuesButton {
-  background-color: #EBF4FA;
-  color: #46A46C;
-  font-family: 'Koulen', cursive;
-  border: 1px solid #46A46C;
+  background-color: whitesmoke;
+  color: #004a22;
+  font-family: 'Futura';
+  border: 1px solid #004a22;
   margin-bottom: 12px;
   margin-top: 12px;
 }
@@ -168,9 +175,9 @@ margin: 0 0 10px 0;
 .valuesButton:hover,
 .valuesButton:focus
  {
-  background-color: #46A46C;
-  color: #EBF4FA;
-  border: 1px solid #46A46C;
+  background-color: #004a22;
+  color: whitesmoke;
+  border: 1px solid #004a22;
   box-shadow: none;
 }
 
@@ -178,8 +185,8 @@ margin: 0 0 10px 0;
 .valueText,
 .dobInput {
   border-style: solid;
-  border: 1px solid #46A46C;
-  outline-color: #46A46C;
+  border: 1px solid #004a22;
+  outline-color: #004a22;
 }
 
 .textInput:hover,
@@ -187,7 +194,7 @@ margin: 0 0 10px 0;
 .valueText:hover,
 .valueText:focus
  {
-  border: 1px solid #46A46C;
+  border: 1px solid #004a22;
   box-shadow: none;
 }
 

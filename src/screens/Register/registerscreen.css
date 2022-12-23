@@ -20,12 +20,18 @@ text-align: start;
   z-index: 1;
 }
 
-.submit {
+.formInput.register::placeholder {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 200;
+  color: #004a22;
+}
+
+.submit {
+  font-family: 'Futura';
   font-weight: 200;
   padding: 8px 10px;
   background-color: #004a22;
-  color: #e2dfcf;
+  color: whitesmoke;
   outline: none;
   border: none;
   box-sizing: border-box;

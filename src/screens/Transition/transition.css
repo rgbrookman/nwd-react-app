@@ -1,5 +1,5 @@
 .landingPageCaption {
-  color: #EBF4FA;
+  color: whitesmoke;
 }
 
 .strapLineDiv {
@@ -22,7 +22,7 @@
 }
 
 .landingPageHeaderText {
-  color: #EBF4FA;
+  color: whitesmoke;
   font-family: 'Futura';
   font-size: clamp(2vw, 8vw, 10vw);
   }

@@ -33,18 +33,25 @@ import TasksCompletionRateTrend from '../../components/Charts/TaskCompletionRate
 import WaveChart from '../../components/Charts/Wave/WaveChart.js'
 
 //Loading
-import Loading from '../../components/Loading/Loading';
-import PageLoading from '../../components/Loading/PageLoading';
-import PropagateLoader from "react-spinners/PropagateLoader";
+import TileLoading from '../../components/Loading/TileLoading';
 
+//Title
+import { Helmet } from "react-helmet";
 
+//Header
 import CentralHeader from "../../components/Header/CentralHeader";
+
+//Tabs
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
+// Mouse Tooltip
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
+
+//StyleSheet
 import './insightscreen.css';
 
+//D3
 import * as d3 from "d3";
 
 
@@ -139,6 +146,9 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
   return (
     <>
+    <Helmet>
+          <title>Your Insights</title>
+        </Helmet>
     <MouseTooltip
           visible={cursorDisplayState}
           offsetX={15}
@@ -148,10 +158,11 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
         <h1 className="sickTooltip">{cursorState}</h1>
         </MouseTooltip>
  <CentralHeader />
- { pageLoading && !days ? <div className="pageLoading"><PropagateLoader color={"#fff"} size={30} /></div> :
+ 
 
     <main className="viewinsight container">
- 
+    { pageLoading && !days ? <TileLoading /> :
+ <>
 <div className="tileLeftOuter">
 
     <div className="tile left">
@@ -163,9 +174,7 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 
 
 { days && days.map(day => 
-<option className="datePickerOption" key={day._id}
-
->{day.logDate.slice(0,10)}</option> 
+<option className="datePickerOption" key={day._id}>{day.logDate.slice(0,10)}</option> 
 )}
 
 </select>
@@ -414,7 +423,8 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
                 )}
 </div>
         
-
+</>
+}
 </main>
 }
 

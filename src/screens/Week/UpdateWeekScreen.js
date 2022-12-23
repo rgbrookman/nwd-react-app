@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { createWeekAction, listWeeks, updateWeekAction } from '../../actions/weekActions';
 import Loading from '../../components/Loading/Loading';
-import PageLoading from '../../components/Loading/PageLoading';
+import TileLoading from '../../components/Loading/TileLoading';
 import { listYears } from '../../actions/yearActions';
 import { listDays } from '../../actions/dayActions';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
@@ -12,6 +12,7 @@ import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import HideDock from '../../components/Dock/HideDock';
 import axios from "axios";
 import MidDock from '../../components/Dock/MidDock';
+import { Helmet } from "react-helmet";
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
 import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -47,7 +48,8 @@ export default function ViewWeekScreen({ history }) {
 
   const [pageLoading, setPageLoading] = useState(true);
   const [cursorDisplayState, setCursorDisplayState] = useState(true);
-  const [cursorState, setCursorState] = useState('The dock allows you to look at your diary through the lens of your important frames and plans.');
+  const [cursorState, setCursorState] = useState('');
+  const [tutorialState, setTutorialState] = useState('tutorial');
 
   const [show, setShow] = useState(false);
 const target = useRef(null);
@@ -312,22 +314,44 @@ const target = useRef(null);
 
   const weekVideo = 'https://share.vidyard.com/watch/Vry5iUQHge3eD6djb2k912?';
 
+  const showTutorial = () => {
+    if(tutorialState === 'tutorial video') {
+      setTutorialState(tutorialState => 'tutorial');
+    } else {
+      setTutorialState(tutorialState => 'tutorial video');
+    }
+  }
+
   return (
 <>
+<Helmet>
+  <title>Update | Year</title>
+</Helmet>
 <CentralHeader />
 <MouseTooltip
-          visible={cursorDisplayState}
-          offsetX={15}
-          offsetY={10}
-          zIndex={1000}
-        >
+    visible={cursorDisplayState}
+    offsetX={15}
+    offsetY={10}
+    zIndex={1000}
+  >
         <h1 className="sickTooltip">{cursorState}</h1>
         </MouseTooltip>
 <form onChange={updateHandler}>
 <main className="weekContainer">
+  { pageLoading ? <TileLoading /> : 
+    <>
+<div className={tutorialState}>
+    <iframe className='tutorialPlayer'
+    width="560" height="315"
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
+</iframe>
+    </div>
 <HideDock 
    toggleOverlay={cursorDisplayToggle}
-   updateWeek={updateHandler} />
+   updateWeek={updateHandler}
+   showTutorial={showTutorial} />
     <MidDock 
    changeName={cursorChangeName}
    changeDOB={cursorChangeDOB}
@@ -576,6 +600,8 @@ const target = useRef(null);
       />
 </div>
   </div>
+  </>
+  }
 </main>
 </form>
 </>

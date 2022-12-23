@@ -1,12 +1,15 @@
 import React from 'react';
 import './paymentscreen.css';
+import CentralHeader from '../../components/Header/CentralHeader';
 
 export default function PaymentScreen() {
+
 
 
   return (
     <>
     <>
+<CentralHeader />
     </>
     <main className="payment">
  
