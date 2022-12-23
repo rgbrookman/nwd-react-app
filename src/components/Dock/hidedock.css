@@ -87,3 +87,7 @@
   .hidedock.node.save:visited #saveIcon {
     color: #fff;
   }
+
+  .hidedock.node.inactive {
+    display: none;
+  }

@@ -10,6 +10,16 @@ import './hidedock.css';
 export default function HideDock ( props ) {
   const [yourName, setYourName] = useState();
 
+  const [helpNodeState, setHelpNodeState] = useState('hidedock node inactive');
+
+  const showHelpNodes = () => {
+    if(helpNodeState === 'hidedock node inactive') {
+      setHelpNodeState(helpNodeState => 'hidedock node');
+    } else {
+      setHelpNodeState(helpNodeState => 'hidedock node inactive');
+    }
+  }
+
   const currentWindow = window.location.href;
 
   return (
@@ -20,7 +30,7 @@ export default function HideDock ( props ) {
       { currentWindow.endsWith('/') ? 
       <>
          <div className="hidedock node"
-    data-tooltip="Toggle Help"
+    data-tooltip="Toggle Frame"
    onMouseOver={props.toggleOverlay}>
     <FontAwesomeIcon
     id="openIcon"
@@ -36,6 +46,14 @@ export default function HideDock ( props ) {
     icon={faCalendarPlus}/>
     </a>
       </div>
+      <div className="hidedock node"
+    data-tooltip="Click for Help"
+    onClick={props.showTutorial}>
+    <FontAwesomeIcon
+    id="questionIcon"
+    className="icon"
+    icon={faQuestion}/>
+</div>
       </> :
       currentWindow.endsWith('/create') 
       ? currentWindow.endsWith('/year/create') ?
@@ -56,14 +74,53 @@ export default function HideDock ( props ) {
       className="icon"
       icon={faFloppyDisk}/>
         </div>
-        <div className="dock node"
-    data-tooltip="Quick Tutorial"
-   onClick={props.showTutorial}>
+
+        <div className="hidedock node"
+    data-tooltip="Click for Tutorial Video"
+   onClick={props.showTutorial}
+   onMouseOver={showHelpNodes}>
     <FontAwesomeIcon
     id="questionIcon"
     className="icon"
     icon={faQuestion}/>
+</div>
+
+     <div className={helpNodeState} data-tooltip="Try the NWD Values Process">
+<a href={'/values'}>
+  <FontAwesomeIcon
+    id="saveIcon"
+    className="icon"
+    icon={faCompassDrafting}/>
+    </a>
       </div>
+
+      <div className={helpNodeState}
+  data-tooltip="Vision Process Coming Soon."
+  style={{opacity: '0.25'}}>
+  <FontAwesomeIcon
+    id="saveIcon"
+    className="icon"
+    icon={faGlasses}/>
+      </div>
+
+      <div className={helpNodeState}
+  data-tooltip="Ikigai Process Coming Soon."
+  style={{opacity: '0.25'}}>
+  <FontAwesomeIcon
+    id="ikigaiIcon"
+    className="icon"
+    icon={faDna}/>
+      </div>
+
+      <div className={helpNodeState}
+  data-tooltip="Quote Generator Coming Soon."
+  style={{opacity: '0.25'}}>
+  <FontAwesomeIcon
+    id="quoteIcon"
+    className="icon"
+    icon={faQuoteLeft}/>
+      </div>
+   
         </>
         :
         <>
@@ -111,6 +168,51 @@ export default function HideDock ( props ) {
    className="icon"
    icon={faFloppyDisk}/>
      </div>
+     <div className="hidedock node"
+    data-tooltip="Click for Tutorial Video"
+   onClick={props.showTutorial}
+   onMouseOver={showHelpNodes}>
+    <FontAwesomeIcon
+    id="questionIcon"
+    className="icon"
+    icon={faQuestion}/>
+</div>
+
+     <div className={helpNodeState} data-tooltip="Try the NWD Values Process">
+<a href={'/values'}>
+  <FontAwesomeIcon
+    id="saveIcon"
+    className="icon"
+    icon={faCompassDrafting}/>
+    </a>
+      </div>
+
+      <div className={helpNodeState}
+  data-tooltip="Vision Process Coming Soon."
+  style={{opacity: '0.25'}}>
+  <FontAwesomeIcon
+    id="saveIcon"
+    className="icon"
+    icon={faGlasses}/>
+      </div>
+
+      <div className={helpNodeState}
+  data-tooltip="Ikigai Process Coming Soon."
+  style={{opacity: '0.25'}}>
+  <FontAwesomeIcon
+    id="ikigaiIcon"
+    className="icon"
+    icon={faDna}/>
+      </div>
+
+      <div className={helpNodeState}
+  data-tooltip="Quote Generator Coming Soon."
+  style={{opacity: '0.25'}}>
+  <FontAwesomeIcon
+    id="quoteIcon"
+    className="icon"
+    icon={faQuoteLeft}/>
+      </div>
      </>
 : 
 <>

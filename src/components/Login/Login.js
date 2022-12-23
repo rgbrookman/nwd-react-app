@@ -50,12 +50,12 @@ const override = {
       <form onSubmit={submitHandler}>
 
 
-          <label className="statement starter" htmlFor="email">Email</label>
+          { email ? <label className="statement starter" htmlFor="email">Email</label> : <></> }
           <br></br>
         <input
         style={{width: "100%"}}
           id="email"
-          className="formInput"
+          className="formInput register"
           type="email"
           value={email}
           placeholder="Enter email"
@@ -65,12 +65,12 @@ const override = {
  <br></br>
 
        
-          <label className="statement starter" htmlFor="password">Password</label>
+ { password ?   <label className="statement starter" htmlFor="password">Password</label> : <></> }
           <br></br>
         <input
         id="password"
         style={{width: "100%"}}
-        className="formInput"
+        className="formInput register"
         type="password"
         placeholder="Password"
         value={password}

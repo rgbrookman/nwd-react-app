@@ -61,7 +61,7 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
     },
   scrollFlash: {
     display: "block",
-    color: "#EBF4FA",
+    color: "whitesmoke",
     transition: {
       duration: 0.5,
       ease: "linear",
@@ -81,7 +81,7 @@ const titleState = {
   },
 titleOn: {
   display: "block",
-  color: "#46A46C",
+  color: "#004a22",
 },
 };
 
@@ -587,6 +587,7 @@ const valuesState = {
 
             <div className="explanationTitle">
                 <motion.h1
+                id='titleOn'
                 initial="titleOn"
                 animate={isTitle ? "titleOn" : "titleOff"}
                 variants={titleState}
@@ -635,7 +636,8 @@ const valuesState = {
                 animate={isTitle2 ? "titleOn" : "titleOff"}
                 variants={titleState}
                 >Laying the Foundation</motion.h1>
-                <p>Write down 3 - 5 traits that you would like to embody as a person simply because they are particularly important to you.</p>
+                <h6>Write down 3 - 5 traits that you would like to embody simply because they are particularly important to you. </h6>
+                  <p>A trait is a quality or attribute in a person. To embody a trait means to exhibit it through your actions strongly and naturally.</p>
                 <motion.div
                 className="fourFiveDiv">
                 <input
@@ -775,7 +777,7 @@ const valuesState = {
                 animate={ isConsistency ? "open" : "closed" }
                 variants={consistencyState}>
                 <h1>Stage One: Consistency</h1>
-                <p>For these traits that you have just written down to speak powerfully and positively to other people, you have to authentically embody them in every decision you make; every detail, every word, every moment.</p>
+                <h6>For these traits that you have just written down to speak powerfully and positively to other people, you have to authentically embody them in every decision you make; every detail, every word, every moment.</h6>
                 <p>Does this knowledge change what you have written down? (Feel free to edit and tweak if so)</p>
                 <motion.div
                 className="fourFiveDiv">
@@ -911,7 +913,7 @@ const valuesState = {
                 initial="hidden"
                 variants={experienceState}>
                 <h1>Stage Two: Transcendency</h1>
-                <p>The traits you are considering not only have to optimise your performance and communicate clearly to others but they also, when authentically and consistently embodied, need to contribute to a special experience and environment for others.</p>
+                <h6>The traits you are considering not only have to optimise your performance and communicate clearly to others but they also, when authentically and consistently embodied, need to contribute to a special experience and environment for others.</h6>
                 <p>Does that change what you have written down? (Have a tweak, have a play. Sit with the question for a minute)</p>
                 <motion.div
                 className="fourFiveDiv">
@@ -1043,17 +1045,16 @@ const valuesState = {
                 </motion.div>
 
                 <motion.div
-                className="specificityContainer"
-                whileHover={{ scale: 1.05 }}
-                animate={ isSpecificity ? "open" : "closed" }
-                initial="hidden"
-                variants={specificityState}>
+                  className="specificityContainer"
+                  whileHover={{ scale: 1.05 }}
+                  animate={ isSpecificity ? "open" : "closed" }
+                  initial="hidden"
+                  variants={specificityState}>
                 <h1>Stage Three: Specificity</h1>
                 <p>Single words are inherently ambigious, yet you have pick these traits because they mean something specifically to your experience of life.</p>
                 <p>Add a short phrase next to each trait that would help you explain it to someone else.</p>
-                <motion.div
-                className="fourFiveDiv">
-                <div className="valuesIntBox">
+                <motion.div className="fourFiveDiv">
+                <div className="valuesIntBox1">
                 <input
                   className="valueText"
                   type="text"
@@ -1077,7 +1078,7 @@ const valuesState = {
                   </motion.div>
                   <motion.div
                   className="fourFiveDiv">
-                    <div className="valuesIntBox">
+                    <div className="valuesIntBox2">
                 <input
                   type="text"
                   value={myValues_2}
@@ -1099,7 +1100,7 @@ const valuesState = {
 
                 <motion.div
                 className="fourFiveDiv">
-                  <div className="valuesIntBox">
+                  <div className="valuesIntBox3">
                 <input
                   type="text"
                   value={myValues_3}
@@ -1138,7 +1139,7 @@ const valuesState = {
               initial="hide"
               animate={ isFourthInput ? "show" : "hide" }
               variants={valuesState}>
-              <div className="valuesIntBox">
+              <div className="valuesIntBox4">
             <input
               type="text"
               value={myValues_4}
@@ -1180,7 +1181,7 @@ const valuesState = {
                 initial="hide"
                 animate={ isFifthInput ? "show" : "hide" }
                 variants={valuesState}>
-                <div className="valuesIntBox">
+                <div className="valuesIntBox5">
               <input
                 type="text"
                 value={myValues_5}

@@ -43,7 +43,7 @@
   box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   content: attr(data-tooltip);
   margin-left: 12px;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 6px;
   white-space: nowrap;
 }

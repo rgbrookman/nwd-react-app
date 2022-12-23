@@ -10,6 +10,7 @@ import PageLoading from '../Loading/PageLoading';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { DropdownButton, Dropdown, Nav, Navbar, Container  } from 'react-bootstrap';
 import logo from '../../NWD_Logo_White.png';
+import greenlogo from '../../green_logo.png';
 import { logout } from '../../actions/userActions';
 import * as d3 from 'd3';
 import './centralheader.css';
@@ -195,14 +196,20 @@ Array.isArray(days) === true ?
   </div>
 
   <div className="box centre">
-  <a id="nava" href={"/"}><img src={logo}   width="30"
-      height="30"></img></a>
+  <a id="nava" href={"/"}>
+    <img src={greenlogo}   width="20"
+      height="20" style={{borderRadius: "50%"}}></img></a>
       </div>
   <div className="box">
 
-    { pageLoading ? <a id="nava"><DropdownLoading /></a> :   
+    { pageLoading ? <a id="nava"><DropdownLoading /></a> : days && days.length > 7 ?  
   <a id="nava"
   href={"/insight"}>Insights
+    <div id="underline">
+    </div> 
+    </a>:
+    <a id="nava"
+  href={"/"}><s>Insights</s>
     <div id="underline">
     </div>
   </a>

@@ -9,7 +9,7 @@ min-width: 60px;
 
 .lastDayNudge {
   font-size: 0.6em;
-  color: #EBF4FA;
+  color: whitesmoke;
 }
 
 .inactive,
@@ -26,8 +26,8 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  background-color: #46A46C;
-  color: #EBF4FA;
+  background-color: #004a22;
+  color: whitesmoke;
   border: none;
   border-radius: 10px;
   box-shadow: none;
@@ -39,7 +39,7 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  color: #EBF4FA;
+  color: whitesmoke;
   border: none;
   border-radius: 10px;
   box-shadow: none;
@@ -50,7 +50,7 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  color: #46A46C;
+  color: #004a22;
   border: none;
   border-radius: 10px;
   box-shadow: none;
@@ -62,8 +62,8 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  background-color: #46A46C;
-  color: #EBF4FA;
+  background-color: #004a22;
+  color: whitesmoke;
   border: none;
   border-radius: 10px;
   box-shadow: none;
@@ -74,8 +74,8 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  background-color: #EBF4FA;
-  color: #46A46C;
+  background-color: whitesmoke;
+  color: #004a22;
   border: none;
     box-shadow: none;
 }
@@ -87,9 +87,9 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  background-color: #EBF4FA;
-  color: #46A46C;
-  border: 1px solid #46A46C;
+  background-color: whitesmoke;
+  color: #004a22;
+  border: 1px solid #004a22;
   padding: 5px;
   box-shadow: 5px 5px #46A46 0.5;
 }
@@ -101,7 +101,7 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 0.9em;
-  color: #46A46C;
+  color: #004a22;
   border-radius: 5px;
 }
 
@@ -112,8 +112,8 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  background-color: #46A46C;
-  color: #EBF4FA;
+  background-color: #004a22;
+  color: whitesmoke;
   border: none;
   box-shadow: none;
   text-decoration: none;
@@ -125,7 +125,7 @@ min-width: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
-  background-color: #46A46C;
-  color: #EBF4FA;
+  background-color: #004a22;
+  color: whitesmoke;
   border: none;
 }

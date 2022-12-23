@@ -42,51 +42,51 @@ export default function RegisterTest({ history }) {
     <section className="registerContainer">
     <form className="register" onSubmit={submitHandler}>
   
-    <label className="statement starter" htmlFor="name">Name</label>
+    { name ? <label className="statement starter" htmlFor="name">Name</label> : <></> }
     <br></br>
     <input
       id="name"
       style={{width: "100%"}}
-      className="formInput"
+      className="formInput register"
       type="text"
       value={name}
-      placeholder="Your Name"
+      placeholder="Enter Your Name"
       onChange={(e) => setName(e.target.value)}
       />
       <br></br>
       <br></br>
-    <label className="statement starter" htmlFor="email">Email</label>
+      { email ? <label className="statement starter" htmlFor="email">Email</label> : <></> }
     <br></br>
     <input
     id="email"
     style={{width: "100%"}}
-    className="formInput"
+    className="formInput register"
     type="text"
     value={email}
-    placeholder="Email Address"
+    placeholder="Enter Email Address"
     onChange={(e) => setEmail(e.target.value)}
     />
     <br></br>
     <br></br>
-    <label className="statement starter" htmlFor="password">Password</label>
+    { password ? <label className="statement starter" htmlFor="password">Password</label>: <></> }
     <br></br>
     <input
     id="password"
     style={{width: "100%"}}
-    className="formInput"
+    className="formInput register"
     type="password"
     value={password}
-    placeholder="Password"
+    placeholder="Choose Password"
     onChange={(e) => setPassword(e.target.value)}
     />
     <br></br>
     <br></br>
-    <label className="statement starter" htmlFor="confPassword">Confirm Password</label>
+    { confirmPassword ? <label className="statement starter" htmlFor="confPassword">Confirm Password</label>: <></> }
     <br></br>
     <input
     id="confPassword"
     style={{width: "100%"}}
-    className="formInput"
+    className="formInput register"
     type="password"
     value={confirmPassword}
     placeholder="Confirm password"
@@ -98,7 +98,9 @@ export default function RegisterTest({ history }) {
         <div id="underline"></div>
         <a>Register</a>
       </button>
-      <span className="statement starter">Already have a NWD, login <a href="/login">here...</a></span>
+      <br></br>
+    <br></br>
+      <span className="statement starter" style={{fontSize: "12px"}}>Already have a NWD, login <a href="/login">here...</a></span>
     </form>
     </section>
     </>

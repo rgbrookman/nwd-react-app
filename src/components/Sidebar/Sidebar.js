@@ -61,11 +61,11 @@ const Sidebar = () => {
       <li className="item" data-tooltip="Log Your First Day">
       <input className="sidebar input" type="radio" checked={Array.isArray(days) === true && days.length === 0 ? false : true} readOnly/>
       </li>
-      <li className="item" data-tooltip="Start Your Year Map">
-      <input className="sidebar input" type="radio" checked={Array.isArray(years) && years.length === 0 ? false : true} readOnly/>
-      </li>
       <li className="item" data-tooltip="Add a Plan for the Week">
       <input className="sidebar input" type="radio" checked={Array.isArray(weeks) && weeks.length === 0  ? false : true} readOnly/>
+      </li>
+      <li className="item" data-tooltip="Start Your Year Map">
+      <input className="sidebar input" type="radio" checked={Array.isArray(years) && years.length === 0 ? false : true} readOnly/>
       </li>
       <li className="item" data-tooltip="Start the 'Art of Looking'">
       <input className="sidebar input" type="radio" checked={localStorage.quiz_start === "1" ? true : false} readOnly/>

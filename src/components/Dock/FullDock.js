@@ -43,16 +43,14 @@ export default function FullDock ( props ) {
   return (
  
 <div className="dock container">
-
-<div className="dock node" 
-data-tooltip="Start a New Day">
-      <a href="/today">
-    <FontAwesomeIcon
-    id="openIcon"
-    className="icon"
-    icon={faCalendarPlus}/>
+  <div className="dock node" data-tooltip="Start a New Day">
+    <a href="/today">
+      <FontAwesomeIcon
+        id="openIcon"
+        className="icon"
+        icon={faCalendarPlus}/>
     </a>
-      </div>
+  </div>
 
       <div className="dock separator">
     <FontAwesomeIcon
@@ -183,13 +181,6 @@ data-tooltip="Start a New Day">
       </div>
       </div>
 
-
-
-
-
-
-
-
   <div className="dock node"
   data-tooltip="Your Ikigai"
   onMouseOver={props.changeIkigai}>
@@ -237,6 +228,7 @@ data-tooltip="Start a New Day">
     icon={faGripLinesVertical}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityOne})`}}
       data-tooltip="Objective #1"
       onMouseOver={props.changeObjOne}>
     <FontAwesomeIcon
@@ -245,6 +237,7 @@ data-tooltip="Start a New Day">
     icon={fa1}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTwo})`}}
       data-tooltip="Objective #2"
       onMouseOver={props.changeObjTwo}>
     <FontAwesomeIcon
@@ -253,6 +246,7 @@ data-tooltip="Start a New Day">
     icon={fa2}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityThree})`}}
       data-tooltip="Objective #3"
       onMouseOver={props.changeObjThree}>
     <FontAwesomeIcon
@@ -261,6 +255,7 @@ data-tooltip="Start a New Day">
     icon={fa3}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityFour})`}}
       data-tooltip="Objective #4"
       onMouseOver={props.changeObjFour}>
     <FontAwesomeIcon
@@ -268,7 +263,9 @@ data-tooltip="Start a New Day">
     className="icon"
     icon={fa4}/>
       </div>
-      <div className="dock node"
+      <div 
+      className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityFive})`}}
       data-tooltip="Objective #5"
       onMouseOver={props.changeObjFive}>
     <FontAwesomeIcon
@@ -277,6 +274,7 @@ data-tooltip="Start a New Day">
     icon={fa5}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacitySix})`}}
       data-tooltip="Objective #6"
       onMouseOver={props.changeObjSix}>
     <FontAwesomeIcon
@@ -285,6 +283,7 @@ data-tooltip="Start a New Day">
     icon={fa6}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacitySeven})`}}
       data-tooltip="Objective #7"
       onMouseOver={props.changeObjSeven}>
     <FontAwesomeIcon
@@ -293,6 +292,7 @@ data-tooltip="Start a New Day">
     icon={fa7}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityEight})`}}
       data-tooltip="Objective #8"
       onMouseOver={props.changeObjEight}>
     <FontAwesomeIcon
@@ -301,6 +301,7 @@ data-tooltip="Start a New Day">
     icon={fa8}/>
       </div>
       <div className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityNine})`}}
       data-tooltip="Objective #9"
       onMouseOver={props.changeObjNine}>
     <FontAwesomeIcon
@@ -308,7 +309,9 @@ data-tooltip="Start a New Day">
     className="icon"
     icon={fa9}/>
       </div>
-      <div id="finalnode" className="dock node"
+      <div id="finalnode" 
+      className="dock node"
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTen})`}}
       data-tooltip="Objective #10"
       onMouseOver={props.changeObjTen}>
     <FontAwesomeIcon
@@ -334,7 +337,7 @@ data-tooltip="Start a New Day">
     <FontAwesomeIcon
     id="saveIcon"
     className="icon"
-    icon={faPlusCircle}/>
+    icon={faFloppyDisk}/>
       </div>
 :
       <div className="dock node save"
