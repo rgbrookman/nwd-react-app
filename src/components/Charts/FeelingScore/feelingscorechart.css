@@ -10,11 +10,11 @@
 
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) { 
 
   #d3demo {
-    width: 100vw;
-    height: 40vh;
+    width: 95vw;
+    height: 50vh;
   }
   
   }

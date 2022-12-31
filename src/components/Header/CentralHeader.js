@@ -6,6 +6,8 @@ import { listWeeks } from '../../actions/weekActions';
 import { listDays } from '../../actions/dayActions';
 import Loading from '../Loading/Loading';
 import DropdownLoading from '../Loading/DropdownLoading';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarDays, faSignature, faLandmarkDome, faDna, faQuoteLeft, faBars  } from '@fortawesome/free-solid-svg-icons'
 import PageLoading from '../Loading/PageLoading';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { DropdownButton, Dropdown, Nav, Navbar, Container  } from 'react-bootstrap';
@@ -15,7 +17,7 @@ import { logout } from '../../actions/userActions';
 import * as d3 from 'd3';
 import './centralheader.css';
 
-const CentralHeader = () => {
+const CentralHeader = ( props ) => {
   const [homepage, setHomepage] = useState(window.location.href === '/' ? true : false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -141,11 +143,51 @@ const CentralHeader = () => {
           dayMapChange();
         });
 
+        const vw = Math.max(document.documentElement.clientWidth);
+        const vw2 = Math.max(window.innerWidth);
+        console.log(vw);
+        console.log(vw2);
+
+  
+
+        const [menuState, setMenuState] = useState('menu');
+        const [navMenu, setNavMenu] = useState('navMenu');
+        const [navDock, setNavDock] = useState('navDock');
+
+
+const openMenu = () => {
+  if (menuState === 'menu') {
+    setMenuState(menuState => 'menu active');
+    setNavMenu(navMenu => 'navMenu active');
+    setNavDock(navDock => 'navDock');
+  } else {
+    setMenuState(menuState => 'menu');
+    setNavMenu(navMenu => 'navMenu');
+    setNavDock(navDock => 'navDock');
+  }
+}
+
+const openDock = () => {
+  if (menuState === 'menu') {
+    setMenuState(menuState => 'menu active');
+    setNavDock(navDock => 'navDock active');
+    setNavMenu(navMenu => 'navMenu');
+  } else {
+    setMenuState(menuState => 'menu');
+    setNavDock(navDock => 'navDock');
+    setNavMenu(navMenu => 'navMenu');
+  }
+}
+
+
+
      
 
   return (
+   <>
+{
+  vw > 500 ? 
 
-<> 
 <nav className="nav central">
   <div className="box">
 
@@ -235,7 +277,204 @@ Array.isArray(days) === true ?
 
   </div>
 </nav>
+
+: 
+<>
+  <nav className="nav mobile">
+  { pageLoading ? <a id="nava"><DropdownLoading /></a> : !currentWindow.endsWith('/profile') ?
+<a id="nava" href="/profile">
+{userInfo?.name}
+<div id="underline"></div>
+</a>
+: 
+<a id="nava" onClick={logoutHandler}>
+  Log out
+<div id="underline"></div>
+</a>
+}
+    <img id="brand" src={greenlogo} height={24} onClick={openDock} />
+    <div onClick={openMenu}>
+      <FontAwesomeIcon
+        id="burgerMenu"
+        className="burger"
+        icon={faBars}/>
+    </div>
+  </nav>
+
+<div className={menuState}>
+<ul className={navDock}>
+  <li>
+    <div className="mobiledock row" onClick={props.changeName}>
+        <h1>Your Name</h1>
+      </div>
+      </li>
+      <li>      
+      <div className="mobiledock row" onClick={props.changeDOB}>
+        <FontAwesomeIcon
+          id="dobIcon"
+          className="icon"
+          icon={faCalendarDays}/>
+          <h1>Your Date of Birth</h1>
+      </div>
+      </li>
+
+      <li>
+      <div className="mobiledock row">
+ 
+      <h1 onClick={props.changeValuesOne}>1</h1>
+
+      <h1 onClick={props.changeValuesTwo}>2</h1>
+  
+      <h1 onClick={props.changeValuesThree}>3</h1>
+ 
+      <h1 onClick={props.changeValuesFour}>4</h1>
+ 
+      <h1 onClick={props.changeValuesFive}>5</h1>
+    </div>
+    </li>
+
+    <li>
+    <div className="mobiledock row">
+    <div>
+      <h1 onClick={props.changeVisionOne}>1</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeVisionTwo}>2</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeVisionThree}>3</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeVisionFour}>4</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeVisionFive}>5</h1>
+    </div>
+    </div>
+      </li>
+
+      <li>
+      <div className="mobiledock row" onClick={props.changeIkigai}>
+        <FontAwesomeIcon
+        id="ikigaiIcon"
+        className="icon"
+        icon={faDna}/>
+        <h1>Your Ikigai</h1>
+        </div>
+      </li>
+      <li>
+      <div 
+        className="mobiledock row"
+        onClick={props.changeQuote}>
+        <FontAwesomeIcon
+        id="quoteIcon"
+        className="icon"
+        icon={faQuoteLeft} />
+        <h1>Navigational Quote</h1>
+        </div>
+      </li>
+      <li>
+      <div 
+        className="mobiledock row"
+        onClick={props.changeMemory}>
+        <FontAwesomeIcon
+        id="memoryIcon"
+        className="icon"
+        icon={faLandmarkDome}/>
+        <h1>Memory</h1>
+        </div>
+      </li>
+      <li>
+    <div className="mobiledock row">
+    <div>
+      <h1 onClick={props.changeObjOne}>1</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjTwo}>2</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjThree}>3</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjFour}>4</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjFive}>5</h1>
+    </div>
+    </div>
+    <div className="mobiledock row">
+    <div>
+      <h1 onClick={props.changeObjSix}>6</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjSeven}>7</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjEight}>8</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjNine}>9</h1>
+    </div>
+    <div>
+      <h1 onClick={props.changeObjTen}>10</h1>
+    </div>
+    </div>
+      </li>
+</ul>
+
+  <ul className={navMenu}>
+  <li className="listItem">
+      { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+  <a id="nava" 
+  style={{color: 'whitesmoke'}}
+  href={'/'}>
+    Home
+    <div id="underline"></div></a>
+  }
+  </li>
+    <li className="listItem">
+      { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+  <a id="nava" 
+  style={{color: 'whitesmoke'}}
+  href={yearMap}>
+    Year
+    <div id="underline"></div></a>
+  }
+  </li>
+  <li className="listItem">
+  { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+    <a id="nava" 
+    style={{color: 'whitesmoke'}}
+  href={weeksMap}>
+    Week
+    <div id="underline"></div></a>
+    }
+  </li>
+  <li className="listItem">
+  { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+
+Array.isArray(days) === true ? 
+    <a id="nava" 
+    style={{color: 'whitesmoke'}}
+  href={daysMap}>
+    Today
+    <div id="underline"></div></a>
+    :
+    <a id="nava" 
+    style={{color: 'whitesmoke'}}
+    href={'/today'}>
+      Today
+      <div id="underline"></div></a>
+    }
+  </li>
+  </ul>
+</div>
 </>
+
+}
+</>
+
+
   )
 }
 
