@@ -1,14 +1,16 @@
+@media only screen and (min-width: 481px) and (max-width: 2000px) { 
 .loggedInMain {
   height: 90vh;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 #lpTutorial {
-  grid-column: 5 / auto;
-  grid-row: 4 / auto;
+  position: fixed;
+  top: 2%;
 }
 
 h2 {
@@ -16,19 +18,12 @@ h2 {
 }
 
 .side {
-  grid-column: 1 / 3;
-  grid-row: 2 / 18;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+display: none
 }
 
 .newsfeed {
   width: 100%;
   overflow: scroll;
-  grid-column: 5 / 15;
-  grid-row: 2 / 18;
   background-color: whitesmoke;
   box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   padding: 16px 20px; 
@@ -65,14 +60,14 @@ h2 {
 .headerIcon {
   height: 30px;
   width: 30px;
-    border-radius: 50%;
-    background-color: #004a22;
-    color: whitesmoke;
-    position: relative;
-    margin: 0 4px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border-radius: 50%;
+  background-color: #004a22;
+  color: whitesmoke;
+  position: relative;
+  margin: 0 4px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nameDate {
@@ -133,18 +128,7 @@ margin-bottom: 4px;
 }
 
 .community {
-  grid-column: 15 / 20;
-  grid-row: 2 / 10;
-  background-color: whitesmoke;
-  margin-left: 24px;
-  padding: 16px 20px; 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: start;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+display: none;
 }
 
 .insightRow {
@@ -163,8 +147,6 @@ margin-bottom: 4px;
   color: #004a22;
   border: 1px solid #004a22;
 }
-
-
 
 .loggedOutMain {
   height: 75vh;
@@ -314,3 +296,325 @@ font-family: 'Futura';
     border: 5px solid #004a22;
     margin-top: 12px;
   }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) { 
+  .loggedInMain {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+  }
+  
+  #lpTutorial {
+    grid-column: 5 / auto;
+    grid-row: 4 / auto;
+  }
+  
+  h2 {
+    color: #004a22;
+  }
+  
+  .side {
+    grid-column: 1 / 3;
+    grid-row: 2 / 18;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .newsfeed {
+    width: 100%;
+    overflow: scroll;
+    grid-column: 5 / 15;
+    grid-row: 2 / 18;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    padding: 16px 20px; 
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+  }
+  
+  .newsitem {
+    margin: 4px 0;
+  }
+  
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  
+  .title span {
+    font-size: 10px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .headerIcon {
+    height: 30px;
+    width: 30px;
+      border-radius: 50%;
+      background-color: #004a22;
+      color: whitesmoke;
+      position: relative;
+      margin: 0 4px 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .nameDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 3px;
+  }
+  
+  .nameDate h6 {
+    margin: 0;
+    padding: 4px 0 0 0;
+    font-size: 12px;
+  }
+  
+  .nameDate span {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  
+  
+  .quote, 
+  .insight,
+  .blog, 
+  .video,
+  .podcast,
+  .picture {
+  height: auto; 
+  width: 100%;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4px;
+  }
+  
+  .quote span, 
+  .insight p,
+  .blog span, 
+  .blog a, 
+  .video span,
+  .podcast span {
+    margin-top: 4px;
+    margin-left: 12px;
+    text-decoration: none;
+    color:#004a22;
+  }
+  
+  .dividingLine {
+    width: 100%;
+    border-top: 3px solid #004a22;
+  }
+  
+  .dividingLineThin {
+    width: 75%;
+    border-top: 5px solid rgba(0, 74, 35, 1);
+  }
+  
+  .community {
+    grid-column: 15 / 20;
+    grid-row: 2 / 10;
+    background-color: whitesmoke;
+    margin-left: 24px;
+    padding: 16px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  }
+  
+  .insightRow {
+    max-height: 4rem;
+    width: 100%;
+    padding: 4px;
+    background-color: #004a22;
+    border-radius: 5px; 
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .insightRow:hover {
+    background-color: whitesmoke;
+    color: #004a22;
+    border: 1px solid #004a22;
+  }
+  
+  
+  
+  .loggedOutMain {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  .pC {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #pcHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .pro, 
+  .con {
+    width: 50%;
+  }
+  
+  .featuredIn {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .lp {
+    font-weight: 500;
+  }
+  
+  .tile.left .hidden {
+    display: none;
+  }
+  
+  /* Mobile Landing Page */ 
+  
+  .landingPage.mobile {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .landingPage.mobile h1 {
+  font-family: 'Futura';
+  }
+  
+  .landingPage.mobile a {
+    font-family: 'Futura';
+    color: #004a22;
+    }
+  
+    /* Animation */ 
+  
+    .main {
+      height:auto;
+      width:100%;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .main h1 {
+      margin-bottom: 24px;
+      font-family: 'Futura';
+      font-weight: 700;
+    }
+    
+    .part {
+      font-family: 'Futura';
+      font-size: clamp(2vw, 3.5vw, 4vw);
+      font-weight: 700;
+      height: 4rem;
+      display: flex;
+      align-items: center;
+    }
+      .part.one {
+    margin-right: 8px;
+    }
+        .part.three{
+    margin-left: 8px;
+    }
+    
+    .part.two {
+      display: flex;
+      flex-direction: column;
+        position: relative;
+      overflow: hidden; 
+      text-align: center;
+      height: 4rem;
+        background-color: #004a22;
+      color: #e3e3e3;
+      padding: 15px 10px;
+    }
+    
+    .part.two span {
+        height: 4rem;
+        font-family: 'Futura';
+      line-height: 6rem;
+      position: relative;
+      top: -1rem;
+      margin: 0 8px;
+      animation: slide 15s ease-in-out infinite alternate; 
+    }
+    
+    @keyframes slide {
+      0%{
+        top: 8rem;
+      }
+      5%{
+        top:-1.8rem;
+      }
+      20%{
+        top: -6.3rem;    
+      }
+      35%{
+        top: -10rem;
+      }
+      50%{
+        top: -14rem;
+      }
+      65%{
+        top: -18rem;
+      }
+        80%{
+        top: -22rem;
+      }
+    }
+  
+    .newsFeedPlayer {
+      width: 560px; 
+      height: 315px;
+      top: 20%;
+      left: 25%;
+      z-index: 25;
+      border-radius: 5px;
+      border: 5px solid #004a22;
+      margin-top: 12px;
+    }
+
+
+}

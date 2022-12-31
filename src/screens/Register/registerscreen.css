@@ -1,3 +1,5 @@
+@media only screen and (min-width: 481px) and (max-width: 2000px) { 
+
 /* Register */
 #registerScreen {
   height: 75vh;
@@ -37,3 +39,28 @@ text-align: start;
   box-sizing: border-box;
 }
 
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) { 
+  #registerScreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .registerContainer {
+    height: auto;
+    width: 100%;
+    padding: 16px 20px; 
+    border-radius: 5px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+}

@@ -18,7 +18,6 @@ import CentralHeader from '../../components/Header/CentralHeader';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import FullDock from '../../components/Dock/FullDock';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
-import CreateDayScreenMobile from './CreateDayScreenMobile';
 import './dayscreens.css';
 
 export default function CreateDayScreen({ history, props }) {
@@ -91,7 +90,6 @@ const [classState, setClassState]= useState('journal outer');
 // Dock State
 const [cursorState, setCursorState] = useState('');
 const [cursorDisplayState, setCursorDisplayState] = useState(true);
-const [mobFrameDisplayState, setMobFrameDisplayState] = useState('mobFrame inactive');
 const [tutorialState, setTutorialState] = useState('tutorial');
 const [fontState, setFontState] = useState();
 
@@ -392,8 +390,6 @@ const fontResizer = () => {
   }
 }
 
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-
 
 useEffect(()=> {
   loadingTimeout();
@@ -402,11 +398,10 @@ useEffect(()=> {
 
 
   return (
-
     <>
        <Helmet>
-          <title>Create | Today</title>
-        </Helmet>
+                      <title>Create | Today</title>
+                  </Helmet>
     <MouseTooltip
           visible={cursorDisplayState}
           offsetX={15}
@@ -415,36 +410,11 @@ useEffect(()=> {
         >
         <h1 className="sickTooltip" style={{ fontSize: `${fontState}px`}}>{cursorState}</h1>
         </MouseTooltip>
- <CentralHeader 
- changeName={cursorChangeName}
- changeDOB={cursorChangeDOB}
- changeValuesOne={cursorChangeValuesOne} 
- changeValuesTwo={cursorChangeValuesTwo} 
- changeValuesThree={cursorChangeValuesThree} 
- changeValuesFour={cursorChangeValuesFour} 
- changeValuesFive={cursorChangeValuesFive} 
- changeVisionOne={cursorChangeVisionOne} 
- changeVisionTwo={cursorChangeVisionTwo} 
- changeVisionThree={cursorChangeVisionThree} 
- changeVisionFour={cursorChangeVisionFour} 
- changeVisionFive={cursorChangeVisionFive} 
- changeIkigai={cursorChangeIkigai} 
- changeQuote={cursorChangeQuote} 
- changeMemory={cursorChangeMemory} 
- changeObjOne={cursorChangeObjOne}
- changeObjTwo={cursorChangeObjTwo}
- changeObjThree={cursorChangeObjThree}
- changeObjFour={cursorChangeObjFour}
- changeObjFive={cursorChangeObjFive}
- changeObjSix={cursorChangeObjSix}
- changeObjSeven={cursorChangeObjSeven}
- changeObjEight={cursorChangeObjEight}
- changeObjNine={cursorChangeObjNine}
- changeObjTen={cursorChangeObjTen}/>
+ <CentralHeader />
   
   <form onSubmit={submitHandler}>
 
-  <main className="createday container">
+  <main className="createday container mobile">
   
   { pageLoading ? <TileLoading /> : 
     <>
@@ -455,7 +425,7 @@ useEffect(()=> {
         src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
 </iframe>
     </div>
-    <div className="tile left">
+    <div className="tile left mobile">
       <div className="dateRow">
         <label for="loggedDate">Diary Entry Date:</label>
         { pageLoading && !logDate ? <></> : 
@@ -519,12 +489,11 @@ onChange={(e) => setStartScore(e.target.value)}
     placeholder="I am pleased to live in my mind and body today because..."
     onChange={(e) => setMindBody(e.target.value)}
     />
-   </div>
-   <div className={mobFrameDisplayState}>
-   <h1 className="sickTooltip" style={{ fontSize: `${fontState}px`}}>{cursorState}</h1>
+   <hr></hr>
+
    </div>
 
-  <div className="tile centre">
+  <div className="tile mobile centre">
     <div className="momentRow">
           <textarea
               className="formInput moment"
@@ -635,7 +604,7 @@ onChange={(e) => setMomentFiveScore(e.target.value)}
 /> 
            
   </div>
-  <div className="tile right">
+  <div className="tile left mobile">
   {/* <h6 className="statement starter">The memories from today that will capture it forever <input className="formInput" type="text" placeholder="..."></input></h6> */}
   { rememberToday ? <label for="rememberToday" className="statement starter">I am pleased to live in my mind and body today because </label> : <></>}
    <textarea
@@ -687,39 +656,39 @@ onChange={(e) => setEndScore(e.target.value)}
 </form>
 <footer className="dock footer">
 <FullDock 
-  openClose={stateChanger} 
-  hideOverlay={cursorDisplayHide}
-  changeName={cursorChangeName}
-  changeDOB={cursorChangeDOB}
-  changeValuesOne={cursorChangeValuesOne} 
-  changeValuesTwo={cursorChangeValuesTwo} 
-  changeValuesThree={cursorChangeValuesThree} 
-  changeValuesFour={cursorChangeValuesFour} 
-  changeValuesFive={cursorChangeValuesFive} 
-  changeVisionOne={cursorChangeVisionOne} 
-  changeVisionTwo={cursorChangeVisionTwo} 
-  changeVisionThree={cursorChangeVisionThree} 
-  changeVisionFour={cursorChangeVisionFour} 
-  changeVisionFive={cursorChangeVisionFive} 
-  changeIkigai={cursorChangeIkigai} 
-  changeQuote={cursorChangeQuote} 
-  changeMemory={cursorChangeMemory} 
-  changeObjOne={cursorChangeObjOne}
-  changeObjTwo={cursorChangeObjTwo}
-  changeObjThree={cursorChangeObjThree}
-  changeObjFour={cursorChangeObjFour}
-  changeObjFive={cursorChangeObjFive}
-  changeObjSix={cursorChangeObjSix}
-  changeObjSeven={cursorChangeObjSeven}
-  changeObjEight={cursorChangeObjEight}
-  changeObjNine={cursorChangeObjNine}
-  changeObjTen={cursorChangeObjTen}
-  submitDay={submitHandler}
-  showTutorial={showTutorial}
+openClose={stateChanger} 
+hideOverlay={cursorDisplayHide}
+changeName={cursorChangeName}
+changeDOB={cursorChangeDOB}
+changeValuesOne={cursorChangeValuesOne} 
+changeValuesTwo={cursorChangeValuesTwo} 
+changeValuesThree={cursorChangeValuesThree} 
+changeValuesFour={cursorChangeValuesFour} 
+changeValuesFive={cursorChangeValuesFive} 
+changeVisionOne={cursorChangeVisionOne} 
+changeVisionTwo={cursorChangeVisionTwo} 
+changeVisionThree={cursorChangeVisionThree} 
+changeVisionFour={cursorChangeVisionFour} 
+changeVisionFive={cursorChangeVisionFive} 
+changeIkigai={cursorChangeIkigai} 
+changeQuote={cursorChangeQuote} 
+changeMemory={cursorChangeMemory} 
+changeObjOne={cursorChangeObjOne}
+changeObjTwo={cursorChangeObjTwo}
+changeObjThree={cursorChangeObjThree}
+changeObjFour={cursorChangeObjFour}
+changeObjFive={cursorChangeObjFive}
+changeObjSix={cursorChangeObjSix}
+changeObjSeven={cursorChangeObjSeven}
+changeObjEight={cursorChangeObjEight}
+changeObjNine={cursorChangeObjNine}
+changeObjTen={cursorChangeObjTen}
+submitDay={submitHandler}
+showTutorial={showTutorial}
 />
 </footer>
 
        
-      </>
+    </>
   );
 }

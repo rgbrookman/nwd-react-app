@@ -258,7 +258,7 @@ useEffect(()=> {
           offsetY={10}
           zIndex={1000}
         >
-        <h1 className="sickTooltip">We will be introducing different experiences to help you with each box across 2023 so keep an eye out!</h1>
+        <h1 className="sickTooltip"></h1>
         </MouseTooltip>
 <form onChange={updateHandler}>
 <main className='yearContainer'>

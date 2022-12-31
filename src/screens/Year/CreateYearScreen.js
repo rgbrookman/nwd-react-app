@@ -155,8 +155,8 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
    toggleOverlay={cursorDisplayToggle}
    saveYear={submitHandler}
    showTutorial={showTutorial} />
-    <div id="yeartest">
-      
+
+    <div id="yeartest"> 
       <div className="yeartile yn">
       { yourName ? <label for="yourName" className="statement starter">My Name is... </label> : <></>}
              <textarea

@@ -140,7 +140,7 @@ color: "red",
   setKickOff(kickOff => true);
 }}>
   <span>Testing your Knowledge:</span>
-  <h1>The Real Quiz</h1>
+  <h1>The Final Quiz</h1>
   <span><strong>Click Anywhere to Start</strong></span>
 </motion.div>
 
@@ -164,8 +164,6 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<img src={realquiz} width="65%" />
-
 </div>
 </div>
 <div className="buttonRow">

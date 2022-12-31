@@ -151,8 +151,6 @@ useEffect(()=> {
    { userInfo ? 
        <>
 
-
-    
            <CentralHeader />
    <main className="loggedInMain">
    
@@ -405,7 +403,6 @@ useEffect(()=> {
    </>
    
    : 
-   vw > 600 ? 
    <>
        <CentralHeaderLP />
 <main className="loggedOutMain ">
@@ -421,53 +418,16 @@ useEffect(()=> {
   </div>
   <div class="part three">has never been better.</div>
 </div>
-{/* <div className="tile left">
 
-<h1>Simple</h1>
-<p>NWD takes the simple principles of a paper mindfulness journal but makes them work harder for your joy and growth.</p>
-
-         </div>
-
-        <div className="tile centre">
-        <h1>Smart</h1>
-        <p>NWD hosts unique experiences and advice that make it easy to do hard thinking about your own life and mind</p>
-        </div>
-        <div className="tile right">
-        <h1>Safe</h1>
-        <p>Your journal inputs and all of your other data is encrypted as well as never segmented, shared or sold. Only you can see and use it.</p>
-</div> */}
 
 </main>
-{/* <section className="featuredIn">
-  <span>A Few Thoughts from Current Users</span>
-</section>
-<section className="currentlyHiring">
-  <span>We are currently recruiting for the following positions: </span>
-</section>             */}
+
 
 
 <ClassicFooter />
 </>
-: 
-<>
-<main className="landingPage mobile">
-  <h1>App coming soon to mobile</h1>
-  <a href={'https://www.nowasteddays.org/'}>Sign up to Mailing List</a>
-  <a href={'https://www.instagram.com/nowasteddays/'}>Follow NWD on Instagram</a>
-</main>
+}
 </>
 
-
-
-   
-   
-   }
-
-
-     
-  
-    
-  
-  </>
   );
 }

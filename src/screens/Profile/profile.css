@@ -1,3 +1,4 @@
+@media only screen and (min-width: 481px) and (max-width: 2000px) { 
 .mainProfileScreen {
   height: 75vh;
   width: 100%;
@@ -162,4 +163,174 @@ margin-bottom: 2px;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 6px;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) { 
+  .mainProfileScreen {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container.profile {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 16px 20px; 
+    color: #004a22;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    text-align: start;
+  }
+  
+  .container.payc {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 16px 20px; 
+    color: #004a22;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    text-align: start;
+  }
+  
+  .payc.message {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .payc.selector {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .updateProfileButton,
+  .sendButton {
+    background-color:#004a22;
+    color: whitesmoke;
+    font-family: 'Futura';
+    border: 1px solid #004a22;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 6px 0px 0 0px;
+  }
+  
+  .updateProfileButton a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  
+  .coffee {
+    margin-top: 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .coffee a {
+    color:#004a22;
+  }
+  
+  .container.name label,
+  .container.email label,
+  .container.password label,
+  .container.confirmPassword label {
+    justify-content: flex-end;
+    margin-right: 12px;
+    color: #004a22;
+    font-size: 0.8em;
+  }
+  
+  .quoteTextText {
+    font-family: 'Futura';
+    color: #004a22;
+    font-size: 2.5em;
+  }
+  
+  .quoteTextAuthor {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color: whitesmoke;
+    font-size: 0.8em;
+  }
+  
+  .profileButtonDiv {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .textInput {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+    width: 100%;
+    border-style: solid;
+    border: 1px solid #004a22;
+    outline-color: #004a22;
+  }
+  
+  .textInput:hover,
+  .textInput:focus
+   {
+    border: 1px solid #004a22;
+    box-shadow: none;
+  }
+  
+  .container.contact {
+    min-height: 388px;
+    min-width: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding: 16px 20px; 
+    color: #004a22;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    text-align: start;
+  }
+  
+  .container.contact label{
+  margin-bottom: 2px;
+  }
+  
+  .container.contact input,
+  .container.contact select,
+  .container.contact textarea
+   {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+    width: 100%;
+    border-style: solid;
+    border: 1px solid #004a22;
+    outline-color: #004a22;
+    padding: 6px;
+    border-radius: 5px;
+    }
+  
+  
+  
+  .sender.row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 6px;
+  }
 }

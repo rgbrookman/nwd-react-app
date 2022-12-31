@@ -163,8 +163,6 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
     <main className="viewinsight container">
     { pageLoading && !days ? <TileLoading /> :
  <>
-<div className="tileLeftOuter">
-
     <div className="tile left">
       <div className="dateRow">
       <label for="dp">Diary Entry Date:</label>
@@ -196,7 +194,8 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
           />
                 )}
       <hr></hr>
-         <label htmlFor="thankYou" className="statement starter">Today, I would like to say thank you to</label> 
+         <label htmlFor="thankYou" className="statement starter">
+          Today, I would like to say thank you to</label> 
          { days && days.filter(day => day.logDate.slice(0,10) == datePicker).map(day =>
 
 
@@ -242,10 +241,9 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
          <hr></hr>
    
          </div>
-         </div>
+       
 
   
-{/* Center Tiles */}
 
 
    <div className="tabContainer">
@@ -262,17 +260,20 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
       <>
       { days && days.filter(day => day.logDate.slice(0,10) == datePicker).map(day =>
         <div key={day._id}className="momentRow">
+          
+        
           <textarea
           className="formInput moment"
           wrap="soft"
           autoComplete="off"
-          value={day.momentOne}
+          value={day.momentOne ? day.momentOne : "No Moment One that Day"}
           placeholder="No Moment One that Day"
           />
           <h5>{day.momentOneScore}</h5>
+          
+          
           </div>
           )}
-          
         <hr></hr>
         { days && days.filter(day => day.logDate.slice(0,10) == datePicker).map(day =>
         <div key={day._id} className="momentRow">
@@ -426,7 +427,7 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
 </>
 }
 </main>
-}
+
 
        
     </>

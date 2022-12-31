@@ -204,6 +204,8 @@ useEffect(() => {
       }
     }
 
+    const vw = Math.max(document.documentElement.clientWidth);
+
   return (
 <>
 <Helmet>
@@ -230,27 +232,37 @@ useEffect(() => {
         src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
 </iframe>
     </div>
-<HideDock 
-   toggleOverlay={cursorDisplayToggle}
-   saveWeek={submitHandler} 
-   showTutorial={showTutorial} />
+    { vw > 480 ? 
+    <>
+  <HideDock 
+  toggleOverlay={cursorDisplayToggle}
+  saveWeek={submitHandler} 
+  showTutorial={showTutorial} />
 
-   <MidDock 
-   changeName={cursorChangeName}
-   changeDOB={cursorChangeDOB}
-   changeValuesOne={cursorChangeValuesOne} 
-   changeValuesTwo={cursorChangeValuesTwo} 
-   changeValuesThree={cursorChangeValuesThree} 
-   changeValuesFour={cursorChangeValuesFour} 
-   changeValuesFive={cursorChangeValuesFive} 
-   changeVisionOne={cursorChangeVisionOne} 
-   changeVisionTwo={cursorChangeVisionTwo} 
-   changeVisionThree={cursorChangeVisionThree} 
-   changeVisionFour={cursorChangeVisionFour} 
-   changeVisionFive={cursorChangeVisionFive} 
-   changeIkigai={cursorChangeIkigai} 
-   changeQuote={cursorChangeQuote} 
-   changeMemory={cursorChangeMemory} />
+  <MidDock 
+  changeName={cursorChangeName}
+  changeDOB={cursorChangeDOB}
+  changeValuesOne={cursorChangeValuesOne} 
+  changeValuesTwo={cursorChangeValuesTwo} 
+  changeValuesThree={cursorChangeValuesThree} 
+  changeValuesFour={cursorChangeValuesFour} 
+  changeValuesFive={cursorChangeValuesFive} 
+  changeVisionOne={cursorChangeVisionOne} 
+  changeVisionTwo={cursorChangeVisionTwo} 
+  changeVisionThree={cursorChangeVisionThree} 
+  changeVisionFour={cursorChangeVisionFour} 
+  changeVisionFive={cursorChangeVisionFive} 
+  changeIkigai={cursorChangeIkigai} 
+  changeQuote={cursorChangeQuote} 
+  changeMemory={cursorChangeMemory} />
+  </>
+  :
+<></>
+
+
+  
+  }
+
   <div id="weektest">
     <div class="weekTile">
     { objectiveOne_text ? <label for="objOne" className="statement starter">#1 </label> : <></>}
