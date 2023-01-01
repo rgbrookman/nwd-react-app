@@ -406,7 +406,7 @@ useEffect(()=> {
    : 
    <>
        <CentralHeaderLP />
-<main className="loggedOutMain ">
+<main className="loggedOutMain">
 <div class="main">
   <div class="part one">Organising your</div>
   <div class="part two">

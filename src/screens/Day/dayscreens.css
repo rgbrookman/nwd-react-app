@@ -209,7 +209,7 @@
         .dateRow {
           width: 100%;
           display: flex;
-          justify-content: flex-start;
+          justify-content: space-between;
           align-items: center;
           margin-bottom: 16px;
           padding-bottom: 10px;
@@ -225,8 +225,8 @@
           -webkit-transition: .2s;
           transition: opacity .2s;
           margin-top: 12px;
-          background: whitesmoke;
-          outline: 0.5px solid rgba(0,0,0,0.2);
+          background-color: #e2dfcf;
+          outline: 0.5px solid rgba(0, 74, 35,0.5);
         }
         
         

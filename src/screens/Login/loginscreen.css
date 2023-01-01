@@ -69,16 +69,17 @@ text-align: start;
 
 @media only screen and (min-width: 0px) and (max-width: 480px) { 
   #login-screen {
-    height: 100vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   
   .loginContainer {
+    margin-top: 24px;
     height: auto;
-    width: 100%;
+    width: 95%;
     padding: 16px 20px; 
     border-radius: 5px;
     background-color: whitesmoke;
@@ -89,4 +90,14 @@ text-align: start;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
+  .loginButton {
+    background-color:#004a22;
+    color: whitesmoke;
+    font-family: 'Futura';
+    border: 1px solid #004a22;
+    padding: 2px 3px;
+    border-radius: 5px;
+  }
+  
 }

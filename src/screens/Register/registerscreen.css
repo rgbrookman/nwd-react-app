@@ -43,16 +43,16 @@ text-align: start;
 
 @media only screen and (min-width: 0px) and (max-width: 480px) { 
   #registerScreen {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   
   .registerContainer {
     height: auto;
-    width: 100%;
+    width: 95%;
     padding: 16px 20px; 
     border-radius: 5px;
     background-color: whitesmoke;
@@ -62,5 +62,20 @@ text-align: start;
     text-align: start;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
     z-index: 1;
+  }
+
+  .registerButton {
+    background-color:#004a22;
+    color: whitesmoke;
+    font-family: 'Futura';
+    border: 1px solid #004a22;
+    padding: 2px 3px;
+    border-radius: 5px;
+  }
+
+  .formInput.register::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color: #004a22;
   }
 }

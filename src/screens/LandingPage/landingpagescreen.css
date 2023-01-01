@@ -531,82 +531,75 @@ font-family: 'Futura';
     }
   
     /* Animation */ 
-  
-    .main {
-      height:auto;
-      width:100%;  
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
     
-    .main h1 {
-      margin-bottom: 24px;
-      font-family: 'Futura';
-      font-weight: 700;
-    }
-    
-    .part {
-      font-family: 'Futura';
-      font-size: clamp(2vw, 3.5vw, 4vw);
-      font-weight: 700;
-      height: 4rem;
-      display: flex;
-      align-items: center;
-    }
-      .part.one {
-    margin-right: 8px;
-    }
-        .part.three{
-    margin-left: 8px;
-    }
-    
-    .part.two {
-      display: flex;
-      flex-direction: column;
-        position: relative;
-      overflow: hidden; 
-      text-align: center;
-      height: 4rem;
-        background-color: #004a22;
-      color: #e3e3e3;
-      padding: 15px 10px;
-    }
-    
-    .part.two span {
-        height: 4rem;
-        font-family: 'Futura';
-      line-height: 6rem;
-      position: relative;
-      top: -1rem;
-      margin: 0 8px;
-      animation: slide 15s ease-in-out infinite alternate; 
-    }
-    
-    @keyframes slide {
-      0%{
-        top: 8rem;
-      }
-      5%{
-        top:-1.8rem;
-      }
-      20%{
-        top: -6.3rem;    
-      }
-      35%{
-        top: -10rem;
-      }
-      50%{
-        top: -14rem;
-      }
-      65%{
-        top: -18rem;
-      }
-        80%{
-        top: -22rem;
-      }
-    }
+  .main {
+  height:auto;
+  width:100%;  
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+  h1 {
+    font-size: clamp(9vw, 14vw, 19vw);
+    margin-bottom: 24px;
+  }
+
+.part {
+  font-family: 'Futura';
+  font-size: 28px;
+  font-weight: 700;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  color: #004a22;
+}
+
+.part.two {
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+  height: 3.5rem;
+  background-color: #004a22;
+}
+
+.part.two span {
+    height: 3.5rem;
+color: whitesmoke;
+  line-height: 4rem;
+  font-family: 'Futura';
+  font-weight: 500;
+  width: auto;  
+  position: relative;
+  top: -1rem;
+  margin: 0px 8px 0px 8px;
+  animation: slide 15s ease-in-out infinite; 
+}
+
+@keyframes slide {
+  0%{
+    top:-0.3rem;
+  }
+  15%{
+    top: -4rem;    
+  }
+  30%{
+    top: -7rem;
+  }
+  45%{
+    top: -10.8rem;
+  }
+  60%{
+    top: -14.1rem;
+  }
+    75%{
+    top: -17.7rem;
+  }
+}
   
     .newsFeedPlayer {
       width: 85vw; 

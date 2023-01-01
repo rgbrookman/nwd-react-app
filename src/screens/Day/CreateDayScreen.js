@@ -12,7 +12,7 @@ import Loading from '../../components/Loading/Loading';
 import TileLoading from '../../components/Loading/TileLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenToSquare, faEraser, faCircleCheck, faQuestion  } from '@fortawesome/free-solid-svg-icons'
+import { faFloppyDisk, faPenToSquare, faEraser, faCircleCheck, faQuestion  } from '@fortawesome/free-solid-svg-icons'
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import CentralHeader from '../../components/Header/CentralHeader';
 import Sidebar from '../../components/Sidebar/Sidebar';
@@ -457,6 +457,7 @@ useEffect(()=> {
     </div>
     <div className="tile left">
       <div className="dateRow">
+        <div>
         <label for="loggedDate">Diary Entry Date:</label>
         { pageLoading && !logDate ? <></> : 
         <input
@@ -467,6 +468,18 @@ useEffect(()=> {
           required
           />
         }
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'row'}}>
+
+<div className="dock node save"
+   onClick={submitHandler}>
+    <FontAwesomeIcon
+    id="saveIcon"
+    className="icon"
+    icon={faFloppyDisk}/>
+      </div>
+      </div>
+        
       </div>
 {/* <hr className="horizontalLine" /> */}
   <div className="momentRow">

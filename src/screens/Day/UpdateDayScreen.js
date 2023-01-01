@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 import TileLoading from '../../components/Loading/TileLoading';
 import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenToSquare, faEraser, faCircleCheck, faQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarPlus, faFloppyDisk, faPenToSquare, faEraser, faCircleCheck, faQuestion } from '@fortawesome/free-solid-svg-icons'
 import axios from "axios";
 import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -428,6 +428,7 @@ const showState = {
 <>
 <div className="tile left">
 <div className="dateRow">
+  <div>
   <label htmlFor="loggedDate">Diary Entry Date:</label>
   { pageLoading && !logDate ? <></> : 
 <input
@@ -438,6 +439,27 @@ onChange={(e) => setLogDate(e.target.value)}
 required
 />
 }
+</div>
+<div style={{ display: 'flex', flexDirection: 'row'}}>
+
+<div className="dock node">
+    <a href="/today">
+      <FontAwesomeIcon
+        id="openIcon"
+        className="icon"
+        icon={faCalendarPlus}/>
+    </a>
+  </div>
+
+
+<div className="dock node save"
+   onClick={updateHandler}>
+    <FontAwesomeIcon
+    id="saveIcon"
+    className="icon"
+    icon={faFloppyDisk}/>
+      </div>
+      </div>
 </div>
 {/* <hr className="horizontalLine" /> */}
   <div className="momentRow">
