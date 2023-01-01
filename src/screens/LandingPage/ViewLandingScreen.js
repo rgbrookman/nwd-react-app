@@ -390,13 +390,14 @@ useEffect(()=> {
       </div> */}
       
     </section>
-
+<div className="hideDockLP">
    <HideDock 
     toggleOverlay={cursorDisplayToggle}
     flashIcon={dayIconMethod}
     iconState={dayIconState} 
     showTutorial={showTutorial}
    />
+   </div>
    </main>
                  
    
