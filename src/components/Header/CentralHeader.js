@@ -302,52 +302,66 @@ Array.isArray(days) === true ?
   </nav>
 
 <div className={menuState}>
+
 <ul className={navDock}>
+
   <li>
     <div className="mobiledock row" onClick={props.changeName}>
-        <h1>Your Name</h1>
+      <div className="dockElement">
+      <h1>Your Name</h1>
       </div>
-      </li>
-      <li>      
-      <div className="mobiledock row" onClick={props.changeDOB}>
-        <FontAwesomeIcon
-          id="dobIcon"
-          className="icon"
-          icon={faCalendarDays}/>
-          <h1>Your Date of Birth</h1>
-      </div>
-      </li>
+    </div>
+  </li>
 
-      <li>
-      <div className="mobiledock row">
- 
+  <li>      
+    <div className="mobiledock row" onClick={props.changeDOB}>
+    <div className="dockElement">
+      <h1>Your Date of Birth</h1>
+      </div>
+    </div>
+  </li>
+
+  <li>
+    <div className="mobiledock row">
+
+      <div className="dockElement values">
       <h1 onClick={props.changeValuesOne}>1</h1>
+      </div>
 
+      <div className="dockElement values">
       <h1 onClick={props.changeValuesTwo}>2</h1>
-  
+      </div>
+
+      <div className="dockElement values">
       <h1 onClick={props.changeValuesThree}>3</h1>
- 
+      </div>
+
+      <div className="dockElement values">
       <h1 onClick={props.changeValuesFour}>4</h1>
- 
+      </div>
+
+      <div className="dockElement values">
       <h1 onClick={props.changeValuesFive}>5</h1>
+      </div>
+      
     </div>
     </li>
 
     <li>
     <div className="mobiledock row">
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeVisionOne}>1</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeVisionTwo}>2</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeVisionThree}>3</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeVisionFour}>4</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeVisionFive}>5</h1>
     </div>
     </div>
@@ -355,10 +369,6 @@ Array.isArray(days) === true ?
 
       <li>
       <div className="mobiledock row" onClick={props.changeIkigai}>
-        <FontAwesomeIcon
-        id="ikigaiIcon"
-        className="icon"
-        icon={faDna}/>
         <h1>Your Ikigai</h1>
         </div>
       </li>
@@ -366,10 +376,6 @@ Array.isArray(days) === true ?
       <div 
         className="mobiledock row"
         onClick={props.changeQuote}>
-        <FontAwesomeIcon
-        id="quoteIcon"
-        className="icon"
-        icon={faQuoteLeft} />
         <h1>Navigational Quote</h1>
         </div>
       </li>
@@ -377,45 +383,41 @@ Array.isArray(days) === true ?
       <div 
         className="mobiledock row"
         onClick={props.changeMemory}>
-        <FontAwesomeIcon
-        id="memoryIcon"
-        className="icon"
-        icon={faLandmarkDome}/>
         <h1>Memory</h1>
         </div>
       </li>
       <li>
-    <div className="mobiledock row">
-    <div>
+    <div className="mobiledock row values">
+    <div className="dockElement values">
       <h1 onClick={props.changeObjOne}>1</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjTwo}>2</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjThree}>3</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjFour}>4</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjFive}>5</h1>
     </div>
     </div>
     <div className="mobiledock row">
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjSix}>6</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjSeven}>7</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjEight}>8</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjNine}>9</h1>
     </div>
-    <div>
+    <div className="dockElement values">
       <h1 onClick={props.changeObjTen}>10</h1>
     </div>
     </div>

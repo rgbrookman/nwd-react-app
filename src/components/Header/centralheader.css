@@ -1,3 +1,4 @@
+/* Full Width */
 .nav.central {
   height: 10vh;
   width: 100%;
@@ -76,6 +77,7 @@ nav .box {
   left: 0px;
 }
 
+/* Mobile View */
 .menu {
   opacity: 0;
   height: 0;
@@ -98,6 +100,7 @@ nav .box {
 
 .navMenu li {
   list-style: none;
+  margin: 6px 0;
 }
 
 .listItem a {
@@ -119,8 +122,7 @@ nav .box {
   width: 100%;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
 }
 
 .mobiledock.row {
@@ -128,9 +130,23 @@ nav .box {
   width: 100%; 
   background-color: whitesmoke;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
+}
+
+.dockElement {
+  width: auto;
+}
+
+.dockElement.values {
+  margin: 2px;
+  border-radius: 50%;
+  background-color: #004a22; 
+}
+
+.dockElement.values h1 {
+  color: whitesmoke;
 }
 
 
