@@ -8,8 +8,10 @@ import Loading from '../Loading/Loading';
 import DropdownLoading from '../Loading/DropdownLoading';
 import PageLoading from '../Loading/PageLoading';
 import PropagateLoader from "react-spinners/PropagateLoader";
-import { DropdownButton, Dropdown, Nav, Navbar, Container  } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarDays, faSignature, faLandmarkDome, faDna, faQuoteLeft, faBars  } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../NWD_Logo_White.png';
+import greenlogo from '../../green_logo.png';
 import { logout } from '../../actions/userActions';
 import * as d3 from 'd3';
 import './centralheader.css';
@@ -72,14 +74,47 @@ const CentralHeader = () => {
           }, 10000)
         }
 
+        const [menuState, setMenuState] = useState('menu');
+        const [navMenu, setNavMenu] = useState('navMenu');
+        const [navDock, setNavDock] = useState('navDock');
+
+        const openMenu = () => {
+          if (menuState === 'menu') {
+            setMenuState(menuState => 'menu active');
+            setNavMenu(navMenu => 'navMenu active');
+            setNavDock(navDock => 'navDock');
+          } else {
+            setMenuState(menuState => 'menu');
+            setNavMenu(navMenu => 'navMenu');
+            setNavDock(navDock => 'navDock');
+          }
+        }
+        
+        const openDock = () => {
+          if (menuState === 'menu') {
+            setMenuState(menuState => 'menu active');
+            setNavDock(navDock => 'navDock active');
+            setNavMenu(navMenu => 'navMenu');
+          } else {
+            setMenuState(menuState => 'menu');
+            setNavDock(navDock => 'navDock');
+            setNavMenu(navMenu => 'navMenu');
+          }
+        }
+
+        const vw = Math.max(document.documentElement.clientWidth);
+
         useEffect(()=> {
           loadingTimeout();
         })
 
   return (
 
-<> 
-<nav className="nav central">
+
+    <> 
+{ vw > 500 ? 
+ <>
+  <nav className="nav central">
   <div className="box">
   <a id="nava" 
   href={'https://www.nowasteddays.org/'} target="_blank">
@@ -107,6 +142,56 @@ const CentralHeader = () => {
   <div id="underline"></div></a>
   </div>
 </nav>
+</>
+:
+<>
+  <nav className="nav mobile">
+  { pageLoading ? <a id="nava"><DropdownLoading /></a> :
+<a id="nava" onClick={logoutHandler} href={'www.nowasteddays.org'} target="_blank">
+  NoWastedDays
+<div id="underline"></div>
+</a>
+}
+    <img id="brand" src={greenlogo} height={24} onClick={openDock} />
+    <div onClick={openMenu}>
+      <FontAwesomeIcon
+        id="burgerMenu"
+        className="burger"
+        icon={faBars}/>
+    </div>
+  </nav>
+
+<div className={menuState}>
+
+  <ul className={navMenu}>
+    <li className="listItem">
+      { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+  <a id="nava" 
+  style={{color: 'whitesmoke'}}
+  href={'/login'}>
+    Login
+    <div id="underline"></div></a>
+  }
+  </li>
+    <li className="listItem">
+      { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+  <a id="nava" 
+  style={{color: 'whitesmoke'}}
+  href={'/register'}>
+    Register
+    <div id="underline"></div></a>
+  }
+  </li>
+
+  </ul>
+</div>
+</>
+
+
+
+
+
+}
 </>
   )
 }

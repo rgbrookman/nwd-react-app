@@ -41,9 +41,13 @@ const ClassicFooter = () => {
         margin: 0,
     };
 
+    const vw = Math.max(document.documentElement.clientWidth);
+
   return (
     <>
-    <footer>
+    { vw > 500 ?
+  
+ <footer>
     <div className="footer-main">
         <div className="footerColumn product">
             <h4 className="footer-header">The App</h4>
@@ -72,6 +76,45 @@ const ClassicFooter = () => {
     </div>
     </div>
 </footer>
+
+
+    : 
+   
+    <footer>
+    <div className="footer-main">
+        <div className="footerColumn product">
+            <h4 className="footer-header">The App</h4>
+            <a id="fava" className="footer-link" href="/register">Get Started<div id="funderline"></div></a>
+            <a id="fava" className="footer-link" style={{opacity: "0.3"}}>Case Studies<div id="funderline"></div></a>
+        </div>
+        <div className="footerColumn company">
+            <h4 className="footer-header">The Team</h4>
+            <a id="fava" className="footer-link" href="https://www.nowasteddays.org/about" target="_blank">About Us<div id="funderline"></div></a>
+            <a id="fava" className="footer-link" style={{opacity: "0.3"}}>Careers<div id="funderline"></div></a>
+        </div>
+        <div className="footerColumn about">
+            <h4 className="footer-header">Need Some Help?</h4>
+            <a id="fava" className="footer-link" href="https://www.nowasteddays.org/faqs">Frequently Asked Questions<div id="funderline"></div></a>
+            <a id="fava" className="footer-link" href="/contact">Report a Bug<div id="funderline"></div></a>
+        </div>
+    </div>
+    <div className="footer-main">
+        <div className="footerColumn contact">
+            <h4 className="footer-header">Contact</h4>
+            <a id="fava" className="footer-link" href="/contact">Ask a Question<div id="funderline"></div></a>
+            <a id="fava" className="footer-link" href="/contact">Media Request<div id="funderline"></div></a>
+        </div>
+         <div className="copyright">
+          <img src={logo} height={30} alt={"logo"}></img>
+        <hr/>
+        <p>Copyright 2022 - All Rights Reserved</p>
+    </div>
+    </div>
+</footer>
+
+    
+    }
+   
 
 
 

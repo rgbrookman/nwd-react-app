@@ -2,12 +2,12 @@
 .footer-main {
   height: 25vh;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: flex-start;
       background-color: transparent;
       border: 0.5px solid #004a22;
       background-color: #004a22;
-      padding: 24px 0 0 0;
+      padding: 24px 12px 0 12px;
   }
   
   .footerColumn {

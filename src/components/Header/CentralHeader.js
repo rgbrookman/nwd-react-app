@@ -6,8 +6,8 @@ import { listWeeks } from '../../actions/weekActions';
 import { listDays } from '../../actions/dayActions';
 import Loading from '../Loading/Loading';
 import DropdownLoading from '../Loading/DropdownLoading';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarDays, faSignature, faLandmarkDome, faDna, faQuoteLeft, faBars  } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarDays, faSignature, faLandmarkDome, faDna, faQuoteLeft, faBars  } from '@fortawesome/free-solid-svg-icons';
 import PageLoading from '../Loading/PageLoading';
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { DropdownButton, Dropdown, Nav, Navbar, Container  } from 'react-bootstrap';
@@ -302,13 +302,12 @@ Array.isArray(days) === true ?
   </nav>
 
 <div className={menuState}>
-
-<ul className={navDock}>
+  <ul className={navDock}>
 
   <li>
     <div className="mobiledock row" onClick={props.changeName}>
       <div className="dockElement">
-      <h1>Your Name</h1>
+      <h2>Your Name</h2>
       </div>
     </div>
   </li>
@@ -316,109 +315,109 @@ Array.isArray(days) === true ?
   <li>      
     <div className="mobiledock row" onClick={props.changeDOB}>
     <div className="dockElement">
-      <h1>Your Date of Birth</h1>
+      <h2>Your Date of Birth</h2>
       </div>
     </div>
   </li>
 
   <li>
-    <div className="mobiledock row">
+    <div className="mobiledock row values">
 
       <div className="dockElement values">
-      <h1 onClick={props.changeValuesOne}>1</h1>
+      <h2 onClick={props.changeValuesOne}>1</h2>
       </div>
 
       <div className="dockElement values">
-      <h1 onClick={props.changeValuesTwo}>2</h1>
+      <h2 onClick={props.changeValuesTwo}>2</h2>
       </div>
 
       <div className="dockElement values">
-      <h1 onClick={props.changeValuesThree}>3</h1>
+      <h2 onClick={props.changeValuesThree}>3</h2>
       </div>
 
       <div className="dockElement values">
-      <h1 onClick={props.changeValuesFour}>4</h1>
+      <h2 onClick={props.changeValuesFour}>4</h2>
       </div>
 
       <div className="dockElement values">
-      <h1 onClick={props.changeValuesFive}>5</h1>
+      <h2 onClick={props.changeValuesFive}>5</h2>
       </div>
       
     </div>
     </li>
 
     <li>
-    <div className="mobiledock row">
+    <div className="mobiledock row values">
     <div className="dockElement values">
-      <h1 onClick={props.changeVisionOne}>1</h1>
+      <h2 onClick={props.changeVisionOne}>1</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeVisionTwo}>2</h1>
+      <h2 onClick={props.changeVisionTwo}>2</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeVisionThree}>3</h1>
+      <h2 onClick={props.changeVisionThree}>3</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeVisionFour}>4</h1>
+      <h2 onClick={props.changeVisionFour}>4</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeVisionFive}>5</h1>
+      <h2 onClick={props.changeVisionFive}>5</h2>
     </div>
     </div>
       </li>
 
       <li>
       <div className="mobiledock row" onClick={props.changeIkigai}>
-        <h1>Your Ikigai</h1>
+        <h2>Your Ikigai</h2>
         </div>
       </li>
       <li>
       <div 
         className="mobiledock row"
         onClick={props.changeQuote}>
-        <h1>Navigational Quote</h1>
+        <h2>Navigational Quote</h2>
         </div>
       </li>
       <li>
       <div 
         className="mobiledock row"
         onClick={props.changeMemory}>
-        <h1>Memory</h1>
+        <h2>Memory</h2>
         </div>
       </li>
       <li>
     <div className="mobiledock row values">
     <div className="dockElement values">
-      <h1 onClick={props.changeObjOne}>1</h1>
+      <h2 onClick={props.changeObjOne}>1</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeObjTwo}>2</h1>
+      <h2 onClick={props.changeObjTwo}>2</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeObjThree}>3</h1>
+      <h2 onClick={props.changeObjThree}>3</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeObjFour}>4</h1>
+      <h2 onClick={props.changeObjFour}>4</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeObjFive}>5</h1>
+      <h2 onClick={props.changeObjFive}>5</h2>
     </div>
     </div>
-    <div className="mobiledock row">
+    <div className="mobiledock row values">
     <div className="dockElement values">
-      <h1 onClick={props.changeObjSix}>6</h1>
-    </div>
-    <div className="dockElement values">
-      <h1 onClick={props.changeObjSeven}>7</h1>
+      <h2 onClick={props.changeObjSix}>6</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeObjEight}>8</h1>
+      <h2 onClick={props.changeObjSeven}>7</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeObjNine}>9</h1>
+      <h2 onClick={props.changeObjEight}>8</h2>
     </div>
     <div className="dockElement values">
-      <h1 onClick={props.changeObjTen}>10</h1>
+      <h2 onClick={props.changeObjNine}>9</h2>
+    </div>
+    <div className="dockElement values">
+      <h2 onClick={props.changeObjTen}>10</h2>
     </div>
     </div>
       </li>
@@ -431,7 +430,7 @@ Array.isArray(days) === true ?
   style={{color: 'whitesmoke'}}
   href={'/'}>
     Home
-    <div id="underline"></div></a>
+    </a>
   }
   </li>
     <li className="listItem">
@@ -440,7 +439,7 @@ Array.isArray(days) === true ?
   style={{color: 'whitesmoke'}}
   href={yearMap}>
     Year
-    <div id="underline"></div></a>
+   </a>
   }
   </li>
   <li className="listItem">
@@ -449,7 +448,7 @@ Array.isArray(days) === true ?
     style={{color: 'whitesmoke'}}
   href={weeksMap}>
     Week
-    <div id="underline"></div></a>
+   </a>
     }
   </li>
   <li className="listItem">
@@ -460,13 +459,13 @@ Array.isArray(days) === true ?
     style={{color: 'whitesmoke'}}
   href={daysMap}>
     Today
-    <div id="underline"></div></a>
+   </a>
     :
     <a id="nava" 
     style={{color: 'whitesmoke'}}
     href={'/today'}>
       Today
-      <div id="underline"></div></a>
+      </a>
     }
   </li>
   </ul>

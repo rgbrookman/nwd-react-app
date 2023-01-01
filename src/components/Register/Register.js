@@ -94,7 +94,7 @@ export default function RegisterTest({ history }) {
     />
     <br></br>
     <br></br>
-    <button id="button-4" className="submit button" type="submit">
+    <button className="registerButton" type="submit">
         <div id="underline"></div>
         <a>Register</a>
       </button>

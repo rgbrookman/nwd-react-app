@@ -78,7 +78,7 @@ const override = {
           />
  <br></br>
  <br></br>
-        <button id="button-4" className="submit button" type="submit">
+        <button className="loginButton" type="submit">
         <div id="underline"></div>
         <a >Submit!</a>
       </button>
