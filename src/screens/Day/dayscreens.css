@@ -171,10 +171,9 @@
         .tile {
           height: auto;
           width: 100%;
-          margin-top: 12px;
           border-radius: 5px;
           padding: 16px 20px; 
-          margin: 12px 0;
+          margin: 6px 0;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -186,9 +185,9 @@
 
 
         .mobileSaveDiv {
-display: flex; 
-flex-direction: row; 
-justify-content: flex-end;
+          display: flex; 
+          flex-direction: row; 
+          justify-content: flex-end;
         }
 
         .mobFrame {
@@ -309,12 +308,18 @@ justify-content: flex-end;
           display: none;
         }
 
+        .mobileTooltip {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          text-align: center;
+        }
+
 
         .mobileDockRow {
           height: 20vh;
           width: 100%;
-          display: flex;
-          justify-content: flex-start;
         }
    
         }

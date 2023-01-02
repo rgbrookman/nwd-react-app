@@ -588,6 +588,7 @@ onChange={(e) => setStartScore(e.target.value)}
   changeIkigai={cursorChangeIkigai} 
   changeQuote={cursorChangeQuote} 
   changeMemory={cursorChangeMemory} 
+  hideOverlay={cursorDisplayHide}
 />
 </div>
 

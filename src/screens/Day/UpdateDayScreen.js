@@ -555,6 +555,7 @@ onChange={(e) => setStartScore(e.target.value)}
   changeIkigai={cursorChangeIkigai} 
   changeQuote={cursorChangeQuote} 
   changeMemory={cursorChangeMemory} 
+  hideOverlay={cursorDisplayHide}
 />
 </div>
   <div className="tile centre">
@@ -671,7 +672,6 @@ onChange={(e) => setMomentFiveScore(e.target.value)}
 
   <div className="mobileDockRow">
    <FullDockMobileTwo 
-   hideOverlay={cursorDisplayHide}
   changeObjOne={cursorChangeObjOne}
   changeObjTwo={cursorChangeObjTwo}
   changeObjThree={cursorChangeObjThree}
