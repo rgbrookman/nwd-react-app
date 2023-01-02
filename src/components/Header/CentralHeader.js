@@ -292,7 +292,9 @@ Array.isArray(days) === true ?
 <div id="underline"></div>
 </a>
 }
-    <img id="brand" src={greenlogo} height={24} onClick={openDock} />
+<a href={'/'}>
+    <img id="brand" src={greenlogo} height={24} />
+    </a>
     <div onClick={openMenu}>
       <FontAwesomeIcon
         id="burgerMenu"
@@ -302,137 +304,9 @@ Array.isArray(days) === true ?
   </nav>
 
 <div className={menuState}>
-  <ul className={navDock}>
-
-  <li>
-    <div className="mobiledock row" onClick={props.changeName}>
-      <div className="dockElement">
-      <h2>Your Name</h2>
-      </div>
-    </div>
-  </li>
-
-  <li>      
-    <div className="mobiledock row" onClick={props.changeDOB}>
-    <div className="dockElement">
-      <h2>Your Date of Birth</h2>
-      </div>
-    </div>
-  </li>
-
-  <li>
-    <div className="mobiledock row values">
-
-      <div className="dockElement values">
-      <h2 onClick={props.changeValuesOne}>1</h2>
-      </div>
-
-      <div className="dockElement values">
-      <h2 onClick={props.changeValuesTwo}>2</h2>
-      </div>
-
-      <div className="dockElement values">
-      <h2 onClick={props.changeValuesThree}>3</h2>
-      </div>
-
-      <div className="dockElement values">
-      <h2 onClick={props.changeValuesFour}>4</h2>
-      </div>
-
-      <div className="dockElement values">
-      <h2 onClick={props.changeValuesFive}>5</h2>
-      </div>
-      
-    </div>
-    </li>
-
-    <li>
-    <div className="mobiledock row values">
-    <div className="dockElement values">
-      <h2 onClick={props.changeVisionOne}>1</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeVisionTwo}>2</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeVisionThree}>3</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeVisionFour}>4</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeVisionFive}>5</h2>
-    </div>
-    </div>
-      </li>
-
-      <li>
-      <div className="mobiledock row" onClick={props.changeIkigai}>
-        <h2>Your Ikigai</h2>
-        </div>
-      </li>
-      <li>
-      <div 
-        className="mobiledock row"
-        onClick={props.changeQuote}>
-        <h2>Navigational Quote</h2>
-        </div>
-      </li>
-      <li>
-      <div 
-        className="mobiledock row"
-        onClick={props.changeMemory}>
-        <h2>Memory</h2>
-        </div>
-      </li>
-      <li>
-    <div className="mobiledock row values">
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjOne}>1</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjTwo}>2</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjThree}>3</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjFour}>4</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjFive}>5</h2>
-    </div>
-    </div>
-    <div className="mobiledock row values">
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjSix}>6</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjSeven}>7</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjEight}>8</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjNine}>9</h2>
-    </div>
-    <div className="dockElement values">
-      <h2 onClick={props.changeObjTen}>10</h2>
-    </div>
-    </div>
-      </li>
-</ul>
-
+ 
   <ul className={navMenu}>
-  <li className="listItem">
-      { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
-  <a id="nava" 
-  style={{color: 'whitesmoke'}}
-  href={'/'}>
-    Home
-    </a>
-  }
-  </li>
+
     <li className="listItem">
       { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
   <a id="nava" 
@@ -467,6 +341,15 @@ Array.isArray(days) === true ?
       Today
       </a>
     }
+  </li>
+  <li className="listItem">
+      { pageLoading ? <a id="nava"><DropdownLoading /></a> : 
+  <a id="nava" 
+  style={{color: 'whitesmoke'}}
+  href={'/insight'}>
+    Insight
+    </a>
+  }
   </li>
   </ul>
 </div>
