@@ -255,11 +255,11 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
       className="tabs"
     >
       <Tab className="tab" eventKey="diary" title="Diary">
-            <div className="tile centre">
+            <div id="insightTileCentre" className="tile centre">
 
       <>
       { days && days.filter(day => day.logDate.slice(0,10) == datePicker).map(day =>
-        <div key={day._id}className="momentRow">
+        <div key={day._id} className="momentRow">
           
         
           <textarea

@@ -231,8 +231,7 @@ useEffect(() => {
         </MouseTooltip>
 <Form onSubmit={submitHandler}>
 <main className="weekContainer">
-  { pageLoading ? <TileLoading /> : 
-  <>
+
 <div className={tutorialState}>
     <iframe className='tutorialPlayer'
     width="560" height="315"
@@ -273,6 +272,8 @@ useEffect(() => {
   }
 
   <div id="weektest">
+    { pageLoading ? <TileLoading /> : 
+    <>
   <motion.div 
     className="mobileTooltip"
     animate={cursorDisplayState ? "show" : "hide"}
@@ -509,9 +510,11 @@ useEffect(() => {
       onChange={(e) => setObjectiveTen_score(e.target.value)} 
       />
 </div>
+
+    
+ </>   
+}
   </div>
-  </>
-  }
 </main>
 </Form>
 </>

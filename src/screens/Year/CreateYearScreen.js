@@ -140,8 +140,9 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
         
     <form onSubmit={submitHandler}>
     <main className='yearContainer'>
-      { pageLoading ? <TileLoading /> : 
       <>
+     
+      
 
     <div className={tutorialState}>
     <iframe className='tutorialPlayer'
@@ -157,6 +158,8 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
    showTutorial={showTutorial} />
 
     <div id="yeartest"> 
+    { pageLoading ? <TileLoading /> : 
+    <>
       <div className="yeartile yn">
       { yourName ? <label for="yourName" className="statement starter">My Name is... </label> : <></>}
              <textarea
@@ -432,10 +435,12 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
            
               />
       </div>
+      </>
+        }
       </div>
 
       </>
-      }
+    
       
     </main>
     </form>

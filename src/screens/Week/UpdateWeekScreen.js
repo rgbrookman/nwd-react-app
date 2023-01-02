@@ -340,8 +340,6 @@ const target = useRef(null);
         </div>
 <form onChange={updateHandler}>
 <main className="weekContainer">
-  { pageLoading ? <TileLoading /> : 
-    <>
 <div className={tutorialState}>
     <iframe className='tutorialPlayer'
     width="560" height="315"
@@ -371,7 +369,8 @@ const target = useRef(null);
    changeQuote={cursorChangeQuote} 
    changeMemory={cursorChangeMemory} />
   <div id="weektest">
-
+    { pageLoading ? <TileLoading /> : 
+<>
     <motion.div 
     className="mobileTooltip"
     animate={cursorDisplayState ? "show" : "hide"}
@@ -609,9 +608,10 @@ const target = useRef(null);
       onChange={(e) => setObjectiveTen_score(e.target.value)} 
       />
 </div>
+
+</>
+}
   </div>
-  </>
-  }
 </main>
 </form>
 </>

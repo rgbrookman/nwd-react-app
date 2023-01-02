@@ -231,6 +231,7 @@ useEffect(()=> {
               but you can be masterful at enjoying every activity; an art made possible through a present and playful mind.
               Some activities you will do excellently, achieving levels of skill or reward as a result; and this quote applies there. 
               There is nothing wrong - in isolation - with being grateful for and proud with your high skill. You are achieving what you can. 
+              <br></br>
               Similarly, that thing you are vulnerable enough to try in a group for the first time; you know you may be the worst at it, you know you may fail in some way; that applies too.
               Being vulnerable and calm is a hugely motivating force in the lives of others. It empowers them to do the same, and feel less anxious. Also, there is a quiet joy that comes from doing any task, 
               if only you are quiet and calm enough to find it. Washing up, pickling cabbage, arm knitting, changing the sheets, presenting to a large group, scoring a goal, 
