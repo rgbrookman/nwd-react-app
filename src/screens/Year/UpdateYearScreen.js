@@ -276,8 +276,6 @@ useEffect(()=> {
           wrap="soft"
           autoComplete="off"
           value={yourName}
-          rows={15}
-          
           placeholder="My name is...."
           onChange={(e) => setYourName(e.target.value)}
           />
@@ -327,8 +325,6 @@ useEffect(()=> {
           autoComplete="off"
           value={myValues_1_Text}
           placeholder="Value Description"
-          rows={15}
-          cols={12}
           onChange={(e) => setMyValues_1_Text(e.target.value)}
           />
           </div>
@@ -350,8 +346,6 @@ useEffect(()=> {
           wrap="soft"
           autoComplete="off"
           value={myValues_2_Text}
-          rows={15}
-          cols={12}
           placeholder="Value Description"
           onChange={(e) => setMyValues_2_Text(e.target.value)}
           />
@@ -374,8 +368,6 @@ useEffect(()=> {
           wrap="soft"
           autoComplete="off"
           value={myValues_3_Text}
-          rows={15}
-          cols={12}
           placeholder="Value Description"
           onChange={(e) => setMyValues_3_Text(e.target.value)}
           />
@@ -398,8 +390,6 @@ useEffect(()=> {
           wrap="soft"
           autoComplete="off"
           value={myValues_4_Text}
-          rows={15}
-          cols={12}
           placeholder="Value Description"
           onChange={(e) => setMyValues_4_Text(e.target.value)}
           />
@@ -422,8 +412,6 @@ useEffect(()=> {
           wrap="soft"
           autoComplete="off"
           value={myValues_5_Text}
-          rows={15}
-          cols={12}
           placeholder="Value Description"
           onChange={(e) => setMyValues_5_Text(e.target.value)}
           />
@@ -443,8 +431,6 @@ useEffect(()=> {
           autoComplete="off"
           value={myVision_1}
           placeholder="Vision #1"
-          rows={15}
-          cols={12}
           onChange={(e) => setMyVision_1(e.target.value)}
           />
           </div>
@@ -458,8 +444,6 @@ useEffect(()=> {
           autoComplete="off"
           value={myVision_2}
           placeholder="Vision #2"
-          rows={15}
-          cols={12}
           onChange={(e) => setMyVision_2(e.target.value)}
           />
           </div>
@@ -473,8 +457,6 @@ useEffect(()=> {
           autoComplete="off"
           value={myVision_3}
           placeholder="Vision #3"
-          rows={15}
-          cols={12}
           onChange={(e) => setMyVision_3(e.target.value)}
           />
           </div>
@@ -488,8 +470,6 @@ useEffect(()=> {
           autoComplete="off"
           value={myVision_4}
           placeholder="Vision #4"
-          rows={15}
-          cols={12}
           onChange={(e) => setMyVision_4(e.target.value)}
           />
           </div>
@@ -503,8 +483,6 @@ useEffect(()=> {
           autoComplete="off"
           value={myVision_5}
           placeholder="Vision #5"
-          rows={15}
-          cols={12}
           onChange={(e) => setMyVision_5(e.target.value)}
           />
           </div>

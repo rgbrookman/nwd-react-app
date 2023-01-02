@@ -106,7 +106,7 @@
   }
 
   .weekTile {
-    height: 100%;
+    height: auto;
     width: 95%;
     padding: 16px 20px; 
     border-radius: 5px;
@@ -120,6 +120,11 @@
     align-items: flex-start;
     text-align: start;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  }
+
+  .formInput.week {
+    height: fit-content;
+    overflow: auto;
   }
   
   .formInput.week::placeholder {
@@ -138,12 +143,23 @@
   #objEight,
   #objNine,
   #objTen {
-    height: 100%;
+    height: max-content;
     width: 100%;
+    overflow: auto;
   }
 
   .dock.footer {
     display: none;
+  }
+
+  .mouseTooltip {
+    display: none;
+  }
+
+  .mobileTooltip {
+    margin-top: 12px;
+    width: 95%;
+    text-align: center;
   }
 
 }

@@ -440,9 +440,10 @@ required
 />
 }
 </div>
-<div style={{ display: 'flex', flexDirection: 'row'}}>
+<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
 
-<div className="dock node">
+<div className="dock node"
+style={{marginRight: '4px'}}>
     <a href="/today">
       <FontAwesomeIcon
         id="openIcon"

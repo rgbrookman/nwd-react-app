@@ -328,6 +328,7 @@ const target = useRef(null);
   <title>Update | Year</title>
 </Helmet>
 <CentralHeader />
+<div className="mouseTooltip">
 <MouseTooltip
     visible={cursorDisplayState}
     offsetX={15}
@@ -336,6 +337,7 @@ const target = useRef(null);
   >
         <h1 className="sickTooltip">{cursorState}</h1>
         </MouseTooltip>
+        </div>
 <form onChange={updateHandler}>
 <main className="weekContainer">
   { pageLoading ? <TileLoading /> : 
@@ -369,6 +371,14 @@ const target = useRef(null);
    changeQuote={cursorChangeQuote} 
    changeMemory={cursorChangeMemory} />
   <div id="weektest">
+
+    <motion.div 
+    className="mobileTooltip"
+    animate={cursorDisplayState ? "show" : "hide"}
+    variants={showHideState}>
+        <h4 className="sickTooltip">{cursorState}</h4>
+        </motion.div>
+ 
     <div class="weekTile">
     { objectiveOne_text ? <label for="objOne" className="statement starter">#1 </label> : <></>}
     <textarea
@@ -376,10 +386,10 @@ const target = useRef(null);
       className="formInput week"
       wrap="soft"
       autoComplete="off"
-      value={objectiveOne_text}
-      placeholder="Objective #1"
       rows={8}
       cols={12}
+      value={objectiveOne_text}
+      placeholder="Objective #1"
       onChange={(e) => setObjectiveOne_text(e.target.value)}
           />
     <input

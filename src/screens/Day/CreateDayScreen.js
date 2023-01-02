@@ -17,6 +17,7 @@ import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import CentralHeader from '../../components/Header/CentralHeader';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import FullDock from '../../components/Dock/FullDock';
+import FullDockMobile from '../../components/Dock/FullDockMobile';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import CreateDayScreenMobile from './CreateDayScreenMobile';
 import './dayscreens.css';
@@ -215,6 +216,14 @@ const loadingTimeout = () => {
     setPageLoading(false)
   }, 3000)
 }
+const showHideState = {
+  hide: {
+    display: "none",
+  },
+  show: {
+    display: "block",
+  },
+}
 
 const stateChanger = () => {
   {classState == 'journal outer' ? setClassState(classState => 'journal outer is-flipped') : setClassState(classState => 'journal outer')}
@@ -407,6 +416,7 @@ useEffect(()=> {
        <Helmet>
           <title>Create | Today</title>
         </Helmet>
+        <div className="mouseTooltip">       
     <MouseTooltip
           visible={cursorDisplayState}
           offsetX={15}
@@ -415,6 +425,7 @@ useEffect(()=> {
         >
         <h1 className="sickTooltip" style={{ fontSize: `${fontState}px`}}>{cursorState}</h1>
         </MouseTooltip>
+        </div>
  <CentralHeader 
  changeName={cursorChangeName}
  changeDOB={cursorChangeDOB}
@@ -536,6 +547,46 @@ onChange={(e) => setStartScore(e.target.value)}
    <div className={mobFrameDisplayState}>
    <h1 className="sickTooltip" style={{ fontSize: `${fontState}px`}}>{cursorState}</h1>
    </div>
+   <motion.div 
+    className="mobileTooltip"
+    animate={cursorDisplayState ? "show" : "hide"}
+    variants={showHideState}>
+        <h4 className="sickTooltip">{cursorState}</h4>
+        </motion.div>
+        
+        <div className="mobileDockRow">
+   <FullDockMobile 
+  openClose={stateChanger} 
+  hideOverlay={cursorDisplayHide}
+  changeName={cursorChangeName}
+  changeDOB={cursorChangeDOB}
+  changeValuesOne={cursorChangeValuesOne} 
+  changeValuesTwo={cursorChangeValuesTwo} 
+  changeValuesThree={cursorChangeValuesThree} 
+  changeValuesFour={cursorChangeValuesFour} 
+  changeValuesFive={cursorChangeValuesFive} 
+  changeVisionOne={cursorChangeVisionOne} 
+  changeVisionTwo={cursorChangeVisionTwo} 
+  changeVisionThree={cursorChangeVisionThree} 
+  changeVisionFour={cursorChangeVisionFour} 
+  changeVisionFive={cursorChangeVisionFive} 
+  changeIkigai={cursorChangeIkigai} 
+  changeQuote={cursorChangeQuote} 
+  changeMemory={cursorChangeMemory} 
+  changeObjOne={cursorChangeObjOne}
+  changeObjTwo={cursorChangeObjTwo}
+  changeObjThree={cursorChangeObjThree}
+  changeObjFour={cursorChangeObjFour}
+  changeObjFive={cursorChangeObjFive}
+  changeObjSix={cursorChangeObjSix}
+  changeObjSeven={cursorChangeObjSeven}
+  changeObjEight={cursorChangeObjEight}
+  changeObjNine={cursorChangeObjNine}
+  changeObjTen={cursorChangeObjTen}
+  submitDay={submitHandler}
+  showTutorial={showTutorial}
+/>
+</div>
 
   <div className="tile centre">
     <div className="momentRow">

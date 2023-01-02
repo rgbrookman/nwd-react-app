@@ -157,6 +157,7 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) { 
+  
   .yearContainer {
     height: 100vh;
     width: 100%;
@@ -192,5 +193,79 @@
     z-index: 1;
   }
 
+  .formInput.year {
+    overflow: hidden;
+  }
+  
+  .formInput.year::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color: #004a22;
+  }
+  
+  #yeartilevalues,
+  #yeartilevision
+   {
+    height: 100%;
+    width: 95%;
+    background-color: whitesmoke;
+    padding: 16px 20px; 
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  }
+  
+  #yourName {
+    width: 100%;
+  }
 
+  .valuesDiv {
+    width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+    
+  #valuesOne,
+  #valuesTwo,
+  #valuesThree,
+  #valuesFour,
+  #valuesFive {
+    width: 100%;
+  }
+  
+  #myValuesOne,
+  #myValuesTwo,
+  #myValuesThree,
+  #myValuesFour,
+  #myValuesFive,
+  #memory,
+  #cont, 
+  #yourName
+   {
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+    
+  #visionOne,
+  #visionTwo,
+  #visionThree,
+  #visionFour,
+  #visionFive
+   {
+    width: 100%;
+  }
+  
+  #iki,
+  #cont,
+  #navQuote,
+  #memory {
+    width: 100%;
+  }
+
+  .yeartile.quote {
+    width: 95%;
+  }
+  
 }

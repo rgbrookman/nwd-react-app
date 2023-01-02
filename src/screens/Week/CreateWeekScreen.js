@@ -108,6 +108,15 @@ useEffect(() => {
     loadingTimeout();
   })
 
+  const showHideState = {
+    hide: {
+      display: "none",
+    },
+    show: {
+      display: "block",
+    },
+  }
+
   const cursorDisplayToggle = () => {
     setCursorDisplayState(cursorDisplayState => !cursorDisplayState);
     };
@@ -264,6 +273,12 @@ useEffect(() => {
   }
 
   <div id="weektest">
+  <motion.div 
+    className="mobileTooltip"
+    animate={cursorDisplayState ? "show" : "hide"}
+    variants={showHideState}>
+        <h4 className="sickTooltip">{cursorState}</h4>
+        </motion.div>
     <div class="weekTile">
     { objectiveOne_text ? <label for="objOne" className="statement starter">#1 </label> : <></>}
     <textarea
