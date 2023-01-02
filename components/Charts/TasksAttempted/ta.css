@@ -1,0 +1,17 @@
+@media screen and (min-width: 1201px) {
+
+  #d3demo2 {
+    width: 388px;
+    height: 388px;
+  }
+  
+  }
+  
+  @media screen and (max-width: 500px) {
+  
+    #d3demo2 {
+      width: 85vw;
+      height: 50vh;
+    }
+    
+    }

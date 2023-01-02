@@ -1,0 +1,131 @@
+.navbarHeader {
+  margin: 10px 12px 10px 12px;
+}
+
+.navSection {
+margin: 0 12px 0 12px;
+min-width: 60px;
+}
+
+.lastDayNudge {
+  font-size: 0.6em;
+  color: whitesmoke;
+}
+
+.inactive,
+#insightSelector:hover {
+  background-color: rgba(227, 226, 222, 0.8);
+  border-radius: 10px;
+  color: grey;
+} 
+
+/* Toggle */
+#yearDropdownToggle,
+#weekDropdownToggle
+{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: #004a22;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.navItem {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  color: #004a22;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.dropDownToggle
+{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: #004a22;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+#userDropdownToggle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: whitesmoke;
+  color: #004a22;
+  border: none;
+    box-shadow: none;
+}
+
+/* Menus */
+#yearDropdownMenu,
+#weekDropdownMenu,
+#userDropdownMenu {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: whitesmoke;
+  color: #004a22;
+  border: 1px solid #004a22;
+  padding: 5px;
+  box-shadow: 5px 5px #46A46 0.5;
+}
+
+/* Selectors */
+#viewSelector,
+#createSelector,
+.profileTabSelector {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #004a22;
+  border-radius: 5px;
+}
+
+/* Hover */
+.todaySelector:hover,
+.insightSelector:hover
+{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: #004a22;
+  color: whitesmoke;
+  border: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+#viewSelector:hover,
+#createSelector:hover,
+.profileTabSelector:hover {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: #004a22;
+  color: whitesmoke;
+  border: none;
+}

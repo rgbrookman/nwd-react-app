@@ -1,0 +1,315 @@
+@media only screen and (min-width: 481px) and (max-width: 2000px) { 
+.dock.container {
+    height: 8vh;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0%;
+    margin-bottom: 12px;
+  }
+  
+  .dock.node {
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    background-color: #004a22;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+  }
+
+#finalnode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dock.node:hover,
+  .dock.node:hover .dock.node .icon,
+  .mini.node:hover,
+  .mini.node:hover .mini.node .icon
+  {
+    transform: scale3d(1.1,1.1,1.1);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .dock.node:hover::before {
+    content: attr(data-tooltip);
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    height: auto;
+    width: auto;
+    padding: 5px;
+    margin: 6px;
+    position: absolute;
+    bottom: 48px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    white-space: nowrap;
+  }
+
+  .dock.separator {
+    height: 40px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: transports;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icon {
+    color: #fff;
+    transform: scale(1.2);
+  }
+
+  .separator {
+    color: #004a22;
+    transform: scale(0.9);
+  }
+
+  .dock.node.save:hover {
+    background-color: whitesmoke;
+    color: #004a22;
+  }
+
+  .dock.node.save:hover #saveIcon {
+    color: #004a22;
+  }
+
+  .dock.node.save:active,
+  .dock.node.save:focus,
+  .dock.node.save:visited {
+    background-color: #004a22;
+    border: 3px solid whitesmoke;
+  }
+
+  .dock.node.save:active #saveIcon,
+  .dock.node.save:focus #saveIcon,
+  .dock.node.save:visited #saveIcon {
+    color: #fff;
+  }
+
+  .dockNodeWrapper {
+    min-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    position: relative;
+    display: flex;
+    margin: 0 4px;
+    flex-direction: column;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mini.node.inactive {
+    display: none;
+    transition: all 1s linear;
+  }
+
+  .mini.node {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #004a22;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transition: all 0.1s ease-in-out;
+  }
+
+  #miniValuesIcon {
+    color: #fff;
+    transform: scale(0.6);
+  }
+
+  .nodeRow {
+    display: flex;
+    overflow: visible;
+    margin-bottom: 6px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) { 
+  .dock.container {
+    height: 50vh;
+    width: 20%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0%; 
+    right: 0%;
+    margin-bottom: 12px;
+    z-index: 25;
+  }
+
+  .mobiledock.container {
+    height: 12.5vh;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .mobiledock.container::-webkit-scrollbar {
+  display: none;
+}
+  
+  .dock.node {
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    background-color: #004a22;
+    position: relative;
+    margin: 4px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .mobiledock.node {
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    background-color: #004a22;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+  }
+
+#finalnode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dock.node:hover,
+  .dock.node:hover .dock.node .icon,
+  .mini.node:hover,
+  .mini.node:hover .mini.node .icon
+  {
+    transform: scale3d(1.1,1.1,1.1);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .dock.separator {
+    height: 40px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: transports;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .icon {
+    color: #fff;
+    transform: scale(1.2);
+  }
+
+  .separator {
+    color: #004a22;
+    transform: scale(0.9);
+  }
+
+  .dock.node.save:hover {
+    background-color: whitesmoke;
+    color: #004a22;
+  }
+
+  .dock.node.save:hover #saveIcon {
+    color: #004a22;
+  }
+
+  .dock.node.save:active,
+  .dock.node.save:focus,
+  .dock.node.save:visited {
+    background-color: #004a22;
+    border: 3px solid whitesmoke;
+  }
+
+  .dock.node.save:active #saveIcon,
+  .dock.node.save:focus #saveIcon,
+  .dock.node.save:visited #saveIcon {
+    color: #fff;
+  }
+
+  .dockNodeWrapper {
+    min-height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mini.node.inactive {
+    display: none;
+    transition: all 1s linear;
+  }
+
+  .mini.node {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #004a22;
+    position: relative;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    transition: all 0.1s ease-in-out;
+  }
+
+  #miniValuesIcon {
+    color: #fff;
+    transform: scale(0.6);
+  }
+
+  .nodeRow {
+    display: flex;
+    overflow: visible;
+    margin-bottom: 6px;
+  }
+
+
+}
