@@ -23,7 +23,13 @@
   border-radius: 5px;
   background-color: #004a22;
   color:whitesmoke;
-  transform: scale(1.2);
+  transform: scale(1.5);
+}
+
+#brand {
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #004a22;
 }
 
 nav .box {

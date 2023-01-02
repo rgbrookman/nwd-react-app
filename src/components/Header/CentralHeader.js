@@ -293,9 +293,9 @@ Array.isArray(days) === true ?
 </a>
 }
 <a href={'/'}>
-    <img id="brand" src={greenlogo} height={24} />
+    <img id="brand" src={greenlogo} height={30} />
     </a>
-    <div onClick={openMenu}>
+    <div onClick={openMenu} style={{marginRight: '12px'}}>
       <FontAwesomeIcon
         id="burgerMenu"
         className="burger"

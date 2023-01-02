@@ -7,7 +7,7 @@ import { faPlusCircle, faFloppyDisk, faSignature, faCalendarDays, faCompassDraft
 import './fulldock.css';
 import formatISO9075 from 'date-fns/formatISO9075';
 
-export default function FullDockMobile ( props ) {
+export function FullDockMobileOne ( props ) {
   const [yourName, setYourName] = useState();
   const [valuesShowState, setValuesShowState] = useState('mini node inactive');
   const [visionShowState, setVisionShowState] = useState('mini node inactive');
@@ -43,22 +43,6 @@ export default function FullDockMobile ( props ) {
   return (
  
 <div className="mobiledock container">
-  <div className="mobiledock node" data-tooltip="Start a New Day">
-    <a href="/today">
-      <FontAwesomeIcon
-        id="openIcon"
-        className="icon"
-        icon={faCalendarPlus}/>
-    </a>
-  </div>
-
-      <div className="dock separator">
-    <FontAwesomeIcon
-    id="separatorIcon"
-    className="separator"
-    icon={faGripLinesVertical}/>
-      </div>
-
 
   <div className="mobiledock node"
   data-tooltip="Your Name"
@@ -124,7 +108,7 @@ export default function FullDockMobile ( props ) {
     icon={fa5}/>
       </div>
       </div>
-      <div className="dock node save"
+      <div className="mobiledock node"
   data-tooltip="Your Values"
   onClick={valuesShow}>
 
@@ -171,7 +155,7 @@ export default function FullDockMobile ( props ) {
 
   </div>
 
-  <div className="dock node save"
+  <div className="mobiledock node"
   data-tooltip="Your Vision"
   onClick={visionShow}>
   <FontAwesomeIcon
@@ -205,6 +189,7 @@ export default function FullDockMobile ( props ) {
     className="icon"
     icon={faLandmarkDome}/>
       </div>
+
       <div className="mobiledock node"
     data-tooltip="Hide Overlay"
    onMouseOver={props.hideOverlay}>
@@ -213,20 +198,48 @@ export default function FullDockMobile ( props ) {
     className="icon"
     icon={faEyeSlash}/>
       </div>
-      <div className="mobiledock node"
-    data-tooltip="Quick Tutorial"
-   onClick={props.showTutorial}>
-    <FontAwesomeIcon
-    id="questionIcon"
-    className="icon"
-    icon={faQuestion}/>
-      </div>
-      <div className="dock separator">
-    <FontAwesomeIcon
-    id="separatorIcon"
-    className="separator"
-    icon={faGripLinesVertical}/>
-      </div>
+  
+  </div>
+  )
+}
+
+export function FullDockMobileTwo ( props ) {
+  const [yourName, setYourName] = useState();
+  const [valuesShowState, setValuesShowState] = useState('mini node inactive');
+  const [visionShowState, setVisionShowState] = useState('mini node inactive');
+
+  const valuesShow = () => {
+    if(valuesShowState === 'mini node inactive'){
+      setValuesShowState(valuesShowState => 'mini node');
+      setVisionShowState(visionShowState => 'mini node inactive');
+    } else {
+      setValuesShowState(valuesShowState => 'mini node inactive');
+    }
+  }
+
+  const visionShow = () => {
+    if(visionShowState === 'mini node inactive'){
+      setVisionShowState(visionShowState => 'mini node');
+      setValuesShowState(valuesShowState => 'mini node inactive');
+    } else {
+      setVisionShowState(visionShowState => 'mini node inactive');
+    }
+  }
+
+  const valuesHide = () => {
+    setValuesShowState(valuesShowState => 'dock node inactive');
+  }
+
+  const visionHide = () => {
+    setVisionShowState(visionShowState => 'dock node inactive');
+  }
+
+  const currentWindow = window.location.href;
+
+  return (
+ 
+<div className="mobiledock container">
+
       <div className="mobiledock node"
       style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityOne})`}}
       data-tooltip="Objective #1"
@@ -324,34 +337,6 @@ export default function FullDockMobile ( props ) {
     className="icon"
     icon={fa0}/>
       </div>
-      <div className="dock separator">
-    <FontAwesomeIcon
-    id="separatorIcon"
-    className="separator"
-    icon={faGripLinesVertical}/>
-      </div>      
-    { currentWindow.endsWith('/today') ?
-      <div className="dock node save"
-    data-tooltip="Click to Save"
-   onClick={props.submitDay}>
-    <FontAwesomeIcon
-    id="saveIcon"
-    className="icon"
-    icon={faFloppyDisk}/>
-      </div>
-:
-      <div className="dock node save"
-    data-tooltip="Click to Save"
-   onClick={props.updateDay}>
-    <FontAwesomeIcon
-    id="saveIcon"
-    className="icon"
-    icon={faFloppyDisk}/>
-      </div>
-}
-
-
-
   </div>
 
   
