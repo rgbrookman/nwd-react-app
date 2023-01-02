@@ -11,6 +11,8 @@ import { ErrorMessage } from '../../components/Error/ErrorMessage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarPlus, faFloppyDisk, faPenToSquare, faEraser, faCircleCheck, faQuestion } from '@fortawesome/free-solid-svg-icons'
 import axios from "axios";
+import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { FullDockMobileOne, FullDockMobileTwo }  from '../../components/Dock/FullDockMobile';
 import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
 import './dayscreens.css';
@@ -282,6 +284,16 @@ const cursorDisplayHide = () => {
     {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
   };
   
+
+  const showHideState = {
+    hide: {
+      display: "none",
+    },
+    show: {
+      display: "block",
+    },
+  }
+
   const cursorChangeObjTwo = () => {
     setCursorState(cursorState => weeks && weeks
       .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1 )
@@ -409,6 +421,7 @@ const showState = {
         <Helmet>
           <title>Update | Today</title>
         </Helmet>
+        <div className="mouseTooltip"> 
     <MouseTooltip
     visible={cursorDisplayState}
     offsetX={15}
@@ -418,6 +431,7 @@ const showState = {
   <h1 className="sickTooltip">{cursorState}</h1>
 
   </MouseTooltip>
+  </div>
   <CentralHeader />
 
 <form onChange={updateHandler}>
@@ -440,7 +454,7 @@ required
 />
 }
 </div>
-<div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+<div className="mobileSaveDiv">
 
 <div className="dock node"
 style={{marginRight: '4px'}}>
@@ -517,6 +531,32 @@ onChange={(e) => setStartScore(e.target.value)}
 
    </div>
 
+   <motion.div 
+    className="mobileTooltip"
+    animate={cursorDisplayState ? "show" : "hide"}
+    variants={showHideState}>
+        <h4 className="sickTooltip">{cursorState}</h4>
+        </motion.div>
+        
+        <div className="mobileDockRow">
+   <FullDockMobileOne 
+  changeName={cursorChangeName}
+  changeDOB={cursorChangeDOB}
+  changeValuesOne={cursorChangeValuesOne} 
+  changeValuesTwo={cursorChangeValuesTwo} 
+  changeValuesThree={cursorChangeValuesThree} 
+  changeValuesFour={cursorChangeValuesFour} 
+  changeValuesFive={cursorChangeValuesFive} 
+  changeVisionOne={cursorChangeVisionOne} 
+  changeVisionTwo={cursorChangeVisionTwo} 
+  changeVisionThree={cursorChangeVisionThree} 
+  changeVisionFour={cursorChangeVisionFour} 
+  changeVisionFive={cursorChangeVisionFive} 
+  changeIkigai={cursorChangeIkigai} 
+  changeQuote={cursorChangeQuote} 
+  changeMemory={cursorChangeMemory} 
+/>
+</div>
   <div className="tile centre">
     <div className="momentRow">
           <textarea
@@ -628,7 +668,34 @@ onChange={(e) => setMomentFiveScore(e.target.value)}
 /> 
            
   </div>
-  <div className="tile left">
+
+  <div className="mobileDockRow">
+   <FullDockMobileTwo 
+   hideOverlay={cursorDisplayHide}
+  changeObjOne={cursorChangeObjOne}
+  changeObjTwo={cursorChangeObjTwo}
+  changeObjThree={cursorChangeObjThree}
+  changeObjFour={cursorChangeObjFour}
+  changeObjFive={cursorChangeObjFive}
+  changeObjSix={cursorChangeObjSix}
+  changeObjSeven={cursorChangeObjSeven}
+  changeObjEight={cursorChangeObjEight}
+  changeObjNine={cursorChangeObjNine}
+  changeObjTen={cursorChangeObjTen}
+  opacityOne={valOne[0]}
+  opacityTwo={valTwo[0]}
+  opacityFour={valFour[0]}
+  opacityThree={valThree[0]}
+  opacityFive={valFive[0]}
+  opacitySix={valSix[0]}
+  opacitySeven={valSeven[0]}
+  opacityEight={valEight[0]}
+  opacityNine={valNine[0]}
+  opacityTen={valTen[0]}
+/>
+</div>
+
+  <div className="tile right">
   {/* <h6 className="statement starter">The memories from today that will capture it forever <input className="formInput" type="text" placeholder="..."></input></h6> */}
   { rememberToday ? <label htmlFor="rememberToday" className="statement starter">The memories from today that will capture it forever are </label> : <></>}
    <textarea

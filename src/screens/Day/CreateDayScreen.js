@@ -17,7 +17,7 @@ import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import CentralHeader from '../../components/Header/CentralHeader';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import FullDock from '../../components/Dock/FullDock';
-import FullDockMobile from '../../components/Dock/FullDockMobile';
+import { FullDockMobileOne, FullDockMobileTwo }  from '../../components/Dock/FullDockMobile';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import CreateDayScreenMobile from './CreateDayScreenMobile';
 import './dayscreens.css';
@@ -385,6 +385,48 @@ const cursorChangeObjTen = () => {
   {cursorDisplayState == false ? setCursorDisplayState(cursorDisplayState => true) : setCursorDisplayState(cursorDisplayState => true)}
 };
 
+const valOne = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveOne_score / 10);
+
+      const valTwo = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveTwo_score / 10);
+
+      const valThree = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveThree_score / 10);
+
+      const valFour = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveFour_score / 10);
+
+      const valFive = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveFive_score / 10);
+
+      const valSix = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveSix_score / 10);
+
+      const valSeven = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveSeven_score / 10);
+
+      const valEight = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveEight_score / 10);
+
+      const valNine = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveNine_score / 10);
+
+      const valTen = weeks && weeks
+      .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
+      .map((week) => week.objectiveTen_score / 10);
+
+      
+
 const showTutorial = () => {
   if(tutorialState === 'tutorial video') {
     setTutorialState(tutorialState => 'tutorial');
@@ -426,32 +468,7 @@ useEffect(()=> {
         <h1 className="sickTooltip" style={{ fontSize: `${fontState}px`}}>{cursorState}</h1>
         </MouseTooltip>
         </div>
- <CentralHeader 
- changeName={cursorChangeName}
- changeDOB={cursorChangeDOB}
- changeValuesOne={cursorChangeValuesOne} 
- changeValuesTwo={cursorChangeValuesTwo} 
- changeValuesThree={cursorChangeValuesThree} 
- changeValuesFour={cursorChangeValuesFour} 
- changeValuesFive={cursorChangeValuesFive} 
- changeVisionOne={cursorChangeVisionOne} 
- changeVisionTwo={cursorChangeVisionTwo} 
- changeVisionThree={cursorChangeVisionThree} 
- changeVisionFour={cursorChangeVisionFour} 
- changeVisionFive={cursorChangeVisionFive} 
- changeIkigai={cursorChangeIkigai} 
- changeQuote={cursorChangeQuote} 
- changeMemory={cursorChangeMemory} 
- changeObjOne={cursorChangeObjOne}
- changeObjTwo={cursorChangeObjTwo}
- changeObjThree={cursorChangeObjThree}
- changeObjFour={cursorChangeObjFour}
- changeObjFive={cursorChangeObjFive}
- changeObjSix={cursorChangeObjSix}
- changeObjSeven={cursorChangeObjSeven}
- changeObjEight={cursorChangeObjEight}
- changeObjNine={cursorChangeObjNine}
- changeObjTen={cursorChangeObjTen}/>
+ <CentralHeader />
   
   <form onSubmit={submitHandler}>
 
@@ -480,7 +497,7 @@ useEffect(()=> {
           />
         }
         </div>
-        <div style={{ display: 'flex', flexDirection: 'row'}}>
+        <div className="mobileSaveDiv">
 
 <div className="dock node save"
    onClick={submitHandler}>
@@ -555,9 +572,7 @@ onChange={(e) => setStartScore(e.target.value)}
         </motion.div>
         
         <div className="mobileDockRow">
-   <FullDockMobile 
-  openClose={stateChanger} 
-  hideOverlay={cursorDisplayHide}
+   <FullDockMobileOne 
   changeName={cursorChangeName}
   changeDOB={cursorChangeDOB}
   changeValuesOne={cursorChangeValuesOne} 
@@ -573,18 +588,6 @@ onChange={(e) => setStartScore(e.target.value)}
   changeIkigai={cursorChangeIkigai} 
   changeQuote={cursorChangeQuote} 
   changeMemory={cursorChangeMemory} 
-  changeObjOne={cursorChangeObjOne}
-  changeObjTwo={cursorChangeObjTwo}
-  changeObjThree={cursorChangeObjThree}
-  changeObjFour={cursorChangeObjFour}
-  changeObjFive={cursorChangeObjFive}
-  changeObjSix={cursorChangeObjSix}
-  changeObjSeven={cursorChangeObjSeven}
-  changeObjEight={cursorChangeObjEight}
-  changeObjNine={cursorChangeObjNine}
-  changeObjTen={cursorChangeObjTen}
-  submitDay={submitHandler}
-  showTutorial={showTutorial}
 />
 </div>
 
@@ -699,6 +702,33 @@ onChange={(e) => setMomentFiveScore(e.target.value)}
 /> 
            
   </div>
+  <div className="mobileDockRow">
+    { pageLoading ? <></> : 
+   <FullDockMobileTwo 
+   hideOverlay={cursorDisplayHide}
+  changeObjOne={cursorChangeObjOne}
+  changeObjTwo={cursorChangeObjTwo}
+  changeObjThree={cursorChangeObjThree}
+  changeObjFour={cursorChangeObjFour}
+  changeObjFive={cursorChangeObjFive}
+  changeObjSix={cursorChangeObjSix}
+  changeObjSeven={cursorChangeObjSeven}
+  changeObjEight={cursorChangeObjEight}
+  changeObjNine={cursorChangeObjNine}
+  changeObjTen={cursorChangeObjTen}
+  opacityOne={valOne[0]}
+  opacityTwo={valTwo[0]}
+  opacityFour={valFour[0]}
+  opacityThree={valThree[0]}
+  opacityFive={valFive[0]}
+  opacitySix={valSix[0]}
+  opacitySeven={valSeven[0]}
+  opacityEight={valEight[0]}
+  opacityNine={valNine[0]}
+  opacityTen={valTen[0]}
+/>
+}
+</div>
   <div className="tile right">
   {/* <h6 className="statement starter">The memories from today that will capture it forever <input className="formInput" type="text" placeholder="..."></input></h6> */}
   { rememberToday ? <label for="rememberToday" className="statement starter">I am pleased to live in my mind and body today because </label> : <></>}
@@ -750,6 +780,7 @@ onChange={(e) => setEndScore(e.target.value)}
 
 </form>
 <footer className="dock footer">
+{ pageLoading ? <></> : 
 <FullDock 
   openClose={stateChanger} 
   hideOverlay={cursorDisplayHide}
@@ -778,9 +809,20 @@ onChange={(e) => setEndScore(e.target.value)}
   changeObjEight={cursorChangeObjEight}
   changeObjNine={cursorChangeObjNine}
   changeObjTen={cursorChangeObjTen}
+  opacityOne={valOne[0]}
+  opacityTwo={valTwo[0]}
+opacityFour={valFour[0]}
+opacityThree={valThree[0]}
+opacityFive={valFive[0]}
+opacitySix={valSix[0]}
+opacitySeven={valSeven[0]}
+opacityEight={valEight[0]}
+opacityNine={valNine[0]}
+opacityTen={valTen[0]}
   submitDay={submitHandler}
   showTutorial={showTutorial}
 />
+}
 </footer>
 
        

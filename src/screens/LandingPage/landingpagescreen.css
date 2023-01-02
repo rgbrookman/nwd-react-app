@@ -317,7 +317,7 @@ font-family: 'Futura';
 
 @media only screen and (min-width: 0px) and (max-width: 480px) { 
   .loggedInMain {
-    height: 90vh;
+    height: 120vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -340,6 +340,7 @@ font-family: 'Futura';
   }
   
   .newsfeed {
+    height: 100vh;
     width: 95%;
     margin-top: 12px;
     overflow: scroll;
