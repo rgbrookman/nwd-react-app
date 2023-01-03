@@ -8,6 +8,18 @@
     margin-top: 24px;
   }
 
+  .tutorial {
+    display: none;
+  }
+  
+  .tutorial.video {
+    display: block;
+    position: fixed;
+    z-index: 25;
+    top: 25%;
+    left: 25%;
+  }
+
 .tabContainer {
     display: flex; 
     flex-direction: column;

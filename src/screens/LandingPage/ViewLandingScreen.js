@@ -4,6 +4,7 @@ import CentralHeader from '../../components/Header/CentralHeader';
 import CentralHeaderLP from '../../components/Header/CentralHeaderLP';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import Sidebar from '../../components/Sidebar/Sidebar';
+import MainTutorial from '../../components/Tutorial/MainTutorial';
 import { listDays } from '../../actions/dayActions';
 import { listYears } from '../../actions/yearActions';
 import ClassicFooter from '../../components/Footer/ClassicFooter';
@@ -162,11 +163,12 @@ useEffect(()=> {
         <h4>NWD Feed:</h4><span>Last Update: 03/09/2023 17:34:00</span>
       </div>
       <div className={tutorialState}>
-   <iframe className='tutorialPlayer'
+   {/* <iframe className='tutorialPlayer'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
-  </iframe>
+  </iframe> */}
+  <MainTutorial showTutorial={showTutorial}/>
 </div>
 
 <div className="newsitem">

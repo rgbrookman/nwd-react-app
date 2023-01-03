@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { listDays } from '../../actions/dayActions';
+import HideDock from '../../components/Dock/HideDock';
+import MainTutorial from '../../components/Tutorial/MainTutorial';
 
 //Feeling Score
 import FeelingScore from '../../components/Charts/FeelingScore/FeelingScore.js';
@@ -56,7 +58,9 @@ import * as d3 from "d3";
 
 
 
-export default function ViewInsightScreen({ history, dateSelected }) {
+
+
+export default function ViewInsightScreen({ history, dateSelected, props}) {
 // State
 const [cursorState, setCursorState] = useState('');
 const [cursorDisplayState, setCursorDisplayState] = useState(true);
@@ -142,6 +146,16 @@ const dateSelector = (e) => {
   setDatePicker(datePicker => e.target.value);
 };
 
+const [tutorialState, setTutorialState] = useState('tutorial');
+
+const showTutorial = () => {
+  if(tutorialState === 'tutorial') {
+    setTutorialState(tutorialState => 'tutorial video');
+  } else if (tutorialState === 'tutorial video') {
+    setTutorialState(tutorialState => 'tutorial');
+  }
+}
+
 const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
   return (
@@ -157,10 +171,19 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
         >
         <h1 className="sickTooltip">{cursorState}</h1>
         </MouseTooltip>
+        <HideDock showTutorial={showTutorial} />
  <CentralHeader />
  
 
     <main className="viewinsight container">
+    <div className={tutorialState}>
+   {/* <iframe className='tutorialPlayer'
+        title='Youtube player'
+        sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
+        src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
+  </iframe> */}
+  <MainTutorial showTutorial={showTutorial} />
+</div>
     { pageLoading && !days ? <TileLoading /> :
  <>
     <div className="tile left">

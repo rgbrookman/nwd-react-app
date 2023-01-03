@@ -156,6 +156,30 @@ margin-bottom: 2px;
   border-radius: 5px;
   }
 
+  .subStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: end;
+  }
+
+  .subStats div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subStats span {
+    font-size: 12px;
+
+  }
+
+  .subStats input {
+    margin-bottom: 6px;
+    margin-left: 4px;
+  }
+
 
 
 .sender.row {
@@ -273,6 +297,30 @@ margin-bottom: 2px;
   .profileButtonDiv {
     display: flex;
     justify-content: center;
+  }
+
+  .subStats {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: end;
+  }
+
+  .subStats div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subStats span {
+    font-size: 12px;
+
+  }
+
+  .subStats input {
+    margin-bottom: 6px;
+    margin-left: 4px;
   }
   
   .textInput {

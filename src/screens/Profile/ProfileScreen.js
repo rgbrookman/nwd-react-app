@@ -106,7 +106,6 @@ const loadingTimeout = () => {
 
 useEffect(()=> {
   loadingTimeout();
-  paycMessage();
 })
 
   return (
@@ -121,8 +120,9 @@ useEffect(()=> {
       <Tab className="tab" eventKey="payc" title="Update Subscription">
         <div className="container payc">
           <div className="payc message">
-            <h4>Your current subscription: {paycName}</h4>
-            <p>{paymentMessage}</p>
+            <h4>Your NoWastedDays Subscription:</h4>
+            <p><strong>I run NWD on a Pay-as-You-Can basis. I believe that things that could help anyone better manage their own mind and feel more joy and growth shouldn't be trapped behind a paywall; 
+              reserved for only people with the awareness and privilege to pay.</strong></p>
           </div>
           <div className="payc selector">
             <select 
@@ -130,6 +130,7 @@ useEffect(()=> {
               defaultValue="https://www.patreon.com/join/nowasteddays/checkout?rid=5772336" 
               onChange={(e) => {
                 setPaycPicker(e.target.value);
+                paycMessage(e.target.value);
               }}>
             <option value="https://www.instagram.com/nowasteddays">Free</option>
             <option value="https://www.patreon.com/join/nowasteddays/checkout?rid=5772336">£1.20</option>
@@ -146,11 +147,26 @@ useEffect(()=> {
             <option value="https://www.patreon.com/join/nowasteddays/checkout?rid=9142284">£11.00</option>
             <option  value="https://www.patreon.com/join/nowasteddays/checkout?rid=9142285">£12.00</option>
             </select>
-            <button className="updateProfileButton"><a href={paycPicker} target="_blank">Update Subscription</a></button>
+            <button className="updateProfileButton"><a href={paycPicker} target="_blank">Activate Subscription</a></button>
+            <hr className="dividingLine"></hr>
+            <div className="subStats">
+            <p className="helpTitle">Subscription Statistics</p>
+            <div>
+          <span>Most Popular Tier:</span><input type="number" placeholder="£3" style={{width: "48px"}} disabled></input>
           </div>
+          <div>
+          <span>Avg Subscription Value: </span><input type="number" placeholder="£2.49" style={{width: "48px"}} disabled></input>
+          </div>
+          <div>
+          <span>Legends Paying £10 and above: </span><input type="number" placeholder="1" style={{width: "48px", padding: "0"}} disabled></input>
+          </div>
+            </div>
+        
+          </div>
+       
         </div>
         <div className="coffee">
-            <a href={'/'}>or just buy me a coffee :)</a>
+            <a href={'https://www.patreon.com/checkout/nowasteddays/9390213'}>or just buy me a coffee :)</a>
           </div>
         </Tab>
         <Tab className="tab" eventKey="update" title="Update Profile">

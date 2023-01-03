@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { createWeekAction, listWeeks, updateWeekAction } from '../../actions/weekActions';
 import TileLoading from '../../components/Loading/TileLoading';
+import MainTutorial from '../../components/Tutorial/MainTutorial';
 import { listYears } from '../../actions/yearActions';
 import { listDays } from '../../actions/dayActions';
 import CentralHeader from '../../components/Header/CentralHeader';
@@ -233,12 +234,13 @@ useEffect(() => {
 <main className="weekContainer">
 
 <div className={tutorialState}>
-    <iframe className='tutorialPlayer'
+    {/* <iframe className='tutorialPlayer'
     width="560" height="315"
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
-</iframe>
+</iframe> */}
+<MainTutorial showTutorial={showTutorial} />
     </div>
     { vw > 480 ? 
     <>
