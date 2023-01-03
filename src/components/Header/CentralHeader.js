@@ -239,7 +239,7 @@ Array.isArray(days) === true ?
 
   <div className="box centre">
   <a id="nava" href={"/"}>
-    <img id="brand" src={greenlogo}   height={30} ></img></a>
+    <img id="brand" src={greenlogo} ></img></a>
       </div>
   <div className="box">
 
@@ -292,7 +292,7 @@ Array.isArray(days) === true ?
 </a>
 }
 <a href={'/'}>
-    <img id="brand" src={greenlogo} height={30} />
+    <img id="brand" src={greenlogo} />
     </a>
     <div onClick={openMenu} style={{marginRight: '12px'}}>
       <FontAwesomeIcon

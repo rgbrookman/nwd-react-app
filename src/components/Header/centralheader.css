@@ -27,9 +27,17 @@
 }
 
 #brand {
+  height: 30px;
+  width: 30px;
   padding: 4px;
   border-radius: 50%;
   background-color: #004a22;
+}
+
+#brand:hover {
+  padding: 8px;
+  border-radius: 50%;
+  transition: all .5s ease-in-out;
 }
 
 nav .box {
