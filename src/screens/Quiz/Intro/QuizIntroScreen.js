@@ -104,14 +104,14 @@ export default function QuizScreen() {
             The <strong>Insight</strong> section of NWD is about giving anyone who wants it a completely different vantage point on their own life.
             <br />
             <br />
-             Our own eyes provide a view on the moments of our days which in many ways is completely phenomenal. 
+            Our own eyes provide a completely phenomenal view on the moments that make up our days.
             Both the eyes themselves and the perspective they afford are brilliant for helping forge connections with other humans, 
             fabulous for studying details in our
             immediate surroundings and terrific at facilitating the visceral glory of simply being alive.
             <br />
             <br />
-            However, this very same view is not well suited to
-            breaking down our behaviours and reliably and regularly turning the best and worst of what we do into greater joy and growth .
+            However, they are not well suited to
+            breaking down our behaviours and reliably and regularly turning the best and worst of what we do into greater joy and growth. For that, you need more than a first person perspective.
           </span>
           <br />
             <br />
@@ -120,22 +120,17 @@ export default function QuizScreen() {
           <span>
             All of the sections that make up NoWastedDays are especially designed to make many different vantage points on life possible.
             In the <strong>Insight</strong> section, you will find a host of graphs and charts that take your <strong>Today</strong> diary data
-            and empower you, with a bit of time and understanding, to positively transform your level of self-awareness and self-assurance.
+            and empower you to positively transform your level of self-awareness and self-assurance.
                 <br />
           <br />
-            However, not a single iota of insight, ounce of possibility or plane of perspective can be created by simply playing back
-            the data in a few simple charts.
+            However, not a single iota of insight or ounce of possibility can be created by simply playing back the data in a few simple charts.
           <br />
           <br />
             To open the door to safe, significant insight and action, there are two big buckets that need filling up first (and they can be found to your right).</span>
           <br />
           <br />
           <strong className='emphasis'>‘The Art of Looking’</strong>
-            <span> is the digital faucet designed to help any user fill both buckets to the brim whilst their own dataset is getting sufficiently full.
-          <br />
-          <br />
-            The 'Art of Looking' encompasses both my own personal experience from <s>700</s> over 800 days of NoWastedDays
-            diary inputs and the key practical pillars that build a firm foundation from which you can reliably find a empowered perspective.</span>
+            <span> is the digital faucet designed to help any user fill both buckets to the brim whilst their own dataset is getting sufficiently full.</span>
     </div>
   <div className="rightCol">
   <div className="rightContent">
@@ -207,6 +202,9 @@ className="quizDiv">
     </div>
       <br />
     <span>
+      The 'Art of Looking' encompasses both my own personal experience from <s>700</s> over 800 days of NoWastedDays
+      diary inputs and the key practical pillars that build a firm foundation from which you can reliably find a empowered perspective on your own life.
+      <hr></hr>
       Ever since I started to get a grasp for web development and data,
       it has aggravated me just how infrequently either are unconditionally applied to any of our lives. 
     </span>
@@ -217,7 +215,7 @@ className="quizDiv">
       within our jobs, school studies; online, offline - everywhere!
     <br />
     <br />
-    Yet for all the causes data and technology can be a slave or a servant to, there seems to be a huge lack of provisions that are entirely
+    Yet for all the causes data and technology can be a slave or a servant to, there seems to be a huge lack of them that are entirely
     centered on helping any human being healthily learn more about themselves, <strong>at a cost they can control</strong>.</span>
       <br />
       <br />
@@ -239,7 +237,7 @@ className="quizDiv">
       <br />
       <strong>
     c) being able to present it in a way that can systemically and safely create a positive change for most people is even harder still as
-    the last thing anyone wants is iatrogenic effects.</strong><i className="aside">(a word for when medical interventions actually make the patient more sick)</i>
+    the last thing anyone wants is iatrogenic* effects.</strong><i className="aside"> *a word for when medical interventions actually make the patient more sick.</i>
     </span>
       <br />
       <br />

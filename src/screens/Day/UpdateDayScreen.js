@@ -530,6 +530,7 @@ onChange={(e) => setStartScore(e.target.value)}
    <hr></hr>
 
    </div>
+
    { vw > 480 ? <></> : 
    <motion.div 
     className="mobileTooltip"
@@ -537,7 +538,8 @@ onChange={(e) => setStartScore(e.target.value)}
     variants={showHideState}>
         <h4 className="sickTooltip">{cursorState}</h4>
         </motion.div>
-}
+        }
+        
         <div className="mobileDockRow">
    <FullDockMobileOne 
   changeName={cursorChangeName}

@@ -260,9 +260,9 @@ className="quizDiv">
         <br />
       This course is written in an attempt to massively mitigate any potentially triggering effects of seeing your
       feeling, moments etc played out on screen.
-      This course is constructed expressly to give anyone all of the essential mental tools, ample calmness and confidence and
+      This course is constructed expressly to give anyone all of the essential mental tools and 
       the benefit of my many mistakes so that they can capably manage any such discomfort and, 
-      most importantly, activate the growth that lays dormant behind it.
+      most importantly, activate the growth and joy that lays dormant behind it.
       <br />
       <br />
       These intentions do not take away from the fact that if you even suspect you are going
@@ -275,27 +275,22 @@ className="quizDiv">
         <br />
         <br />
       I believe that data and technology can facilitate the far more proactive processing and designing of our lives;
-      helping any user reach levels of joy and growth that they would have perhaps struggled to reach in a
-      lifetime without this new unconditional perspective. The human experience has changed in so many ways in the last 250 years. 
+      helping anyone reach levels of joy and growth that they would have perhaps struggled to reach in a
+      lifetime without this new objective perspective. The human experience has changed in so many ways in the last 250 years. 
       Thousands of years based on agricultural lives
       and optimally sized community centric groups have been overrun by industrial centres, smog, urban sprawl, the internet, smartphones, notifications, surveillance capitalism and many more such things.
       <br />
       <br />
-      How we process our experiences, make sense of our minds
+      All this being true, despite the abundance of data and opportunity, how we process our experiences, make sense of our minds
       and relate to our environment, however, has stood weirdly still.
       <br />
       <br />
-      In general, people are certainly empowered to talk more and, hopefully, with the rampant sharing of information that the internet has afforded,
-      do this talking with more knowing people, and if some specialist (expensive or otherwise) or smart technology (expensive or otherwise)
-      has helped along the way that is all the better.
-      <br />
-      <br />
-      But, it doesn't feel quite satisfactory for me. What I am trying to find out is what can be done to best
-      affect this human need to make sense of two fundamental relationships <i className="aside">(1. The one we have with our own minds &
-        2. The one we have with our environment)</i> using data and technology for the most people at the least cost to them.
+      This doesn't feel satisfactory for me. What I am trying to find out is what can be done to best
+      affect the human need to, for the want of a better word, optimise two fundamental relationships: (1. The one we have with our own minds &
+        2. The one we have with our environment) by using data and technology for the most people at the least cost to them.
         <br />
         <br />
-      This all being true, and as above, I want to state that stopping now is absolutely 100% not an ommission of weakness on your part,
+      This all being true, and as above, I want to state that stopping now is absolutely 100% not an omission of weakness on your part,
       or in any way a sign of your being unfit for anything in life.
       There are a million and one ways to find greater joy and growth, and some phenomenal resources do exist online.
       I will link to as many of these as I can think of at the bottom of the page.
@@ -359,26 +354,29 @@ className="quizDiv">
       <br />
 <br />
       This thought will be the loudest, most consistent 
-      drum beat throughout this short course. Your feeling score metrics, just like every other metric or graph, are there to provide signals, and in being so, set in motion the following cycle of mental events:
+      drumbeat throughout this short course. 
+      <br />
+<br />
+      <strong>Your feeling score metrics, just like every other metric or graph, are there to provide signals, and in being so, set in motion the following cycle of mental events:</strong>
 
       <br />
 <br />
   <strong>Every metric, shift in the graph or data point is a <strong>signal.</strong></strong>
 <br />
 <br />
-  <strong>Every signal helps us ask a better question.</strong>
+  <strong>Every <strong>signal</strong> helps us ask a better <strong>question.</strong></strong>
 <br />
 <br />
-  <strong>Every question helps prompt more purposeful, specific self-explorations.</strong>
+  <strong>Every <strong>question</strong> helps prompt more purposeful, specific <strong>self-explorations</strong>.</strong>
 <br />
 <br />
-<strong>Every exploration is capable of producing either a new signal or an observation than can inspire new actions.</strong>
+<strong>Every <strong>self-exploration</strong> is capable of producing either a new signal or an observation than can inspire <strong>new actions</strong>.</strong>
 <br />
 <br />
-<strong>These new actions will, in time, become new shifts in metrics and signals of their own.</strong>
-<br />
+<strong>These <strong>new actions</strong> will, in time, become new shifts in metrics and <strong>signals</strong> of their own.</strong>
 <br />
 
+<hr></hr>
 Another important insight surrounding the feeling score is that your feeling score average only means what you know it means;
       it has no other context outside of your own.
       In terms of this particular metric, comparison with others is very unlikely to be of any real value to you.
@@ -412,8 +410,8 @@ Another important insight surrounding the feeling score is that your feeling sco
       <br />
     <br />
     The awakening will always come from you.
-    You have reems of unwritten context bumbling around in your head, and the combination of the insight signals and access to your diary of days and the mental sparks they help create, hugely helps 
-    with exploring said context with more purpose, specificity and healthy detachment.
+    You have reems of unwritten context bumbling around in your head, and it is this that we need to activate. The combination of the insight signals and access to your diary of days creates mental sparks that allow
+    exploring said context with more purpose, specificity and healthy detachment.
     </span>
     <br />
     <br />
@@ -467,7 +465,7 @@ and you will always be the overwhelming master of that subject.
 <br />
 <br />
 On the subject of context, another key provider of it in regards to your average is what is called the 'variance' or 'deviation'
-i.e. a data point that demonstrates how a sample of data varies from the average.
+i.e. a metric that demonstrates how a sample of data varies from the average.
 </span>
 <br />
 <br />

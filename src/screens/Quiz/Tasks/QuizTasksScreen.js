@@ -225,7 +225,7 @@ className="quizDiv">
 <br />
 <br />
 <span>
-<strong><i>Signal says - "Ooh! I wonder what is causing..."</i></strong>
+<strong><i>Signal says - <strong>"Ooh! I wonder what is causing..."</strong></i></strong>
 </span>
 <br />
 <br />
@@ -235,7 +235,7 @@ className="quizDiv">
 <br />
 <br />
 <span>
-<strong>...to rarely follow a day where you did do everything you said you would with another such day?</strong>
+<strong>...you to rarely follow a day where you did do everything you said you would with another such day?</strong>
 </span>
 <br />
 <br />
@@ -336,12 +336,12 @@ setMyLearnings2(myLearnings2 => true);
   <br />
 <span>
   As I just shared, thanks to the NWD format, I have, importantly, gained many revelations about myself and, less importantly but with a certain sense of
-  satisfaction, have seen a quiet improvement in each measure over time; even if some habits still persist.
+  satisfaction, seen a quiet improvement in each measure over time; even if some habits still persist.
 <br />
 <br />
 
-  A key takeaway from this time and experience is that I can say with utter confidence that<strong>the action(s) that sit behind any signal
-  </strong><i className="aside">(i.e. the cause for which the data displayed in the graph is an effect)</i><strong> are never wholly bad or wholly good.</strong>
+  A key takeaway from this time and experience is that I can say with utter confidence that <strong>the action(s) that sit behind any signal
+  </strong><i className="aside"> (i.e. the cause for which the data displayed in the graph is an effect)</i><strong> are never wholly bad or wholly good.</strong>
 <br />
 <br />
 <strong className="emphasis">Why is that?</strong>
@@ -351,8 +351,8 @@ setMyLearnings2(myLearnings2 => true);
   This is another thing which is obvious to us in some realms, but often escapes us when referring to our own lives and minds.
 <br />
 <br />
-  For example, if you are trying to gain some weight, having a large portion of white rice and with your protein, fibre, fats etc and a dessert for afters, is a good thing as the extra nutrients and calories are highly correlated with 
-  the singular objective. However, if you are actually trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
+  For example, if you are trying to gain some weight, having a large portion of white rice with your protein, fibre, fats etc and a nice dessert for afters, is a good thing as the extra nutrients and calories are highly correlated with 
+  the singular objective of gaining weight. However, if you are actually trying to lean out and reduce spikes in your blood sugar, it is not a 'good' thing.
 <br />
 <br />
   However, when you are dealing with bad or good in relation to increasing joy and growth,
@@ -360,8 +360,12 @@ setMyLearnings2(myLearnings2 => true);
 <br />
 <br />
 This is because something either is 'good' because
+<br />
+<br />
   it is helping provide in the moment, or confidently nurture for the future, a relationship
   with joy and growth that you know deeply resonates with yourself and is of deep authentic value,
+  <br />
+<br />
   or that something has the <strong>potential for good</strong> by offering you a chance to transform your relationship with it - whether it is a habit or isolated behaviour - 
   that, with some introspection and a degree of effort, will provide the kind of 'good' moments and nurturing ability described formerly.
 </span>
