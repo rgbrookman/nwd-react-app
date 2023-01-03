@@ -112,8 +112,8 @@ useEffect(() => {
 						const [x, y] = d3.pointer(event);
 						Tooltip
 							.text(`Date: ${d.date.toLocaleDateString()} Feeling Score: ${d.es}`)
-							.style("left", (x + 400) + "px")
-							.style("top", (y + 130) + "px")
+							.style("left", (x + 500) + "px")
+							.style("top", (y + 200) + "px")
 							.style("font-family", "Futura")
 							.style("font-size", "8px")
 							.style("color", "#004a22")

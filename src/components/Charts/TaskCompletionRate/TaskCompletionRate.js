@@ -123,8 +123,8 @@ day.taskCompletionRate = tcr;
 
           Tooltip1
             .text(`Date: ${d.date.toLocaleDateString()} MRR: ${d.tcr} `)
-            .style("left", (x + 400) + "px")
-            .style("top", (y + 130) + "px")
+            .style("left", (x + 500) + "px")
+            .style("top", (y + 200) + "px")
             .style("font-family", "Futura")
             .style("font-size", "8px")
             .style("color", "#004a22")

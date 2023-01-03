@@ -123,8 +123,8 @@ tcData.pop();
 
           Tooltip4
             .text(`Date: ${d.date.toLocaleDateString()} Total: ${d.total} `)
-            .style("left", (x + 400) + "px")
-            .style("top", (y + 130) + "px")
+            .style("left", (x + 500) + "px")
+            .style("top", (y + 200) + "px")
             .style("font-family", "Futura")
             .style("font-size", "8px")
             .style("color", "#004a22")

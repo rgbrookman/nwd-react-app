@@ -27,7 +27,7 @@ export default function HideDock ( props ) {
 <div className="hidedock container">
    
 
-      { currentWindow.endsWith('/') ? 
+      { currentWindow.endsWith('/') || currentWindow.endsWith('/insight') ? 
       <>
          <div className="hidedock node"
     data-tooltip="Toggle Frame"
@@ -77,11 +77,12 @@ export default function HideDock ( props ) {
 
         <div className="hidedock node"
     data-tooltip="Click for Tutorial Video"
-   onClick={props.showTutorial}
+   
    onMouseOver={showHelpNodes}>
     <FontAwesomeIcon
     id="questionIcon"
     className="icon"
+    onClick={props.showTutorial}
     icon={faQuestion}/>
 </div>
 
