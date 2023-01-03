@@ -262,12 +262,12 @@ useEffect(()=> {
         </MouseTooltip>
 <form onChange={updateHandler}>
 <main className='yearContainer'>
+{ pageLoading ? <TileLoading /> : 
+  <>
 <HideDock 
    toggleOverlay={cursorDisplayToggle}
    updateYear={updateHandler} />
 <div id="yeartest">
-  { pageLoading ? <TileLoading /> : 
-  <>
   <div className="yeartile yn">
   { yourName ? <label htmlFor="yourName" className="statement starter">My Name is... </label> : <></>}
          <textarea
@@ -535,11 +535,9 @@ useEffect(()=> {
           value={day.rememberToday}
           />)}
   </div>
-  </>
-}
   </div>
-
-
+</>
+}
 </main>
 </form>
     </>
