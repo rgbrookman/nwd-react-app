@@ -163,15 +163,22 @@
   }
 
   .mobiledock.container {
+    margin: 6px 0;
+    padding: 0 0 0 4px;
     height: auto;
     width: auto;
     border-radius: 10px;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 12px;
+    align-items: flex-end;
     overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
+
+  .mobiledock.container::-webkit-scrollbar {
+  display: none;
+}
   
   .dock.node {
     min-height: 40px;
@@ -264,12 +271,15 @@
   }
 
   .dockNodeWrapper {
-    min-height: 40px;
-    min-width: 40px;
-    max-width: 40px;
-    position: relative;
     display: flex;
     flex-direction: column;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobileDockNodeWrapper {
+    display: flex;
     overflow: visible;
     justify-content: center;
     align-items: center;
@@ -300,6 +310,12 @@
   }
 
   .nodeRow {
+    display: flex;
+    overflow: visible;
+    margin-bottom: 6px;
+  }
+
+  .mobileNodeRow {
     display: flex;
     overflow: visible;
     margin-bottom: 6px;

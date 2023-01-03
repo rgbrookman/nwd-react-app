@@ -67,8 +67,18 @@ export function FullDockMobileOne ( props ) {
       </div>
 
 
-<div className="dockNodeWrapper">
-  <div className="nodeRow">
+<div className="mobileDockNodeWrapper">
+ 
+
+      <div className="mobiledock node"
+      onClick={valuesShow}>
+
+  <FontAwesomeIcon
+    id="valuesIcon"
+    className="icon"
+    icon={faCompassDrafting}/>
+      </div>
+      <div className="mobileNodeRow">
     <div className={valuesShowState} data-tooltip="Value #1" onMouseOver={props.changeValuesOne}>
  <FontAwesomeIcon
     id="miniValuesIcon"
@@ -108,61 +118,54 @@ export function FullDockMobileOne ( props ) {
     icon={fa5}/>
       </div>
       </div>
-      <div className="mobiledock node"
-  data-tooltip="Your Values"
-  onClick={valuesShow}>
-
-  <FontAwesomeIcon
-    id="saveIcon"
-    className="icon"
-    icon={faCompassDrafting}/>
-      </div>
 </div>
   
-<div className="dockNodeWrapper">
-  <div className="nodeRow">
-
-  <div className={visionShowState} data-tooltip="Vision #1" onMouseOver={props.changeVisionOne}>
- <FontAwesomeIcon
-    id="miniValuesIcon"
-    className="icon"
-    icon={fa1}/>
-      </div>
-      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionTwo}>
- <FontAwesomeIcon
-    id="miniValuesIcon"
-    className="icon"
-    icon={fa2}/>
-      </div>
-      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionThree}>
- <FontAwesomeIcon
-    id="miniValuesIcon"
-    className="icon"
-    icon={fa3}/>
-      </div>
-      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionFour}>
- <FontAwesomeIcon
-    id="miniValuesIcon"
-    className="icon"
-    icon={fa4}/>
-      </div>
-      <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionFive}>
- <FontAwesomeIcon
-    id="miniValuesIcon"
-    className="icon"
-    icon={fa5}/>
-      </div>
-
-  </div>
+<div className="mobileDockNodeWrapper">
+ 
 
   <div className="mobiledock node"
   data-tooltip="Your Vision"
   onClick={visionShow}>
   <FontAwesomeIcon
-    id="saveIcon"
+    id="visionIcon"
     className="icon"
     icon={faGlasses}/>
       </div>
+
+      <div className="mobileNodeRow">
+
+<div className={visionShowState} data-tooltip="Vision #1" onMouseOver={props.changeVisionOne}>
+<FontAwesomeIcon
+  id="miniValuesIcon"
+  className="icon"
+  icon={fa1}/>
+    </div>
+    <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionTwo}>
+<FontAwesomeIcon
+  id="miniValuesIcon"
+  className="icon"
+  icon={fa2}/>
+    </div>
+    <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionThree}>
+<FontAwesomeIcon
+  id="miniValuesIcon"
+  className="icon"
+  icon={fa3}/>
+    </div>
+    <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionFour}>
+<FontAwesomeIcon
+  id="miniValuesIcon"
+  className="icon"
+  icon={fa4}/>
+    </div>
+    <div className={visionShowState} data-tooltip="Vision #2" onMouseOver={props.changeVisionFive}>
+<FontAwesomeIcon
+  id="miniValuesIcon"
+  className="icon"
+  icon={fa5}/>
+    </div>
+
+</div>
       </div>
 
   <div className="mobiledock node"

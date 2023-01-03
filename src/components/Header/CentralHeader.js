@@ -239,8 +239,7 @@ Array.isArray(days) === true ?
 
   <div className="box centre">
   <a id="nava" href={"/"}>
-    <img src={greenlogo}   width="20"
-      height="20" style={{borderRadius: "50%"}}></img></a>
+    <img id="brand" src={greenlogo}   height={30} ></img></a>
       </div>
   <div className="box">
 
