@@ -506,7 +506,7 @@ useEffect(()=> {
      
   </div>
 
-  <div className="yeartile quote">
+  <div className="yeartile navquote">
   { navigationalQuote ? <label htmlFor="navQuote" className="statement starter">My Navigational Quote is... </label> : <></>}
          <textarea
          id="navQuote"

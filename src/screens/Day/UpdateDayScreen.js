@@ -398,7 +398,7 @@ const cursorDisplayHide = () => {
       .filter((week, i, weeks) => weeks.indexOf(week) === weeks.length -1)
       .map((week) => week.objectiveTen_score / 10);
 
-
+      const vw = Math.max(document.documentElement.clientWidth);
 
 
 useEffect(()=> {
@@ -530,14 +530,14 @@ onChange={(e) => setStartScore(e.target.value)}
    <hr></hr>
 
    </div>
-
+   { vw > 480 ? <></> : 
    <motion.div 
     className="mobileTooltip"
     animate={cursorDisplayState ? "show" : "hide"}
     variants={showHideState}>
         <h4 className="sickTooltip">{cursorState}</h4>
         </motion.div>
-        
+}
         <div className="mobileDockRow">
    <FullDockMobileOne 
   changeName={cursorChangeName}

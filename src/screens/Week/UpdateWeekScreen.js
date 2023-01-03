@@ -322,6 +322,8 @@ const target = useRef(null);
     }
   }
 
+  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+
   return (
 <>
 <Helmet>
@@ -371,12 +373,14 @@ const target = useRef(null);
   <div id="weektest">
     { pageLoading ? <TileLoading /> : 
 <>
+{ vw > 500 ? <></> : 
     <motion.div 
     className="mobileTooltip"
     animate={cursorDisplayState ? "show" : "hide"}
     variants={showHideState}>
         <h4 className="sickTooltip">{cursorState}</h4>
         </motion.div>
+        }
  
     <div class="weekTile">
     { objectiveOne_text ? <label for="objOne" className="statement starter">#1 </label> : <></>}

@@ -68,7 +68,7 @@
 .tabs {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,6 +76,9 @@
 
 .tab .tile {
   margin: 0;
+}
+
+#insightTileCentre {
   min-width: 388px;
 }
 

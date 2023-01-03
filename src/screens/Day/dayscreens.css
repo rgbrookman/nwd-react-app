@@ -168,6 +168,10 @@
           align-items: flex-start;
         }
 
+        .loggedDate {
+          border: 2px dashed rgba(0,0,0,0.2);
+        }
+
         .tile {
           height: auto;
           width: 100%;

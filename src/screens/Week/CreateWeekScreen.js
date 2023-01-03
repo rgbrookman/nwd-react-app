@@ -274,12 +274,14 @@ useEffect(() => {
   <div id="weektest">
     { pageLoading ? <TileLoading /> : 
     <>
+     { vw > 480 ? <></> : 
   <motion.div 
     className="mobileTooltip"
     animate={cursorDisplayState ? "show" : "hide"}
     variants={showHideState}>
         <h4 className="sickTooltip">{cursorState}</h4>
         </motion.div>
+}
     <div class="weekTile">
     { objectiveOne_text ? <label for="objOne" className="statement starter">#1 </label> : <></>}
     <textarea
