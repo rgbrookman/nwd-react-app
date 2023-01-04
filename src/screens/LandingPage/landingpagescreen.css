@@ -301,6 +301,9 @@ font-family: 'Futura';
       80%{
       top: -22rem;
     }
+    100%{
+      top: 8rem;
+    }
   }
 
   .newsFeedPlayer {
@@ -564,14 +567,14 @@ font-family: 'Futura';
   position: relative;
   overflow: hidden; 
   text-align: center;
-  height: 3.5rem;
+  height: 5rem;
   background-color: #004a22;
 }
 
 .part.two span {
-    height: 3.5rem;
+    height: 6rem;
 color: whitesmoke;
-  line-height: 4rem;
+  line-height: 6rem;
   font-family: 'Futura';
   font-weight: 500;
   width: auto;  
@@ -583,22 +586,25 @@ color: whitesmoke;
 
 @keyframes slide {
   0%{
-    top:-0.3rem;
+    top: 0rem;
   }
   15%{
-    top: -4rem;    
+    top: -6.6rem;    
   }
   30%{
-    top: -7rem;
+    top: -12.6rem;
   }
   45%{
-    top: -10.8rem;
+    top: -18.6rem;
   }
   60%{
-    top: -14.1rem;
+    top: -24.6rem;
   }
     75%{
-    top: -17.7rem;
+    top: -30.6rem;
+  }
+  100% {
+    top: 0rem;
   }
 }
   

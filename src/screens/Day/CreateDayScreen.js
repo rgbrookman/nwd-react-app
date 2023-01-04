@@ -444,6 +444,7 @@ const fontResizer = () => {
 
 const vw = Math.max(document.documentElement.clientWidth);
 
+const [viewWidth, setViewWidth] = useState(vw);
 
 useEffect(()=> {
   loadingTimeout();
@@ -560,14 +561,18 @@ onChange={(e) => setStartScore(e.target.value)}
     onChange={(e) => setMindBody(e.target.value)}
     />
    </div>
-   { vw > 480 ? <></> : 
+
+
+   { viewWidth < 480 ? 
    <motion.div 
     className="mobileTooltip"
     animate={cursorDisplayState ? "show" : "hide"}
     variants={showHideState}>
-        <h4 className="sickTooltip">{cursorState}</h4>
+    <h4 className="sickTooltip">{cursorState}</h4>   
         </motion.div>
-}
+       : <></> 
+     }
+
         <div className="mobileDockRow">
    <FullDockMobileOne 
   changeName={cursorChangeName}
