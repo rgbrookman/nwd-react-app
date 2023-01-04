@@ -39,6 +39,16 @@ text-align: start;
   box-sizing: border-box;
 }
 
+
+.registerButton {
+  background-color:#004a22;
+  color: whitesmoke;
+  font-family: 'Futura';
+  border: 1px solid #004a22;
+  padding: 2px 3px;
+  border-radius: 5px;
+}
+
 }
 
 @media only screen and (min-width: 0px) and (max-width: 480px) { 

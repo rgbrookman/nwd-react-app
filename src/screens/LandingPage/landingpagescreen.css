@@ -171,7 +171,8 @@ margin-bottom: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  text-align: start;
 }
 
 
@@ -232,14 +233,15 @@ font-family: 'Futura';
     width:100%;  
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: start;
   }
   
   .main h1 {
     margin-bottom: 24px;
     font-family: 'Futura';
     font-weight: 700;
+    color: #004a22;
   }
   
   .part {
@@ -541,13 +543,14 @@ font-family: 'Futura';
   width:100%;  
   display: block;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
 }
 
   h1 {
     font-size: clamp(9vw, 14vw, 19vw);
     margin-bottom: 24px;
+
   }
 
 .part {
@@ -619,8 +622,5 @@ color: whitesmoke;
       margin-top: 12px;
     }
 
-    .hideDockLP {
-      display: none;
-    }
 
 }
