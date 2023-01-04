@@ -52,18 +52,18 @@ const ClassicFooter = () => {
         <div className="footerColumn product">
             <h4 className="footer-header">The App</h4>
             <a id="fava" className="footer-link" href="/register">Get Started<div id="funderline"></div></a>
-            <a id="fava" className="footer-link" style={{opacity: "0.3"}}>Case Studies<div id="funderline"></div></a>
+            <a id="fava" className="footer-link" href="https://www.nowasteddays.org/how-it-works" target="_blank">How it Works<div id="funderline"></div></a>
         </div>
         <div className="footerColumn company">
-            <h4 className="footer-header">The Team</h4>
-            <a id="fava" className="footer-link" href="https://www.nowasteddays.org/about" target="_blank">About Us<div id="funderline"></div></a>
-            <a id="fava" className="footer-link" style={{opacity: "0.3"}}>Careers<div id="funderline"></div></a>
+            <h4 className="footer-header">NoWastedDays</h4>
+            <a id="fava" className="footer-link" href="https://www.nowasteddays.org/about" target="_blank">About<div id="funderline"></div></a>
+            <a id="fava" className="footer-link" href="https://www.nowasteddays.org/contact" target="_blank">Careers<div id="funderline"></div></a>
         </div>
-        <div className="footerColumn about">
+        {/* <div className="footerColumn about">
             <h4 className="footer-header">Need Some Help?</h4>
             <a id="fava" className="footer-link" href="https://www.nowasteddays.org/faqs">Frequently Asked Questions<div id="funderline"></div></a>
             <a id="fava" className="footer-link" href="/contact">Report a Bug<div id="funderline"></div></a>
-        </div>
+        </div> */}
         <div className="footerColumn contact">
             <h4 className="footer-header">Contact</h4>
             <a id="fava" className="footer-link" href="/contact">Ask a Question<div id="funderline"></div></a>
