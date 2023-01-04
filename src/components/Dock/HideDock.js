@@ -21,6 +21,7 @@ export default function HideDock ( props ) {
   }
 
   const currentWindow = window.location.href;
+  console.log(currentWindow);
 
   return (
  
@@ -74,10 +75,8 @@ export default function HideDock ( props ) {
       className="icon"
       icon={faFloppyDisk}/>
         </div>
-
         <div className="hidedock node"
     data-tooltip="Click for Tutorial Video"
-   
    onMouseOver={showHelpNodes}>
     <FontAwesomeIcon
     id="questionIcon"
@@ -243,6 +242,14 @@ icon={faFloppyDisk}/>
         icon={faCalendarPlus}/>
         </a>
           </div>
+          <div className="hidedock node"
+    data-tooltip="Click for Help"
+    onClick={props.showTutorial}>
+    <FontAwesomeIcon
+    id="questionIcon"
+    className="icon"
+    icon={faQuestion}/>
+</div>
   </>
 }
   </div>
