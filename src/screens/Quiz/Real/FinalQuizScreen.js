@@ -152,12 +152,12 @@ className="quizDiv">
     <br />
     <span>
     Also, we have a set of emerging experiences on the site including a process that helps you think about your personal values.
-    Maybe give it a look if you have a moment. <br /><strong className="emphasis"><a href='/values'>Values Help</a></strong>
+    Maybe give it a look if you have a moment. <br /><br /><strong className="emphasis"><a href='/values'>Values Help</a></strong>
     </span>
     <br />
     <br />
     <span>
-    Well done again! That is a really good effort! 
+    Well done again! That is a really good effort and I really hope it will help immensely as you start to learn from your own NWD data.
     </span>
 </div>
 <div className="rightCol">

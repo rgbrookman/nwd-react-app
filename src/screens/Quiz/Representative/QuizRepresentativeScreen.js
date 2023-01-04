@@ -156,7 +156,7 @@ likelihood of self-transformation.
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<img src={obama} width="80%" />
+<img src={obama} width="80%"  className="imageOrGif" />
 
 </div>
 </div>
@@ -210,7 +210,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<img src={lampAnimation} width="50%" />
+<img src={lampAnimation} width="50%" className="imageOrGif" />
 
 
 </div>
@@ -270,7 +270,7 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<img src={consistent} width="50%" />
+<img src={consistent} width="50%" className="imageOrGif" />
 
 </div>
 </div>

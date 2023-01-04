@@ -357,8 +357,8 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
         <FeelingScore />
         <div className="statsRow">
         <label><strong>Average: </strong></label><FeelingScoreAverage />
-        <label><strong>Variance: </strong></label><FeelingScoreVariance />
         <label><strong>Recent v. Lifetime: </strong></label><FeelingScoreTrend />
+        <label><strong>Variance: </strong></label><FeelingScoreVariance />
         </div>
         </div>
       </Tab>
@@ -367,8 +367,8 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
         <TasksCompleted />
         <div className="statsRow">
         <label><strong>Average: </strong></label><TasksCompletedAverage />
-        <label><strong>Variance: </strong></label><TasksCompletedVariance />
         <label><strong>Recent v. Lifetime: </strong></label><TasksCompletedTrend />
+        <label><strong>Variance: </strong></label><TasksCompletedVariance />
         </div>
         </div>
       </Tab>
@@ -377,8 +377,8 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
         <TasksCompletionRate />
         <div className="statsRow">
         <label><strong>Average: </strong></label><TasksCompletionRateAverage />
-        <label><strong>Variance: </strong></label><TasksCompletionRateVariance />
         <label><strong>Recent v. Lifetime: </strong></label><TasksCompletionRateTrend />
+        <label><strong>Variance: </strong></label><TasksCompletionRateVariance />
         </div>
         </div>
       </Tab>
@@ -387,8 +387,8 @@ const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth
         <TasksAttempted />
         <div className="statsRow">
         <label><strong>Average: </strong></label><TasksAttemptedAverage />
-        <label><strong>Variance: </strong></label><TasksAttemptedVariance />
         <label><strong>Recent v. Lifetime: </strong></label><TasksAttemptedTrend />
+        <label><strong>Variance: </strong></label><TasksAttemptedVariance />
         </div>
         </div>
       </Tab>

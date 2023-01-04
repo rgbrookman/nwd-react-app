@@ -1193,7 +1193,7 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">What is your total moment score?</h1>
+  <h1 className="question">What is your Tasks Completed score?</h1>
   </motion.div>
 
   <div className="optionContainer">
@@ -1361,7 +1361,7 @@ className="quizDiv">
   className="answerCheck"
   animate = { wrongAnswer ? "right" : "wrong"}
   variants={wrongAnswerAnimation}>
-  <h1 className="question">What is your attempted moment score ?</h1>
+  <h1 className="question">What is your Tasks Attempted score ?</h1>
   </motion.div>
   <div className="optionContainer">
 
@@ -1526,7 +1526,7 @@ className="quizDiv">
     className="answerCheck"
     animate = { wrongAnswer ? "right" : "wrong"}
     variants={wrongAnswerAnimation}>
-  <h1 className="question">What is your Moment Completed %?</h1>
+  <h1 className="question">What is your Task Completed Rate?</h1>
 </motion.div>
   <div className="optionContainer">
 

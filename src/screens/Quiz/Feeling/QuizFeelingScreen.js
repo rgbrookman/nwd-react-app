@@ -434,7 +434,8 @@ Another important insight surrounding the feeling score is that your feeling sco
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>Map of Learnings</p>
+<p>A real cool visual. Fancy making one?</p>
+<a href={'https://www.nowasteddays.org/contact'} target="_blank">Send me an idea.</a>
 </div>
 </div>
 <div className="buttonRow">

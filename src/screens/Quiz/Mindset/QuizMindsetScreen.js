@@ -83,14 +83,13 @@ className="quizDiv">
     </div>
     <br />
     <span>
-      Getting value from a graph is only a very small part about being able to spot and scrutinise the visualisation itself in any
-      even minorly statistical manner. We can all spot a peak or a trough, and all spy a subtler shift in a line or trend.
+      Getting value from a graph is only a very small part about being able to spot and scrutinise the visualisation itself in any statistical manner. We can all spot a peak or a trough, and all spy a subtler shift in a line or trend.
     </span>
     <br />
     <br />
     <span>
-      The far larger portion of potential value is derieved by knowing how to reliably create the perfect mind state from which
-      to study your insights - one that will prime you for greater, safer and happier explorations.
+      The far larger portion of potential value is derived by knowing how to reliably create the perfect mind state from which
+      to study your insights - one that will prime you for greater, happier explorations time after time.
       </span>
     <br />
     <br />
@@ -180,15 +179,17 @@ className="quizDiv">
       <br />
       Obviously, the nature and shape of this oasis will be different for everyone.
       However, to know what it is for you is essential as distractions, task switching and insufficient time will all steal from your minds ability to settle in and do
-      genuinely deep and creative thinking.</li>
+      genuinely deep and creative thinking in regards to your own data.</li>
           <br />
-      <li><strong className="emphasis">Define</strong> the slot of time you are going to think within.</li>
-        <ul className="subList"><i className="aside">(What makes a good time slot)</i>
+      <li><strong className="emphasis">Define the slot of time you are going to think within.</strong></li>
+        <ul className="subList">(What makes a good time slot)
+        <br />
+        <br />
           <li>
           This slot needs a pre-defined start
           </li>
           <li>
-          and the slot needs a pre-defined  end
+          and the slot needs a pre-defined end
           </li>
           <li>
           Half a day is too long in most cases
@@ -197,26 +198,26 @@ className="quizDiv">
           30 minutes is too short in most cases
           </li>
           <li>
-          80 - 100 minutes is often optimal.
+          100 - 180 minutes is often an optimal window
           </li>
         </ul>
             <br />
         <li>Be prepared for your mind to take a moment to warm up in the first 30 minutes. It will likely resist a litle as you try and put it to work, however, resist
         the temptation to prioritise something that is either less urgent or straight up less important.</li>
         <br />
-        <li>Be prepared for it to feel like perhaps more like play, and less like rational economic optimsation.</li>
+        <li>Be prepared for it to feel like perhaps more like play, and less like rational, linear optimisation.</li>
       </ul>
       <br />
       <span>2.<strong className="boldHeader">Time (to put the sub-conscious to work)</strong></span>
       <br />
       <ul>
-      <li>If you don't reach a satisfactory conclusion withn your time and space oasis,
-      and you are not at the point where a decision needs to be made, then don't make one.
+      <li>If you don't reach a satisfactory conclusion within your time and space oasis,
+      and you are not at the point where a decision needs to be made, <strong>then don't make one.</strong>
       Your sub-conscious will then work gamely on a solution in the now vacant window.
       <br />
       <br />
       This frees you from feeling like you have to to force it in the moment,
-      providing you can tolerate the space a question without an answer creates.
+      providing you can tolerate the curious mental space a question without an answer creates.
       <br />
       <br />
       This space is not a void; it is rather a crucible for creative combustion;
@@ -234,6 +235,8 @@ className="quizDiv">
 <span>
   When you have a solution you love, or simply the best you could have created before having to make a decision, then switch to the closed mode
   to back your decision with strong, assertive energy.
+  <br />
+  <br />
   But, remember, be very careful not to get stuck there by unduly prioritising making snap decisions to reduce
   your discomfort, starving yourself of space and time and or believing that you can force everything in a rational,
   linear and compulsive fashion.
@@ -284,14 +287,13 @@ className="quizDiv">
     <br />
     <br />
     It is the backbone of progress. The scientist who doesn't just settle for an apparently correct solution and rather asks skeptically, 'how could this be wrong?'
-    is the one far more likely to get to the truth of a subject than the one in it to simply confirm his/her pre-existing belief, or simply takes the face value
-    of the evidence laid in front of them as gospel.
+    is the one far more likely to get to the truth of a subject than the one in it to simply confirm his/her pre-existing belief.
     <br />
     <br />
     Furthermore, in general life, when we cease to be skeptical, we tend to accept whatever we are told as fact, when even minor scrutiny would lead to a better outcome
-    for all parties. On the other side of the equation, when we are exclusively, billigerently skeptical, we do strafe in to cynicism;
-    and find ourselves reluctant to believe in anything, undertake any action or believe
-    anyone is putting good action behind a good intention.</span>
+    for all parties. On the other side of the equation, when we are exclusively, belligerently skeptical, we do strafe in to cynicism;
+    and find ourselves reluctant to believe in anything, undertake any action or believe in 
+    anyone who looks like they are putting good action behind a good intention.</span>
     <br />
     <br />
     <span>
@@ -341,13 +343,13 @@ className="quizDiv">
     It is arranged and presented according to its potential for good, but also it has inevitable limitations.
     <br />
     <br />
-    Example limitation: It is not your every waking thought, movement, feeling or foible.
+    <strong>Example limitation:</strong> It is not your every waking thought, movement, feeling or foible.
     <br />
     <br />
-    Example limitation: Your data is just the expression of a few self-reported intentions, actions and feelings.
+    <strong>Example limitation:</strong> Your data is just the expression of a few self-reported intentions, actions and feelings.
     <br />
     <br />
-    Example limitation: What you are looking at is just a mixture of lines, dots, marks and numbers on a page.
+    <strong>Example limitation:</strong> What you are looking at is just a mixture of lines, dots, marks and numbers on a page.
     <br />
     <br />
     Yet, for all their limitations, when looked at in the open mode, with due skepticism and an understanding of the context, these limited
@@ -355,8 +357,8 @@ className="quizDiv">
     'why' and 'how could my insight here be wrong', in a healthily contrarian manner.
     <br />
     <br />
-   To summarise, treat every signal you find in the open mode with skepticism. This diligent scrutiny will help you get to the deepest
-    lying truth and be less shaken by the things you saw and felt on first glance.
+    <strong>To summarise, treat every signal you find in the open mode with skepticism. This diligent scrutiny will help you get to the deepest
+    lying truth and be less shaken by the things you saw and felt on first glance.</strong>
     </span>
 
 </div>
@@ -406,8 +408,7 @@ ego with a past and a future, but rather as a pulsating node in one giant organi
 <br />
 <br />
 <span>
-Whilst I am definitely not saying that the only way to get value from your insights reach this level of existential one-ness, 
-however, this disintegrating of self and existing only in the present moment is something we can use with real effect.
+Whilst I am definitely not saying that the only way to get value from your insights is to reach this level of existential one-ness, this idea of detaching from self and existing only in the present moment is something we can use with real effect.
 </span>
 <br />
 <br />
@@ -419,7 +420,7 @@ It is so easy to lurch to thoughts such as, 'Man, I regret doing that' or 'What 
 <br />
 <br />
 <span>
-Why that is true is something I learned from Johnny Wilkinson in the talk to the right.</span>
+Why that it is the case is something that Johnny Wilkinson speaks to brilliantly in the talk to the right.</span>
 <br />
 <br />
 <span>
@@ -434,11 +435,11 @@ Everything I do has a consequence, everything has a cause and effect".
 <br />
 <br />
 <span>
-  In physical sense, this is undeniable, but we are dealing in the realm of the mental and emotional.
+  Within physical laws, this is undeniable - action and reaction etc - but we are dealing in the realm of the mental and emotional.
   <br />
   <br />
-  In short, Wilkinson's remark is saying that the suffering or triggers we experience are a product of an attachment with the past,
-  or projections into the future, and that if you are, instead, exclusively alive entirely and solely in the present moment, you will avoid that suffering.
+  In short, Wilkinson's remark is saying that the suffering or triggers we experience are exclusively products of an attachment with the past,
+  or projecting into the future and that if you are, instead, exclusively alive entirely and solely in the present moment, you will avoid that suffering.
   <br />
   <br />
   <hr className="dividingLine" />
@@ -456,8 +457,8 @@ Everything I do has a consequence, everything has a cause and effect".
   you can be content.
   <br />
   <br />
-  Both of these responses have wrenched your brain out of the present.
-  When looked at in the present, the things you are seeing as just signals
+  Both of these responses have, potentially, wrenched your brain out of the present.
+  When looked at in the present moment, the things you are seeing are just signals
   that can allow you to explore your diary and take away a learning that can be applied.
   <br />
   <br />
@@ -509,7 +510,10 @@ className="quizDiv">
       <br />
       <br />
     In a perpetually alarming and negative news cycle, pessimism about the human condition - a solely bleak outlook on the future
-    and a dwindling association with hope - has become over valued by the apparently wise and perceptive.
+    and a dwindling association with hope - becomes an all too common mental default; one that is 'proved to be correct' day in and day out as another 
+    murder is followed by another fraud, another conflict superseded by another tragedy.
+    <br />
+      <br />
     This tends to leave optimism relegated to the presumed shallow and naive.
       <br />
       <br />
@@ -519,6 +523,9 @@ className="quizDiv">
     but is going to translate to better performance too.
       <br />
       <br />
+      {/* Optimisim, in my experience, is the combination of honesty and empowerment. You need to adopt a perspective that is as close to the truth as possible yet also carries sufficient 
+      <br />
+      <br /> */}
     I have three lovely gobbets that I refer back to in mind when I reflect on optimism that you can explore by clicking on the buttons below.
       <br />
       <br />
@@ -552,9 +559,9 @@ Finally, a third quote: the actor, raconteur and humanitarian Peter Ustinov said
     I have always thought that an optimist was a person who know exactly how sad a place the world
     could be, and a pessimist was someone who finds out anew every morning."</strong>
     <br />
-      <br />
-    These three thouts beautifully demonstrate the difference between mindless hope without action or awareness of reality,
-    and the use of optimism in an honest, empowering way.
+    <br />
+    These three thoughts beautifully demonstrate the difference between mindless hope without action or awareness of reality,
+    and genuine optimism - an honest, empowering perspective that inspires appropriate action.
     <br />
       <br />
     You know it will be hard, you know the world can be ruthless, but that isn't reason to despair
@@ -573,7 +580,7 @@ variants={showHideState}
 <iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${elaineStritch}?start=26`}>
+        src={`https://youtube.com/embed/${elaineStritch}?start=26&end=52`}>
 </iframe>
 </motion.div>
 <motion.div
@@ -584,7 +591,7 @@ variants={showHideState}
 <iframe className='videoPlayerQuiz'
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
-        src={`https://youtube.com/embed/${steveJobs}?start=302`}>
+        src={`https://youtube.com/embed/${steveJobs}?start=302&end=333`}>
 </iframe>
 </motion.div>
 <motion.div
@@ -600,21 +607,21 @@ variants={showHideState}
 </motion.div>
 <div className="nameButtonRow">
 <motion.button
-className="toggleButton" onClick={()=>{
+className="toggleButton" style={{padding: "4px 6px", borderRadius: "5px", marginTop: "12px"}} onClick={()=>{
     setVideo1(video1 => true);
     setVideo2(video2 => false);
     setVideo3(video3 => false);
 }
 }>Elaine</motion.button>
 <motion.button
-className="toggleButton" onClick={()=>{
+className="toggleButton" style={{padding: "4px 6px", borderRadius: "5px", marginTop: "12px"}}  onClick={()=>{
     setVideo1(video1 => false);
     setVideo2(video2 => true);
     setVideo3(video3 => false);
 }
 }>Steve</motion.button>
 <motion.button
-className="toggleButton" onClick={()=>{
+className="toggleButton" style={{padding: "4px 6px", borderRadius: "5px", marginTop: "12px"}}  onClick={()=>{
     setVideo1(video1 => false);
     setVideo2(video2 => false);
     setVideo3(video3 => true);

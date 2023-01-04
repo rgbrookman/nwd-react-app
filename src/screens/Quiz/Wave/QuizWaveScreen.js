@@ -140,13 +140,13 @@ className="quizDiv">
     <br />
     <br />
       It made for a really interesting check-in point because to see a wave crest,
-      and for it to really mean something, I needed to really extend myself and demonstrate high self-awareness.
+      and for it to really mean something, I needed to really extend myself and demonstrate peak self-awareness and action.
       To do everything you said you would do, to feel good and to feel that sense of satisfaction that comes with knowing you did
       the best you could have done, is no mean feat.
     <br />
     <br />
       As you can see quite clearly now,
-      but was only revealing itself slowly and incrementally at the time, there was this wave like pattern emerging.
+      but was only revealing itself slowly and incrementally at the time, there was this wave-like pattern emerging.
     </span>
 <span>
 </span>
@@ -218,11 +218,18 @@ className="quizDiv">
     Whilst in some case this had been true, more often that not I was not shutting down, switching off or regressing in anyway.
   <br />
   <br />
-    What I was doing trying to do was take things up a notch! Choosing to crank it up so immediately was going to ask much more
+    What I was doing trying to do was take things up a notch! Choosing to crank it up so quickly was going to ask much more
     from my...
+    <br />
+    <br />
     a) relationship with my self,
+    <br />
     b) my overall conditioning at what I was trying to do and
-    c) my daily habits and rituals, than was required in the previous span of time.
+    <br />
+    c) my daily habits and rituals
+    <br />
+    <br />
+    ...than was required in the previous span of time.
   <br />
   <br />
     In this context, a crashing of the wave is not a classic regression to the mean, or fall in motivation,
@@ -230,14 +237,14 @@ className="quizDiv">
   <br />
   <br />
     Really deep significant growth is hard to realise and this difficulty is likely to manifest right across your spectrum of NWD inputs. 
-    As you start to contend with new challenges and test your condition in new ways, and build the muscle to take on a bit more, prioritise things differently and make new habits,
-    a cost is always going to be paid to one of those core scores. However, this should not be look at as a failing
+    Contending with new challenges and testing your condition in new ways is likely to mean you will complete a bit less, and this completing a bit less of the struggle involved may mean, albeit far from inevitably, that you feel less well. 
+    However, this should not be look at as a failing. It is simply a natural, wave-like effect 
     <br />
     <br />
     Just as a surfer, whether he or she crashes off the board in the heart of a wave or gamely sails it to shore, that experience is engaged with only in the present and the experience itself has only moved them closer to greater engagement with the sea in the future.
     <br />
     <br />
-    The crashing of a NWD wave, again, in this context, is only a positive, a sign that you are pushing yourself significantly well, and are following up
+    The crashing of a NWD wave, again, in the context of a smart, focused and honest effort, is only a positive, a sign that you are pushing yourself significantly well, and are following up
     self-awareness with a commitment to grow.
   </span>
 
@@ -287,33 +294,29 @@ And know the place for the first time."</strong>
 <br />
 <br />
 <span>
-Mike Posner articulates beautifully that, just like climbing a mountain where you walk, graft and grind to get to a certain peak,
-only to reach it and see the next peak strafing out ahead of you, the same is true of your own growth.
+Mike Posner articulates beautifully that just like the aim to climb a mountain, it is who you become and what you are excited to do when you reach the top - the new beginning that presents - that is as important as the end of getting there in the first place. 
+The same is true of your own growth.
 <br />
 <br />
-This is sign that growth is perpetual and that the journey & present moment are the things to be relished above all else, because you the game of growth 
-- and the joy, interest, connection and affinity with all things that can come with it - is an infinite game, not one with a fixed, universally sanctified end.
-<br />
-<br />
-Our lives as humans on earth are so rich, diverse and challenging that you could live for a million years and still
+Growth is perpetual opportunity; one to be relished in the present moment and on the journey. Our lives as humans on earth are so rich, diverse and challenging that you could live for a million years and still
 be finding new ways to grow your condition, relate to your environment, contain with existence,
-learn new skills, look more deeply inside yourself.
+learn new skills and look more deeply inside yourself.
 <br />
 <br />
-Some people see this as a tunnel without an end and get to defeated - assuming that, without a fixed end, the journey is of no use.
+Some people see this as a tunnel without an end and feel defeated - assuming that, without a fixed end, the journey is of no use.
+<br />
 I find the opposite is true.
-To grow in anyway each day is a joy of a lifetime. It is a opportunity that each day affords.
-Obviously, whether you embrace this opportunity or not, you are still
-enough, still worthy of love, still deserving of peace and safety.
+To grow each day is a joy of a lifetime. It is an opportunity that each day affords.
+It can come from huge, concerted physical and mental effort, or simply the courage to sit still and embrace in-action & uncertainty a bit longer than the day before.
 </span>
 <br />
 <br />
 <hr className="dividingLine" />
 <br />
 <span>
-The second quote - a stanza from T.S Eliot's 'Little Gidding' - reminds me how, within the context of the graph,
+The second quote - a stanza from T.S Eliot's 'Little Gidding' - reminds me how, within the context of the wave graph,
 each wave can only peak so high, and on the face of it, every peak will look the same.
-But the reality is that no one wave is ever the same as any before it because we ourselves have changed.
+But the reality is that no one wave is ever the same as any before it because we have changed; we are different in some small but significant way from before.
 <br />
 <br />
 When approached the right way by you, the user, each numerically equivalent peak is in fact the indication that you are viewing your
@@ -365,12 +368,12 @@ src={waveConcept} width="95%"/>
   src={spiralConcept}
   width="80%" />
 
-<motion.button className="toggleButton" onClick={()=>{
+<motion.button className="toggleButton" style={{padding: "4px 6px", borderRadius: "5px", marginTop: "12px"}} onClick={()=>{
     setSpiral(spiral => false);
     setWave(wave => true);
 }
 }>Wave</motion.button>
-<motion.button className="toggleButton" onClick={()=> {
+<motion.button className="toggleButton" style={{padding: "4px 6px", borderRadius: "5px", marginTop: "12px"}}  onClick={()=> {
     setSpiral(spiral => true);
     setWave(wave => false);
 }

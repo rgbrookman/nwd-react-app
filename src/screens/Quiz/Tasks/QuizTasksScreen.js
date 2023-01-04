@@ -184,7 +184,8 @@ className="quizDiv">
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>map of learnings</p>
+<p>A real cool visual. Fancy making one?</p>
+<a href={'https://www.nowasteddays.org/contact'} target="_blank">Send me an idea.</a>
 </div>
 </div>
 <div className="buttonRow">
@@ -225,22 +226,22 @@ className="quizDiv">
 <br />
 <br />
 <span>
-<strong><i>Signal says - <strong>"Ooh! I wonder what is causing..."</strong></i></strong>
+<strong><i>Signal says - <strong>"Ooh! I wonder what is causing you to..."</strong></i></strong>
 </span>
 <br />
 <br />
 <span>
-<strong>...you to not have many days where you do everything you said you would?</strong>
+<strong>...not have many days where you do everything you said you would?</strong>
 </span>
 <br />
 <br />
 <span>
-<strong>...you to rarely follow a day where you did do everything you said you would with another such day?</strong>
+<strong>...rarely follow a day where you did do everything you said you would with another such day?</strong>
 </span>
 <br />
 <br />
 <span>
-<strong>...you to write things down that perhaps you are not truly engaged and invested in doing?</strong>
+<strong>...write things down that perhaps you are not truly engaged and invested in doing?</strong>
 </span>
 <br />
 <br />
@@ -254,55 +255,58 @@ Remember, these signals, just as your own will be, are objective forces without 
 <br />
 <span>
 By being a hugely effectual generator of such signals (in a way that your own first person perspective never can
-and the impression of others cannot do consistently), NWD, and two full buckets, can be a massively helpful tool for greater self-awareness. 
+and the impression of others cannot do consistently), your NoWastedDays journal can be a massively helpful self-awareness tool. 
 <br />
 <br />
-  Obviously, the signal cannot provide a solution without suitable scrutiny and an ensuing exploration. 
-  The exploration will, in time, birth an observation that will, in turn, prompt a new behaviour from the new found self-awareness, which in turn will create different kinds of 
-  signals in your data. And, the cycle will continue anew. 
+  Obviously, the signal itself cannot provide a solution. That comes from following a signal with sufficient scrutiny and exploration. 
+  This effort, in turn, will birth an observation that will prompt a new behaviour. This new act will then create different kinds of 
+  signals in your data. And, the cycle will renew itself. 
   <br />
   <br />
- Later sections of this course talk more the mindset and mental tools that can help you cope with self-revelation, 
- but I want to take another brief moment to empower you to see your distant or recent past with lots of empathy, even if that 
- involves baring myself a bit more than you'd expect from the average digital course.
+ Other sections of this course talk in more detail regarding the mindset and mental tools that can help you cope with this cycle of self-revelation, 
+ however, this is a very timely moment to empower you to see your distant or recent past with lots of empathy by, again, being open about my own past. 
+ <br />
+ <br />
+ <hr></hr>
+ We are all versions of the human animals response to being alive and the difficulties that the journey from being born to now has presented; learning, connecting, growing, thinking, perceiving etc.
  <br />
  <br />
 As a version of the human condition over the course of my life to date, 
 a pretty accurate description of me would be as follows...
   <br />
   <br />
-  ...that I am a person whose suffering tended to manifest in terms of people pleasing,
-  suppressing my own ability and not seeing things through to the finish.
+  I am a person whose suffering tended to manifest in terms of people pleasing, self-sabotage; mostly through not seeing things through to the finish.
   <br />
   <br />
-  The preoccupations that accompany these psychoses are not without their benefits. They do serve do make you more...
+  In several ways, these responses have, directly and indirectly, served me well. They do make you more...
   <br />
   <br />
-  <strong className="emphasis">Curious</strong>
+  <strong className="emphasis">Curious:</strong>
   <br />
-  <i className="aside">(not finishing one thing, and subconsciously being organised to not finish any, means the starting of another quite divergent thing)</i>
+  <span>Being prone to not finish things you started, if you are really good at it, often means starting another really quite divergent thing. Despite not having the skills or understanding to do either thoroughly, in my mid-twenties, I tried to start a sustainable fashion brand and an ice hockey analytics company. Enough said, right?</span>
   <br />
   <br />
-  <strong className="emphasis">
-  Creative</strong>
+  <strong className="emphasis">Creative</strong>
   <br />
-  <i className="aside">(if you have explored many divergent things,
-    you can see joins that others struggle to and or have a larger plain of reference from which to make imaginative suggestions)</i>
+  <span>If you have explored many divergent things, you can see joins that others struggle to and or have a larger plain of reference from which to make imaginative suggestions. People who aggressively specialise, something which can also be done to excess of course, will inevitably lack this ability to 
+    channel the vast underlying connectedness of things.
+  </span>
   <br />
   <br />
   <strong className="emphasis">Empathetic</strong>
   <br />
-  <i className="aside">(playing in different spaces usually means being prepared to be vulnerable and having experienced a greater diversity of human stories;
-  both of which are likely to engender more empathy)</i>
+  <span>Playing in different spaces usually means being prepared to be vulnerable and having experienced a greater diversity of human stories;
+  both of which are likely to engender more empathy)</span>
   <br />
   <br />
-  That being said, the manifestations of my suffering were certainly also acting as blockers in my relationship with my own mind and how I related to the world.
-  I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, 
-understanding them and transforming my relationship with them in order to get the best from them. I would never have reached this clarity so calmly had it not been for the NWD format; the signals it spawn, 
- the questions it then prompted, the explorations they then afford and the observations they unlocked that were translated into action.
+  This all being true, the manifestations of my suffering were also certainly acting as blockers to a better relationship with my own mind and how I related to the world.
+  I am doing an increasingly effective job of transcending the worst parts of my suffering by accepting them, understanding them and transforming my relationship with them in order to get the best from myself. 
+  I would never have reached this clarity so calmly had it not been for the NWD format; the signals it spawns, 
+ the questions it then prompted, the explorations it then afford and the observations they unlocked that were translated into action.
    <br />
   <br />
-     <strong>In summary, as one my favourite sports coaches says, 'Doers make mistakes'; expect your data to look like a hot mess if you are pushing yourself and remember the signals it provides are objective and unemotional, not personal and carrying a distinct value judgement.</strong>
+     <strong>In summary, as one my favourite sports coaches says, 'Doers make mistakes'; expect your data to look like a hot mess if you are pushing yourself and remember the signals it provides are objective and unemotional, not personal and carrying a distinct value judgement. 
+      Also, don't forget that no one comes out of childhood and into adulthood unscathed so have a base expectation that you will have inhibiting behaviours that will offer you the joy and challenge to transcend.</strong>
   </span>
   <br />
 
@@ -359,15 +363,16 @@ setMyLearnings2(myLearnings2 => true);
   it is spectacularly unhelpful to perceive the vast swathe of life as 'bad'.
 <br />
 <br />
-This is because something either is 'good' because
+This is because something either is 'good' due to...
 <br />
 <br />
-  it is helping provide in the moment, or confidently nurture for the future, a relationship
-  with joy and growth that you know deeply resonates with yourself and is of deep authentic value,
+  how it is helping provide in the moment, or confidently nurture for the future, a relationship
+  with joy and growth that you know deeply resonates with yourself and is, therefore, of deep, known authentic value or, more simply put, <strong>actually good.</strong>,
   <br />
 <br />
-  or that something has the <strong>potential for good</strong> by offering you a chance to transform your relationship with it - whether it is a habit or isolated behaviour - 
-  that, with some introspection and a degree of effort, will provide the kind of 'good' moments and nurturing ability described formerly.
+  or that something has the <strong>potential for good</strong> by offering you a chance to transform your relationship with it. 
+  <br />
+  This could be a long standing habit, or something you have yet to explore; ostensibly any thought or action that, with some introspection and a degree of effort, will be transcended to the point that it falls in the category above.
 </span>
 <br />
 <br />
@@ -378,9 +383,10 @@ This is because something either is 'good' because
 <br />
 <br />
 <span>
-As such, as I refer back to the mentions of my particular sufferings, the many days, decisions and moments that were shaped by their 'worst' components, all help them fall in the
+As such, I refer back to the mentions of my particular sufferings, the many days, decisions and moments that were shaped by their 'worst' components. All fall in the
 bucket of 'potential for good'. No one comes through their early life and early adult life unscathed i.e. free from trauma, incident or anywhere near perfectly calibrated with such peak
-levels of existential conscience that result in a near divine experience of every present moment. As a result, we all have a long list of a 'potential for goods' in our live, and this is a joy in life; finding a way to transform our condition each day. Every incremental (even infinitesimal) improvement in condition is a huge and captivating victory.
+levels of existential conscience that result in a near divine experience of every present moment. As a result, we all have a long list of a 'potential for goods' in our live, and it is the joy of a lifetime to find a way to transcend them. 
+Every incremental (even infinitesimal) improvement in condition is a huge and captivating victory.
   <br />
   <br />
   Unfortunately, there is not easy word for these 'potential for goods' at the moment. Let me know if you have any ideas! 
@@ -393,7 +399,8 @@ levels of existential conscience that result in a near divine experience of ever
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>map of learnings</p>
+<p>A real cool visual. Fancy making one?</p>
+<a href={'https://www.nowasteddays.org/contact'} target="_blank" rel="noreferrer">Send me an idea.</a>
 </div>
 </div>
 <div className="buttonRow">
@@ -448,7 +455,9 @@ setMyLearnings3(myLearnings3 => true);
   <br />
   <strong className="emphasis">something I should 100% avoid doing and or craving because I have near complete confidence it is inversely correlated with my joy and growth, both now and in the future.</strong>
   <br />
+  <br />
   or...
+  <br />
   <br />
   <strong className="emphasis">something that I should, in fact, optimise lots of my life towards because, without me realising it before now, it is something I experience huge joy and or growth from every time I do it.</strong>
 <br />
@@ -480,13 +489,13 @@ You see a big feeling score attached to such a 'disastrous' day in terms of thos
 The signals start popping up off the page:
 <br />
 <br />
-"Am I optimising for the right things?"
+<strong>"Am I optimising for the right things?"</strong>
 <br />
 <br />
-"How much time should I make for some serendipity and such quality time now compared to now?"
+<strong>"How much time should I make for some serendipity and such quality time now compared to now?"</strong>
 <br />
 <br />
-"Why am I always optimising for the complex or complicated versus the simple and serene?"
+<strong>"Why am I always optimising for the complex or complicated versus the simple and serene?"</strong>
 <br />
 <br />
 <hr className="dividingLine" />
@@ -530,7 +539,8 @@ I can view it on my phone as well. But when it was just a spreadsheet in its ver
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>map of learnings</p>
+<p>A real cool visual. Fancy making one?</p>
+<a href={'https://www.nowasteddays.org/contact'} target="_blank">Send me an idea.</a>
 </div>
 </div>
 <div className="buttonRow">
@@ -558,7 +568,7 @@ className="quizDiv">
     <h2 className="quizHeaderWhite">Finding your balance between running and resting</h2>
     <br />
     <span>
-      If the light teasing of my friends is anything to go by, if NoWastedDays ever became a more widely known platform, the prevailing opinion would be that, on the basis of the name,
+      If the light teasing of my friends is anything to go by, were NoWastedDays to ever become a more widely known platform, the prevailing opinion would be that, on the basis of the name,
       that it is about cramming more and more activities into everyday in the kind of Type-A frantic, no rest, 'sleep when you are dead' way that is often lauded in our culture.
     </span>
     <br />
@@ -580,8 +590,8 @@ className="quizDiv">
     <span>
     <br />
         <br />
-    <strong className="emphasis">If you can fill the unforgiving minute
-    With fourty seconds’ worth of distance run,</strong>
+    <strong className="emphasis"><i>If you can fill the unforgiving minute
+    With fourty seconds’ worth of distance run...</i></strong>
     <br />
         <br />
     i.e. 40 seconds is 66% of a minute so, if you apply this to your NWD, a good baseline is, if you have 3 things dedicated to growth

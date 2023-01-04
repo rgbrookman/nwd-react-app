@@ -81,13 +81,13 @@ export default function QuizDebriefScreen() {
   To look at an outcome objectively and in its entirety without a reliable prompt or piece of guidance is basically impossible.
   <br />
   <br />
-  This difficulty then, in turn, stands in the way of any of us learning from each day and the things we have tried to achieve within it as much as we possibly could.
+  The impact of this added difficulty is that it stands in the way of any of us learning from the things we have tried to achieve within each day as much as we possibly could.
   As a result, more often than not, we end up short on insight and high on a poorly calibrated sense of your role in the outcome.
 </span>
 <br />
 <br />
 <span>
-  This miscalibration usually takes one of two forms:
+  This mis-calibration is important to acknowledge and usually takes one of two forms:
 <br />
 <br />
   <strong className="emphasis">Form #1.</strong> We portion ourselves the blame for all the things that went 'wrong',
@@ -95,16 +95,15 @@ export default function QuizDebriefScreen() {
 <br />
 <br />
   <strong className="emphasis">Form #2.</strong> We flood ourselves in praise and acclaim, and really start to believe our own hype.
-  Then, in turn, we don't have a grateful word to say about the role of key people, the people upon whose shoulders we are standing
-  or sheer blind good fortune that afforded us an opportunity to succeed at all.
+  Then, quite naturally, we don't have a grateful word to say about the role of key people or any of the many moments of sheer blind good fortune that afforded us an opportunity to succeed at all.
 </span>
 <br />
 <br />
 <span>
   I have worked in data for over a decade as a marketing analyst, as a performance development coach for a professional ice hockey team,
-  and as a founder of different start-ups. In that time I have needed to review many performances and outcomes of many different types.
-  Whilst depending on the situation there are a million ways to do this, one ultra-robust, really accessible framework that you
-  can do on any scrap of paper, spare word doc or excel sheet, I am sharing in this section.
+  and as a founder of different start-ups. In that time I have needed to review performances and outcomes of many different types.
+  Whilst depending on the situation there are a million ways to do this, I want to share one ultra-robust, really accessible framework that you
+  can do on any scrap of paper, spare word doc or excel sheet.
 </span>
 <br />
 <br />
@@ -129,8 +128,8 @@ Create 4 colums or chunks, and give each one of the following headers:
 <br />
 <br />
 <span>
-  The last note for this section, and something I hope to demonstrate across the next four mini-steps is that in any outcome,
-  there are <strong>always</strong> multiple notes that fit into each of the buckets above.
+  The last note for this section, and something I hope to demonstrate across the next four mini-steps, is that any outcome
+ <strong>always</strong> has multiple notes that fit into each of the buckets above.
 </span>
 </div>
 <div  id="debriefColMain" className="rightCol">
@@ -146,8 +145,8 @@ variants={showHideState}>
 <motion.div className="why"
 animate={pic ? "hide" :"show"}
 variants={showHideState}>
-<span><strong>Confidence</strong> -  There will always be things that you
-contributed positively and you deserve to consolidate the confidence from those actions.</span>
+<h3>Confidence</h3> - <span> <strong>There will always be things that you
+contributed positively and you deserve to consolidate the confidence from those actions.</strong></span>
 </motion.div>
 <motion.button
 className="debriefButton"
@@ -167,8 +166,8 @@ variants={showHideState}>
 <motion.div className="why"
 animate={poc ? "hide" :"show"}
 variants={showHideState}>
-<span><strong>Gratitude</strong> - There will always be things that benefitted a situation
-over which you had less than zero control over. Giving gratitude to these things will help you feel better more often.</span>
+<h3>Gratitude</h3> - <span><strong>There will always be things that benefitted a situation
+over which you had less than zero control over. Giving gratitude to these things will help you feel better more often.</strong></span>
 </motion.div>
 <motion.button
 className="debriefButton"
@@ -188,9 +187,9 @@ variants={showHideState}>
 <motion.div className="why"
 animate={nic ? "hide" :"show"}
 variants={showHideState}>
-<span><strong>Construction</strong> - There will always be things you could have instigated in better time or owned more entirely.
+<h3>Construction</h3> -  <span><strong>There will always be things you could have instigated in better time or owned more entirely.
 Articulating these things will help you healthily detach from them; seeing them only in objective opportunity terms versus
-character flaws.</span>
+character flaws.</strong></span>
 </motion.div>
 <motion.button
 className="debriefButton"
@@ -209,9 +208,9 @@ variants={showHideState}>
 <motion.div className="why"
 animate={noc ? "hide" :"show"}
 variants={showHideState}>
-<span><strong>Transcendence</strong> - Your emotional response to a situation is a force that blurs the boundary between what you could and could not control.
+<h3>Transcendence</h3> - <span><strong>Your emotional response to a situation is a force that blurs the boundary between what you could and could not control.
 Honestly articulating what you could not control will allow you to detach and, in time, perhaps even forgive and then love those forces
-for how they have shaped and strengthened your outlook.</span>
+for how they have shaped and strengthened your outlook.</strong></span>
 </motion.div>
 <motion.button
 className="debriefButton"
@@ -302,8 +301,8 @@ Be careful here as overstating your impact on something is as bad as failing to 
 We explore what might fall in that former category in a coming section.
       <br />
       <br />
-    To summarise, whether you hit all of your aims or fell short of every standard, their is confidence out there to be consolidated and you can
-    rely on the debrief format, win or lose, as a way to grasp it!
+    <strong>To summarise, whether you hit all of your aims or fell short of every standard, their is confidence out there to be consolidated and you can
+    rely on the debrief format, win or lose, as a way to grasp it!</strong>
   </span>
   <span>
 
@@ -311,7 +310,8 @@ We explore what might fall in that former category in a coming section.
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<p>A sick graphic describing what I've said</p>
+<p>A real cool visual. Fancy making one?</p>
+<a href={'https://www.nowasteddays.org/contact'} target="_blank">Send me an idea.</a>
 </div>
 </div>
 <div className="buttonRow">
@@ -352,11 +352,10 @@ className="quizDiv">
       <br />
     <br />
       ...all the love, hate, pioneering effort, balking chance, migration, stagnation, inflation and procrastination;
-      each of the dizzying lineages of people, places, processes, postulations, perambulations and prognostications that go back even just a
-      couple of generations, let alone a longer period of time and space...
+      each of the dizzying lineages of people, places, processes; the human ocean of postulations, perambulations and prognostications that go back even just a single generation, let alone a longer period of time and space...
       <br />
     <br />
-      ...for you to even to have a chance to exist in the first place. 
+      ...for you to even have a chance to exist in the first place. 
       <br />
     <br />
       The chance is so mind bogglingly small that you can't help but be brought back to the present moment 
@@ -365,13 +364,12 @@ className="quizDiv">
     <br />
     <br />
     <span>
-      This thought exercise ladders up to the broader point of this step which is that all the things 
-that happened before your life that put you in a position to live you had no control over
- but it is possible to feel intense gratitude for, and that is what this section is about.
+      This thought exercise ladders up to the broader point of this step which that so much is happening constantly outside of your awareness or control that is helping to you succeed at any given task.
+      This impact is thoroughly worth articulating and sharing, and is a key part of the debrief format.
       <br />
       <br />
       In a more distilled and present tense fashion, there is so much good that is afforded to us by other people and things on a daily
-      basis that it is important to be grateful for it.
+      basis that it is so important to be grateful for it.
     </span>
     <br />
     <br />
@@ -384,8 +382,8 @@ that happened before your life that put you in a position to live you had no con
     and that environment will never have been created exclusively by you.
     <br />
     <br />
-    You should be doting on
-    existence, nature, favour, friends, family or some other kind of good exceptional external circumstances
+    We all should be doting on
+    existence, nature, favour, friends, family and or some other kind of good exceptional external circumstances
     over which you had less than zero control.
     <br />
     <br />
@@ -396,47 +394,70 @@ that happened before your life that put you in a position to live you had no con
     <ol>
     <br />
     <li><strong>People / Person:</strong> 
+    <br />
       Start close to home or furthest from home - whatever you find easiest. 
-      Who has helped you? 
+      <br />
+      Who has helped you today, or recently; even if only in a very small and practical way?
+      <br />
       From whose wisdom have you made better decisions? 
+      <br />
       Whose goodness have you witness or heard about?
+      <br />
       Who is someone who you have never met but you feel an affinity for that transcends time and space?</li>
     <br />
+    <br />
   <li><strong>Place:</strong> 
+  <br />
+  Which of the spaces in your own home bring you most joy and safety.
+  <br />
+  What places have you been grateful to spend time within or enjoyed visiting?
+  <br />
     What organisations have helped you succeed or feel more at home in the world? 
-    What places have you been grateful to spend time within or enjoyed visiting?
   </li>
   <br />
+  <br />
     <li><strong>Part of your Body:</strong> 
-      Our limbs and organs work in unbelievable connectivity to afford us the chance to think, feel and act. Which have helped you the most recently?
+    <br />
+      Our limbs and organs work with unbelievable connectivity and afford us the chance to think, feel and act. Which have helped you the most recently?
+      <br />
       Which have you perhaps never said thank you to, despite the fact they have worked continually, and perhaps without fail, since before you were born? 
     </li>
       <br />
+      <br />
     <li><strong>Plant or Product:</strong> 
+    <br />
       Which of the plants in your home, or plants in your surrounding area are you grateful to see each day? 
+      <br />
       Which of the appliances that you use has helped you a lot recently?
+      <br />
     </li>
       <br />
-    <li><strong>Property:</strong> 
-      What force can you say has afforded you a chance to feel?
+      <br />
+    <li><strong>Property (of an object, space, time.):</strong> 
+    <br />
+      What force can you say has afforded you a chance to feel deeper or happier?
+      <br />
+      What emotional aspect of a person or place to relish the most? 
     </li>
     <br />
+    <br />
     <li><strong>Pain or Perversity:</strong> 
-      What pain or perversity can you be grateful for because a) it is a sign you are alive in the world and b) because it is better than succumbing to greater pain or be trapped by greater levels of perverse thinking?
+    <br />
+      Which slice of pain or piece of individual perversity can you be grateful for because a) it is a sign you are alive in the world and b) because it is better than succumbing to greater pain or be trapped by greater levels of perverse thinking?
+      <br />
+      Which bitter experience from the past has, without meaning to, enriched your understanding of being alive and connecting with others?
     </li>
       <br />
+      <br />
 </ol>
-    To summarise, ply your 'Positive & Out of Your Control' box with, in order of importance, as many of the environmental factors that helped you as possible and
-    you will feel a huge wash of gratitude and goodness!
+    <strong>To summarise, ply your 'Positive & Out of Your Control' box with, in order of importance, as many of the environmental factors that helped you as possible and
+    you will feel a huge wash of gratitude and goodness!</strong>
     </span>
 </div>
 <div className="rightCol">
 <div className="rightContent">
-<h4 classaName="quizHeaderGreen">Positive & Out of Your Control - Insights & Related Quotes:</h4>
-<p>The advice of someone</p>
-<p>Someone being open to your idea</p>
-<p>Someone simply not getting in the way of your idea</p>
-<p>The 'machinery' exist so what you wanted to achieve could take place</p>
+<p>A real cool visual. Fancy making one?</p>
+<a href={'https://www.nowasteddays.org/contact'} target="_blank">Send me an idea.</a>
 </div>
 </div>
 <div className="buttonRow">
@@ -468,11 +489,11 @@ className="quizDiv">
   <br />
   <br />
   <span>
-    But this difficulty processing has one particular cause; an underlying assumption that is getting in the way of our progress.
+    Fortunately, there is one additional insight that can hugely help with this bucket, and help us overcome this difficulty of processing the negative.
     <br />
     <br />
-    We assume that we are not idiots and, as a result, should only be making choices that represent the best of our accumulated knowledge
-    and demonstrate our near-godly apprehension.
+    <strong>We assume that we are not idiots and, as a result, should only be making choices that represent the best of our accumulated knowledge
+    and demonstrate near-godly apprehension.</strong>
   </span>
   <br />
   <br />
@@ -482,7 +503,7 @@ className="quizDiv">
   <br />
   <br />
   <span>
-  Most of the 8 principles they present, which are born from so much wisdom, millions of words written and decades of expertise,
+    The video summarises all their writings and content into an eight point credo. Most of the 8 principles they present, which are born from so much wisdom, millions of words written and decades of expertise,
     centre on embracing imperfection, accepting your own unique yet archetypal idiocy and the pervasively tragic nature of being alive.
     They present these themes as a powerful remedy to the time we waste resisting these actually unavoidable elements of some large, large part of your life.
   </span>
@@ -501,12 +522,11 @@ The 'Negative and In Your Control' bucket is here to help with the process of he
 its underpinning angst and struggle with a wave of empathetic yet unemotional constructive commentary.
 <br />
 <br />
-Fill it up as much as you can with things that you could have done either have done better, or more holistically, or in less time.
+Fill it up as much as you can with things that you could have either done better, or more holistically, or in less time.
 <br />
 <br />
 Celebrate a heaving bucket of such remarks
 as the kind of self-insight and awareness that is beautifully symbolic of both your engagement with yourself and the nature of being alive.
-
   </span>
 </div>
 <div className="rightCol">
@@ -550,8 +570,11 @@ className="quizDiv">
     <span>
       To map, not only the helpful factors as we discussed earlier, but any present hindering factors as well is very important.
       It often requires more thought and toleration of discomfort than playing back the positive parts of a journey,
-      and often feels more skippable than endeavouring to consolidate what you personally could have done better,
-      but to map the 'negative and out of your control' puts in motion the following chain of mental events.
+      and often feels more skippable than endeavouring to consolidate what you personally could have done better.
+      However, I feel that to map the 'negative and out of your control' is like pushing a snowball down a hill; a small act with grows in size without you even trying.
+    <br />
+    <br />
+    <strong>Why write down the 'Negative & Outside of Your Control' factors?</strong>
     <br />
     <br />
     <strong className="emphasis">1. First, It allows you to detach from them.</strong>
@@ -561,19 +584,21 @@ className="quizDiv">
     but in the messy, often emotional aftermath of a outcome we can so often do just the opposite.
     <br />
     <br />
-    Writing the 'Negative Impact & Out of Your Control' down, therefore, is powerful in acknowledging that
-    it was outside of you and the fact that it is now there on the spreadsheet or on the A4 in a very separate bucket
-    is a powerful visual acknowledgment of this externality.
+    Writing the 'Negative Impact & Out of Your Control' down is a simple yet powerful way of acknowledging that
+    it was outside of your control and the fact that it is now there on the spreadsheet or on the A4 in a very separate bucket
+    is a stark visual acknowledgment of this externality.
       <br />
       <br />
     <strong className="emphasis">2. This detachment allows you to forgive it more easily.</strong>
     <br />
     When we attach our 'selves' to a outcome, it can be far harder to forgive negative external circumstances
     because they have come at the cost of us - our very self - and it seems crazy to be prepared to pay that toll.
+    <br />
+      <br />
     But, as we discussed in the mindset section, attachment and the self are
     notions not only associated with suffering, but are two of its major underpinnings.
     By writing down and detaching from whatever the negative forces in a situation may have been,
-    we can see it outside of oursevles, free of a cost to us, and then we can forgive ourselves and it more readily.
+    we can see it outside of ourselves, free of a cost to us, and then we can forgive both ourselves and it more readily.
       <br />
       <br />
     <strong className="emphasis">3. This forgiveness then empowers you to love the way things played out.</strong>
@@ -588,8 +613,9 @@ className="quizDiv">
   </span>
   <br />
   <br />
+  Most people do the opposite of this - keeping negative chance events outside of their consciousness or, worse still, actively resenting them. This leaves them bitter and victimised. In contrast, doing your best to embrace the hand that fate has dealt you will see you moving forward more optimistically and calmly.
   <span>
-Overall, to map them is to detach from circumstances; to detach is to forgive and to forgive is to love them; to love them is to transcend them.
+<strong>Overall, to map the negative and outside of your control is to significantly detach from said circumstances; to detach is to forgive and to forgive is to love them; to love them is to transcend them.</strong>
 </span>
 </div>
 <div className="rightCol">
