@@ -560,9 +560,6 @@ onChange={(e) => setStartScore(e.target.value)}
     onChange={(e) => setMindBody(e.target.value)}
     />
    </div>
-   <div className={mobFrameDisplayState}>
-   <h1 className="sickTooltip" style={{ fontSize: `${fontState}px`}}>{cursorState}</h1>
-   </div>
    { vw > 480 ? <></> : 
    <motion.div 
     className="mobileTooltip"
