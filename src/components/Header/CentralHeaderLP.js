@@ -130,8 +130,7 @@ const CentralHeader = () => {
     </a>
   </div>
   <div className="box centre">
-  <img src={logo}   width="30"
-      height="30"></img>
+  <img id="brand" src={greenlogo} height={24} onClick={openDock} />
       </div>
   <div className="box">
   <a id="nava"
@@ -147,7 +146,7 @@ const CentralHeader = () => {
 <>
   <nav className="nav mobile">
   { pageLoading ? <a id="nava"><DropdownLoading /></a> :
-<a id="nava" onClick={logoutHandler} href={'www.nowasteddays.org'} target="_blank">
+<a id="nava" onClick={logoutHandler} href={'https://www.nowasteddays.org'} target="_blank">
   NoWastedDays
 <div id="underline"></div>
 </a>
