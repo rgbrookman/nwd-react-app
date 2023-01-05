@@ -286,15 +286,15 @@ className="quizDiv">
 <div className="rightCol">
 <div className="rightContentContent">
 <h2 className="quizHeaderGreen">Contents</h2>
-<span>1.    <strong className="boldHeader"><a href={'/insight/quiz/feeling'}>Looking at your Charts 101:</a></strong></span>
+<span>1.    <strong className="boldHeader"><a href={'/insight/quiz/feeling'} style={{color: #004a22}}>Looking at your Charts 101:</a></strong></span>
 <span className="subtitle" style={{marginBottom: "24px"}}>Quickly yet Completely Teaching the 4 Core Data Views</span>
-<span>2.    <strong className="boldHeader"><a href={'/insight/quiz/feeling'}>Harnessing the Wave:</a></strong></span>
+<span>2.    <strong className="boldHeader"><a href={'/insight/quiz/wave'} style={{color: #004a22}}>Harnessing the Wave:</a></strong></span>
 <span className="subtitle" style={{marginBottom: "24px"}}>How to Best Use a Dynamic Hidden Deep in your Data</span>
-<span>3.    <strong className="boldHeader"><a href={'/insight/quiz/feeling'}>Making of a Mindset</a></strong></span>
+<span>3.    <strong className="boldHeader"><a href={'/insight/quiz/mindset'} style={{color: #004a22}}>Making of a Mindset</a></strong></span>
 <span className="subtitle" style={{marginBottom: "24px"}}>Why how you look at your data matters more than any other single thing.</span>
-<span>4.    <strong className="boldHeader"><a href={'/insight/quiz/feeling'}>Making the Data Deeply Representative</a></strong></span>
+<span>4.    <strong className="boldHeader"><a href={'/insight/quiz/representative'} style={{color: #004a22}}>Making the Data Deeply Representative</a></strong></span>
 <span className="subtitle" style={{marginBottom: "24px"}}>Sharing the 3 Keys to Top Quality Data</span>
-<span>5.    <strong className="boldHeader"><a href={'/insight/quiz/feeling'}>Getting Value from Any Outcome</a></strong></span>
+<span>5.    <strong className="boldHeader"><a href={'/insight/quiz/debrief'} style={{color: #004a22}}>Getting Value from Any Outcome</a></strong></span>
 <span className="subtitle" style={{marginBottom: "24px"}}>The best way to break down any event (and its completely free!)</span>
 </div>
 </div>
