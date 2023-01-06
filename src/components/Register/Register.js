@@ -26,20 +26,20 @@ export default function RegisterTest({ history }) {
 }, [history, userInfo]);
 
 
-  const submitHandler = async (e) => {
-    await e.preventDefault();
-   if (password !== confirmPassword) {
-     await setMessage("Passwords do not match");
-   } else {
-     await dispatch(register(name, email, password ));
-     await navigate('/login');
-   }
-    };
+const submitHandler = (e) => {
+  e.preventDefault();
+
+  if (password !== confirmPassword) {
+    setMessage("Passwords do not match");
+  } else dispatch(register(name, email, password));
+};
 
   return (
     <>
 
     <section className="registerContainer">
+    {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+    {message && <ErrorMessage variant="danger">{message}</ErrorMessage>}
     <form className="register" onSubmit={submitHandler}>
   
     { name ? <label className="statement starter" htmlFor="name">Name</label> : <></> }

@@ -33,20 +33,15 @@ const override = {
   borderColor: "red",
 };
 
-  const submitHandler = async (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
     dispatch(login(email,password));
-    setLoadingSpinner(true);
-    setTimeout(()=> {
-      setLoadingSpinner(false);
-    }, 1500);
-    navigate('/');
   };
 
   return (
   <>
     <section className="loginContainer" onMouseOver={props.hide}>
-
+    {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
       <form onSubmit={submitHandler}>
 
 

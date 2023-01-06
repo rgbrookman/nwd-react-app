@@ -19,22 +19,22 @@ export default function MainTutorial( props ) {
     <br></br>
     <div className="helpRow text">
         <p>NoWastedDays.io is a digital journal powered by data.</p>
-        <p>Like any journal, it helps you plan out your year, week and day. However, being digital and powered by data, it can do far more to generate insight and signals that can, in time, lead you to better and better days in the future.</p>
+        <p>Like any journal, it can really help you plan out your year, week and day. However, courtesty of being digital and powered by data, it can do far more to generate insights and signals that can lead you to better and better days in the future.</p>
         <p>Find below a helpful list of what each part of the site does and each icon means:</p>
     </div>
     <hr className="dividingLine"></hr>
     <p><strong className="helpTitle">Site Sections</strong></p>
     <div className="helpRow">
-        <p><h4>Year</h4> - A place to map the most important cognitive frames we all share - your vision, your values and more - and complete interactive experiences to help make thinking about them easier.</p>
+        <p><h4>Year</h4> - A place to map lots of the most important ideas that shape your daily planning and decisions. I like to call them 'frames' as by looking at a decision through them, you will always find a clearer, better answer. To help construct your frames, I have also started to create complete interactive experiences to make thinking about them easier to do.</p>
     </div>
     <div className="helpRow">
-        <p><h4>Week</h4> - A space to translate the aims and frames of a year into the steps that make it possible week-by-week.</p>
+        <p><h4>Week</h4> - A space to translate the aims and frames of a year into the steps that make it possible week-by-week. Once you have filled out your year map, you will be able to refer to your yearly aims whilst planning your week. This makes it so much easier to focus on the most urgent and important things and, as a result, achieve your aims faster.</p>
     </div>
     <div className="helpRow">
-        <p><h4>Today</h4> - Your daily diary; a smart, simple format for planning and consolidating each day.</p>
+        <p><h4>Today</h4> - Your daily diary; a smart, simple format for planning and processing each day.</p>
     </div>
     <div className="helpRow">
-        <p><h4>Insights</h4> - Scroll back through your diary and see your 5 different views of your data. </p>
+        <p><h4>Insights</h4> - Scroll back through your diary and see your 5 different views of your data to spot the signals that may lead to greater joy and growth in the future. </p>
     </div>
     <div className="helpRow">
         <p><h4>Art of Looking</h4> - A short course to help you explore your data safely and successfully.</p>
