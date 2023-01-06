@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { createYearAction, listYears } from '../../actions/yearActions';
 import TileLoading from '../../components/Loading/TileLoading';
+import MainTutorial from '../../components/Tutorial/MainTutorial';
 import CentralHeader from '../../components/Header/CentralHeader';
 import MouseTooltip from '../../components/MouseTooltip/MouseTooltip';
 import HideDock from '../../components/Dock/HideDock';
@@ -100,6 +101,7 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
   }
 
 
+
   useEffect(()=> {
     loadingTimeout();
   })
@@ -145,12 +147,13 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
       
 
     <div className={tutorialState}>
-    <iframe className='tutorialPlayer'
+    {/* <iframe className='tutorialPlayer'
     width="560" height="315"
         title='Youtube player'
         sandbox='allow-same-origin allow-forms allow-popups allow-scripts allow-presentation'
         src={`https://youtube.com/embed/zJkUF4o2D1o}`}>
-</iframe>
+</iframe> */}
+<MainTutorial showTutorial={showTutorial} />
     </div>
     <HideDock 
    toggleOverlay={cursorDisplayToggle}
@@ -407,7 +410,7 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
          
       </div>
     
-      <div className="yeartile quote">
+      <div className="yeartile navquote">
       { navigationalQuote ? <label for="navQuote" className="statement starter">My Navigational Quote is... </label> : <></>}
              <textarea
              id="navQuote"
