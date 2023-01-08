@@ -18,14 +18,15 @@ export default function MainTutorial( props ) {
     <h2>Help</h2>
     <br></br>
     <div className="helpRow text">
-        <p>NoWastedDays.io is a digital journal powered by data.</p>
-        <p>Like any journal, it can really help you plan out your year, week and day. However, courtesty of being digital and powered by data, it can do far more to generate insights and signals that can lead you to better and better days in the future.</p>
+        <p>NoWastedDays.io is a digital daily journal powered by data.</p>
+        <p>Like any good journal, it can really help you plan out your year, week and day. However, courtesy of being digital and powered by data, it can do far more to generate insights that can lead you to better and better days in the future and make superior planning really easy.</p>
         <p>Find below a helpful list of what each part of the site does and each icon means:</p>
     </div>
     <hr className="dividingLine"></hr>
     <p><strong className="helpTitle">Site Sections</strong></p>
     <div className="helpRow">
         <p><h4>Year</h4> - A place to map lots of the most important ideas that shape your daily planning and decisions. I like to call them 'frames' as by looking at a decision through them, you will always find a clearer, better answer. To help construct your frames, I have also started to create complete interactive experiences to make thinking about them easier to do.</p>
+        <p>The frames on the year page include your name, date of birth, your visions for the year, your personal values, your reason for being (or ikigai), a navigational quote, a memory from the past and the unique day number</p>
     </div>
     <div className="helpRow">
         <p><h4>Week</h4> - A space to translate the aims and frames of a year into the steps that make it possible week-by-week. Once you have filled out your year map, you will be able to refer to your yearly aims whilst planning your week. This makes it so much easier to focus on the most urgent and important things and, as a result, achieve your aims faster.</p>
