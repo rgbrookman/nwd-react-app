@@ -304,7 +304,7 @@ useEffect(()=> {
   </div>
 
   <div id="yeartilevalues" className="yeartile values">
-
+  <div className="valuesRow">
     <div className="valuesDiv">
   { myValues_1 ? <label htmlFor="myValuesOne" className="statement starter">#1 </label> : <></>}
 
@@ -417,10 +417,11 @@ useEffect(()=> {
           />
           </div>
    
+          </div>
   </div>
 
   <div id="yeartilevision" className="yeartile vision">
-
+<div className="valuesRow">
 <div className="valuesDiv">
   { myVision_1 ? <label htmlFor="visionOne" className="statement starter">#1 </label> : <></>}
 
@@ -485,6 +486,7 @@ useEffect(()=> {
           placeholder="Vision #5"
           onChange={(e) => setMyVision_5(e.target.value)}
           />
+          </div>
           </div>
   </div>
 

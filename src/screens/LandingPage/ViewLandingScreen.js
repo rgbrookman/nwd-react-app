@@ -160,7 +160,7 @@ useEffect(()=> {
    </div>
     <section className="newsfeed">
       <div className="title">
-        <h4>NWD Feed:</h4><span>Last Update: 03/09/2023 17:34:00</span>
+        <h4>NWD Feed:</h4><span>Last Update: 08/01/2023 08:34:00</span>
       </div>
       <div className={tutorialState}>
    {/* <iframe className='tutorialPlayer'
@@ -170,6 +170,58 @@ useEffect(()=> {
   </iframe> */}
   <MainTutorial showTutorial={showTutorial}/>
 </div>
+
+<div className="newsitem">
+        <div className="header">
+          <div className="headerIcon">
+          <FontAwesomeIcon
+            id="quote"
+            className="icon"
+            icon={faQuoteLeft}/> 
+          </div>
+          
+          <div className="nameDate">
+            <h6>Quote</h6>
+            <span>08/01/2023</span>
+            </div>
+        </div>
+        
+        <div className="quote">
+          <h2>"It is not enough to take steps which may some day lead to a goal; each step must be itself a goal and a step likewise"</h2>
+          <span>Johann Wolfgang von Goethe</span>
+          <hr className="dividingLineThin"></hr>
+          <span>
+            <strong>Any activity is able to be done mindfully and, if it is done mindfully, is able to be both restorative and satisfying. 
+            Due to its obsession with financial returns, oblique value and hard skills, modern life can kid us all into a task hierarchy wherein some activities festoon as 'boring' and 'pointless' whereas others are perennially worthwhile and exciting. 
+            The hierarchy betrays the following far more robust insights as to where enduring satisfaction and personal growth comes moment by moment: 
+              <br></br>
+              <br></br>
+              <ul>
+                <li><strong>Recognising the 'now-ness' of your life experience is a surefire way to feel more primed for joy and work.</strong>
+                <br></br> 
+              
+              This thought is both wonderfully and tragically captured in a famous British TV interview between Dennis Potter and Melvyn Bragg. 
+              Potter was suffering from the late stages of a cancer diagnosis at the time of recording and this thread runs through the interview 
+              as they pause to make him comfortable. He articulates a series of thoughts on the 'now-ness of things' and a little kind of treatise 
+              on the present tense which I think is brilliantly and I think we can all relate to. <a href={'https://youtu.be/XpnyPl8-ZcQ?t=34'} target="_blank">Watch Clip</a></li>
+              <br></br>
+             <li><strong>Remembering that, whilst some tasks and skills obviously ladder up to achievement at others more keenly, it is only what it is directly in front of you that is worth your complete, calm attention.</strong>
+              <br></br>
+              Johnny Wilkinson makes a great point about how the washing up is no less worthy than a triathlon. As he says, they are both simply moving your body towards a goal, so why is one more worthy than the other? <a href={'https://youtu.be/O80qs9OEadw?t=2507'} target="_blank">Watch Clip</a>.</li>
+              <br></br>
+             <li><strong>Acknowledging that it is not time spent on a task but rather sufficient time spent in a state of deliberate practice that correlates most with progress.</strong>
+             <br></br> 
+              Anders Ericsson, the man on whose research the 10,000 hours notion was defined, has a checklist of what connotes great deliberate practice <a href={'https://www.swimmingworldmagazine.com/news/swimming-world-presents-swimming-technique-concepts-dr-anders-ericssons-concept-of-deliberate-practice-by-rod-havriluk/#:~:text=COMPONENTS%20OF%20DELIBERATE%20PRACTICE'} target="_blank">here.</a> It is time spent enriched by these factors that creates systemic growth.</li>
+              </ul>
+              
+              The Goethe quote above summarises the above very nicely. Plot your course with small goals, take each step consciously and then relish, in each and every present moment you have, the journey towards wherever you'd like to be.
+            </strong>
+          </span>
+        </div>
+      </div>
+
+
+      <hr className="dividingLine"></hr>
 
 <div className="newsitem">
         <div className="header">
@@ -224,7 +276,7 @@ useEffect(()=> {
         </div>
         
         <div className="quote">
-          <h2><i>"I try all things. I achieve what I can."</i></h2>
+          <h2>"I try all things. I achieve what I can."</h2>
           <span>Herman Melville</span>
           <hr className="dividingLineThin"></hr>
           <span>
@@ -233,6 +285,7 @@ useEffect(()=> {
               but you can be masterful at enjoying every activity; an art made possible through a present and playful mind.
               Some activities you will do excellently, achieving levels of skill or reward as a result; and this quote applies there. 
               There is nothing wrong - in isolation - with being grateful for and proud with your high skill. You are achieving what you can. 
+              <br></br>
               <br></br>
               Similarly, that thing you are vulnerable enough to try in a group for the first time; you know you may be the worst at it, you know you may fail in some way; that applies too.
               Being vulnerable and calm is a hugely motivating force in the lives of others. It empowers them to do the same, and feel less anxious. Also, there is a quiet joy that comes from doing any task, 

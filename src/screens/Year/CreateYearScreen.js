@@ -189,6 +189,8 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
       </div>
     
       <div id="yeartilevalues" className="yeartile values">
+      <label for="navQuote" className="statement starter">My Personal Values are... </label> 
+      <div className="valuesRow">
         <div className="valuesDiv">
       { myValues_1 ? <label for="myValuesOne" className="statement starter">#1 </label> : <></>}
     
@@ -310,11 +312,12 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
               onChange={(e) => setMyValues_5_Text(e.target.value)}
               />
               </div>
-       
+              </div>
       </div>
     
       <div id="yeartilevision" className="yeartile vision">
-    
+      <label className="statement starter">My Vision for 2023 is... </label> 
+    <div className="valuesRow">
     <div className="valuesDiv">
       { myVision_1 ? <label for="visionOne" className="statement starter">#1 </label> : <></>}
     
@@ -389,6 +392,7 @@ const [cursorDisplayState, setCursorDisplayState] = useState(true);
               cols={12}
               onChange={(e) => setMyVision_5(e.target.value)}
               />
+              </div>
               </div>
       </div>
     

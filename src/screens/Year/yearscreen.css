@@ -50,13 +50,22 @@
   padding: 16px 20px; 
   border-radius: 5px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   text-align: start;
   height: 100%;
   width: 100%;
   box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   z-index: 1;
   overflow: hidden;
+}
+
+.valuesRow {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .valuesDiv {
@@ -213,10 +222,6 @@
     border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
   }
-  
-  #yourName {
-    width: 100%;
-  }
 
   .valuesDiv {
     width: 100%;
@@ -226,6 +231,12 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+  
+  #yourName {
+    width: 100%;
+  }
+
+ 
     
   #valuesOne,
   #valuesTwo,

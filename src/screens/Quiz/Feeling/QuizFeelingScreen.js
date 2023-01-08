@@ -357,7 +357,7 @@ className="quizDiv">
       drumbeat throughout this short course. 
       <br />
 <br />
-      <strong>Your feeling score metrics, just like every other metric or graph, are there to provide signals, and in being so, set in motion the following cycle of mental events:</strong>
+      <strong>Your feeling score metrics, just like every other metric or graph, are there to provide signals, and in doing so, set in motion the following cycle of mental events:</strong>
 
       <br />
 <br />
