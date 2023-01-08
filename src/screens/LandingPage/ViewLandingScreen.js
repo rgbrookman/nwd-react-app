@@ -213,7 +213,6 @@ useEffect(()=> {
              <br></br> 
               Anders Ericsson, the man on whose research the 10,000 hours notion was defined, has a checklist of what connotes great deliberate practice <a href={'https://www.swimmingworldmagazine.com/news/swimming-world-presents-swimming-technique-concepts-dr-anders-ericssons-concept-of-deliberate-practice-by-rod-havriluk/#:~:text=COMPONENTS%20OF%20DELIBERATE%20PRACTICE'} target="_blank">here.</a> It is time spent enriched by these factors that creates systemic growth.</li>
               </ul>
-              
               The Goethe quote above summarises the above very nicely. Plot your course with small goals, take each step consciously and then relish, in each and every present moment you have, the journey towards wherever you'd like to be.
             </strong>
           </span>
