@@ -301,7 +301,7 @@ export default function FullDock ( props ) {
     icon={fa8}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityNine + 0.025})`, border: "1px solid rgba(0, 74, 35,0.2)"}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityNine + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #9"
       onMouseOver={props.changeObjNine}>
     <FontAwesomeIcon
@@ -311,7 +311,7 @@ export default function FullDock ( props ) {
       </div>
       <div id="finalnode" 
       className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTen + 0.025})`, border: "1px solid rgba(0, 74, 35,0.2)"}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTen + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #10"
       onMouseOver={props.changeObjTen}>
     <FontAwesomeIcon
