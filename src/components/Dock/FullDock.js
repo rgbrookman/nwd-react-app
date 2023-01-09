@@ -228,7 +228,7 @@ export default function FullDock ( props ) {
     icon={faGripLinesVertical}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityOne})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityOne + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #1"
       onMouseOver={props.changeObjOne}>
     <FontAwesomeIcon
@@ -237,7 +237,7 @@ export default function FullDock ( props ) {
     icon={fa1}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTwo})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTwo + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #2"
       onMouseOver={props.changeObjTwo}>
     <FontAwesomeIcon
@@ -246,7 +246,7 @@ export default function FullDock ( props ) {
     icon={fa2}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityThree})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityThree + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #3"
       onMouseOver={props.changeObjThree}>
     <FontAwesomeIcon
@@ -255,7 +255,7 @@ export default function FullDock ( props ) {
     icon={fa3}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityFour})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityFour + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #4"
       onMouseOver={props.changeObjFour}>
     <FontAwesomeIcon
@@ -265,7 +265,7 @@ export default function FullDock ( props ) {
       </div>
       <div 
       className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityFive})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityFive + 0.025}`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #5"
       onMouseOver={props.changeObjFive}>
     <FontAwesomeIcon
@@ -274,7 +274,7 @@ export default function FullDock ( props ) {
     icon={fa5}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacitySix})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacitySix + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #6"
       onMouseOver={props.changeObjSix}>
     <FontAwesomeIcon
@@ -283,7 +283,7 @@ export default function FullDock ( props ) {
     icon={fa6}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacitySeven})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacitySeven + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #7"
       onMouseOver={props.changeObjSeven}>
     <FontAwesomeIcon
@@ -292,7 +292,7 @@ export default function FullDock ( props ) {
     icon={fa7}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityEight})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityEight + 0.025})`, border: "1px solid rgba(0, 74, 35,0.05)"}}
       data-tooltip="Objective #8"
       onMouseOver={props.changeObjEight}>
     <FontAwesomeIcon
@@ -301,7 +301,7 @@ export default function FullDock ( props ) {
     icon={fa8}/>
       </div>
       <div className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityNine})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityNine + 0.025})`, border: "1px solid rgba(0, 74, 35,0.2)"}}
       data-tooltip="Objective #9"
       onMouseOver={props.changeObjNine}>
     <FontAwesomeIcon
@@ -311,7 +311,7 @@ export default function FullDock ( props ) {
       </div>
       <div id="finalnode" 
       className="dock node"
-      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTen})`}}
+      style={{backgroundColor: `rgba(0, 74, 35, ${props.opacityTen + 0.025})`, border: "1px solid rgba(0, 74, 35,0.2)"}}
       data-tooltip="Objective #10"
       onMouseOver={props.changeObjTen}>
     <FontAwesomeIcon
